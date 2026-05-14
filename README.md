@@ -1,25 +1,110 @@
-# A Calculus for Redundant System Design
+# Redundancy-Aware Mitigation Synthesis for ICS
 
-* Possible Titles:
-    - A Redundancy Aware Calculus for System Design Analysis
-    - A Calculus for Redundant System Design
+A formal verification framework for synthesizing safe redundant controller responses in Industrial Control Systems (ICS) under attack or failure conditions.
 
-* Venue: DSN? NFM? FM?
+## Problem Statement
 
-## File descriptions
-- valve_model: A basic dGL program showing what is physically possible in the system.
-- valve_model_basic: The valve_model dGL program instrumented to also have metrics to measure the operational and redundancy costs.
-- attack: A overflow attack specification, written as a mapping from dGL subgames representing PLC control to the way the attacker overrides the control decisions, plus how long the attack runs.
-- attack_analysis: A dGL program that composes the valve_model_basic with the attack specification. Its control envelope (preconditions annotations of every subgame saying when they can safely be played) analyzes the system behavior under attack. If state \sigma is in the envelope at program point p, that means starting at program point p there is a way to mitigate the attack with cost \sigma(cost_metric) where cost_metric measures the operational/redundancy costs incurred.
-- reasoning_description.txt: Describes an example if how the game in attack_analysis gives us a way to verify if our analysis of system behavior is correct.
+Building on HyTwin's attack detection and mitigation horizon capabilities, this project addresses the **response synthesis problem**: given that an attack has been detected and a mitigation window identified, how do we formally synthesize and verify safe redundant control responses?
 
-## Notes/Open questions:
-- Is the attack syntax of replacing subgames a good abstraction to represent real attacks? Is it general enough to represent some well-known class of attacks?
-- Is the metric instrumentation general enough to represent metrics of practical interest?
-    * If we can arbitrarily add new variables, are there even any theoretical limitations to what we can express?
-    * On the other hand, is there a systematic way to do instrumentation so that adding typical metrics is easy for practitioners?
-- Do we really want control envelopes, or is dGL enough? I think envelopes make more sense if we want to somehow extract mitigation as a part of our story, otherwise dGL could be enough.
+The attacker is modeled at the **effect level**: it can replace plant-facing commands and, in stealthy cases, spoof controller/operator-facing measurements. The defender has access to an independent **redundant intervention path**—e.g., backup PLC, external monitor, operator override, or bump-in-the-wire safety device.
 
-## Paper
+## Approach Overview
 
-Overleaf (currently very little, tentative text): https://www.overleaf.com/1633871886gmcpnjrykzsg#fe8c83
+The framework uses **differential game logic (dGL)** to model:
+
+1. **Effect-Level Attack Model** — Attacker actions as plant-facing command replacement (subgame replacement)
+2. **Intervention Cost Metrics** — Operational costs (`ometric`) + intervention costs (`rmetric`)
+3. **Control Envelopes** — Certified safe regions with cost bounds, providing mitigation certificates
+
+Verification is performed using **KeYmaera X**, with standards alignment to IEC 61508, IEC 62443, and NERC PRC-012-2.
+
+**Important distinctions:**
+- We model attack **effects** on the plant, not exploit mechanisms
+- `rmetric` is a deterministic intervention cost, NOT a PFDavg budget
+- HFT, PFDavg, SFF are architecture constraints, not consumed per action
+
+## Repository Structure
+
+| File | Description | Status |
+|------|-------------|--------|
+| `valve_model.kyx` | Basic water tank dGL model | Complete |
+| `valve_model_basic.kyx` | Model with metrics instrumentation | Complete |
+| `attack.kyx` | Overflow attack specification | Complete |
+| `attack_analysis.kyx` | Composed model with 4 mitigation strategies | Complete |
+| `TODO.md` | Prioritized task list | Active |
+| `PROJECT_STATUS.md` | Current state assessment | Active |
+| `STANDARDS_MAPPING.md` | IEC/NERC/NIST standards alignment | Reference |
+| `ATTACK_MODEL.md` | Effect-level attack abstraction | Reference |
+| `METRIC_INTERFACE.md` | Operational and intervention metrics | Reference |
+| `CONTROL_ENVELOPES.md` | Control envelope concept and NERC mapping | Reference |
+| `SPHERE_ALIGNMENT.md` | SPHERE CPS Enclave integration | Reference |
+| `PAPER_FRAMING.md` | Research positioning and terminology | Reference |
+
+## Quick Start
+
+### Prerequisites
+
+1. Install [KeYmaera X](https://keymaerax.org/) (v5.0+)
+2. Clone this repository
+
+### Running the Models
+
+```bash
+# Open in KeYmaera X
+keymaerax valve_model.kyx
+keymaerax attack_analysis.kyx
+```
+
+### Model Variables
+
+| Variable | Description | Type |
+|----------|-------------|------|
+| `x1, x2` | Water levels in tanks | Continuous state |
+| `P1, P2` | Pump controls | Binary (0/1) |
+| `V1, V2` | Valve controls | Binary (0/1) |
+| `f1, f2` | Flow rates | Parameters |
+| `ometric` | Operational cost (budget remaining) | Metric |
+| `rmetric` | Intervention cost (budget remaining) | Metric |
+
+### Safety Property
+
+```
+safe(x1, x2) <-> (L1 <= x1 <= H1) & (L2 <= x2 <= H2)
+```
+
+## Domain Roles
+
+- **Water:** Formal running example (simple dynamics, intuitive model)
+- **Power/HARVEY:** Motivating attack pattern (original HARVEY was power-grid firmware rootkit)
+- **SPHERE:** Effect-level attack instantiation across domains (U of Utah CPS Enclave)
+
+## Related Work
+
+- **HyTwin**: Hybrid digital twin for attack detection and mitigation horizon
+- **SPHERE/CPS Enclave**: Security and Privacy Heterogeneous Environment for Reproducible Experimentation (U of Utah)
+- **XPhysICS**: Taxonomy of physical-domain ICS attacks
+- **HARVEY**: Firmware-level PLC rootkit (power-grid origin; we use as attack pattern)
+- **dGL**: Differential game logic for hybrid systems verification
+
+## Target Venues
+
+- DSN (Dependable Systems and Networks)
+- NFM (NASA Formal Methods)
+- FM (Formal Methods)
+
+## Contributing
+
+All tasks are tracked in `TODO.md` with:
+- Status indicators (Pending/In Progress/Complete)
+- Owner field (TBD until assigned)
+- Acceptance criteria
+
+See `PROJECT_STATUS.md` for current state and priorities.
+
+## License
+
+TBD
+
+## References
+
+See `mitigation_synthesis_paper/refs.bib` for complete bibliography (97 entries).
