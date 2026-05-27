@@ -1,14 +1,113 @@
-Use metric analysis from valve_model_basic under overflow attack from attack.kyx.
+/* Metric analysis for a plant-facing overflow effect.
+ *
+ * Intended claim:
+ *   This model represents the plant-facing command effects of a
+ *   HARVEY-inspired compromise. It does not model the firmware exploit,
+ *   sensor spoofing, or the original power-grid HARVEY payload.
+ *
+ * Proof status:
+ *   The envelope below is a proposed invariant structure. It still needs
+ *   to be checked in KeYmaera X and may need proof-oriented refactoring.
+ *
+ * System:
+ *   The plant is a two-tank water process with one inflow path and one
+ *   outflow/transfer path. Pump P1 and valve V1 control inflow into tank 1.
+ *   Pump P2 and valve V2 control outflow from tank 1 into tank 2. The primary
+ *   channel, PLC1, normally chooses actuator commands. During the attack
+ *   window, PLC1's plant-facing commands are replaced by malicious overflow
+ *   commands. The redundant intervention path, PLC2, can then overwrite the
+ *   actuator commands before the continuous plant evolution occurs.
+ *
+ * Plant dynamics:
+ *   x1' = V1 * P1 * f1 - V2 * P2 * f2
+ *   x2' = V2 * P2 * f2
+ *
+ * Attack effect:
+ *   While attackTimer <= AttackTime, the plant-facing primary commands are:
+ *     P1 := 1, V1 := 1, P2 := 0, V2 := 0.
+ *   This forces inflow and blocks outflow, creating an overflow-pressure
+ *   effect on tank 1.
+ *
+ * Variables:
+ *   x1, x2        Water levels in tanks 1 and 2.
+ *   L1, H1        Low/high safety bounds for tank 1.
+ *   L2, H2        Low/high safety bounds for tank 2.
+ *   P1, V1        Inflow pump and valve, binary actuator states.
+ *   P2, V2        Outflow pump and valve, binary actuator states.
+ *   old_*         Actuator values before PLC2 intervention, used for cost.
+ *   f1, f2        Inflow and outflow rates.
+ *   t             Time elapsed inside the current control-loop step.
+ *   T             Maximum duration of one continuous evolution step.
+ *   Tmin          Minimum duration required for a completed loop step.
+ *   attackTimer   Time elapsed since the attack began.
+ *   AttackTime    Duration bound for the plant-facing attack effect.
+ *   ometric       Remaining operational budget.
+ *   rmetric       Remaining redundant-intervention budget.
+ *   c1, c2        Continuous operational cost coefficients.
+ *   op1, op2      Intervention costs for changing pumps P1 and P2.
+ *   ov1, ov2      Intervention costs for changing valves V1 and V2.
+ */
 
-Let safe(x1, x2) <-> x1 < L1 | x1 > H1
+Definitions
+    Bool isBinary(Real v) := (v = 0) | (v = 1);
+    Bool safe(Real x1, Real x2) := (L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2);
+    Bool unsafe(Real x1, Real x2) := (x1 < L1 | x1 > H1 | x2 < L2 | x2 > H2);
+End.
+
+ProgramVariables
+    Real P1;            /* Pump 1. If 1, pump is on; if 0, off. */
+    Real V1;            /* Valve 1. If 1, valve is open; if 0, closed. */
+    Real P2;            /* Pump 2. If 1, pump is on; if 0, off. */
+    Real V2;            /* Valve 2. If 1, valve is open; if 0, closed. */
+    Real old_P1;
+    Real old_V1;
+    Real old_P2;
+    Real old_V2;
+
+    Real x1;            /* Tank 1 water level. */
+    Real x2;            /* Tank 2 water level. */
+    Real L1;            /* Tank 1 low safety bound. */
+    Real H1;            /* Tank 1 high safety bound. */
+    Real L2;            /* Tank 2 low safety bound. */
+    Real H2;            /* Tank 2 high safety bound. */
+
+    Real f1;            /* Inflow rate. */
+    Real f2;            /* Outflow rate. */
+    Real t;             /* Time within one control-loop step. */
+    Real T;             /* Maximum control-loop step duration. */
+    Real Tmin;          /* Minimum control-loop step duration. */
+    Real attackTimer;   /* Time elapsed since the attack began. */
+    Real AttackTime;    /* Upper bound on attack duration. */
+
+    Real ometric;       /* Operational budget remaining. */
+    Real rmetric;       /* Intervention budget remaining. */
+    Real c1;            /* Operational cost coefficient for pump 1 inefficiency. */
+    Real c2;            /* Operational cost coefficient for pump 2 inefficiency. */
+    Real op1;           /* Intervention cost for changing pump 1. */
+    Real ov1;           /* Intervention cost for changing valve 1. */
+    Real op2;           /* Intervention cost for changing pump 2. */
+    Real ov2;           /* Intervention cost for changing valve 2. */
+End.
 
 Problem
+    (
+        L1 <= H1 & L2 <= H2
+        & f1 >= 0 & f2 >= 0
+        & T > 0 & Tmin > 0 & Tmin <= T
+        & AttackTime >= 0 & attackTimer >= 0
+        & c1 >= 0 & c2 >= 0
+        & op1 >= 0 & ov1 >= 0 & op2 >= 0 & ov2 >= 0
+        & ometric >= 0 & rmetric >= 0
+        & safe(x1, x2)
+        & isBinary(P1) & isBinary(V1) & isBinary(P2) & isBinary(V2)
+    )
+    ->
     <
         {
             {
                   {
                       ? attackTimer <= AttackTime;
-                      /* First layer of PLCs under attack. */
+                      /* Plant-facing overflow effect: force inflow and block outflow. */
                       P1_PLC1: P1 := 1;
                       V1_PLC1: V1 := 1;
                       P2_PLC1: P2 := 0;
@@ -18,16 +117,18 @@ Problem
                   ++
                   {
                       ? attackTimer > AttackTime;
-                      /* First layer of PLCs under normal operation. */
-                      P1_PLC1: P1 := *;
-                      V1_PLC1: V1 := *;
-                      P2_PLC1: P2 := *;
-                      V2_PLC1: V2 := *;
-                      ? isBinary(P1) & isBinary(V1) & isBinary(P2) & isBinary(V2);
+                      /* Normal primary channel after the attack window. */
+                      {
+                        P1_PLC1: P1 := *;
+                        V1_PLC1: V1 := *;
+                        P2_PLC1: P2 := *;
+                        V2_PLC1: V2 := *;
+                        ? isBinary(P1) & isBinary(V1) & isBinary(P2) & isBinary(V2);
+                      }^@;
                   }
                 ;
                 {
-                    /* Second layer of PLCs. */
+                    /* Redundant intervention path. */
                     old_P1 := P1;
                     old_V1 := V1;
                     old_P2 := P2;
@@ -36,37 +137,63 @@ Problem
                     V1_PLC2: V1 := *;
                     P2_PLC2: P2 := *;
                     V2_PLC2: V2 := *;
-                    /* Penalty for using redundant PLCs */
-                    rmetric := rmetric - (|old_P1 - P1| * op1 + |old_V1 - V1| * ov1 + |old_P2 - P2| * op2 + |old_V2 - V2| * ov2);
                     ? isBinary(P1) & isBinary(V1) & isBinary(P2) & isBinary(V2);
-                }
+
+                    /* Since actuator states are binary, squared differences are 1
+                     * exactly when the redundant path changes the actuator.
+                     */
+                    rmetric := rmetric -
+                        ((old_P1 - P1) * (old_P1 - P1) * op1
+                       + (old_V1 - V1) * (old_V1 - V1) * ov1
+                       + (old_P2 - P2) * (old_P2 - P2) * op2
+                       + (old_V2 - V2) * (old_V2 - V2) * ov2);
+                }^@;
                 t:=0;
-                { 
-                    x1' = V1 * f1 - V2 * P2 * f2, 
+                {
+                    x1' = V1 * P1 * f1 - V2 * P2 * f2,
                     x2' = V2 * P2 * f2,
                     t' = 1,
                     attackTimer' = 1,
-                    ometric' = -x2 - c1 * (P1 * (1 - V1)) - c2* (P2 * (1 - V2)),
-                    & (x1 >= 0 & x2 >= 0 & f1 >= 0 & f2 >= 0) & t <= T
+                    ometric' = -x2 - c1 * (P1 * (1 - V1)) - c2 * (P2 * (1 - V2)),
+                    & x1 >= 0 & x2 >= 0 & f1 >= 0 & f2 >= 0 & t <= T
                 };
                 ? t >= Tmin;
             }*
-        }^@ 
-        /* Invariant:
-            /* Attack over. */
-            (safe(x1, x2) & attackTimer > AttackTime & ometric >= 0 & rmetric >= 0)
-            /* Safety by draining. Extra margin because of tank capacity with margin of error due to loop latency.  */
-            | (safe(x1, x2) & ometric >= (AttackTime-attackTimer)*f2 - (H2-x2-T/(f2-f1))/f2 & rmetric >= 0 & f2>=f1 & T * (f2-f1) >= f2*(x2 - L1) & T*f1 <= H1 - (L1 + T * (f2-f1)))
-            /* Safety by overriding valve. */
-            | (safe(x1, x2) & ometric >= (AttackTime-attackTimer + T) * c1 & rmetric >= ov1 * ceil((AttackTime-attackTimer) / Tmin))
-            /* Safety by overriding pump. */
-            | (safe(x1, x2) & ometric >= 0 & rmetric >= ov2 * ceil((AttackTime-attackTimer) / Tmin))
-        */
+        }^@
+        /* Proposed invariant structure, pending proof:
+         *
+         * Attack over:
+         *   safe(x1, x2) & attackTimer > AttackTime & ometric >= 0 & rmetric >= 0
+         *
+         * Drain safely:
+         *   safe(x1, x2)
+         *   & ometric >= (AttackTime-attackTimer)*f2 - (H2-x2-T/(f2-f1))/f2
+         *   & rmetric >= 0
+         *   & f2 >= f1
+         *   & T * (f2-f1) >= f2*(x2 - L2)
+         *   & T*f1 <= H1 - (L1 + T * (f2-f1))
+         *
+         * Override inflow valve:
+         *   safe(x1, x2)
+         *   & ometric >= (AttackTime-attackTimer + T) * c1
+         *   & rmetric >= ov1 * ceil((AttackTime-attackTimer) / Tmin)
+         *
+         * Override inflow pump:
+         *   safe(x1, x2)
+         *   & ometric >= 0
+         *   & rmetric >= op1 * ceil((AttackTime-attackTimer) / Tmin)
+         *
+         * The ceil terms are documentation-level formulas for now. A checked
+         * KeYmaera X proof should replace them with an explicit counter or an
+         * equivalent arithmetic encoding accepted by the prover.
+         */
     >
-    ((x1 < L1 | x1 > H1) &
-      /* tracker variables */
-      attackTimer >= 0 & ometric >= 0 & rmetric >= 0
-      /* other side conditions. */
-      isBinary(P1) & isBinary(V1) & isBinary(P2) & isBinary(V2);
-    ) 
+    (
+      safe(x1, x2)
+      & !unsafe(x1, x2)
+      & attackTimer >= 0
+      & ometric >= 0
+      & rmetric >= 0
+      & isBinary(P1) & isBinary(V1) & isBinary(P2) & isBinary(V2)
+    )
 End.
