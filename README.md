@@ -29,31 +29,37 @@ Verification is performed using **KeYmaera X**, with standards alignment to IEC 
 |------|-------------|--------|
 | `valve_model.kyx` | Basic water tank dGL model | Complete |
 | `valve_model_basic.kyx` | Model with metrics instrumentation | Complete |
-| `attack.kyx` | Overflow attack specification | Complete |
-| `attack_analysis.kyx` | Composed model with 4 mitigation strategies | Complete |
-| `TODO.md` | Prioritized task list | Active |
-| `PROJECT_STATUS.md` | Current state assessment | Active |
-| `STANDARDS_MAPPING.md` | IEC/NERC/NIST standards alignment | Reference |
-| `ATTACK_MODEL.md` | Effect-level attack abstraction | Reference |
-| `METRIC_INTERFACE.md` | Operational and intervention metrics | Reference |
-| `CONTROL_ENVELOPES.md` | Control envelope concept and NERC mapping | Reference |
-| `SPHERE_ALIGNMENT.md` | SPHERE CPS Enclave integration | Reference |
-| `PAPER_FRAMING.md` | Research positioning and terminology | Reference |
+| `attack.kyx` | Overflow attack shorthand / note artifact | Supporting |
+| `attack_analysis.kyx` | Main composed model with attack, metrics, and proposed mitigation strategies | Model complete, proofs pending |
+| `attack.envelope` | CLEO-style envelope draft for general override mitigation | Draft |
+| `attackvalve.envelope` | CLEO-style envelope draft for valve-focused mitigation | Draft |
+| `water_attack.py` | Local parser / development runner for the envelope drafts | Active |
+| `requirements.md` | Detailed runtime and verification setup instructions | Current |
 
 ## Quick Start
 
-### Prerequisites
+Detailed setup and version guidance live in [requirements.md](requirements.md).
 
-1. Install [KeYmaera X](https://keymaerax.org/) (v5.0+)
-2. Clone this repository
-
-### Running the Models
+### Direct `.kyx` workflow
 
 ```bash
-# Open in KeYmaera X
 keymaerax valve_model.kyx
 keymaerax attack_analysis.kyx
 ```
+
+### `.envelope` workflow
+
+After installing CLEO in a Python 3.12 environment:
+
+```bash
+python water_attack.py
+python water_attack.py attackvalve.envelope
+```
+
+Current state:
+- both envelope files parse successfully
+- the attack envelopes are still draft proof artifacts
+- full verification of `attack.envelope` is not complete yet because annotations for `a` and `aw` are still missing
 
 ### Model Variables
 
@@ -94,12 +100,10 @@ safe(x1, x2) <-> (L1 <= x1 <= H1) & (L2 <= x2 <= H2)
 
 ## Contributing
 
-All tasks are tracked in `TODO.md` with:
-- Status indicators (Pending/In Progress/Complete)
-- Owner field (TBD until assigned)
-- Acceptance criteria
-
-See `PROJECT_STATUS.md` for current state and priorities.
+When contributing:
+- keep the formal artifacts small and readable
+- state whether you tested the `.kyx` workflow, the `.envelope` workflow, or both
+- update `requirements.md` if toolchain expectations change
 
 ## License
 
