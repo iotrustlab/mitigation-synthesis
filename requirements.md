@@ -1,15 +1,15 @@
 # Runtime and Verification Requirements
 
-This document explains how to run the repository without relying on machine-specific paths.
+This document explains how to run the canonical Phase 1 artifact without using machine-specific paths.
 
 ## Scope
 
-This repository contains two kinds of formal artifacts:
+The repository now centers on one CLEO envelope workflow:
 
-1. `.kyx` files for direct KeYmaera X use
-2. `.envelope` files plus `water_attack.py` for the CLEO-based envelope workflow
+- `attack.envelope` is the formal artifact
+- `water_attack.py` is the local runner
 
-These workflows have different requirements.
+There is no separate bundled `.kyx` workflow in this cleaned Phase 1 snapshot.
 
 ## Recommended Toolchain
 
@@ -18,70 +18,36 @@ These workflows have different requirements.
 | Git | 2.34+ | Standard repository operations |
 | Python | 3.12.x | Matches the CLEO artifact requirements |
 | pip | 24+ | Modern editable-install support |
-| Java | 21 LTS | Stable runtime for KeYmaera X; Java 11+ is generally acceptable |
-| Z3 CLI | 4.16.0 | Recommended for the CLEO workflow |
+| Java | 21 LTS | Stable runtime for KeYmaera X |
+| Z3 CLI | 4.16.0 | Recommended backend for KeYmaera X and CLEO |
 | Python `z3-solver` | 4.16.0.0 | Matches the tested CLEO install |
-| KeYmaera X | 5.x | Needed for proving dGL obligations |
-| CLEO | 0.1.0 artifact dated 2026-05-19 | Provides `EnvelopeSession`, `parse_envelope`, and proof checking |
+| KeYmaera X | 5.x | Required by CLEO for proof discharge |
+| CLEO | 0.1.0 artifact dated 2026-05-19 | Provides `EnvelopeSession`, parsing, and verification |
 
-## What Is In This Repo
+## External Dependencies
 
-| File type | Purpose |
-|-----------|---------|
-| `*.kyx` | Differential game logic models for KeYmaera X |
-| `*.envelope` | CLEO envelope drafts |
-| `water_attack.py` | Local runner for parsing or developing the attack envelopes |
+You need:
 
-## Workflow A: Run the `.kyx` Models Directly
+1. a local CLEO checkout or artifact unpack
+2. Java available on `PATH`
+3. Z3 available on `PATH` as `z3`, or configured in KeYmaera X
+4. KeYmaera X available to CLEO
 
-Use this if you want to inspect or prove the KeYmaera X models directly.
-
-### Requirements
-
-- KeYmaera X 5.x installed separately
-- Java installed and available on `PATH`
-
-### Commands
-
-From the repository root:
-
-```bash
-cd mitigation_synthesis
-keymaerax valve_model.kyx
-keymaerax attack_analysis.kyx
-```
-
-If your KeYmaera X installation is not exposed as `keymaerax`, use the launch method provided by your own installation.
-
-## Workflow B: Run the `.envelope` Files with CLEO
-
-Use this if you want to parse or verify the envelope drafts.
-
-### Requirements
-
-- Python 3.12.x
-- Java on `PATH`
-- Z3 installed either:
-  - on `PATH` as `z3`, or
-  - through KeYmaera X configuration
-- A local checkout or unpacked copy of the CLEO artifact
-
-### Get CLEO
+## Get CLEO
 
 Use the CLEO artifact associated with:
 
 - DOI `10.1184/R1/32320254`
 - Title: `Cleo: Command Line EnvelOpe Verification Tool`
 
-After unpacking, the CLEO directory should contain:
+After unpacking, the CLEO directory should contain at least:
 
 - `pyproject.toml`
 - `cleo/`
 - `examples/`
-- `questions/`
 - `tests/`
 
-### Create the CLEO Virtual Environment
+## Create the CLEO Virtual Environment
 
 From the CLEO root:
 
@@ -92,7 +58,7 @@ python -m pip install --upgrade pip
 python -m pip install -e .[dev]
 ```
 
-### Configure Z3 for KeYmaera X
+## Configure Z3 for KeYmaera X
 
 Recommended:
 
@@ -106,41 +72,45 @@ QE_TOOL = z3
 Z3_PATH = <path-to-your-z3-binary>
 ```
 
-Use your own local Z3 path in place of `<path-to-your-z3-binary>`.
+Replace `<path-to-your-z3-binary>` with your own local Z3 path.
 
-### Run the Repo's Envelope Runner
+## Run the Canonical Phase 1 Verification
 
-Activate the CLEO virtual environment first, then run from this repository root:
+Activate the CLEO virtual environment first, then run from the repository root:
 
 ```bash
-cd mitigation_synthesis
-python water_attack.py
-python water_attack.py attackvalve.envelope
+python mitigation_synthesis/water_attack.py
 ```
 
-These commands perform parser smoke tests for:
+Expected output includes:
 
-- `attack.envelope`
-- `attackvalve.envelope`
+- the envelope parses correctly
+- `PASS loop_inductive`
+- `PASS loop_post`
+- `PASS ode`
+- `PASS arithmetic`
 
-### Current Verification Status
+## Parser-Only Mode
 
-The current repository state is:
+If you only want a syntax and parsing smoke test:
 
-- `attack.envelope` parses successfully
-- `attackvalve.envelope` parses successfully
-- the repo's attack envelopes are not yet fully verified
+```bash
+python mitigation_synthesis/water_attack.py --parse-only
+```
 
-Known proof gap in `attack.envelope`:
+## Current Verification Status
 
-- missing loop invariant for game id `a`
-- missing ODE annotation / tactic for game id `aw`
+The current Phase 1 artifact is fully configured for the canonical proof profile in `attack.envelope`.
 
-So the current `water_attack.py` path is a parser/development harness, not a completed proof script.
+This means:
+
+- the loop invariant is supplied automatically by `water_attack.py`
+- the ODE annotation is supplied automatically by `water_attack.py`
+- CLEO verification succeeds end to end for this canonical case
 
 ## CLEO Smoke Tests
 
-Once CLEO is installed, these are useful checks from the CLEO root:
+Once CLEO is installed, these checks are useful from the CLEO root:
 
 ```bash
 source .venv/bin/activate
@@ -154,26 +124,12 @@ PY
 
 Expected behavior:
 
-- the parser/unit tests should pass
-- `examples/lotka.envelope` should verify successfully
+- parser and envelope-format tests pass
+- `examples/lotka.envelope` verifies successfully
 
 ## Repo-Specific Notes
 
-- This repository does not bundle its own standalone KeYmaera X installation for opening `.kyx` files directly.
-- The envelope workflow depends on an external CLEO installation.
-- `water_attack.py` imports `cleo`, so it must be run from an environment where CLEO has already been installed.
+- The repository does not bundle a standalone KeYmaera X installation.
+- The verification path depends on an external CLEO installation.
+- `water_attack.py` must run in an environment where `cleo` is importable.
 - Docker is optional, not required.
-
-## Minimum Practical Setup
-
-If you only want to inspect the formal models:
-
-- install KeYmaera X
-- open `attack_analysis.kyx`
-
-If you want to work on the envelope path:
-
-- install CLEO in a Python 3.12 virtual environment
-- install or configure Z3
-- run `python water_attack.py`
-

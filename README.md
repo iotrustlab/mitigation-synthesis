@@ -1,114 +1,91 @@
 # Redundancy-Aware Mitigation Synthesis for ICS
 
-A formal verification framework for synthesizing safe redundant controller responses in Industrial Control Systems (ICS) under attack or failure conditions.
+This repository now contains the canonical Phase 1 artifact for the project: one CLEO-checkable mitigation envelope for a water-tank attack scenario.
 
-## Problem Statement
+## Phase 1 Goal
 
-Building on HyTwin's attack detection and mitigation horizon capabilities, this project addresses the **response synthesis problem**: given that an attack has been detected and a mitigation window identified, how do we formally synthesize and verify safe redundant control responses?
+The Phase 1 objective is to show one end-to-end formally verified example of:
 
-The attacker is modeled at the **effect level**: it can replace plant-facing commands and, in stealthy cases, spoof controller/operator-facing measurements. The defender has access to an independent **redundant intervention path**—e.g., backup PLC, external monitor, operator override, or bump-in-the-wire safety device.
+1. an attacker changing plant-facing commands,
+2. a redundant mitigation path overriding the attack, and
+3. a proof that safety and cost bounds are preserved.
 
-## Approach Overview
+This is intentionally narrower than the full research vision. It gives us one trustworthy baseline before expanding to richer models or automated synthesis.
 
-The framework uses **differential game logic (dGL)** to model:
+## What Is In Scope
 
-1. **Effect-Level Attack Model** — Attacker actions as plant-facing command replacement (subgame replacement)
-2. **Intervention Cost Metrics** — Operational costs (`ometric`) + intervention costs (`rmetric`)
-3. **Control Envelopes** — Certified safe regions with cost bounds, providing mitigation certificates
+| File | Purpose |
+|------|---------|
+| `attack.envelope` | Canonical Phase 1 mitigation envelope |
+| `water_attack.py` | Local parser and verification runner for the canonical envelope |
+| `requirements.md` | Toolchain and run instructions |
 
-Verification is performed using **KeYmaera X**, with standards alignment to IEC 61508, IEC 62443, and NERC PRC-012-2.
+## Scenario Summary
 
-**Important distinctions:**
-- We model attack **effects** on the plant, not exploit mechanisms
-- `rmetric` is a deterministic intervention cost, NOT a PFDavg budget
-- HFT, PFDavg, SFF are architecture constraints, not consumed per action
+The model is a two-tank water system with binary pumps and valves.
 
-## Repository Structure
+- `x1`, `x2`: tank levels
+- `P1`, `P2`: pump commands
+- `V1`, `V2`: valve commands
+- `ometric`: remaining operational budget
+- `rmetric`: remaining mitigation budget
 
-| File | Description | Status |
-|------|-------------|--------|
-| `valve_model.kyx` | Basic water tank dGL model | Complete |
-| `valve_model_basic.kyx` | Model with metrics instrumentation | Complete |
-| `attack.kyx` | Overflow attack shorthand / note artifact | Supporting |
-| `attack_analysis.kyx` | Main composed model with attack, metrics, and proposed mitigation strategies | Model complete, proofs pending |
-| `attack.envelope` | CLEO-style envelope draft for general override mitigation | Draft |
-| `attackvalve.envelope` | CLEO-style envelope draft for valve-focused mitigation | Draft |
-| `water_attack.py` | Local parser / development runner for the envelope drafts | Active |
-| `requirements.md` | Detailed runtime and verification setup instructions | Current |
+The attacker is modeled at the effect level. During the active attack window, it forces the primary controller toward an unsafe inflow pattern. The defender has a redundant path that can still force `P1 := 0`.
+
+The Phase 1 envelope proves a final-step case:
+
+- less than one control period remains before the attack ends,
+- the system starts in a safe shutdown configuration,
+- the secondary tank is already empty (`x2 = 0`),
+- the redundant controller can spend one mitigation action to keep the system safe.
 
 ## Quick Start
 
-Detailed setup and version guidance live in [requirements.md](requirements.md).
+Detailed setup is in [requirements.md](requirements.md).
 
-### Direct `.kyx` workflow
-
-```bash
-keymaerax valve_model.kyx
-keymaerax attack_analysis.kyx
-```
-
-### `.envelope` workflow
-
-After installing CLEO in a Python 3.12 environment:
+From the repository root, after activating an environment where CLEO is installed and KeYmaera X plus Z3 are available:
 
 ```bash
-python water_attack.py
-python water_attack.py attackvalve.envelope
+python mitigation_synthesis/water_attack.py
 ```
 
-Current state:
-- both envelope files parse successfully
-- the attack envelopes are still draft proof artifacts
-- full verification of `attack.envelope` is not complete yet because annotations for `a` and `aw` are still missing
+Expected result:
 
-### Model Variables
+- `attack.envelope` parses correctly
+- `loop_inductive` passes
+- `loop_post` passes
+- `ode` passes
+- `arithmetic` passes
 
-| Variable | Description | Type |
-|----------|-------------|------|
-| `x1, x2` | Water levels in tanks | Continuous state |
-| `P1, P2` | Pump controls | Binary (0/1) |
-| `V1, V2` | Valve controls | Binary (0/1) |
-| `f1, f2` | Flow rates | Parameters |
-| `ometric` | Operational cost (budget remaining) | Metric |
-| `rmetric` | Intervention cost (budget remaining) | Metric |
+To do only a parser smoke test:
 
-### Safety Property
-
-```
-safe(x1, x2) <-> (L1 <= x1 <= H1) & (L2 <= x2 <= H2)
+```bash
+python mitigation_synthesis/water_attack.py --parse-only
 ```
 
-## Domain Roles
+## Current Research Position
 
-- **Water:** Formal running example (simple dynamics, intuitive model)
-- **Power/HARVEY:** Motivating attack pattern (original HARVEY was power-grid firmware rootkit)
-- **SPHERE:** Effect-level attack instantiation across domains (U of Utah CPS Enclave)
+What Phase 1 proves:
 
-## Related Work
+- a redundant override exists for this canonical final-step case
+- the override preserves safety
+- the override keeps both metrics nonnegative
 
-- **HyTwin**: Hybrid digital twin for attack detection and mitigation horizon
-- **SPHERE/CPS Enclave**: Security and Privacy Heterogeneous Environment for Reproducible Experimentation (U of Utah)
-- **XPhysICS**: Taxonomy of physical-domain ICS attacks
-- **HARVEY**: Firmware-level PLC rootkit (power-grid origin; we use as attack pattern)
-- **dGL**: Differential game logic for hybrid systems verification
+What Phase 1 does not yet prove:
 
-## Target Venues
-
-- DSN (Dependable Systems and Networks)
-- NFM (NASA Formal Methods)
-- FM (Formal Methods)
+- the full multi-step attack horizon
+- synthesis of the mitigation automatically
+- broader actuator choices or richer cost models
+- a general architecture search over redundant paths
 
 ## Contributing
 
-When contributing:
-- keep the formal artifacts small and readable
-- state whether you tested the `.kyx` workflow, the `.envelope` workflow, or both
+When changing the Phase 1 artifact:
+
+- keep the formal model small and readable
+- rerun `water_attack.py`
 - update `requirements.md` if toolchain expectations change
 
 ## License
 
 TBD
-
-## References
-
-See `mitigation_synthesis_paper/refs.bib` for complete bibliography (97 entries).

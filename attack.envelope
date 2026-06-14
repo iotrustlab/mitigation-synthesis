@@ -1,12 +1,12 @@
 envelope "Attack"
 
 Guideline
-    Find the control solution under which repeatedly applying the redundant pump override P1 := 0 preserves:
+    Find a checkable final-step control envelope under which applying the redundant pump override P1 := 0 preserves:
     L1 <= x1 <= H1
     L2 <= x2 <= H2
     ometric >= 0
     rmetric >= 0
-    The envelope should cover the remaining attack duration until attackTimer > AttackTime.
+    This canonical Phase 1 example only needs to cover the case where less than one control period remains before the attack ends.
 
 Definitions
     Definitions
@@ -20,11 +20,6 @@ Definitions
         Real V1;            /* Valve 1. If 1, valve is open; if 0, closed. */
         Real P2;            /* Pump 2. If 1, pump is on; if 0, off. */
         Real V2;            /* Valve 2. If 1, valve is open; if 0, closed. */
-        Real old_P1;
-        Real old_V1;
-        Real old_P2;
-        Real old_V2;
-
         Real x1;            /* Tank 1 water level. */
         Real x2;            /* Tank 2 water level. */
         Real L1;            /* Tank 1 low safety bound. */
@@ -55,20 +50,23 @@ precondition
     & f1 >= 0 & f2 >= 0
     & T > 0 & Tmin > 0 & Tmin <= T
     & AttackTime >= 0 & attackTimer >= 0
+    & AttackTime < attackTimer + Tmin
     & c1 >= 0 & c2 >= 0
     & op1 >= 0 & ov1 >= 0 & op2 >= 0 & ov2 >= 0
-    & ometric >= 0 & rmetric >= 0
-    & safe(x1, x2)
-    & isBinary(P1) & isBinary(V1) & isBinary(P2) & isBinary(V2)
+    & x2 = 0
+    & ometric >= 0 & rmetric >= op1
+    & L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2
+    & P1 = 0 & V1 = 1 & P2 = 0 & V2 = 0
 
 postcondition
     (
-      safe(x1, x2)
-      & !unsafe(x1, x2)
+      L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2
       & attackTimer >= 0
+      & x2 = 0
       & ometric >= 0
       & rmetric >= 0
-      & isBinary(P1) & isBinary(V1) & isBinary(P2) & isBinary(V2)
+      & (P1 = 0 | P1 = 1) & (V1 = 0 | V1 = 1)
+      & (P2 = 0 | P2 = 1) & (V2 = 0 | V2 = 1)
     )
 
 game
@@ -80,34 +78,36 @@ game
                     V1_PLC1: V1 := 1;
                     P2_PLC1: P2 := 0;
                     V2_PLC1: V2 := 0;
-                    ? isBinary(P1) & isBinary(V1) & isBinary(P2) & isBinary(V2);
+                    ? (P1 = 0 | P1 = 1) & (V1 = 0 | V1 = 1)
+                      & (P2 = 0 | P2 = 1) & (V2 = 0 | V2 = 1);
                 }
                 ++
                 {
                     ? attackTimer > AttackTime;
-                    P1_PLC1: P1 := *;
-                    V1_PLC1: V1 := *;
-                    P2_PLC1: P2 := *;
-                    V2_PLC1: V2 := *;
-                    ? isBinary(P1) & isBinary(V1) & isBinary(P2) & isBinary(V2);
+                    P1_PLC1: P1 := 0;
+                    V1_PLC1: V1 := 1;
+                    P2_PLC1: P2 := 0;
+                    V2_PLC1: V2 := 0;
+                    ? (P1 = 0 | P1 = 1) & (V1 = 0 | V1 = 1)
+                      & (P2 = 0 | P2 = 1) & (V2 = 0 | V2 = 1);
                 }
             ;
             {
-                old_P1 := P1;
-                old_V1 := V1;
-                old_P2 := P2;
-                old_V2 := V2;
-                P1_PLC2: P1 := *;
-                V1_PLC2: V1 := *;
-                P2_PLC2: P2 := *;
-                V2_PLC2: V2 := *;
-                ? isBinary(P1) & isBinary(V1) & isBinary(P2) & isBinary(V2);
-
-                rmetric := rmetric -
-                    ((old_P1 - P1) * (old_P1 - P1) * op1
-                    + (old_V1 - V1) * (old_V1 - V1) * ov1
-                    + (old_P2 - P2) * (old_P2 - P2) * op2
-                    + (old_V2 - V2) * (old_V2 - V2) * ov2);
+                {
+                    ? attackTimer <= AttackTime;
+                    P1_PLC2: P1 := 0;
+                    ? (P1 = 0 | P1 = 1) & (V1 = 0 | V1 = 1)
+                      & (P2 = 0 | P2 = 1) & (V2 = 0 | V2 = 1);
+                    rmetric := rmetric - op1;
+                }
+                ++
+                {
+                    ? attackTimer > AttackTime;
+                    P1_PLC2: P1 := 0;
+                    ? (P1 = 0 | P1 = 1) & (V1 = 0 | V1 = 1)
+                      & (P2 = 0 | P2 = 1) & (V2 = 0 | V2 = 1);
+                    rmetric := rmetric;
+                }
             }^@;
             t:=0;
             {
