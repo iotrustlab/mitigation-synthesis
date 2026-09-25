@@ -132,6 +132,14 @@ separate immediate-isolation controlled safe hold. The latter preserves safety
 with positive external demand but zero actual delivery, so it can be
 certificate-covered and still fail a requested positive-service contract.
 
+The deterministic incident-evidence front end is documented in
+[`INCIDENT_EVIDENCE_GROUNDING_CONTRACT.md`](INCIDENT_EVIDENCE_GROUNDING_CONTRACT.md).
+It converts raw synthetic telemetry, alerts, command events, and resource
+observations into a provenance-aware candidate, grounds that candidate against
+manually maintained plant knowledge and recovery authority, then uses the
+existing offline certificate/selection path. It does not invoke CLEO online and
+uses no LLM.
+
 The incident-dependent delayed-isolation model is independently versioned in
 `delayed_isolation_formal.py`, `delayed_isolation_proof_profile.py`, and
 `delayed_isolation_recovery_takeover.envelope`. It gives the attacker two
