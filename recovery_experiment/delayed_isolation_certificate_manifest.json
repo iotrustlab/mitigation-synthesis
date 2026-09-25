@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "certificate_id": "two-tank-flowing-takeover-delayed-isolation-v1",
+  "formal_model_id": "delayed-isolation-flowing-takeover-v1",
+  "proof_profile_id": "delayed-isolation-clock-relative-margins-v2",
+  "verification_artifact_id": "delayed-isolation-cleo-symbolic-proof-v1",
+  "verification_status": "VERIFIED",
+  "offline_proof_seconds": 19.196509931003675,
+  "verification_command": "$CLEO_PYTHON -m recovery_experiment.verify_delayed_isolation_recovery --output-dir <proof-output-dir>",
+  "verified_obligations": {
+    "be": "isolation_phase_one",
+    "bn": "isolation_phase_two",
+    "bu": "backup_pending_phase",
+    "ch": "operation_phase",
+    "a": "top_level_arithmetic"
+  },
+  "recovery_policy_id": "trusted-delayed-isolation-flowing-backup-takeover-v1",
+  "plant_model_id": "delayed-isolation-state-dependent-two-tank-v1",
+  "proof_artifacts": {
+    "delayed_isolation_recovery_takeover.envelope": "1e681d841db6639bc099018d50c594c6ad0e0cce143b1155d477c3a3776b086f",
+    "delayed_isolation_formal.py": "78112ca664ccc635659beff1d0a86e1d478d7a53c59c9c7bfa06cecefb23b439",
+    "delayed_isolation_proof_profile.py": "3e8f28a0440c05f92eb681fcda84b7523df9046c219cab4057864b53bed1f329",
+    "verify_delayed_isolation_recovery.py": "2e306acb4d9f876286544907a8d186b8e6e580cfe95e32a94f00da9b8b735839"
+  },
+  "certified_region": {
+    "topology": "synthetic T1 -> {P1, P2} -> T2 with x1' = qin-q1-q2 and x2' = q1+q2-qout",
+    "attacker": "P1 command path is compromised; Demon chooses P1 off or on at time zero and after exactly ControlPeriod. The theorem covers all four binary pairs, not an arbitrary command frequency.",
+    "authority": "P1 command control remains attacker-controlled until an independently trusted physical primary isolator becomes effective exactly at IsolationDelay. Trusted P2 command starts concurrently at time zero.",
+    "timing": "ControlPeriod > 0; IsolationDelay = 2*ControlPeriod; StartupDelay = 3*ControlPeriod; 0 < IsolationDelay <= StartupDelay <= TransferDeadline; mandatory post-takeover T > 0.",
+    "initial_safety": "L1 <= x1 <= H1, L2 <= x2 <= H2, with L1,L2 >= 0 and L1 < H1, L2 < H2.",
+    "margins": "x1 + startupInflow*StartupDelay <= H1; x1 + (startupInflow-qprimary)*IsolationDelay >= L1; x2 - startupWithdrawal*StartupDelay >= L2; x2 + (qprimary-startupWithdrawal)*IsolationDelay <= H2.",
+    "flows_and_service": "Before P2 is available qin=startupInflow, qout=qdelivered=startupWithdrawal >= qmin > 0, q1 is 0 or qprimary until isolation and then 0. qprimary >= startupInflow and qprimary >= startupWithdrawal. After P2 is available, qin=demand=qout=qbackup, q2=qbackup, and qbackup >= qmin.",
+    "runtime_horizon": "The symbolic theorem proves every positive T. The runtime binding is T = horizon-StartupDelay, which must remain positive; no particular six-second trace is used to infer a longer guarantee.",
+    "budget": "isolationCost >= 0, backupCost >= 0, and interventionBudget >= isolationCost + backupCost."
+  },
+  "trust_boundary": "This locally reviewed manifest and its source hashes establish consistency with the recorded successful symbolic proof run. Runtime checks do not rerun KeYmaera X, simulate success as proof, command an actuator, independently validate the proof, or establish that a real deployment has an independent trusted isolator. This is not an externally signed certificate."
+}

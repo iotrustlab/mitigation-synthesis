@@ -1,0 +1,125 @@
+{
+  "status": "VERIFIED",
+  "reason": "all generated bounded-delay obligations discharged",
+  "schedule": {
+    "control_period": 0.5,
+    "isolation_periods": 3,
+    "startup_periods": 5
+  },
+  "formal_model_id": "built-3of5-control-period-isolation-flowing-takeover-v1",
+  "proof_profile": {
+    "profile_id": "bounded-isolation-clock-relative-margins-v1",
+    "schedule": {
+      "control_period": 0.5,
+      "isolation_periods": 3,
+      "startup_periods": 5
+    },
+    "invariant_names": [
+      "isolation_pending_phase_1",
+      "isolation_pending_phase_2",
+      "isolation_pending_phase_3",
+      "backup_pending_phase_1",
+      "backup_pending_phase_2",
+      "operation_phase"
+    ],
+    "tactic": "implyR(1); solve(1); QE"
+  },
+  "elapsed_seconds": 30.051020102982875,
+  "annotations": [
+    {
+      "game_id": "bk",
+      "kind": "ode",
+      "profile": "isolation_pending_phase_1"
+    },
+    {
+      "game_id": "bt",
+      "kind": "ode",
+      "profile": "isolation_pending_phase_2"
+    },
+    {
+      "game_id": "cc",
+      "kind": "ode",
+      "profile": "isolation_pending_phase_3"
+    },
+    {
+      "game_id": "cj",
+      "kind": "ode",
+      "profile": "backup_pending_phase_1"
+    },
+    {
+      "game_id": "cm",
+      "kind": "ode",
+      "profile": "backup_pending_phase_2"
+    },
+    {
+      "game_id": "cz",
+      "kind": "ode",
+      "profile": "operation_phase"
+    }
+  ],
+  "obligations": [
+    {
+      "kind": "ode",
+      "game_id": "bk",
+      "profile": "isolation_pending_phase_1",
+      "proof_goal": "(L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2 & L1 >= 0 & L2 >= 0 & startupInflow >= 0 & startupWithdrawal >= qmin & qmin > 0 & qprimary >= startupInflow & qprimary >= startupWithdrawal & qbackup >= qmin & ControlPeriod > 0 & IsolationDelay = 3*ControlPeriod & StartupDelay = 5*ControlPeriod & IsolationDelay > 0 & IsolationDelay <= StartupDelay & StartupDelay <= TransferDeadline & TransferDeadline > 0 & T > 0 & isolationCommanded = 1 & p2Command = 1 & qin = startupInflow & demand = startupWithdrawal & qout = demand & qdelivered = qout & qdelivered >= qmin & interventionBudget >= isolationCost + backupCost & isolationCost >= 0 & backupCost >= 0 & x1 + startupInflow*(StartupDelay - startupClock) <= H1 & x2 - startupWithdrawal*(StartupDelay - startupClock) >= L2 & x1 + startupInflow*(IsolationDelay - isolationClock) <= H1 & x1 + (startupInflow - qprimary)*(IsolationDelay - isolationClock) >= L1 & x2 + (qprimary - startupWithdrawal)*(IsolationDelay - isolationClock) <= H2 & isolated = 0 & p2 = 0 & q1 >= 0 & q1 <= qprimary & q2 = p2*qbackup & (p1 = 0 | p1 = 1) & isolationClock = 0 & startupClock = 0 & transferClock = 0) -> <{x1' = qin - q1 - q2, x2' = q1 + q2 - qout, isolationClock' = 1, startupClock' = 1, transferClock' = 1 & isolationClock <= ControlPeriod & startupClock <= StartupDelay & transferClock <= TransferDeadline}>(isolationClock >= ControlPeriod & L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2 & L1 >= 0 & L2 >= 0 & startupInflow >= 0 & startupWithdrawal >= qmin & qmin > 0 & qprimary >= startupInflow & qprimary >= startupWithdrawal & qbackup >= qmin & ControlPeriod > 0 & IsolationDelay = 3*ControlPeriod & StartupDelay = 5*ControlPeriod & IsolationDelay > 0 & IsolationDelay <= StartupDelay & StartupDelay <= TransferDeadline & TransferDeadline > 0 & T > 0 & isolationCommanded = 1 & p2Command = 1 & qin = startupInflow & demand = startupWithdrawal & qout = demand & qdelivered = qout & qdelivered >= qmin & interventionBudget >= isolationCost + backupCost & isolationCost >= 0 & backupCost >= 0 & x1 + startupInflow*(StartupDelay - startupClock) <= H1 & x2 - startupWithdrawal*(StartupDelay - startupClock) >= L2 & x1 + startupInflow*(IsolationDelay - isolationClock) <= H1 & x1 + (startupInflow - qprimary)*(IsolationDelay - isolationClock) >= L1 & x2 + (qprimary - startupWithdrawal)*(IsolationDelay - isolationClock) <= H2 & isolated = 0 & p2 = 0 & 0 >= 0 & 0 <= qprimary & q2 = p2*qbackup & (0 = 0 | 0 = 1) & isolationClock = 1*ControlPeriod & startupClock = 1*ControlPeriod & transferClock = 1*ControlPeriod & L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2 & L1 >= 0 & L2 >= 0 & startupInflow >= 0 & startupWithdrawal >= qmin & qmin > 0 & qprimary >= startupInflow & qprimary >= startupWithdrawal & qbackup >= qmin & ControlPeriod > 0 & IsolationDelay = 3*ControlPeriod & StartupDelay = 5*ControlPeriod & IsolationDelay > 0 & IsolationDelay <= StartupDelay & StartupDelay <= TransferDeadline & TransferDeadline > 0 & T > 0 & isolationCommanded = 1 & p2Command = 1 & qin = startupInflow & demand = startupWithdrawal & qout = demand & qdelivered = qout & qdelivered >= qmin & interventionBudget >= isolationCost + backupCost & isolationCost >= 0 & backupCost >= 0 & x1 + startupInflow*(StartupDelay - startupClock) <= H1 & x2 - startupWithdrawal*(StartupDelay - startupClock) >= L2 & x1 + startupInflow*(IsolationDelay - isolationClock) <= H1 & x1 + (startupInflow - qprimary)*(IsolationDelay - isolationClock) >= L1 & x2 + (qprimary - startupWithdrawal)*(IsolationDelay - isolationClock) <= H2 & isolated = 0 & p2 = 0 & qprimary >= 0 & qprimary <= qprimary & q2 = p2*qbackup & (1 = 0 | 1 = 1) & isolationClock = 1*ControlPeriod & startupClock = 1*ControlPeriod & transferClock = 1*ControlPeriod)",
+      "tactic": "implyR(1); solve(1); QE",
+      "passed": true,
+      "feedback": ""
+    },
+    {
+      "kind": "ode",
+      "game_id": "bt",
+      "profile": "isolation_pending_phase_2",
+      "proof_goal": "(L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2 & L1 >= 0 & L2 >= 0 & startupInflow >= 0 & startupWithdrawal >= qmin & qmin > 0 & qprimary >= startupInflow & qprimary >= startupWithdrawal & qbackup >= qmin & ControlPeriod > 0 & IsolationDelay = 3*ControlPeriod & StartupDelay = 5*ControlPeriod & IsolationDelay > 0 & IsolationDelay <= StartupDelay & StartupDelay <= TransferDeadline & TransferDeadline > 0 & T > 0 & isolationCommanded = 1 & p2Command = 1 & qin = startupInflow & demand = startupWithdrawal & qout = demand & qdelivered = qout & qdelivered >= qmin & interventionBudget >= isolationCost + backupCost & isolationCost >= 0 & backupCost >= 0 & x1 + startupInflow*(StartupDelay - startupClock) <= H1 & x2 - startupWithdrawal*(StartupDelay - startupClock) >= L2 & x1 + startupInflow*(IsolationDelay - isolationClock) <= H1 & x1 + (startupInflow - qprimary)*(IsolationDelay - isolationClock) >= L1 & x2 + (qprimary - startupWithdrawal)*(IsolationDelay - isolationClock) <= H2 & isolated = 0 & p2 = 0 & q1 >= 0 & q1 <= qprimary & q2 = p2*qbackup & (p1 = 0 | p1 = 1) & isolationClock = 1*ControlPeriod & startupClock = 1*ControlPeriod & transferClock = 1*ControlPeriod) -> <{x1' = qin - q1 - q2, x2' = q1 + q2 - qout, isolationClock' = 1, startupClock' = 1, transferClock' = 1 & isolationClock <= 2*ControlPeriod & startupClock <= StartupDelay & transferClock <= TransferDeadline}>(isolationClock >= 2*ControlPeriod & L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2 & L1 >= 0 & L2 >= 0 & startupInflow >= 0 & startupWithdrawal >= qmin & qmin > 0 & qprimary >= startupInflow & qprimary >= startupWithdrawal & qbackup >= qmin & ControlPeriod > 0 & IsolationDelay = 3*ControlPeriod & StartupDelay = 5*ControlPeriod & IsolationDelay > 0 & IsolationDelay <= StartupDelay & StartupDelay <= TransferDeadline & TransferDeadline > 0 & T > 0 & isolationCommanded = 1 & p2Command = 1 & qin = startupInflow & demand = startupWithdrawal & qout = demand & qdelivered = qout & qdelivered >= qmin & interventionBudget >= isolationCost + backupCost & isolationCost >= 0 & backupCost >= 0 & x1 + startupInflow*(StartupDelay - startupClock) <= H1 & x2 - startupWithdrawal*(StartupDelay - startupClock) >= L2 & x1 + startupInflow*(IsolationDelay - isolationClock) <= H1 & x1 + (startupInflow - qprimary)*(IsolationDelay - isolationClock) >= L1 & x2 + (qprimary - startupWithdrawal)*(IsolationDelay - isolationClock) <= H2 & isolated = 0 & p2 = 0 & 0 >= 0 & 0 <= qprimary & q2 = p2*qbackup & (0 = 0 | 0 = 1) & isolationClock = 2*ControlPeriod & startupClock = 2*ControlPeriod & transferClock = 2*ControlPeriod & L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2 & L1 >= 0 & L2 >= 0 & startupInflow >= 0 & startupWithdrawal >= qmin & qmin > 0 & qprimary >= startupInflow & qprimary >= startupWithdrawal & qbackup >= qmin & ControlPeriod > 0 & IsolationDelay = 3*ControlPeriod & StartupDelay = 5*ControlPeriod & IsolationDelay > 0 & IsolationDelay <= StartupDelay & StartupDelay <= TransferDeadline & TransferDeadline > 0 & T > 0 & isolationCommanded = 1 & p2Command = 1 & qin = startupInflow & demand = startupWithdrawal & qout = demand & qdelivered = qout & qdelivered >= qmin & interventionBudget >= isolationCost + backupCost & isolationCost >= 0 & backupCost >= 0 & x1 + startupInflow*(StartupDelay - startupClock) <= H1 & x2 - startupWithdrawal*(StartupDelay - startupClock) >= L2 & x1 + startupInflow*(IsolationDelay - isolationClock) <= H1 & x1 + (startupInflow - qprimary)*(IsolationDelay - isolationClock) >= L1 & x2 + (qprimary - startupWithdrawal)*(IsolationDelay - isolationClock) <= H2 & isolated = 0 & p2 = 0 & qprimary >= 0 & qprimary <= qprimary & q2 = p2*qbackup & (1 = 0 | 1 = 1) & isolationClock = 2*ControlPeriod & startupClock = 2*ControlPeriod & transferClock = 2*ControlPeriod)",
+      "tactic": "implyR(1); solve(1); QE",
+      "passed": true,
+      "feedback": ""
+    },
+    {
+      "kind": "ode",
+      "game_id": "cc",
+      "profile": "isolation_pending_phase_3",
+      "proof_goal": "(L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2 & L1 >= 0 & L2 >= 0 & startupInflow >= 0 & startupWithdrawal >= qmin & qmin > 0 & qprimary >= startupInflow & qprimary >= startupWithdrawal & qbackup >= qmin & ControlPeriod > 0 & IsolationDelay = 3*ControlPeriod & StartupDelay = 5*ControlPeriod & IsolationDelay > 0 & IsolationDelay <= StartupDelay & StartupDelay <= TransferDeadline & TransferDeadline > 0 & T > 0 & isolationCommanded = 1 & p2Command = 1 & qin = startupInflow & demand = startupWithdrawal & qout = demand & qdelivered = qout & qdelivered >= qmin & interventionBudget >= isolationCost + backupCost & isolationCost >= 0 & backupCost >= 0 & x1 + startupInflow*(StartupDelay - startupClock) <= H1 & x2 - startupWithdrawal*(StartupDelay - startupClock) >= L2 & x1 + startupInflow*(IsolationDelay - isolationClock) <= H1 & x1 + (startupInflow - qprimary)*(IsolationDelay - isolationClock) >= L1 & x2 + (qprimary - startupWithdrawal)*(IsolationDelay - isolationClock) <= H2 & isolated = 0 & p2 = 0 & q1 >= 0 & q1 <= qprimary & q2 = p2*qbackup & (p1 = 0 | p1 = 1) & isolationClock = 2*ControlPeriod & startupClock = 2*ControlPeriod & transferClock = 2*ControlPeriod) -> <{x1' = qin - q1 - q2, x2' = q1 + q2 - qout, isolationClock' = 1, startupClock' = 1, transferClock' = 1 & isolationClock <= IsolationDelay & startupClock <= StartupDelay & transferClock <= TransferDeadline}>(isolationClock >= IsolationDelay & L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2 & L1 >= 0 & L2 >= 0 & startupInflow >= 0 & startupWithdrawal >= qmin & qmin > 0 & qprimary >= startupInflow & qprimary >= startupWithdrawal & qbackup >= qmin & ControlPeriod > 0 & IsolationDelay = 3*ControlPeriod & StartupDelay = 5*ControlPeriod & IsolationDelay > 0 & IsolationDelay <= StartupDelay & StartupDelay <= TransferDeadline & TransferDeadline > 0 & T > 0 & isolationCommanded = 1 & p2Command = 1 & qin = startupInflow & demand = startupWithdrawal & qout = demand & qdelivered = qout & qdelivered >= qmin & interventionBudget >= isolationCost + backupCost & isolationCost >= 0 & backupCost >= 0 & x1 + startupInflow*(StartupDelay - startupClock) <= H1 & x2 - startupWithdrawal*(StartupDelay - startupClock) >= L2 & 1 = 1 & p2 = 0 & 0 = 0 & q2 = 0 & q2 = p2*qbackup & (0 = 0 | 0 = 1) & isolationClock = IsolationDelay & startupClock = IsolationDelay & transferClock = IsolationDelay & L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2 & L1 >= 0 & L2 >= 0 & startupInflow >= 0 & startupWithdrawal >= qmin & qmin > 0 & qprimary >= startupInflow & qprimary >= startupWithdrawal & qbackup >= qmin & ControlPeriod > 0 & IsolationDelay = 3*ControlPeriod & StartupDelay = 5*ControlPeriod & IsolationDelay > 0 & IsolationDelay <= StartupDelay & StartupDelay <= TransferDeadline & TransferDeadline > 0 & T > 0 & isolationCommanded = 1 & p2Command = 1 & qin = startupInflow & demand = startupWithdrawal & qout = demand & qdelivered = qout & qdelivered >= qmin & interventionBudget >= isolationCost + backupCost & isolationCost >= 0 & backupCost >= 0 & x1 + startupInflow*(StartupDelay - startupClock) <= H1 & x2 - startupWithdrawal*(StartupDelay - startupClock) >= L2 & 1 = 1 & p2 = 0 & 0 = 0 & q2 = 0 & q2 = p2*qbackup & (1 = 0 | 1 = 1) & isolationClock = IsolationDelay & startupClock = IsolationDelay & transferClock = IsolationDelay)",
+      "tactic": "implyR(1); solve(1); QE",
+      "passed": true,
+      "feedback": ""
+    },
+    {
+      "kind": "ode",
+      "game_id": "cj",
+      "profile": "backup_pending_phase_1",
+      "proof_goal": "(L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2 & L1 >= 0 & L2 >= 0 & startupInflow >= 0 & startupWithdrawal >= qmin & qmin > 0 & qprimary >= startupInflow & qprimary >= startupWithdrawal & qbackup >= qmin & ControlPeriod > 0 & IsolationDelay = 3*ControlPeriod & StartupDelay = 5*ControlPeriod & IsolationDelay > 0 & IsolationDelay <= StartupDelay & StartupDelay <= TransferDeadline & TransferDeadline > 0 & T > 0 & isolationCommanded = 1 & p2Command = 1 & qin = startupInflow & demand = startupWithdrawal & qout = demand & qdelivered = qout & qdelivered >= qmin & interventionBudget >= isolationCost + backupCost & isolationCost >= 0 & backupCost >= 0 & x1 + startupInflow*(StartupDelay - startupClock) <= H1 & x2 - startupWithdrawal*(StartupDelay - startupClock) >= L2 & isolated = 1 & p2 = 0 & q1 = 0 & q2 = 0 & q2 = p2*qbackup & (p1 = 0 | p1 = 1) & isolationClock = IsolationDelay & startupClock = IsolationDelay & transferClock = IsolationDelay) -> <{x1' = qin - q1 - q2, x2' = q1 + q2 - qout, startupClock' = 1, transferClock' = 1 & startupClock <= 4*ControlPeriod & transferClock <= TransferDeadline}>(startupClock >= 4*ControlPeriod & transferClock <= TransferDeadline & L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2 & L1 >= 0 & L2 >= 0 & startupInflow >= 0 & startupWithdrawal >= qmin & qmin > 0 & qprimary >= startupInflow & qprimary >= startupWithdrawal & qbackup >= qmin & ControlPeriod > 0 & IsolationDelay = 3*ControlPeriod & StartupDelay = 5*ControlPeriod & IsolationDelay > 0 & IsolationDelay <= StartupDelay & StartupDelay <= TransferDeadline & TransferDeadline > 0 & T > 0 & isolationCommanded = 1 & p2Command = 1 & qin = startupInflow & demand = startupWithdrawal & qout = demand & qdelivered = qout & qdelivered >= qmin & interventionBudget >= isolationCost + backupCost & isolationCost >= 0 & backupCost >= 0 & x1 + startupInflow*(StartupDelay - startupClock) <= H1 & x2 - startupWithdrawal*(StartupDelay - startupClock) >= L2 & isolated = 1 & p2 = 0 & q1 = 0 & q2 = 0 & q2 = p2*qbackup & (p1 = 0 | p1 = 1) & isolationClock = IsolationDelay & startupClock = 4*ControlPeriod & transferClock = 4*ControlPeriod)",
+      "tactic": "implyR(1); solve(1); QE",
+      "passed": true,
+      "feedback": ""
+    },
+    {
+      "kind": "ode",
+      "game_id": "cm",
+      "profile": "backup_pending_phase_2",
+      "proof_goal": "(L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2 & L1 >= 0 & L2 >= 0 & startupInflow >= 0 & startupWithdrawal >= qmin & qmin > 0 & qprimary >= startupInflow & qprimary >= startupWithdrawal & qbackup >= qmin & ControlPeriod > 0 & IsolationDelay = 3*ControlPeriod & StartupDelay = 5*ControlPeriod & IsolationDelay > 0 & IsolationDelay <= StartupDelay & StartupDelay <= TransferDeadline & TransferDeadline > 0 & T > 0 & isolationCommanded = 1 & p2Command = 1 & qin = startupInflow & demand = startupWithdrawal & qout = demand & qdelivered = qout & qdelivered >= qmin & interventionBudget >= isolationCost + backupCost & isolationCost >= 0 & backupCost >= 0 & x1 + startupInflow*(StartupDelay - startupClock) <= H1 & x2 - startupWithdrawal*(StartupDelay - startupClock) >= L2 & isolated = 1 & p2 = 0 & q1 = 0 & q2 = 0 & q2 = p2*qbackup & (p1 = 0 | p1 = 1) & isolationClock = IsolationDelay & startupClock = 4*ControlPeriod & transferClock = 4*ControlPeriod) -> <{x1' = qin - q1 - q2, x2' = q1 + q2 - qout, startupClock' = 1, transferClock' = 1 & startupClock <= StartupDelay & transferClock <= TransferDeadline}>(startupClock >= StartupDelay & transferClock <= TransferDeadline & qbackup >= qmin & L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2 & L1 >= 0 & L2 >= 0 & isolated = 1 & isolationCommanded = 1 & p2Command = 1 & 1 = 1 & qbackup = qbackup & qbackup = qbackup & qbackup = qbackup & 0 = 0 & 1*qbackup = qbackup & 1*qbackup = 1*qbackup & qbackup = qbackup & qbackup >= qmin & (p1 = 0 | p1 = 1) & qprimary >= 0 & qbackup >= qmin & qmin > 0 & startupClock = StartupDelay & transferClock = StartupDelay & transferClock <= TransferDeadline & isolationClock = IsolationDelay & interventionBudget - (isolationCost + backupCost) >= 0 & isolationCost >= 0 & backupCost >= 0 & T > 0 & 0 = 0)",
+      "tactic": "implyR(1); solve(1); QE",
+      "passed": true,
+      "feedback": ""
+    },
+    {
+      "kind": "ode",
+      "game_id": "cz",
+      "profile": "operation_phase",
+      "proof_goal": "(L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2 & L1 >= 0 & L2 >= 0 & isolated = 1 & isolationCommanded = 1 & p2Command = 1 & p2 = 1 & qin = qbackup & demand = qbackup & qout = demand & q1 = 0 & q2 = qbackup & q2 = p2*qbackup & qdelivered = qout & qdelivered >= qmin & (p1 = 0 | p1 = 1) & qprimary >= 0 & qbackup >= qmin & qmin > 0 & startupClock = StartupDelay & transferClock = StartupDelay & transferClock <= TransferDeadline & isolationClock = IsolationDelay & interventionBudget >= 0 & isolationCost >= 0 & backupCost >= 0 & T > 0 & operationClock = 0) -> <{x1' = qin - q1 - q2, x2' = q1 + q2 - qout, operationClock' = 1 & operationClock <= T}>(operationClock >= T & L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2 & isolationCommanded = 1 & isolated = 1 & p2Command = 1 & p2 = 1 & q1 = 0 & q2 = qbackup & q2 = p2*qbackup & qin = qbackup & demand = qbackup & qout = demand & qdelivered = qout & qdelivered >= qmin & isolationClock = IsolationDelay & startupClock = StartupDelay & transferClock = StartupDelay & transferClock <= TransferDeadline & operationClock = T & interventionBudget >= 0)",
+      "tactic": "implyR(1); solve(1); QE",
+      "passed": true,
+      "feedback": ""
+    },
+    {
+      "kind": "arithmetic",
+      "game_id": "a",
+      "profile": null,
+      "proof_goal": null,
+      "tactic": null,
+      "passed": true,
+      "feedback": ""
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+envelope "Trusted backup takeover recovery"
+
+Guideline
+    Baseline concrete instance generated from the synthetic default RecoveryContext.
+    Prove bounded startup recovery and repeated safe operation after trusted primary-path isolation.
+
+Definitions
+    Definitions
+        Bool safe(Real x1, Real x2) <-> (L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2);
+        Bool binary(Real v) <-> (v = 0) | (v = 1);
+    End.
+
+    ProgramVariables
+        Real x1; Real x2;
+        Real L1; Real H1; Real L2; Real H2;
+        Real p1; Real p2; Real isolated;
+        Real qin; Real qd; Real qprimary; Real qbackup; Real qmin;
+        Real startupClock; Real operationClock; Real StartupDelay; Real IsolationDelay;
+        Real T; Real Tmin;
+        Real interventionBudget; Real isolationCost; Real backupCost;
+    End.
+
+precondition
+    L1 = 4 & H1 = 11 & L2 = 3 & H2 = 9
+    & x1 = 7 & x2 = 6
+    & qprimary = 1.5 & qbackup = 1.5 & qmin = 1.2
+    & StartupDelay = 1 & IsolationDelay = 0
+    & T = 0.5 & Tmin = 0.5
+    & isolationCost = 1 & backupCost = 1 & interventionBudget = 2
+    & L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2
+    & qprimary >= 0 & qbackup >= qmin & qmin > 0
+    & T > 0 & Tmin > 0 & Tmin <= T
+    & IsolationDelay = 0
+    & p1 = 1 & p2 = 0 & isolated = 0
+
+postcondition
+    L1 <= x1 & x1 <= H1 & L2 <= x2 & x2 <= H2
+    & isolated = 1 & p2 = 1
+    & qin = qbackup & qd = qbackup
+    & p2 * qbackup >= qmin
+    & interventionBudget >= 0
+
+game
+    {
+        {
+            { p1 := 0; }
+            ++
+            { p1 := 1; }
+        }^@;
+        isolated := 1;
+        p2 := 0;
+        qin := 0;
+        qd := 0;
+        startupClock := 0;
+        {
+            startup_ode: {
+                x1' = qin - (1-isolated) * p1 * qprimary - p2 * qbackup,
+                x2' = (1-isolated) * p1 * qprimary + p2 * qbackup - qd,
+                startupClock' = 1
+                & x1 >= 0 & x2 >= 0 & startupClock <= StartupDelay
+            };
+            ? startupClock >= StartupDelay;
+        }^@;
+        {
+            { p1 := 0; }
+            ++
+            { p1 := 1; }
+        }^@;
+        p2 := 1;
+        qin := qbackup;
+        qd := qbackup;
+        interventionBudget := interventionBudget - (isolationCost + backupCost);
+        operation_loop: {
+            {
+                { p1 := 0; }
+                ++
+                { p1 := 1; }
+            }^@;
+            isolated := 1;
+            p2 := 1;
+            qin := qbackup;
+            qd := qbackup;
+            operationClock := 0;
+            {
+                operation_ode: {
+                    x1' = qin - (1-isolated) * p1 * qprimary - p2 * qbackup,
+                    x2' = (1-isolated) * p1 * qprimary + p2 * qbackup - qd,
+                    operationClock' = 1
+                    & x1 >= 0 & x2 >= 0 & operationClock <= T
+                };
+                ? operationClock >= Tmin;
+            }^@;
+        }*
+    }

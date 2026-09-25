@@ -1,0 +1,47 @@
+{
+  "status": "VERIFIED",
+  "reason": "all controlled-safe-hold symbolic obligations discharged",
+  "elapsed_seconds": 4.14572924998356,
+  "formal_model_id": "controlled-safe-hold-immediate-isolation-v1",
+  "proof_profile_id": "controlled-safe-hold-immediate-isolation-profile-v1",
+  "annotations": [
+    {
+      "game_id": "v",
+      "kind": "ode",
+      "profile": "controlled-safe-hold-immediate-isolation-profile-v1",
+      "tactic": "implyR(1); solve(1); QE"
+    }
+  ],
+  "obligations": [
+    {
+      "kind": "ode",
+      "game_id": "v",
+      "passed": true,
+      "feedback": ""
+    },
+    {
+      "kind": "arithmetic",
+      "game_id": "a",
+      "passed": true,
+      "feedback": ""
+    }
+  ],
+  "milestones": {
+    "A_attacker_before_isolation": {
+      "specification": "the game universally considers both P1 commands before immediate isolation",
+      "passed": true
+    },
+    "B_mandatory_safe_hold": {
+      "specification": "one positive-duration hold ODE preserves closed tank safety without safety in its domain",
+      "passed": true
+    },
+    "C_external_demand_service_curtailment": {
+      "specification": "external demand remains positive while actual delivery is zero for the hold duration",
+      "passed": true
+    },
+    "D_budgeted_independent_hold": {
+      "specification": "budget remains nonnegative after independent isolation and hold-control cost",
+      "passed": true
+    }
+  }
+}

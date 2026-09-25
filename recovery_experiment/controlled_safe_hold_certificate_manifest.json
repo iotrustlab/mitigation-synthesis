@@ -1,0 +1,36 @@
+{
+  "certificate_id": "two-tank-controlled-safe-hold-immediate-isolation-v1",
+  "formal_model_id": "controlled-safe-hold-immediate-isolation-v1",
+  "plant_model_id": "controlled-safe-hold-two-tank-v1",
+  "recovery_policy_id": "trusted-controlled-safe-hold-v1",
+  "proof_profile_id": "controlled-safe-hold-immediate-isolation-profile-v1",
+  "verification_status": "VERIFIED",
+  "review_status": "REVIEWED_LOCAL_PROVENANCE",
+  "review_scope": "The local trust anchor binds the verified symbolic envelope, invariant profile, verifier, and proof record. It does not establish deployment authority.",
+  "resource_contract": {
+    "physical_topology": "Fixed synthetic two-tank parallel-pump plant with a primary-path isolator and upstream/downstream gates.",
+    "incident_trusted_resources": [
+      "trusted_isolation_available",
+      "trusted_inflow_control_available",
+      "trusted_demand_control_available"
+    ],
+    "not_required": [
+      "trusted_backup_available"
+    ],
+    "authority_boundary": "The P1 command path remains attacker-controlled before immediate physical isolation. Gate closure and isolation are independent trusted recovery controls, not an in-memory block on attacker actions."
+  },
+  "theorem_contract": {
+    "isolation_timing": "Immediate physical isolation only (isolation_delay = 0).",
+    "hold_duration": "Mandatory symbolic HoldDuration > 0, instantiated from the configured finite horizon at runtime.",
+    "safety": "Closed T1/T2 safety bounds are preserved throughout the hold ODE.",
+    "service": "externalDemand > 0 remains explicit while qdelivered = 0; this is a safety certificate, not a positive-service certificate.",
+    "budget": "interventionBudget covers isolationCost plus holdControlCost."
+  },
+  "proof_artifacts": {
+    "controlled_safe_hold_formal.py": "92bd91a20726b9899ff0acda9fca95e16e3d58a3ae57b65984127b0d47d6ccac",
+    "controlled_safe_hold_proof_profile.py": "f81791a294efc465294536544686c45f588a5a61e902973224907bc683ec52c9",
+    "verify_controlled_safe_hold.py": "481b2e0c904dd183fec7d643633d2831a608974b51472212a25a4d633012c641",
+    "proof_records/controlled_safe_hold/controlled_safe_hold.generated.envelope": "fe4dbb9dd8d9fdbcf0d01a3a0f65cac88a989d38fa624ff5d22f1a074e543616",
+    "proof_records/controlled_safe_hold/controlled_safe_hold_verification.json": "b57866e42bb75e9100262ca117f6b3a458c6e81397c001d6c34d2275fd3f3742"
+  }
+}

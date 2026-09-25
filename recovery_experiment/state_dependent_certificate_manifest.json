@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "certificate_id": "two-tank-flowing-takeover-state-dependent-v1",
+  "formal_model_id": "state-dependent-flowing-takeover-v1",
+  "verification_artifact_id": "state-dependent-cleo-symbolic-proof-v1",
+  "verification_status": "VERIFIED",
+  "offline_proof_seconds": 9.85577582300175,
+  "recovery_policy_id": "trusted-flowing-backup-takeover-v1",
+  "plant_model_id": "state-dependent-two-tank-v1",
+  "proof_artifacts": {
+    "state_dependent_recovery_takeover.envelope": "bff94d011109ab1a3489064b20c6163d51246994dd777600effa807edd10a3fc",
+    "state_dependent_proof_profile.py": "45ee5b19ea2cb499cbc4d2d03327b54e1da011c4c7dfe13d0541832e945f9951",
+    "state_dependent_formal.py": "5cf8abd72fa7295d6786ced58ca5fcad7d61387996bef3728c8338e7e06b7c3c"
+  },
+  "certified_region": {
+    "state": "L1 <= x1 <= H1, L2 <= x2 <= H2, L1,L2 >= 0",
+    "startup_margin": "x1 + startup_inflow_rate*backup_startup_delay <= H1 and x2 - startup_withdrawal_rate*backup_startup_delay >= L2",
+    "startup_service": "startup_withdrawal_rate >= min_service_flow > 0 and qout = demand = startup_withdrawal_rate",
+    "transfer_timing": "0 < backup_startup_delay <= transfer_recovery_deadline",
+    "trace_compatibility": "backup_startup_delay/control_period is an integer so the discrete trace reaches P2 activation at the exact modeled startup boundary",
+    "post_takeover": "backup_capacity = upstream_nominal = downstream_demand >= min_service_flow",
+    "authority": "P1 command is attacker-controlled; primary isolation and P2 command are independently trusted",
+    "budget": "intervention_budget >= isolation_cost + backup_activation_cost"
+  },
+  "trust_boundary": "This reviewed manifest binds the state-dependent certificate to the verified symbolic theorem. Runtime digest checks detect local artifact drift but do not rerun KeYmaera X or establish physical trust assumptions."
+}

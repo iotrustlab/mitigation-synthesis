@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "certificate_id": "two-tank-trusted-takeover-parameterized-v1",
+  "formal_model_id": "parameterized-timed-takeover-v1",
+  "verification_artifact_id": "parameterized-cleo-symbolic-proof-v1",
+  "verification_status": "VERIFIED",
+  "offline_proof_seconds": 9.09929197000747,
+  "recovery_policy_id": "trusted-backup-takeover-v1",
+  "plant_model_id": "synthetic-two-tank-v1",
+  "proof_artifacts": {
+    "parameterized_recovery_takeover.envelope": "ca5a5d597ee3d461e3c7ea333c67403f2162ba73b5a07b6f14dec3c9dae65423",
+    "parameterized_proof_profile.py": "db7400c6c3d0d19339817473a0c34e5c4c513da67f8e632e461edaf5118f7138",
+    "parameterized_formal.py": "292302385057dd4d9829bec914198afb0f1962f58b01084ada65d7446557c0f6"
+  },
+  "certified_region": {
+    "initial_state": "L1 <= x1 <= H1 and L2 <= x2 <= H2, with L1,L2 >= 0",
+    "capacity_service": "qprimary >= 0 and qbackup >= qmin > 0",
+    "timing": "0 < StartupDelay <= RecoveryDeadline and 0 < T",
+    "budget": "isolationCost >= 0, backupCost >= 0, and interventionBudget >= isolationCost + backupCost",
+    "flow": "trusted takeover sets qin = qd = qbackup after startup",
+    "authority": "P1 command is attacker-controlled; isolation and P2 command are trusted and independent"
+  },
+  "trust_boundary": "This manifest is a reviewed, prevalidated binding to the checked symbolic theorem. Runtime digest checks detect changes but do not rerun or independently validate the KeYmaera X proof."
+}
