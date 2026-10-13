@@ -1,0 +1,4 @@
+.external/
+.venv/
+__pycache__/
+.run/

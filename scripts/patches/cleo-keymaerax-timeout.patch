@@ -1,0 +1,30 @@
+--- a/cleo/keymaerax_utils.py
++++ b/cleo/keymaerax_utils.py
+@@ -19,5 +19,6 @@
+ RESULTS_PATH = "experiments/results"
+ KEYMAERA_PATH = "keymaerax.jar"
++KEYMAERAX_TIMEOUT_SECONDS = os.environ.get("CLEO_KEYMAERAX_TIMEOUT_SECONDS", "300")
+ 
+ type KyxOutput = str
+ type KyxOutcome = Valid | ParserError | UndefSymbol | Timeout | Failed | Unfinished
+@@ -84,7 +85,7 @@
+ 
+     # Timeout is 5 minutes.
+     keymaera_is_new = False # Set to True if using later than version 5.1.
+-    timeout = "30s" if keymaera_is_new else "30"  # 5 minutes in seconds
++    timeout = f"{KEYMAERAX_TIMEOUT_SECONDS}s" if keymaera_is_new else KEYMAERAX_TIMEOUT_SECONDS
+     base_dir = os.path.dirname(os.path.abspath(__file__))
+     conjecture_dir = os.path.join(base_dir, CONJECTURE_DIR)
+     keymaera_path = os.path.join(base_dir, KEYMAERA_PATH)
+@@ -185,11 +186,11 @@
+             return self.check_conjecture_file(callback_cmd)
+         elif output.find("Output: Error: Unknown option -prove") != -1:
+             self.keymaera_is_new = True
+-            self.timeout = "30s"
++            self.timeout = f"{KEYMAERAX_TIMEOUT_SECONDS}s"
+             return self.check_conjecture_file(callback_cmd)
+         elif output.find("Output: Error: Unknown option prove") != -1:
+             self.keymaera_is_new = False
+-            self.timeout = "30"
++            self.timeout = KEYMAERAX_TIMEOUT_SECONDS
+             return self.check_conjecture_file(callback_cmd)

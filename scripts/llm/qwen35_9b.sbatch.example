@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+# Copy this template, replace every angle-bracket placeholder, and then submit
+# the edited copy with sbatch. SBATCH directives do not expand shell variables.
+#
+#SBATCH --job-name=drics-qwen35-9b
+#SBATCH --account=<CHPC_ACCOUNT>
+#SBATCH --partition=<GPU_PARTITION>
+#SBATCH --gres=gpu:<GPU_TYPE>:1
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=64G
+#SBATCH --time=08:00:00
+#SBATCH --output=<ABSOLUTE_LOG_DIRECTORY>/%x-%j.out
+#SBATCH --error=<ABSOLUTE_LOG_DIRECTORY>/%x-%j.err
+
+set -euo pipefail
+
+REPO_ROOT="<ABSOLUTE_PATH_TO_MITIGATION_SYNTHESIS>"
+cd "${REPO_ROOT}"
+
+# Use group storage, not a personal-home Hugging Face cache.
+export DRICS_MODEL_DIR="<ABSOLUTE_GROUP_STORAGE>/drics-llm/models"
+export HF_HOME="<ABSOLUTE_GROUP_STORAGE>/drics-llm/cache"
+export DRICS_HF_HUB_CACHE="${HF_HOME}/hub"
+
+export DRICS_LLM_MODEL="Qwen/Qwen3.5-9B"
+export DRICS_LLM_REVISION="c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+export DRICS_LLM_HOST="127.0.0.1"
+export DRICS_LLM_PORT="8000"
+export DRICS_LLM_TENSOR_PARALLEL_SIZE="1"
+export DRICS_LLM_MAX_MODEL_LEN="16384"
+export DRICS_LLM_GPU_MEMORY_UTILIZATION="0.90"
+export DRICS_LLM_ENGINE_SEED="20260926"
+
+# Preserve the concrete allocation identity and GPU inventory in the SLURM log.
+hostname
+nvidia-smi
+allocated_node="$(hostname)"
+echo "Node-local Dr.ICS endpoint: http://127.0.0.1:${DRICS_LLM_PORT}/v1"
+echo "Allocated-node address (only with an explicitly approved non-loopback bind): http://${allocated_node}:${DRICS_LLM_PORT}/v1"
+echo "With the safe loopback default, forward the port over SSH as documented in recovery_experiment/LLM_INCIDENT_INTERPRETER.md."
+
+# The launcher loads CHPC's vllm/current Apptainer module and refuses GPUs with
+# less than 22,000 MiB. Keep this job alive while using an SSH tunnel and run
+# smoke/baseline clients from a shell on this node or through an SSH tunnel.
+exec "${REPO_ROOT}/scripts/llm/start_qwen35_9b_server.sh"

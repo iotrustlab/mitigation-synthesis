@@ -166,6 +166,22 @@ def _accuracy(cases: list[CaseEvaluation], attribute: str) -> Accuracy:
 
 def _evaluate_case(case: SyntheticIncidentCase) -> CaseEvaluation:
     result = run_incident_pipeline(case.evidence, case.trusted_plant_knowledge, case.recovery_configuration)
+    return evaluate_incident_pipeline_result(case, result)
+
+
+def evaluate_incident_pipeline_result(
+    case: SyntheticIncidentCase,
+    result: IncidentPipelineResult,
+) -> CaseEvaluation:
+    """Compare one already-executed pipeline result with its declared gold.
+
+    Keeping this comparison separate lets an external interpreter be called
+    exactly once while reusing the same downstream metrics as the deterministic
+    baseline.  Gold labels are consumed only here, after interpretation.
+    """
+
+    if result.evidence.scenario_id != case.scenario_id:
+        raise ValueError("pipeline result does not belong to the supplied evaluation case")
     field_matches = tuple(
         (name, _actual_field_value(result, name) == expected)
         for name, expected in case.gold.candidate_values
@@ -187,7 +203,7 @@ def _evaluate_case(case: SyntheticIncidentCase) -> CaseEvaluation:
             divergence,
         )
 
-    assert result.formal_assessment is not None and result.selection is not None
+    assert result.formal_assessment is not None
     actual_templates = tuple(
         template.template_id.value
         for template in result.formal_assessment.templates
@@ -203,12 +219,21 @@ def _evaluate_case(case: SyntheticIncidentCase) -> CaseEvaluation:
         for template in result.formal_assessment.templates
         if template.applicability.applicable
     )
-    actual_service = tuple(sorted((candidate.policy, candidate.status.value) for candidate in result.selection.candidates))
+    actual_service = (
+        ()
+        if result.selection is None
+        else tuple(
+            sorted(
+                (candidate.policy, candidate.status.value)
+                for candidate in result.selection.candidates
+            )
+        )
+    )
     template_match = actual_templates == case.gold.applicable_templates
     formal_match = actual_models == case.gold.formal_models
     certificate_match = actual_certificates == case.gold.certificate_statuses
     service_match = actual_service == tuple(sorted(case.gold.service_statuses))
-    selection_match = (
+    selection_match = result.selection is not None and (
         result.selection.status.value == case.gold.selection_status
         and result.selection.selected_policy == case.gold.selected_policy
     )
