@@ -1,0 +1,70 @@
+/* A bounded controller-scan abstraction of the authored Attleboro surrogate.
+   This proves SCADA authority ineligibility only. It does not prove hydraulic
+   service, hardwired protection, or the physical Hand path. */
+
+ArchiveEntry "Generator or utility loss blocks remote authority"
+
+ProgramVariables
+  Real utility; Real mtsGen; Real genRun; Real selectorRemote; Real trip;
+  Real startReq; Real resetPending; Real resetReq; Real prevResetReq;
+  Real remoteEligible; Real remoteStart;
+End.
+
+Problem
+  (utility=0 | mtsGen=1 | genRun=1)
+  -> [
+    ? (utility=0 | mtsGen=1 | genRun=1);
+    resetPending:=1;
+    prevResetReq:=resetReq;
+    {
+      { ? (utility=1 & mtsGen=0 & genRun=0 & resetPending=0 & selectorRemote=1 & trip=0); remoteEligible:=1; }
+      ++
+      { ? !(utility=1 & mtsGen=0 & genRun=0 & resetPending=0 & selectorRemote=1 & trip=0); remoteEligible:=0; }
+    };
+    {
+      { ? (remoteEligible=1 & startReq=1); remoteStart:=1; }
+      ++
+      { ? !(remoteEligible=1 & startReq=1); remoteStart:=0; }
+    }
+  ] (resetPending=1 & remoteEligible=0 & remoteStart=0)
+End.
+
+Tactic "Auto"
+  master
+End.
+
+End.
+
+ArchiveEntry "Utility return without a new reset keeps remote authority blocked"
+
+ProgramVariables
+  Real utility; Real mtsGen; Real genRun; Real selectorRemote; Real trip;
+  Real startReq; Real resetPending; Real resetReq; Real prevResetReq;
+  Real remoteEligible; Real remoteStart;
+End.
+
+Problem
+  utility=1 & mtsGen=0 & genRun=0 & resetPending=1
+  & (resetReq=0 | prevResetReq=1)
+  -> [
+    ? !(resetReq=1 & prevResetReq=0);
+    resetPending:=resetPending;
+    prevResetReq:=resetReq;
+    {
+      { ? (utility=1 & mtsGen=0 & genRun=0 & resetPending=0 & selectorRemote=1 & trip=0); remoteEligible:=1; }
+      ++
+      { ? !(utility=1 & mtsGen=0 & genRun=0 & resetPending=0 & selectorRemote=1 & trip=0); remoteEligible:=0; }
+    };
+    {
+      { ? (remoteEligible=1 & startReq=1); remoteStart:=1; }
+      ++
+      { ? !(remoteEligible=1 & startReq=1); remoteStart:=0; }
+    }
+  ] (resetPending=1 & remoteEligible=0 & remoteStart=0)
+End.
+
+Tactic "Auto"
+  master
+End.
+
+End.
