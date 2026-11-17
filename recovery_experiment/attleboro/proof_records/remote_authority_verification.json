@@ -1,16 +1,17 @@
 {
   "status": "VERIFIED",
-  "model_sha256": "6311c0541ef0f0785f7b55d89104a84bef9bc11877998074e1d6f0f2a0c9ce07",
+  "archive": "authority",
+  "model_sha256": "0a8d8e93051eca6668caa4995d1828851b2c225ee575f987620a582095540c18",
   "proof_scope": "controller remote authority after one scan, for two precondition classes only",
   "prover": "KeYmaera X 5.1.1",
   "arithmetic_backend": "Z3",
   "return_code": 0,
   "entries": {
-    "Generator or utility loss blocks remote authority": "PROVED",
-    "Utility return without a new reset keeps remote authority blocked": "PROVED"
+    "Generator or utility loss blocks remote start demand": "PROVED",
+    "Utility return without a new reset blocks remote start demand": "PROVED"
   },
   "proof_artifact_sha256": {
-    "remote_authority-remote_authority.kyx-Generator%2Bor%2Butility%2Bloss%2Bblocks%2Bremote%2Bauthority.kyp": "0e40c906fb48b22f37b1d49406088466ed388bafc1c0ec31151b40b2aaf2624f",
-    "remote_authority-remote_authority.kyx-Utility%2Breturn%2Bwithout%2Ba%2Bnew%2Breset%2Bkeeps%2Bremote%2Bauthority%2Bblocked.kyp": "50b06f4478b0e3cc5b11f1d3c604c16a9519fcac3495e47136dfc2fd4b5deeb4"
+    "remote_authority-remote_authority.kyx-Generator%2Bor%2Butility%2Bloss%2Bblocks%2Bremote%2Bstart%2Bdemand.kyp": "7951d25cb075407e5b51a5d31153b71a3b67ff6e3e7b13fc3fd53df899312458",
+    "remote_authority-remote_authority.kyx-Utility%2Breturn%2Bwithout%2Ba%2Bnew%2Breset%2Bblocks%2Bremote%2Bstart%2Bdemand.kyp": "fe48994af3051a5c9020c3601257de93ad1fbb2eb13dab67d891cf82e2f5debf"
   }
 }

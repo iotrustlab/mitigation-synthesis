@@ -1,0 +1,20 @@
+KeYmaera X Prover 5.1.1
+Use option -help for usage and license information
+Proving entries from 1 files
+Proving /Users/lag/Development/mitigation-synthesis/recovery_experiment/attleboro/remote_authority_nonvacuity.kyx#Attleboro bad power branch is reachable witness 2026 ...
+master... master done (proved, 713ms)
+Done /Users/lag/Development/mitigation-synthesis/recovery_experiment/attleboro/remote_authority_nonvacuity.kyx#Attleboro bad power branch is reachable witness 2026 (proved)
+Proving /Users/lag/Development/mitigation-synthesis/recovery_experiment/attleboro/remote_authority_nonvacuity.kyx#Attleboro held reset branch is reachable witness 2026 ...
+master... master done (proved, 234ms)
+Done /Users/lag/Development/mitigation-synthesis/recovery_experiment/attleboro/remote_authority_nonvacuity.kyx#Attleboro held reset branch is reachable witness 2026 (proved)
+PROVED Attleboro bad power branch is reachable witness 2026: tactic=Auto,tacticsize=1,budget=60[s],duration=713[ms],qe=37[ms],rcf=0,steps=1049
+PROVED Attleboro held reset branch is reachable witness 2026: tactic=Auto,tacticsize=1,budget=60[s],duration=234[ms],qe=23[ms],rcf=0,steps=1511
+
+A WolframKernel location could not be determined.
+
+Use -configure to set WOLFRAMSCRIPT_KERNELPATH.
+Alternatively, export WolframKernel=/yourpath/WolframKernel.
+
+If you have no Wolfram product currently installed,
+ the free Wolfram Engine for developers can be downloaded
+ at https://www.wolfram.com/engine/.

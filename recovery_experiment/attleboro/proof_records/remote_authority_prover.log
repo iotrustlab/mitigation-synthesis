@@ -1,14 +1,14 @@
 KeYmaera X Prover 5.1.1
 Use option -help for usage and license information
 Proving entries from 1 files
-Proving /private/tmp/mitigation-synthesis-import/recovery_experiment/attleboro/remote_authority.kyx#Generator or utility loss blocks remote authority ...
-master... master done (proved, 938ms)
-Done /private/tmp/mitigation-synthesis-import/recovery_experiment/attleboro/remote_authority.kyx#Generator or utility loss blocks remote authority (proved)
-Proving /private/tmp/mitigation-synthesis-import/recovery_experiment/attleboro/remote_authority.kyx#Utility return without a new reset keeps remote authority blocked ...
-master... master done (proved, 185ms)
-Done /private/tmp/mitigation-synthesis-import/recovery_experiment/attleboro/remote_authority.kyx#Utility return without a new reset keeps remote authority blocked (proved)
-PROVED Generator or utility loss blocks remote authority: tactic=Auto,tacticsize=1,budget=60[s],duration=939[ms],qe=8[ms],rcf=0,steps=240
-PROVED Utility return without a new reset keeps remote authority blocked: tactic=Auto,tacticsize=1,budget=60[s],duration=186[ms],qe=5[ms],rcf=0,steps=385
+Proving /Users/lag/Development/mitigation-synthesis/recovery_experiment/attleboro/remote_authority.kyx#Generator or utility loss blocks remote start demand ...
+master... master done (proved, 850ms)
+Done /Users/lag/Development/mitigation-synthesis/recovery_experiment/attleboro/remote_authority.kyx#Generator or utility loss blocks remote start demand (proved)
+Proving /Users/lag/Development/mitigation-synthesis/recovery_experiment/attleboro/remote_authority.kyx#Utility return without a new reset blocks remote start demand ...
+master... master done (proved, 158ms)
+Done /Users/lag/Development/mitigation-synthesis/recovery_experiment/attleboro/remote_authority.kyx#Utility return without a new reset blocks remote start demand (proved)
+PROVED Generator or utility loss blocks remote start demand: tactic=Auto,tacticsize=1,budget=60[s],duration=851[ms],qe=10[ms],rcf=0,steps=240
+PROVED Utility return without a new reset blocks remote start demand: tactic=Auto,tacticsize=1,budget=60[s],duration=158[ms],qe=8[ms],rcf=0,steps=385
 
 A WolframKernel location could not be determined.
 

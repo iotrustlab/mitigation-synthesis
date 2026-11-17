@@ -1,12 +1,14 @@
 /* A bounded controller-scan abstraction of the authored Attleboro surrogate.
-   This proves SCADA authority ineligibility only. It does not prove hydraulic
+   startDemand abstracts the controller's pending or run-feedback-sealed start
+   state; its internal five-second timeout is outside these theorems. This
+   proves SCADA authority ineligibility only. It does not prove hydraulic
    service, hardwired protection, or the physical Hand path. */
 
-ArchiveEntry "Generator or utility loss blocks remote authority"
+ArchiveEntry "Generator or utility loss blocks remote start demand"
 
 ProgramVariables
   Real utility; Real mtsGen; Real genRun; Real selectorRemote; Real trip;
-  Real startReq; Real resetPending; Real resetReq; Real prevResetReq;
+  Real startDemand; Real resetPending; Real resetReq; Real prevResetReq;
   Real remoteEligible; Real remoteStart;
 End.
 
@@ -22,9 +24,9 @@ Problem
       { ? !(utility=1 & mtsGen=0 & genRun=0 & resetPending=0 & selectorRemote=1 & trip=0); remoteEligible:=0; }
     };
     {
-      { ? (remoteEligible=1 & startReq=1); remoteStart:=1; }
+      { ? (remoteEligible=1 & startDemand=1); remoteStart:=1; }
       ++
-      { ? !(remoteEligible=1 & startReq=1); remoteStart:=0; }
+      { ? !(remoteEligible=1 & startDemand=1); remoteStart:=0; }
     }
   ] (resetPending=1 & remoteEligible=0 & remoteStart=0)
 End.
@@ -35,11 +37,11 @@ End.
 
 End.
 
-ArchiveEntry "Utility return without a new reset keeps remote authority blocked"
+ArchiveEntry "Utility return without a new reset blocks remote start demand"
 
 ProgramVariables
   Real utility; Real mtsGen; Real genRun; Real selectorRemote; Real trip;
-  Real startReq; Real resetPending; Real resetReq; Real prevResetReq;
+  Real startDemand; Real resetPending; Real resetReq; Real prevResetReq;
   Real remoteEligible; Real remoteStart;
 End.
 
@@ -56,9 +58,9 @@ Problem
       { ? !(utility=1 & mtsGen=0 & genRun=0 & resetPending=0 & selectorRemote=1 & trip=0); remoteEligible:=0; }
     };
     {
-      { ? (remoteEligible=1 & startReq=1); remoteStart:=1; }
+      { ? (remoteEligible=1 & startDemand=1); remoteStart:=1; }
       ++
-      { ? !(remoteEligible=1 & startReq=1); remoteStart:=0; }
+      { ? !(remoteEligible=1 & startDemand=1); remoteStart:=0; }
     }
   ] (resetPending=1 & remoteEligible=0 & remoteStart=0)
 End.
