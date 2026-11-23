@@ -1,0 +1,71 @@
+/* Concrete preconditions and diamond postconditions show that the two
+   authority box theorems do not rely on impossible antecedents or dead
+   controller paths. These are model witnesses, not physical plant traces. */
+
+ArchiveEntry "Attleboro bad power branch is reachable witness 2026"
+
+ProgramVariables
+  Real utility; Real mtsGen; Real genRun; Real selectorRemote; Real trip;
+  Real startDemand; Real resetPending; Real resetReq; Real prevResetReq;
+  Real remoteEligible; Real remoteStart;
+End.
+
+Problem
+  utility=0 & mtsGen=0 & genRun=0 & selectorRemote=1 & trip=0
+  & startDemand=1 & resetPending=0 & resetReq=0 & prevResetReq=0
+  -> <
+    ? (utility=0 | mtsGen=1 | genRun=1);
+    resetPending:=1;
+    prevResetReq:=resetReq;
+    {
+      { ? (utility=1 & mtsGen=0 & genRun=0 & resetPending=0 & selectorRemote=1 & trip=0); remoteEligible:=1; }
+      ++
+      { ? !(utility=1 & mtsGen=0 & genRun=0 & resetPending=0 & selectorRemote=1 & trip=0); remoteEligible:=0; }
+    };
+    {
+      { ? (remoteEligible=1 & startDemand=1); remoteStart:=1; }
+      ++
+      { ? !(remoteEligible=1 & startDemand=1); remoteStart:=0; }
+    }
+  > (resetPending=1 & remoteEligible=0 & remoteStart=0)
+End.
+
+Tactic "Auto"
+  master
+End.
+
+End.
+
+ArchiveEntry "Attleboro held reset branch is reachable witness 2026"
+
+ProgramVariables
+  Real utility; Real mtsGen; Real genRun; Real selectorRemote; Real trip;
+  Real startDemand; Real resetPending; Real resetReq; Real prevResetReq;
+  Real remoteEligible; Real remoteStart;
+End.
+
+Problem
+  utility=1 & mtsGen=0 & genRun=0 & selectorRemote=1 & trip=0
+  & startDemand=1 & resetPending=1 & resetReq=1 & prevResetReq=1
+  -> <
+    ? !(resetReq=1 & prevResetReq=0);
+    resetPending:=resetPending;
+    prevResetReq:=resetReq;
+    {
+      { ? (utility=1 & mtsGen=0 & genRun=0 & resetPending=0 & selectorRemote=1 & trip=0); remoteEligible:=1; }
+      ++
+      { ? !(utility=1 & mtsGen=0 & genRun=0 & resetPending=0 & selectorRemote=1 & trip=0); remoteEligible:=0; }
+    };
+    {
+      { ? (remoteEligible=1 & startDemand=1); remoteStart:=1; }
+      ++
+      { ? !(remoteEligible=1 & startDemand=1); remoteStart:=0; }
+    }
+  > (resetPending=1 & remoteEligible=0 & remoteStart=0)
+End.
+
+Tactic "Auto"
+  master
+End.
+
+End.

@@ -1,0 +1,19 @@
+{
+  "experiment": "Attleboro documented command-location choice",
+  "source_sha256": "8367be197100a9ac77d3d5e6595213d31c9eaadf02a50f2e3f84f9f752e27c38",
+  "status": "VERIFIED",
+  "claim": "eligible command location only; no physical plant or service theorem",
+  "ownership": "Angel chooses a documented eligible branch; environment state is fixed by the precondition",
+  "branch_guards": [
+    "utility, utility MTS, no generator run, Remote selector, cleared reset, no trip",
+    "generator MTS, generator ready, Hand selector, local actor, no trip"
+  ],
+  "obligations": [
+    {
+      "kind": "arithmetic",
+      "game_id": "a",
+      "passed": true,
+      "feedback": ""
+    }
+  ]
+}

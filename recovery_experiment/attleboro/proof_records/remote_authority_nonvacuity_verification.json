@@ -1,0 +1,17 @@
+{
+  "status": "VERIFIED",
+  "archive": "nonvacuity",
+  "model_sha256": "07e3dbe4aa62cc02dd0ccc98292006f6a75158a45628791c075d4981304d36e0",
+  "proof_scope": "two concrete preconditions and reachable one-scan poststates",
+  "prover": "KeYmaera X 5.1.1",
+  "arithmetic_backend": "Z3",
+  "return_code": 0,
+  "entries": {
+    "Attleboro bad power branch is reachable witness 2026": "PROVED",
+    "Attleboro held reset branch is reachable witness 2026": "PROVED"
+  },
+  "proof_artifact_sha256": {
+    "remote_authority_nonvacuity-remote_authority_nonvacuity.kyx-Attleboro%2Bbad%2Bpower%2Bbranch%2Bis%2Breachable%2Bwitness%2B2026.kyp": "555afc8490ad056757946a6f38fa8f413b96f6676eba850bfeab61ddc8c13686",
+    "remote_authority_nonvacuity-remote_authority_nonvacuity.kyx-Attleboro%2Bheld%2Breset%2Bbranch%2Bis%2Breachable%2Bwitness%2B2026.kyp": "9df4a8fc593064b2d6665f9ac72b9e49274a031343a0dcc046e694379c99b1e9"
+  }
+}
