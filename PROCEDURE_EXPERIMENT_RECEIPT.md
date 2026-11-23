@@ -311,3 +311,43 @@ rerun passed 131 unit tests with one skip; the HTTP loopback case passed when
 loopback access was allowed. Downs–Vogel passed 26 tests with 14 skips, and
 the local provenance, translation, binding, and render checks passed. The
 remote CI billing block remains outside these local validation results.
+
+## Follow-up experiment handoff (2026-11-23)
+
+The initial receipt above is a dated account of the 2026-11-17 checks. A later
+[procedure-study package](recovery_experiment/procedure_study/README.md) now
+adds the formal-side experiments used in the discussion deck. The package
+contains a [formal framework note](recovery_experiment/procedure_study/FORMAL_FRAMEWORK.md),
+two CLEO envelopes with verification scripts and JSON results, two generated
+ModelPlex controller formulas, and an offline evaluator with two saved trace
+results. It excludes the HTML deck, images, CLEO source/JAR/virtual
+environment, and unrelated public-exposure project data.
+
+The case-side companion is
+[`sphere-usecases/experiments/procedure_study`](https://github.com/iotrustlab/sphere-usecases/tree/codex/procedure-usecases/experiments/procedure_study)
+at case experiment commit `2de48f6562db2b12872f49efc2bbbbe7c72373b6`. Its plant and ODE
+checks, actor/interface and cost analysis, and generic CHP surrogate consume
+the three case branches' recorded run bundles. Its README has portable rerun
+commands. The separate BYU public-exposure surrogate is context, not an
+imported dependency.
+
+The follow-up CLEO runs used the pinned CLEO 0.1.0 artifact in an isolated
+local environment with Java and Z3. They do not revise the earlier statement
+that CLEO was unavailable **in the 2026-11-17 receipt environment**:
+
+| Input | Recorded result | Exact scope |
+| --- | --- | --- |
+| [Guarded Remote-or-Hand choice](recovery_experiment/procedure_study/cleo/attleboro_documented_choice.envelope), SHA-256 `8367be197100a9ac77d3d5e6595213d31c9eaadf02a50f2e3f84f9f752e27c38` | CLEO `VERIFIED`, one arithmetic obligation | An authored Angel choice selects a command location from already-eligible branches. No plant service or cost-optimal synthesis claim. |
+| [Finite flow phase](recovery_experiment/procedure_study/cleo/attleboro_sampled_flow.envelope), SHA-256 `4205b2a3b47b672d614b17edee8dae3fc7c5f48171772107ba744d9c4de14e81` | CLEO `VERIFIED`, ODE and arithmetic obligations | Pre-clamp research flow stays in `[0,10] L/s` over one 0.1-second frozen-slope phase. No as-built hydraulic or service theorem. |
+| [ModelPlex bad-power formula](recovery_experiment/procedure_study/modelplex/attleboro_bad_power_ctrl.kym), committed SHA-256 `48a2ca454ee13a15b2bcb8f84ca1af40a3b857dad544604d6bfd014e9a5f37a3` | 25/25 applicable scans match in each of two saved synthetic traces; three in-memory output mutations rejected | Offline visible PLC-output check only. The compromised trace also has 22 downstream delivered-output differences, which the formula does not monitor. |
+
+The [package README](recovery_experiment/procedure_study/README.md) gives
+portable commands for installing dependencies, rerunning both CLEO checks,
+regenerating the ModelPlex formulas, and checking the saved traces. The
+generated `.kym` comments were normalized to relative names; the formula
+bodies match the original raw output byte-for-byte, as recorded in the
+[ModelPlex receipt](recovery_experiment/procedure_study/modelplex/MODELPLEX_RECEIPT.md).
+The current mainline proof remains the one-scan KeYmaera X authority result.
+No Merwin or Polish CHP recovery theorem, whole-controller ST translation,
+end-to-end service proof, deployed ModelPlex monitor, or cost-optimal policy
+has been established.

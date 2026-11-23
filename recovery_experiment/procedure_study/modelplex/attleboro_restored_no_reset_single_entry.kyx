@@ -1,0 +1,33 @@
+ArchiveEntry "Utility return without a new reset blocks remote start demand"
+
+ProgramVariables
+  Real utility; Real mtsGen; Real genRun; Real selectorRemote; Real trip;
+  Real startDemand; Real resetPending; Real resetReq; Real prevResetReq;
+  Real remoteEligible; Real remoteStart;
+End.
+
+Problem
+  utility=1 & mtsGen=0 & genRun=0 & resetPending=1
+  & (resetReq=0 | prevResetReq=1)
+  -> [
+    ? !(resetReq=1 & prevResetReq=0);
+    resetPending:=resetPending;
+    prevResetReq:=resetReq;
+    {
+      { ? (utility=1 & mtsGen=0 & genRun=0 & resetPending=0 & selectorRemote=1 & trip=0); remoteEligible:=1; }
+      ++
+      { ? !(utility=1 & mtsGen=0 & genRun=0 & resetPending=0 & selectorRemote=1 & trip=0); remoteEligible:=0; }
+    };
+    {
+      { ? (remoteEligible=1 & startDemand=1); remoteStart:=1; }
+      ++
+      { ? !(remoteEligible=1 & startDemand=1); remoteStart:=0; }
+    }
+  ] (resetPending=1 & remoteEligible=0 & remoteStart=0)
+End.
+
+Tactic "Auto"
+  master
+End.
+
+End.

@@ -1,0 +1,58 @@
+envelope "Attleboro documented Remote or Hand authority choice"
+
+Guideline
+    This is a research procedure-choice envelope, not plant service proof.
+    Angel chooses one of two documented command locations when eligible.
+    The normal Remote branch needs utility, utility MTS, no generator run,
+    Remote selector, cleared Power Fail Reset latch, and no trip.
+    The generator Hand branch needs generator MTS, generator readiness,
+    local Hand selector, local operator, and no trip.
+    The game proves command-location eligibility only. Physical delivery,
+    run feedback, flow and observation are separate obligations.
+
+Definitions
+    Definitions
+    End.
+
+    ProgramVariables
+        Real utility; Real mtsGen; Real genRun; Real genReady;
+        Real selectorRemote; Real selectorHand; Real localActor;
+        Real trip; Real resetPending; Real startDemand;
+        Real remoteCmd; Real handCmd;
+    End.
+
+precondition
+    startDemand = 1
+    & (
+      (utility = 1 & mtsGen = 0 & genRun = 0
+       & selectorRemote = 1 & resetPending = 0 & trip = 0)
+      |
+      (mtsGen = 1 & genReady = 1 & selectorHand = 1
+       & localActor = 1 & trip = 0)
+    )
+
+postcondition
+    (remoteCmd = 1 & handCmd = 0
+     & utility = 1 & mtsGen = 0 & genRun = 0
+     & selectorRemote = 1 & resetPending = 0 & trip = 0)
+    |
+    (remoteCmd = 0 & handCmd = 1
+     & mtsGen = 1 & genReady = 1 & selectorHand = 1
+     & localActor = 1 & trip = 0)
+
+game
+    {
+        {
+            ? (utility = 1 & mtsGen = 0 & genRun = 0
+               & selectorRemote = 1 & resetPending = 0 & trip = 0);
+            remoteCmd := 1;
+            handCmd := 0;
+        }
+        ++
+        {
+            ? (mtsGen = 1 & genReady = 1 & selectorHand = 1
+               & localActor = 1 & trip = 0);
+            remoteCmd := 0;
+            handCmd := 1;
+        }
+    }

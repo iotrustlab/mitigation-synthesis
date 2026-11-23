@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "monitor_sha256": "48a2ca454ee13a15b2bcb8f84ca1af40a3b857dad544604d6bfd014e9a5f37a3",
+  "trace_sha256": "218fdd32f74bf3cf3bcfe8392c86e00b61645136c5bf20e7217284c830821618",
+  "rows_total": 30,
+  "applicable_bad_power_rows": 25,
+  "first_applicable_tick": 5,
+  "last_applicable_tick": 29,
+  "failing_ticks": [],
+  "demand_values_checked": [
+    0,
+    1
+  ],
+  "unobserved_post_symbol": "prevResetReqpost, existentially projected over {0,1}",
+  "visible_field_mapping": {
+    "utility": "ATT_Utility_Available",
+    "mtsGen": "ATT_MTS_Generator",
+    "genRun": "ATT_Generator_Running",
+    "selectorRemote": "ATT_Selector_Remote",
+    "trip": "ATT_Trip",
+    "resetReq": "ATT_Reset_Request",
+    "resetPendingpost": "ATT_Reset_Pending",
+    "remoteEligiblepost": "ATT_Remote_Eligible",
+    "remoteStartpost": "ATT_Remote_Start"
+  },
+  "mutations": [
+    {
+      "tick": 8,
+      "flipped_column": "ATT_Remote_Eligible",
+      "accepted_by_monitor": false,
+      "hidden_witness_by_demand": {}
+    },
+    {
+      "tick": 8,
+      "flipped_column": "ATT_Remote_Start",
+      "accepted_by_monitor": false,
+      "hidden_witness_by_demand": {}
+    },
+    {
+      "tick": 8,
+      "flipped_column": "ATT_Reset_Pending",
+      "accepted_by_monitor": false,
+      "hidden_witness_by_demand": {}
+    }
+  ],
+  "downstream_delivery_mismatch_rows": 22,
+  "downstream_delivery_is_not_a_monitor_input": true,
+  "scope": "saved synthetic same-scan input/output rows; bad-power controller branch only; no physical plant or network monitor"
+}

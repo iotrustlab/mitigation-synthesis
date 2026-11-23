@@ -1,0 +1,23 @@
+{
+  "experiment": "Attleboro sampled-slope research flow ODE",
+  "source_sha256": "4205b2a3b47b672d614b17edee8dae3fc7c5f48171772107ba744d9c4de14e81",
+  "status": "VERIFIED",
+  "claim": "pre-clamp research flow remains in [0,10] L/s after one 0.1 s phase",
+  "scope": "frozen sampled-slope interpolation of the SPHERE simulator; no site hydraulic or service theorem",
+  "ode_precondition": "0 <= q0 & q0 <= 10 & (target = 0 | target = 10) & q = q0 & t = 0",
+  "ode_tactic": "implyR(1); solve(1); QE",
+  "obligations": [
+    {
+      "kind": "ode",
+      "game_id": "f",
+      "passed": true,
+      "feedback": ""
+    },
+    {
+      "kind": "arithmetic",
+      "game_id": "a",
+      "passed": true,
+      "feedback": ""
+    }
+  ]
+}

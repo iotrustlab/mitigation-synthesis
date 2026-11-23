@@ -1,0 +1,32 @@
+ArchiveEntry "Generator or utility loss blocks remote start demand"
+
+ProgramVariables
+  Real utility; Real mtsGen; Real genRun; Real selectorRemote; Real trip;
+  Real startDemand; Real resetPending; Real resetReq; Real prevResetReq;
+  Real remoteEligible; Real remoteStart;
+End.
+
+Problem
+  (utility=0 | mtsGen=1 | genRun=1)
+  -> [
+    ? (utility=0 | mtsGen=1 | genRun=1);
+    resetPending:=1;
+    prevResetReq:=resetReq;
+    {
+      { ? (utility=1 & mtsGen=0 & genRun=0 & resetPending=0 & selectorRemote=1 & trip=0); remoteEligible:=1; }
+      ++
+      { ? !(utility=1 & mtsGen=0 & genRun=0 & resetPending=0 & selectorRemote=1 & trip=0); remoteEligible:=0; }
+    };
+    {
+      { ? (remoteEligible=1 & startDemand=1); remoteStart:=1; }
+      ++
+      { ? !(remoteEligible=1 & startDemand=1); remoteStart:=0; }
+    }
+  ] (resetPending=1 & remoteEligible=0 & remoteStart=0)
+End.
+
+Tactic "Auto"
+  master
+End.
+
+End.
