@@ -1,0 +1,274 @@
+[
+  {
+    "B1": "ACCEPT",
+    "B2": "ACCEPT",
+    "B3": "ACCEPT",
+    "B4": "PROVED",
+    "first_stage": "service established",
+    "mutation": "M0",
+    "procedure": "remote",
+    "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+    "reason": []
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "ACCEPT",
+    "B3": "DECLINE",
+    "B4": "REJECTED",
+    "first_stage": "authority",
+    "mutation": "M1",
+    "procedure": "remote",
+    "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+    "reason": [
+      "AUTHORITY_FAILED"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "ACCEPT",
+    "B3": "DECLINE",
+    "B4": "REJECTED",
+    "first_stage": "authority",
+    "mutation": "M2",
+    "procedure": "remote",
+    "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+    "reason": [
+      "AUTHORITY_FAILED"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "DECLINE",
+    "B3": "DECLINE",
+    "B4": "REJECTED",
+    "first_stage": "communication",
+    "mutation": "M3",
+    "procedure": "remote",
+    "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+    "reason": [
+      "COMMUNICATION_UNAVAILABLE"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "ACCEPT",
+    "B3": "DECLINE",
+    "B4": "REJECTED",
+    "first_stage": "controller",
+    "mutation": "M4",
+    "procedure": "remote",
+    "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+    "reason": [
+      "CONTROLLER_COMPROMISED"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "ACCEPT",
+    "B3": "ACCEPT",
+    "B4": "REJECTED",
+    "first_stage": "delivery",
+    "mutation": "M5",
+    "procedure": "remote",
+    "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+    "reason": [
+      "OUTPUT_STAGE_COMPROMISED"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "ACCEPT",
+    "B3": "INAPPLICABLE",
+    "B4": "REJECTED",
+    "first_stage": "authority",
+    "mutation": "M5",
+    "procedure": "hand",
+    "procedure_id": "attleboro-local-hand-v1",
+    "reason": [
+      "AUTHORITY_FAILED"
+    ]
+  },
+  {
+    "B1": "INAPPLICABLE",
+    "B2": "INAPPLICABLE",
+    "B3": "INAPPLICABLE",
+    "B4": "REJECTED",
+    "first_stage": "service contract",
+    "mutation": "M5",
+    "procedure": "hold",
+    "procedure_id": "attleboro-hold-v1",
+    "reason": [
+      "SERVICE_NOT_ESTABLISHED"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "DECLINE",
+    "B3": "ACCEPT",
+    "B4": "REJECTED",
+    "first_stage": "actuator",
+    "mutation": "M6",
+    "procedure": "remote",
+    "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+    "reason": [
+      "ACTUATOR_UNAVAILABLE"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "DECLINE",
+    "B3": "INAPPLICABLE",
+    "B4": "REJECTED",
+    "first_stage": "actuator",
+    "mutation": "M6",
+    "procedure": "hand",
+    "procedure_id": "attleboro-local-hand-v1",
+    "reason": [
+      "ACTUATOR_UNAVAILABLE"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "ACCEPT",
+    "B3": "ACCEPT",
+    "B4": "REJECTED",
+    "first_stage": "plant",
+    "mutation": "M7",
+    "procedure": "remote",
+    "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+    "reason": [
+      "SERVICE_NOT_ESTABLISHED"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "ACCEPT",
+    "B3": "ACCEPT",
+    "B4": "REJECTED",
+    "first_stage": "observation",
+    "mutation": "M8",
+    "procedure": "remote",
+    "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+    "reason": [
+      "OBSERVATION_STALE"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "ACCEPT",
+    "B3": "ACCEPT",
+    "B4": "REJECTED",
+    "first_stage": "observation",
+    "mutation": "M9",
+    "procedure": "remote",
+    "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+    "reason": [
+      "OBSERVER_COMPROMISED"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "DECLINE",
+    "B3": "INAPPLICABLE",
+    "B4": "REJECTED",
+    "first_stage": "actor",
+    "mutation": "M10",
+    "procedure": "hand",
+    "procedure_id": "attleboro-local-hand-v1",
+    "reason": [
+      "ACTOR_UNAVAILABLE"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "ACCEPT",
+    "B3": "INAPPLICABLE",
+    "B4": "REJECTED",
+    "first_stage": "actor",
+    "mutation": "M11",
+    "procedure": "hand",
+    "procedure_id": "attleboro-local-hand-v1",
+    "reason": [
+      "ACTOR_LATE",
+      "DEADLINE_MISSED"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "ACCEPT",
+    "B3": "DECLINE",
+    "B4": "REJECTED",
+    "first_stage": "protection",
+    "mutation": "M12",
+    "procedure": "remote",
+    "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+    "reason": [
+      "TRIP_ACTIVE"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "ACCEPT",
+    "B3": "INAPPLICABLE",
+    "B4": "REJECTED",
+    "first_stage": "protection",
+    "mutation": "M12",
+    "procedure": "hand",
+    "procedure_id": "attleboro-local-hand-v1",
+    "reason": [
+      "TRIP_ACTIVE"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "UNRESOLVED",
+    "B3": "ACCEPT",
+    "B4": "UNKNOWN",
+    "first_stage": "dependency evidence",
+    "mutation": "M13",
+    "procedure": "remote",
+    "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+    "reason": [
+      "EVIDENCE_INSUFFICIENT"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "DECLINE",
+    "B3": "DECLINE",
+    "B4": "REJECTED",
+    "first_stage": "communication",
+    "mutation": "M14",
+    "procedure": "remote",
+    "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+    "reason": [
+      "COMMUNICATION_UNAVAILABLE"
+    ]
+  },
+  {
+    "B1": "ACCEPT",
+    "B2": "DECLINE",
+    "B3": "INAPPLICABLE",
+    "B4": "REJECTED",
+    "first_stage": "actor",
+    "mutation": "M14",
+    "procedure": "hand",
+    "procedure_id": "attleboro-local-hand-v1",
+    "reason": [
+      "ACTOR_UNAVAILABLE"
+    ]
+  },
+  {
+    "B1": "INAPPLICABLE",
+    "B2": "INAPPLICABLE",
+    "B3": "INAPPLICABLE",
+    "B4": "REJECTED",
+    "first_stage": "service contract",
+    "mutation": "M14",
+    "procedure": "hold",
+    "procedure_id": "attleboro-hold-v1",
+    "reason": [
+      "SERVICE_NOT_ESTABLISHED"
+    ]
+  }
+]

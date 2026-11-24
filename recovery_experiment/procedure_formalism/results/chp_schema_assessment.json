@@ -1,0 +1,567 @@
+{
+  "dependency_catalog": {
+    "backup": {
+      "kind": "INTERFACE",
+      "node_id": "backup",
+      "notes": "Available, compatible, reviewed backup. Operational trust has not been established.",
+      "owner": "engineering",
+      "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/poland-2025-chp-recovery/source_assessment.md",
+      "required_by": [
+        "chp-reviewed-backup-reload"
+      ],
+      "source_status": "UNKNOWN",
+      "status": "UNKNOWN",
+      "threat_effect": "Threat alphabet unspecified in this representation"
+    },
+    "customer_supply": {
+      "kind": "SERVICE",
+      "node_id": "customer_supply",
+      "notes": "Supply mechanism and observations unknown. Operational trust has not been established.",
+      "owner": "unknown",
+      "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/poland-2025-chp-recovery/source_assessment.md",
+      "required_by": [
+        "chp-controller-reset",
+        "chp-reviewed-backup-reload",
+        "chp-isolate-hold"
+      ],
+      "source_status": "UNKNOWN",
+      "status": "UNKNOWN",
+      "threat_effect": "Threat alphabet unspecified in this representation"
+    },
+    "engineer": {
+      "kind": "HUMAN_ACTOR",
+      "node_id": "engineer",
+      "notes": "Authorized engineering role. Operational trust has not been established.",
+      "owner": "engineering",
+      "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/poland-2025-chp-recovery/source_assessment.md",
+      "required_by": [
+        "chp-controller-reset",
+        "chp-reviewed-backup-reload",
+        "chp-isolate-hold"
+      ],
+      "source_status": "UNKNOWN",
+      "status": "UNKNOWN",
+      "threat_effect": "Threat alphabet unspecified in this representation"
+    },
+    "engineering_access": {
+      "kind": "INTERFACE",
+      "node_id": "engineering_access",
+      "notes": "Fixture engineering access. Operational trust has not been established.",
+      "owner": "engineering",
+      "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/poland-2025-chp-recovery/source_assessment.md",
+      "required_by": [
+        "chp-controller-reset",
+        "chp-reviewed-backup-reload",
+        "chp-isolate-hold"
+      ],
+      "source_status": "UNKNOWN",
+      "status": "UNKNOWN",
+      "threat_effect": "Threat alphabet unspecified in this representation"
+    },
+    "heartbeat": {
+      "kind": "OBSERVER",
+      "node_id": "heartbeat",
+      "notes": "Disposable runtime scan counter. Operational trust has not been established.",
+      "owner": "device evaluator",
+      "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/poland-2025-chp-recovery/source_assessment.md",
+      "required_by": [
+        "chp-reviewed-backup-reload"
+      ],
+      "source_status": "UNKNOWN",
+      "status": "UNKNOWN",
+      "threat_effect": "Threat alphabet unspecified in this representation"
+    },
+    "plc": {
+      "kind": "CONTROLLER",
+      "node_id": "plc",
+      "notes": "Bootability and loaded logic are distinct. Operational trust has not been established.",
+      "owner": "device fixture",
+      "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/poland-2025-chp-recovery/source_assessment.md",
+      "required_by": [
+        "chp-controller-reset",
+        "chp-reviewed-backup-reload"
+      ],
+      "source_status": "UNKNOWN",
+      "status": "UNKNOWN",
+      "threat_effect": "Threat alphabet unspecified in this representation"
+    },
+    "process": {
+      "kind": "PHYSICAL_PROCESS",
+      "node_id": "process",
+      "notes": "Cogeneration plant and restart permissives. Operational trust has not been established.",
+      "owner": "unknown",
+      "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/poland-2025-chp-recovery/source_assessment.md",
+      "required_by": [
+        "chp-controller-reset",
+        "chp-reviewed-backup-reload",
+        "chp-isolate-hold"
+      ],
+      "source_status": "UNKNOWN",
+      "status": "UNKNOWN",
+      "threat_effect": "Threat alphabet unspecified in this representation"
+    }
+  },
+  "procedures": [
+    {
+      "cost_vector": null,
+      "customer_service": "UNKNOWN",
+      "dependency_states": {
+        "customer_supply": "UNKNOWN",
+        "engineer": "UNKNOWN",
+        "engineering_access": "UNKNOWN",
+        "plc": "UNKNOWN",
+        "process": "UNKNOWN"
+      },
+      "device_logic_execution": "NOT_ESTABLISHED",
+      "formal_model_sha256": null,
+      "physical_chp_output": "UNKNOWN",
+      "procedure_id": "chp-controller-reset",
+      "process_readiness": "UNKNOWN",
+      "proof_record": null,
+      "reason": "PLANT_MODEL_MISSING",
+      "result": "UNKNOWN",
+      "safety_status": "UNKNOWN",
+      "schema": {
+        "actor": "engineer",
+        "actor_ready_time": null,
+        "actuator": null,
+        "attacker_effects": {},
+        "authority_requirements": [
+          "Engineering access."
+        ],
+        "case_id": "polish-chp",
+        "communication_path": null,
+        "controller": "plc",
+        "controller_guard": "Engineering access.",
+        "controller_transition": "Attempt reset. Bootability depends on the device profile.",
+        "cost_vector_definition": [
+          "service_deficit",
+          "restoration_delay",
+          "human_effort",
+          "intervention_count",
+          "resource_use",
+          "evidence_gap_duration"
+        ],
+        "deadline": null,
+        "delivered_actuation_relation": "Simulated reset and device log loss.",
+        "evidence_status_by_field": {
+          "actor": "RESEARCH_AUTHORED",
+          "actor_ready_time": "UNKNOWN",
+          "actuator": "RESEARCH_AUTHORED",
+          "attacker_effects": "UNKNOWN",
+          "authority_requirements": "RESEARCH_AUTHORED",
+          "case_id": "RESEARCH_AUTHORED",
+          "communication_path": "RESEARCH_AUTHORED",
+          "controller": "RESEARCH_AUTHORED",
+          "controller_guard": "RESEARCH_AUTHORED",
+          "controller_transition": "RESEARCH_AUTHORED",
+          "cost_vector_definition": "RESEARCH_AUTHORED",
+          "deadline": "UNKNOWN",
+          "delivered_actuation_relation": "RESEARCH_AUTHORED",
+          "freshness_requirement": "UNKNOWN",
+          "horizon": "UNKNOWN",
+          "initial_state": "RESEARCH_AUTHORED",
+          "interface": "RESEARCH_AUTHORED",
+          "observation_relation": "RESEARCH_AUTHORED",
+          "observer": "RESEARCH_AUTHORED",
+          "output_stage": "RESEARCH_AUTHORED",
+          "plant_model": "UNKNOWN",
+          "procedure_id": "RESEARCH_AUTHORED",
+          "required_dependencies": "RESEARCH_AUTHORED",
+          "role": "RESEARCH_AUTHORED",
+          "safety_definition": "UNKNOWN",
+          "service_definition": "UNKNOWN",
+          "shared_dependencies": "RESEARCH_AUTHORED",
+          "source_references": "RESEARCH_AUTHORED",
+          "version": "RESEARCH_AUTHORED"
+        },
+        "freshness_requirement": "Process and customer-service observation contracts are unknown.",
+        "horizon": null,
+        "initial_state": {
+          "customer_supply_mechanism": null,
+          "process_ready": null
+        },
+        "interface": "engineering_access",
+        "observation_relation": "Reset alone supplies no runtime evidence.",
+        "observer": null,
+        "output_stage": null,
+        "plant_model": null,
+        "procedure_id": "chp-controller-reset",
+        "required_dependencies": [
+          "engineer",
+          "engineering_access",
+          "plc",
+          "process",
+          "customer_supply"
+        ],
+        "role": "engineering operator",
+        "safety_definition": "Site process readiness and safe restart bounds are unknown.",
+        "service_definition": "Credible physical cogeneration and customer supply require separate evidence.",
+        "shared_dependencies": [
+          "engineer",
+          "engineering_access",
+          "plc",
+          "process",
+          "customer_supply"
+        ],
+        "source_references": [
+          "PROCEDURE_EXPERIMENT_RECEIPT.md",
+          "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/poland-2025-chp-recovery/source_assessment.md",
+          "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/poland-2025-chp-recovery/replay.py"
+        ],
+        "version": "1"
+      },
+      "service_status": "UNKNOWN",
+      "trace_witness": {
+        "bundle": "runs/siemens_compatible_openplc and runs/wago_nonbootable_openplc",
+        "evidence_status": "OBSERVED_IN_TRACE",
+        "observation": "Simulated Siemens-like reset and loss of device logs. The WAGO-like device remained unbootable."
+      },
+      "unresolved_assumptions": [
+        "No physical CHP model, restart permissives or process-readiness observation.",
+        "Backup assurance, device trust and the means of customer supply are unresolved.",
+        "No bounded service deadline or process observation contract."
+      ]
+    },
+    {
+      "cost_vector": null,
+      "customer_service": "UNKNOWN",
+      "dependency_states": {
+        "backup": "UNKNOWN",
+        "customer_supply": "UNKNOWN",
+        "engineer": "UNKNOWN",
+        "engineering_access": "UNKNOWN",
+        "heartbeat": "UNKNOWN",
+        "plc": "UNKNOWN",
+        "process": "UNKNOWN"
+      },
+      "device_logic_execution": "OBSERVED_ON_DISPOSABLE_RUNTIME",
+      "formal_model_sha256": null,
+      "physical_chp_output": "UNKNOWN",
+      "procedure_id": "chp-reviewed-backup-reload",
+      "process_readiness": "UNKNOWN",
+      "proof_record": null,
+      "reason": "PLANT_MODEL_MISSING",
+      "result": "UNKNOWN",
+      "safety_status": "UNKNOWN",
+      "schema": {
+        "actor": "engineer",
+        "actor_ready_time": null,
+        "actuator": null,
+        "attacker_effects": {},
+        "authority_requirements": [
+          "Engineering access, bootable device, available compatible reviewed backup."
+        ],
+        "case_id": "polish-chp",
+        "communication_path": null,
+        "controller": "plc",
+        "controller_guard": "Engineering access, bootable device, available compatible reviewed backup.",
+        "controller_transition": "Load reviewed logic after reset, then request runtime start.",
+        "cost_vector_definition": [
+          "service_deficit",
+          "restoration_delay",
+          "human_effort",
+          "intervention_count",
+          "resource_use",
+          "evidence_gap_duration"
+        ],
+        "deadline": null,
+        "delivered_actuation_relation": "Program load and runtime start are distinct lifecycle transitions.",
+        "evidence_status_by_field": {
+          "actor": "RESEARCH_AUTHORED",
+          "actor_ready_time": "UNKNOWN",
+          "actuator": "RESEARCH_AUTHORED",
+          "attacker_effects": "UNKNOWN",
+          "authority_requirements": "RESEARCH_AUTHORED",
+          "case_id": "RESEARCH_AUTHORED",
+          "communication_path": "RESEARCH_AUTHORED",
+          "controller": "RESEARCH_AUTHORED",
+          "controller_guard": "RESEARCH_AUTHORED",
+          "controller_transition": "RESEARCH_AUTHORED",
+          "cost_vector_definition": "RESEARCH_AUTHORED",
+          "deadline": "UNKNOWN",
+          "delivered_actuation_relation": "RESEARCH_AUTHORED",
+          "freshness_requirement": "UNKNOWN",
+          "horizon": "UNKNOWN",
+          "initial_state": "RESEARCH_AUTHORED",
+          "interface": "RESEARCH_AUTHORED",
+          "observation_relation": "OBSERVED_IN_TRACE",
+          "observer": "RESEARCH_AUTHORED",
+          "output_stage": "RESEARCH_AUTHORED",
+          "plant_model": "UNKNOWN",
+          "procedure_id": "RESEARCH_AUTHORED",
+          "required_dependencies": "RESEARCH_AUTHORED",
+          "role": "RESEARCH_AUTHORED",
+          "safety_definition": "UNKNOWN",
+          "service_definition": "UNKNOWN",
+          "shared_dependencies": "RESEARCH_AUTHORED",
+          "source_references": "RESEARCH_AUTHORED",
+          "version": "RESEARCH_AUTHORED"
+        },
+        "freshness_requirement": "Process and customer-service observation contracts are unknown.",
+        "horizon": null,
+        "initial_state": {
+          "customer_supply_mechanism": null,
+          "process_ready": null
+        },
+        "interface": "engineering_access",
+        "observation_relation": "Two increasing scan-counter reads on a disposable OpenPLC runtime witness benign execution.",
+        "observer": "heartbeat",
+        "output_stage": null,
+        "plant_model": null,
+        "procedure_id": "chp-reviewed-backup-reload",
+        "required_dependencies": [
+          "engineer",
+          "engineering_access",
+          "plc",
+          "backup",
+          "heartbeat",
+          "process",
+          "customer_supply"
+        ],
+        "role": "engineering operator",
+        "safety_definition": "Site process readiness and safe restart bounds are unknown.",
+        "service_definition": "Credible physical cogeneration and customer supply require separate evidence.",
+        "shared_dependencies": [
+          "engineer",
+          "engineering_access",
+          "plc",
+          "process",
+          "customer_supply"
+        ],
+        "source_references": [
+          "PROCEDURE_EXPERIMENT_RECEIPT.md",
+          "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/poland-2025-chp-recovery/source_assessment.md",
+          "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/poland-2025-chp-recovery/replay.py"
+        ],
+        "version": "1"
+      },
+      "service_status": "UNKNOWN",
+      "trace_witness": {
+        "bundle": "runs/siemens_compatible_openplc",
+        "evidence_status": "OBSERVED_IN_TRACE",
+        "observation": "Simulated reviewed reload followed by two increasing counter reads on a disposable runtime."
+      },
+      "unresolved_assumptions": [
+        "No physical CHP model, restart permissives or process-readiness observation.",
+        "Backup assurance, device trust and the means of customer supply are unresolved.",
+        "No bounded service deadline or process observation contract."
+      ]
+    },
+    {
+      "cost_vector": null,
+      "customer_service": "UNKNOWN",
+      "dependency_states": {
+        "customer_supply": "UNKNOWN",
+        "engineer": "UNKNOWN",
+        "engineering_access": "UNKNOWN",
+        "process": "UNKNOWN"
+      },
+      "device_logic_execution": "NOT_ESTABLISHED",
+      "formal_model_sha256": null,
+      "physical_chp_output": "UNKNOWN",
+      "procedure_id": "chp-isolate-hold",
+      "process_readiness": "UNKNOWN",
+      "proof_record": null,
+      "reason": "EVIDENCE_INSUFFICIENT",
+      "result": "UNKNOWN",
+      "safety_status": "UNKNOWN",
+      "schema": {
+        "actor": "engineer",
+        "actor_ready_time": null,
+        "actuator": null,
+        "attacker_effects": {},
+        "authority_requirements": [
+          "Engineering access. Isolation coverage is unknown."
+        ],
+        "case_id": "polish-chp",
+        "communication_path": null,
+        "controller": null,
+        "controller_guard": "Engineering access. Isolation coverage is unknown.",
+        "controller_transition": "Withhold a process restart request.",
+        "cost_vector_definition": [
+          "service_deficit",
+          "restoration_delay",
+          "human_effort",
+          "intervention_count",
+          "resource_use",
+          "evidence_gap_duration"
+        ],
+        "deadline": null,
+        "delivered_actuation_relation": "Isolation and continued safe hold require independent confirmation.",
+        "evidence_status_by_field": {
+          "actor": "RESEARCH_AUTHORED",
+          "actor_ready_time": "UNKNOWN",
+          "actuator": "RESEARCH_AUTHORED",
+          "attacker_effects": "UNKNOWN",
+          "authority_requirements": "RESEARCH_AUTHORED",
+          "case_id": "RESEARCH_AUTHORED",
+          "communication_path": "RESEARCH_AUTHORED",
+          "controller": "RESEARCH_AUTHORED",
+          "controller_guard": "RESEARCH_AUTHORED",
+          "controller_transition": "RESEARCH_AUTHORED",
+          "cost_vector_definition": "RESEARCH_AUTHORED",
+          "deadline": "UNKNOWN",
+          "delivered_actuation_relation": "RESEARCH_AUTHORED",
+          "freshness_requirement": "UNKNOWN",
+          "horizon": "UNKNOWN",
+          "initial_state": "RESEARCH_AUTHORED",
+          "interface": "RESEARCH_AUTHORED",
+          "observation_relation": "RESEARCH_AUTHORED",
+          "observer": "RESEARCH_AUTHORED",
+          "output_stage": "RESEARCH_AUTHORED",
+          "plant_model": "UNKNOWN",
+          "procedure_id": "RESEARCH_AUTHORED",
+          "required_dependencies": "RESEARCH_AUTHORED",
+          "role": "RESEARCH_AUTHORED",
+          "safety_definition": "UNKNOWN",
+          "service_definition": "UNKNOWN",
+          "shared_dependencies": "RESEARCH_AUTHORED",
+          "source_references": "RESEARCH_AUTHORED",
+          "version": "RESEARCH_AUTHORED"
+        },
+        "freshness_requirement": "Process and customer-service observation contracts are unknown.",
+        "horizon": null,
+        "initial_state": {
+          "customer_supply_mechanism": null,
+          "process_ready": null
+        },
+        "interface": "engineering_access",
+        "observation_relation": "No process observer defined.",
+        "observer": null,
+        "output_stage": null,
+        "plant_model": null,
+        "procedure_id": "chp-isolate-hold",
+        "required_dependencies": [
+          "engineer",
+          "engineering_access",
+          "process",
+          "customer_supply"
+        ],
+        "role": "engineering operator",
+        "safety_definition": "Site process readiness and safe restart bounds are unknown.",
+        "service_definition": "Credible physical cogeneration and customer supply require separate evidence.",
+        "shared_dependencies": [
+          "engineer",
+          "engineering_access",
+          "process",
+          "customer_supply"
+        ],
+        "source_references": [
+          "PROCEDURE_EXPERIMENT_RECEIPT.md",
+          "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/poland-2025-chp-recovery/source_assessment.md",
+          "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/poland-2025-chp-recovery/replay.py"
+        ],
+        "version": "1"
+      },
+      "service_status": "NO_POSITIVE_SERVICE_CLAIM",
+      "trace_witness": null,
+      "unresolved_assumptions": [
+        "No physical CHP model, restart permissives or process-readiness observation.",
+        "Backup assurance, device trust and the means of customer supply are unresolved.",
+        "No bounded service deadline or process observation contract."
+      ]
+    },
+    {
+      "cost_vector": null,
+      "customer_service": "UNKNOWN",
+      "dependency_states": {},
+      "device_logic_execution": "NOT_ESTABLISHED",
+      "formal_model_sha256": null,
+      "physical_chp_output": "UNKNOWN",
+      "portfolio_outcome": "NO_ASSURED_PROCESS_RECOVERY",
+      "procedure_id": "chp-no-assured-process-recovery",
+      "process_readiness": "UNKNOWN",
+      "proof_record": null,
+      "reason": "EVIDENCE_INSUFFICIENT",
+      "result": "UNKNOWN",
+      "safety_status": "UNKNOWN",
+      "schema": {
+        "actor": null,
+        "actor_ready_time": null,
+        "actuator": null,
+        "attacker_effects": {},
+        "authority_requirements": [
+          "No process procedure has established service."
+        ],
+        "case_id": "polish-chp",
+        "communication_path": null,
+        "controller": null,
+        "controller_guard": "No process procedure has established service.",
+        "controller_transition": "Record the assessment disposition.",
+        "cost_vector_definition": [
+          "service_deficit",
+          "restoration_delay",
+          "human_effort",
+          "intervention_count",
+          "resource_use",
+          "evidence_gap_duration"
+        ],
+        "deadline": null,
+        "delivered_actuation_relation": "No command issued.",
+        "evidence_status_by_field": {
+          "actor": "RESEARCH_AUTHORED",
+          "actor_ready_time": "UNKNOWN",
+          "actuator": "RESEARCH_AUTHORED",
+          "attacker_effects": "UNKNOWN",
+          "authority_requirements": "RESEARCH_AUTHORED",
+          "case_id": "RESEARCH_AUTHORED",
+          "communication_path": "RESEARCH_AUTHORED",
+          "controller": "RESEARCH_AUTHORED",
+          "controller_guard": "RESEARCH_AUTHORED",
+          "controller_transition": "RESEARCH_AUTHORED",
+          "cost_vector_definition": "RESEARCH_AUTHORED",
+          "deadline": "UNKNOWN",
+          "delivered_actuation_relation": "RESEARCH_AUTHORED",
+          "freshness_requirement": "UNKNOWN",
+          "horizon": "UNKNOWN",
+          "initial_state": "RESEARCH_AUTHORED",
+          "interface": "RESEARCH_AUTHORED",
+          "observation_relation": "RESEARCH_AUTHORED",
+          "observer": "RESEARCH_AUTHORED",
+          "output_stage": "RESEARCH_AUTHORED",
+          "plant_model": "UNKNOWN",
+          "procedure_id": "RESEARCH_AUTHORED",
+          "required_dependencies": "RESEARCH_AUTHORED",
+          "role": "RESEARCH_AUTHORED",
+          "safety_definition": "UNKNOWN",
+          "service_definition": "UNKNOWN",
+          "shared_dependencies": "RESEARCH_AUTHORED",
+          "source_references": "RESEARCH_AUTHORED",
+          "version": "RESEARCH_AUTHORED"
+        },
+        "freshness_requirement": "Process and customer-service observation contracts are unknown.",
+        "horizon": null,
+        "initial_state": {
+          "customer_supply_mechanism": null,
+          "process_ready": null
+        },
+        "interface": null,
+        "observation_relation": "No process observer defined.",
+        "observer": null,
+        "output_stage": null,
+        "plant_model": null,
+        "procedure_id": "chp-no-assured-process-recovery",
+        "required_dependencies": [],
+        "role": "analysis disposition",
+        "safety_definition": "Site process readiness and safe restart bounds are unknown.",
+        "service_definition": "Credible physical cogeneration and customer supply require separate evidence.",
+        "shared_dependencies": [],
+        "source_references": [
+          "PROCEDURE_EXPERIMENT_RECEIPT.md",
+          "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/poland-2025-chp-recovery/source_assessment.md",
+          "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/poland-2025-chp-recovery/replay.py"
+        ],
+        "version": "1"
+      },
+      "service_status": "UNKNOWN",
+      "trace_witness": null,
+      "unresolved_assumptions": [
+        "No physical CHP model, restart permissives or process-readiness observation.",
+        "Backup assurance, device trust and the means of customer supply are unresolved.",
+        "No bounded service deadline or process observation contract."
+      ]
+    }
+  ],
+  "source_case_tree": "3bbe96d73b2a450ac238f58504c8a1ff6cf91ee7"
+}

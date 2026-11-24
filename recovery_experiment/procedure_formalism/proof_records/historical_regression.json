@@ -1,0 +1,55 @@
+{
+  "archives": {
+    "authority": {
+      "archive": "authority",
+      "arithmetic_backend": "Z3",
+      "command": "python3 -m recovery_experiment.attleboro.verify_authority --jar \"$KEYMAERAX_JAR\" --z3 \"$Z3\" --output-dir \"$PROOF_SCRATCH\" --archive authority",
+      "duration_ms": {
+        "Generator or utility loss blocks remote start demand": 316,
+        "Utility return without a new reset blocks remote start demand": 79
+      },
+      "entries": {
+        "Generator or utility loss blocks remote start demand": "PROVED",
+        "Utility return without a new reset blocks remote start demand": "PROVED"
+      },
+      "model_sha256": "0a8d8e93051eca6668caa4995d1828851b2c225ee575f987620a582095540c18",
+      "proof_artifact_sha256": {
+        "remote_authority-remote_authority.kyx-Generator%2Bor%2Butility%2Bloss%2Bblocks%2Bremote%2Bstart%2Bdemand.kyp": "21327cb687f239d363a0ab06612b9bf5319e688897c75b911f37f43db258bf53",
+        "remote_authority-remote_authority.kyx-Utility%2Breturn%2Bwithout%2Ba%2Bnew%2Breset%2Bblocks%2Bremote%2Bstart%2Bdemand.kyp": "bb33ffd632d4da6d10405d6d50d6592efc52b05a2048f63eebf782bfc6d48f7f"
+      },
+      "proof_scope": "controller remote authority after one scan, for two precondition classes only",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "VERIFIED",
+      "wall_seconds": 6.608
+    },
+    "nonvacuity": {
+      "archive": "nonvacuity",
+      "arithmetic_backend": "Z3",
+      "command": "python3 -m recovery_experiment.attleboro.verify_authority --jar \"$KEYMAERAX_JAR\" --z3 \"$Z3\" --output-dir \"$PROOF_SCRATCH\" --archive nonvacuity",
+      "duration_ms": {
+        "Attleboro bad power branch is reachable witness 2026": 467,
+        "Attleboro held reset branch is reachable witness 2026": 169
+      },
+      "entries": {
+        "Attleboro bad power branch is reachable witness 2026": "PROVED",
+        "Attleboro held reset branch is reachable witness 2026": "PROVED"
+      },
+      "model_sha256": "07e3dbe4aa62cc02dd0ccc98292006f6a75158a45628791c075d4981304d36e0",
+      "proof_artifact_sha256": {
+        "remote_authority_nonvacuity-remote_authority_nonvacuity.kyx-Attleboro%2Bbad%2Bpower%2Bbranch%2Bis%2Breachable%2Bwitness%2B2026.kyp": "9c34095c10c82527b141ea320ab5109c9d1f2d8c8df0047fa628161b83757585",
+        "remote_authority_nonvacuity-remote_authority_nonvacuity.kyx-Attleboro%2Bheld%2Breset%2Bbranch%2Bis%2Breachable%2Bwitness%2B2026.kyp": "c33df924d80d1c4c041bc5b85b6fca0fadcf2da06c4717e3b547eb3942652400"
+      },
+      "proof_scope": "two concrete preconditions and reachable one-scan poststates",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "VERIFIED",
+      "wall_seconds": 3.162
+    }
+  },
+  "cache": "Fresh user-home cache shared between the two archives. Separate writable output directory.",
+  "java": "OpenJDK 17.0.21.1",
+  "prover_jar_sha256": "c72cb700992e4c9fbf052113917e039ced43fa6c512493fe5473964e18b691bb",
+  "timeout_seconds_per_obligation": 60,
+  "z3": "Z3 version 4.15.4 - 64 bit"
+}

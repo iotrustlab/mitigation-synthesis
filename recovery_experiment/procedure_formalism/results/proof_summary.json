@@ -1,0 +1,252 @@
+{
+  "cache": "Fresh isolated user home per replay; derived-lemma cache shared across cases.",
+  "command": "java -Duser.home=WORKSPACE -Xss20M -jar tool.jar -launch -prove model.kyx -tool z3 -z3path solver -timeout 60 -out result.kyp",
+  "generated_models": [
+    {
+      "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+      "formal_model_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+      "mutation": "M0",
+      "obligations": {
+        "end_to_end": {
+          "duration_ms": 223,
+          "proof_sha256": "49621e563057068af159482970c79e3b58da1a9d37e51ad8df256545cd267e6a",
+          "status": "PROVED"
+        },
+        "execution_witness": {
+          "duration_ms": 192,
+          "proof_sha256": "4716ac57f6ea9fdec076fa5ccf24af9698d0e94fc3a27b5e77f98d8301aa4e8b",
+          "status": "PROVED"
+        },
+        "precondition_witness": {
+          "duration_ms": 13,
+          "proof_sha256": "d4bd6169e8c5ec54e2aec92e0a554ff32b60bd9deb4d075fcf058a7cfe8eabd0",
+          "status": "PROVED"
+        },
+        "retained_start": {
+          "duration_ms": 61,
+          "proof_sha256": "20bec7f0612fc9f13790ed9e085408f030d7baa648a0cf24886ed53cd1737943",
+          "status": "PROVED"
+        },
+        "stage_actor": {
+          "duration_ms": 16,
+          "proof_sha256": "837f8d7e153fea4ceb6c36f12001ae9368dd530899aa07df1f1072eb4474c4c8",
+          "status": "PROVED"
+        },
+        "stage_controller": {
+          "duration_ms": 26,
+          "proof_sha256": "4f34a0e94c12127b3487b6bf827ecf5bd881ab2557ee134a7ac5c45620d02d69",
+          "status": "PROVED"
+        },
+        "stage_delivery": {
+          "duration_ms": 22,
+          "proof_sha256": "d1de151795b07f0e0b83133379a3ae95400dd4dbd03ceeb89fdc148a413a315d",
+          "status": "PROVED"
+        },
+        "stage_observer": {
+          "duration_ms": 230,
+          "proof_sha256": "d16f75b64fdf992f100cacc7efcd001c79294853d90745aa7dd5ebc4aabafed9",
+          "status": "PROVED"
+        },
+        "stage_plant": {
+          "duration_ms": 231,
+          "proof_sha256": "6eb0f806cd4d45db87dd8626d0157f11c95f98c7086d95f1ae13daf0d53a95a1",
+          "status": "PROVED"
+        }
+      },
+      "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_obligation_kind": "recovery",
+      "proof_record": "proof_records/verification.json",
+      "validated": true,
+      "wall_seconds": 7.978
+    },
+    {
+      "archive_sha256": "7d8184f810e2b7075cb6b3d58d19005c6a1a55db562fd129abc27877a102313f",
+      "formal_model_sha256": "8e090cba9c0e116d9234b059ac74ed1694108d3369cd9d36a26635310c7df5d6",
+      "mutation": "M1",
+      "obligations": {
+        "violation": {
+          "duration_ms": 287,
+          "proof_sha256": "21e29956b8f14e36d76b989761db072aea7d51bae34ba194f754c3f026e404b3",
+          "status": "PROVED"
+        }
+      },
+      "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_obligation_kind": "violation",
+      "proof_record": "proof_records/verification.json",
+      "validated": true,
+      "wall_seconds": 2.829
+    },
+    {
+      "archive_sha256": "a6eb6a160d76251131e5d14c4ac1f7310f21f0383d91651e2d1e4ab0fa8b63dc",
+      "formal_model_sha256": "8c8085acb13c920cf86083f5aaec227436b5ba3558019c2d71f7f371729bcbbb",
+      "mutation": "M2",
+      "obligations": {
+        "violation": {
+          "duration_ms": 303,
+          "proof_sha256": "1eeba1fcde39b76b4b194c86dd421e18ca33bdd2ea76942e8daa4441020d94b4",
+          "status": "PROVED"
+        }
+      },
+      "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_obligation_kind": "violation",
+      "proof_record": "proof_records/verification.json",
+      "validated": true,
+      "wall_seconds": 2.94
+    },
+    {
+      "archive_sha256": "02e8b4934d84889e80cf51efd276d4f384705fd6fb496016448eb6eebb0655e4",
+      "formal_model_sha256": "6873d3a82af49b8980850e497d46fda349b08288a2b8cf01714cfd14a970066f",
+      "mutation": "M4",
+      "obligations": {
+        "violation": {
+          "duration_ms": 355,
+          "proof_sha256": "1d5ea26e8bc950251cfb2e71c02df46265c3468110ae68b7878000f1738cdc06",
+          "status": "PROVED"
+        }
+      },
+      "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_obligation_kind": "violation",
+      "proof_record": "proof_records/verification.json",
+      "validated": true,
+      "wall_seconds": 3.069
+    },
+    {
+      "archive_sha256": "94bcde2c484a8f5318b5c27f20161093b357acd4ad854c28a6b1a017ce67ad8c",
+      "formal_model_sha256": "af02eaa1e7154d8ea4e55aa3110bc4b9143f29b6583fd81ea2ae1e69a8d307fb",
+      "mutation": "M5",
+      "obligations": {
+        "violation": {
+          "duration_ms": 316,
+          "proof_sha256": "b6d69ec09686eb685d6443d441750cf75f40ce751d0859b8b6fd4d93631c68c6",
+          "status": "PROVED"
+        }
+      },
+      "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_obligation_kind": "violation",
+      "proof_record": "proof_records/verification.json",
+      "validated": true,
+      "wall_seconds": 3.031
+    },
+    {
+      "archive_sha256": "189bb34b8243289ee519befbbca7ccd69ac5cd7753f054bd158a03f1bb9fdfd9",
+      "formal_model_sha256": "2522e48e81442c8a407985f48f5d7490bdd80bb76e13bcc39e876398436e6eaf",
+      "mutation": "M7",
+      "obligations": {
+        "violation": {
+          "duration_ms": 352,
+          "proof_sha256": "eeadefb75843d06acba1d7a668ea0b8ae9ef627e7dfd8fff204eb98429d87de7",
+          "status": "PROVED"
+        }
+      },
+      "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_obligation_kind": "violation",
+      "proof_record": "proof_records/verification.json",
+      "validated": true,
+      "wall_seconds": 2.93
+    },
+    {
+      "archive_sha256": "d78e84e3954ad3674355cb27c0ba141111243e0a4f5333c1b01d2dfcec6c6bf1",
+      "formal_model_sha256": "937322664fb0a97b40ab58f2e7c60cf6543d975f4363e262229aff7576b18dc4",
+      "mutation": "M8",
+      "obligations": {
+        "violation": {
+          "duration_ms": 346,
+          "proof_sha256": "b2fd176609d1d3f34d78d3c00c576569bb47272e758d5e0d81173590b2105278",
+          "status": "PROVED"
+        }
+      },
+      "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_obligation_kind": "violation",
+      "proof_record": "proof_records/verification.json",
+      "validated": true,
+      "wall_seconds": 2.958
+    },
+    {
+      "archive_sha256": "a4f1a60c3262b6ee9def3051f7eb300b014989bfbf0e0ae41709b9d3b6195c02",
+      "formal_model_sha256": "9e36cdb3fed6d343a5636a0c7e4a1fad21d4e84bb2f64b67d94e8787526ecc83",
+      "mutation": "M9",
+      "obligations": {
+        "violation": {
+          "duration_ms": 410,
+          "proof_sha256": "25eee6057164fd3072dce2a3b1445b260c9895f80c399bfe4823b3132005aa8d",
+          "status": "PROVED"
+        }
+      },
+      "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_obligation_kind": "violation",
+      "proof_record": "proof_records/verification.json",
+      "validated": true,
+      "wall_seconds": 2.97
+    },
+    {
+      "archive_sha256": "2d30c6538c3b3de57c5b8ec26b68656331b1be9e90c02b62debc0f5054462ccf",
+      "formal_model_sha256": "a0813ce9cbe2ac891383473cb6a3298b4d6b7b73104113139953d4082b95372b",
+      "mutation": "M13",
+      "obligations": {
+        "violation": {
+          "duration_ms": 398,
+          "proof_sha256": "0e15d7c152a83fba8877bc42872a5cddad51c502e496fd6865a1a106317aaa22",
+          "status": "PROVED"
+        }
+      },
+      "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_obligation_kind": "possible_violation",
+      "proof_record": "proof_records/verification.json",
+      "validated": true,
+      "wall_seconds": 2.954
+    }
+  ],
+  "historical_archives": {
+    "authority": {
+      "archive": "authority",
+      "arithmetic_backend": "Z3",
+      "command": "python3 -m recovery_experiment.attleboro.verify_authority --jar \"$KEYMAERAX_JAR\" --z3 \"$Z3\" --output-dir \"$PROOF_SCRATCH\" --archive authority",
+      "duration_ms": {
+        "Generator or utility loss blocks remote start demand": 316,
+        "Utility return without a new reset blocks remote start demand": 79
+      },
+      "entries": {
+        "Generator or utility loss blocks remote start demand": "PROVED",
+        "Utility return without a new reset blocks remote start demand": "PROVED"
+      },
+      "model_sha256": "0a8d8e93051eca6668caa4995d1828851b2c225ee575f987620a582095540c18",
+      "proof_artifact_sha256": {
+        "remote_authority-remote_authority.kyx-Generator%2Bor%2Butility%2Bloss%2Bblocks%2Bremote%2Bstart%2Bdemand.kyp": "21327cb687f239d363a0ab06612b9bf5319e688897c75b911f37f43db258bf53",
+        "remote_authority-remote_authority.kyx-Utility%2Breturn%2Bwithout%2Ba%2Bnew%2Breset%2Bblocks%2Bremote%2Bstart%2Bdemand.kyp": "bb33ffd632d4da6d10405d6d50d6592efc52b05a2048f63eebf782bfc6d48f7f"
+      },
+      "proof_scope": "controller remote authority after one scan, for two precondition classes only",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "VERIFIED",
+      "wall_seconds": 6.608
+    },
+    "nonvacuity": {
+      "archive": "nonvacuity",
+      "arithmetic_backend": "Z3",
+      "command": "python3 -m recovery_experiment.attleboro.verify_authority --jar \"$KEYMAERAX_JAR\" --z3 \"$Z3\" --output-dir \"$PROOF_SCRATCH\" --archive nonvacuity",
+      "duration_ms": {
+        "Attleboro bad power branch is reachable witness 2026": 467,
+        "Attleboro held reset branch is reachable witness 2026": 169
+      },
+      "entries": {
+        "Attleboro bad power branch is reachable witness 2026": "PROVED",
+        "Attleboro held reset branch is reachable witness 2026": "PROVED"
+      },
+      "model_sha256": "07e3dbe4aa62cc02dd0ccc98292006f6a75158a45628791c075d4981304d36e0",
+      "proof_artifact_sha256": {
+        "remote_authority_nonvacuity-remote_authority_nonvacuity.kyx-Attleboro%2Bbad%2Bpower%2Bbranch%2Bis%2Breachable%2Bwitness%2B2026.kyp": "9c34095c10c82527b141ea320ab5109c9d1f2d8c8df0047fa628161b83757585",
+        "remote_authority_nonvacuity-remote_authority_nonvacuity.kyx-Attleboro%2Bheld%2Breset%2Bbranch%2Bis%2Breachable%2Bwitness%2B2026.kyp": "c33df924d80d1c4c041bc5b85b6fca0fadcf2da06c4717e3b547eb3942652400"
+      },
+      "proof_scope": "two concrete preconditions and reachable one-scan poststates",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "VERIFIED",
+      "wall_seconds": 3.162
+    }
+  },
+  "historical_record": "proof_records/historical_regression.json",
+  "jar_sha256": "c72cb700992e4c9fbf052113917e039ced43fa6c512493fe5473964e18b691bb",
+  "java": "openjdk version \"17.0.21.1\" 2026-11-17",
+  "scope": "A verified violation diamond is a negative witness. An M13 witness depends on the unresolved integrity state.",
+  "z3": "Z3 version 4.15.4 - 64 bit"
+}

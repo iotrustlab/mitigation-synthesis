@@ -1,0 +1,78 @@
+{
+  "comparison": {
+    "procedures": [
+      "attleboro-remote-end-to-end-recovery-v1",
+      "attleboro-local-hand-v1"
+    ],
+    "reason": "Exclusive selector positions exclude simultaneous admissibility under one fixed mode. No end-to-end Local Hand service proof has been supplied in this study.",
+    "result": "NOT_COMPARABLE_UNDER_COMMON_CONTEXT"
+  },
+  "cost_vector": {
+    "evidence_gap_duration": {
+      "evidence_status": "OBSERVED_IN_TRACE",
+      "measurement_horizon_s": 0.3,
+      "provenance": "nominal_remote ticks 0–2. Credited-service tag false while physical service tag true.",
+      "unit": "s",
+      "value": 0
+    },
+    "human_effort": {
+      "evidence_status": "UNKNOWN",
+      "measurement_horizon_s": 0.3,
+      "provenance": "nominal_remote ticks 0–2. Active work duration is unmeasured.",
+      "unit": "person*h",
+      "value": null
+    },
+    "intervention_count": {
+      "evidence_status": "OBSERVED_IN_TRACE",
+      "measurement_horizon_s": 0.3,
+      "provenance": "nominal_remote ticks 0–2. Drive starts counted by rising run-feedback edges.",
+      "unit": "count",
+      "value": 1
+    },
+    "resource_use": {
+      "evidence_status": "UNKNOWN",
+      "measurement_horizon_s": 0.3,
+      "provenance": "nominal_remote ticks 0–2. Motor energy use is unmeasured.",
+      "unit": "kWh",
+      "value": null
+    },
+    "restoration_delay": {
+      "evidence_status": "OBSERVED_IN_TRACE",
+      "measurement_horizon_s": 0.3,
+      "provenance": "nominal_remote ticks 0–2. Elapsed between first row and first credited-service row.",
+      "unit": "s",
+      "value": 0.2
+    },
+    "service_deficit": {
+      "evidence_status": "OBSERVED_IN_TRACE",
+      "measurement_horizon_s": 0.3,
+      "provenance": "nominal_remote ticks 0–2. Sum of fixture flow shortfall below 5 L/s times the scan period.",
+      "unit": "m3",
+      "value": 0.0006
+    }
+  },
+  "deadline_s": 0.3,
+  "eligible_for_cost_comparison": true,
+  "environment_id": "a46f0cff9fc8609a4b5d1d4289af4c1c8b5a7ce3ae4021cac975d391167d693b",
+  "formal_model_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+  "horizon_s": 0.3,
+  "initial_state_id": "74a5bf774a8f9c12844195b6133095baa8e7c6d09fa0c0664a7d214d920f7984",
+  "procedure_id": "attleboro-remote-end-to-end-recovery-v1",
+  "proof_record": "proof_records/verification.json",
+  "restoration_delay_origin": "Timestamp of first recorded row (tick 0), distinct from the three completed scans.",
+  "result": "PROVED",
+  "safety_definition": "At each sample, 0 <= flow <= 10 L/s, pressure <= 90 psi, pH in range and trip clear.",
+  "service_definition": "Actual flow >= 5 L/s, pressure <= 90 psi, pH in range and trip clear; establishment additionally requires a credible observed flow >= 5 L/s.",
+  "source": {
+    "bundle": "sector-water/attleboro-interconnection/runs/local-reference/nominal_remote",
+    "commit": "2de48f6562db2b12872f49efc2bbbbe7c72373b6",
+    "file_sha256": {
+      "meta.json": "485f1105dcbf6740e45c1d1ea9c6f3d11235dd894c8cc8f418846b5476f3cb83",
+      "tags.csv": "f274ac3edf53ca6bb182d85e97c0c1953c07b1172bd54dc5c5178e99922fb642"
+    },
+    "repository": "iotrustlab/sphere-usecases",
+    "scan_period_s": 0.1,
+    "service_min_flow_L_s": 5.0
+  },
+  "trace_scope": "First three synthetic scans. Each row represents one 0.1 s interval for integration."
+}
