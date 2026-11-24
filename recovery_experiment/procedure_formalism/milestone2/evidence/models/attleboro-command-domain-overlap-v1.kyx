@@ -1,0 +1,12 @@
+/* Recovery experiment attleboro-command-domain-overlap-v1. Base c817476a8f1e92a7d801652e583d4e8d0a23096a. */
+ArchiveEntry "attleboro-command-domain-overlap-v1_exclusive_command_modes"
+ProgramVariables
+  Real delivered; Real drive; Real hand; Real remote;
+End.
+Problem
+  (drive=1 & ((((delivered=1) & (remote=1) & (hand=0)) & drive=1) | (!((delivered=1) & (remote=1) & (hand=0)) & drive=0)) & ((((delivered=1) & (hand=1) & (remote=0)) & drive=1) | (!((delivered=1) & (hand=1) & (remote=0)) & drive=0))) -> 0=1
+End.
+Tactic "Bounded proof"
+  QE
+End.
+End.

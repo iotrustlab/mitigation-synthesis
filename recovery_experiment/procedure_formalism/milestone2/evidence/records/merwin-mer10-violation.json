@@ -1,0 +1,33 @@
+{
+  "archive_bytes": 7390,
+  "archive_sha256": "7b7027586bceeb68e2bca9680994e37194d6dd1df05b15c707e586aca72d15b2",
+  "case": "merwin-mer10-violation",
+  "cleo": "not used",
+  "command": "java -Duser.home=WORKSPACE -Xss20M -jar tool.jar -launch -prove model.kyx -tool z3 -z3path solver -timeout 60 -out result.kyp",
+  "configuration": "Fresh isolated prover home per family replay, 60 s per obligation.",
+  "dependencies": 10,
+  "family_profile_construction_ns": 8276069,
+  "horizon": "1296 mandatory 100 ms scans (129.6 s)",
+  "jar_sha256": "c72cb700992e4c9fbf052113917e039ced43fa6c512493fe5473964e18b691bb",
+  "java": "openjdk version \"17.0.21.1\" 2026-11-17",
+  "kind": "experiment",
+  "model_generation_ns": 9580,
+  "obligations": {
+    "violation": {
+      "duration_ms": 446,
+      "proof_sha256": "7e325fa302e988f7aaa6f84e8328ec5b8155edab5160ff484c43e29f8deda2fa",
+      "status": "PROVED"
+    }
+  },
+  "optional_lemma_initialization_restricted": true,
+  "plant_states": 4,
+  "procedure_id": "merwin-mer10-violation",
+  "proof_profile_sha256": "c62b173de2478851d1f7a32559b84989dcb3b278b51ac76deab87dc16c872de2",
+  "prover": "KeYmaera X 5.1.1",
+  "return_code": 0,
+  "source_commit": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+  "status": "PROVED",
+  "timestamp": "2026-11-24T02:34:26+00:00",
+  "wall_seconds": 3.12,
+  "z3": "Z3 version 4.15.4 - 64 bit"
+}

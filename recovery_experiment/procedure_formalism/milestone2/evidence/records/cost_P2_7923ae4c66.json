@@ -1,0 +1,52 @@
+{
+  "archive_bytes": 8997,
+  "archive_sha256": "1f3ca22445d78f5442043e369bd02574bd9323d3e1298e65ed6c3cc5d0a46240",
+  "case": "cost_P2_7923ae4c66",
+  "cleo": "not used",
+  "command": "java -Duser.home=WORKSPACE -Xss20M -jar tool.jar -launch -prove model.kyx -tool z3 -z3path solver -timeout 60 -out result.kyp",
+  "configuration": "Fresh isolated prover home per family replay, 60 s per obligation.",
+  "dependencies": 8,
+  "horizon": "4 s, service from 2 s",
+  "jar_sha256": "c72cb700992e4c9fbf052113917e039ced43fa6c512493fe5473964e18b691bb",
+  "java": "openjdk version \"17.0.21.1\" 2026-11-17",
+  "kind": "experiment",
+  "model_generation_ns": 20240,
+  "obligations": {
+    "composition": {
+      "duration_ms": 105,
+      "proof_sha256": "8905bf44780d83da0b71a7cf7c0d0b8cb321f2c3a54abd0b4950458247e39d5f",
+      "status": "PROVED"
+    },
+    "controller": {
+      "duration_ms": 21,
+      "proof_sha256": "b5de1ac933a8cd33d2001b3d4412dd0d92f945827bd1e9a36f3b5b68e98f55bb",
+      "status": "PROVED"
+    },
+    "nonvacuity": {
+      "duration_ms": 78,
+      "proof_sha256": "4f676bd65aa02208037ea3333aa15f736b4653073a8dba36c02bc01f214d9458",
+      "status": "PROVED"
+    },
+    "plant": {
+      "duration_ms": 50,
+      "proof_sha256": "640d9cb6601f142affb0f8cb054e6e40b38fdda141ed67f0fe15589cfef36493",
+      "status": "PROVED"
+    },
+    "rate_integral": {
+      "duration_ms": 395,
+      "proof_sha256": "0da46c613593797e1c0438a830b54c220d8b23bbeede4d1ba52a70eb82a9fbf7",
+      "status": "PROVED"
+    }
+  },
+  "optional_lemma_initialization_restricted": true,
+  "plant_states": 1,
+  "procedure_id": "cost_P2_7923ae4c66",
+  "proof_profile_sha256": "94065bab228442ff81ba7a81d13089e5826157d275a62d015c46953b13083267",
+  "prover": "KeYmaera X 5.1.1",
+  "return_code": 0,
+  "source_commit": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+  "status": "PROVED",
+  "timestamp": "2026-11-24T02:31:24+00:00",
+  "wall_seconds": 3.15,
+  "z3": "Z3 version 4.15.4 - 64 bit"
+}

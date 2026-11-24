@@ -1,0 +1,161 @@
+{
+  "attleboro_study": {
+    "choice": {
+      "agrees_with_historical_record": true,
+      "obligations": [
+        {
+          "feedback": "",
+          "game_id": "a",
+          "kind": "arithmetic",
+          "passed": true
+        }
+      ],
+      "result_sha256": "b0f144e9bf802e5646d8988b975247b95370311a2e0f66525d3cbd94438cf071",
+      "source_sha256": "8367be197100a9ac77d3d5e6595213d31c9eaadf02a50f2e3f84f9f752e27c38",
+      "status": "VERIFIED",
+      "wall_seconds": 0.17
+    },
+    "flow": {
+      "agrees_with_historical_record": true,
+      "obligations": [
+        {
+          "feedback": "",
+          "game_id": "f",
+          "kind": "ode",
+          "passed": true
+        },
+        {
+          "feedback": "",
+          "game_id": "a",
+          "kind": "arithmetic",
+          "passed": true
+        }
+      ],
+      "result_sha256": "fc196901f0f421f4c43a100c3662e1c9f1678636a0e6fdd25f770e7959e5bdaa",
+      "source_sha256": "4205b2a3b47b672d614b17edee8dae3fc7c5f48171772107ba744d9c4de14e81",
+      "status": "VERIFIED",
+      "wall_seconds": 7.337
+    }
+  },
+  "bundled_jar_sha256": "184840ee0ad5ec3a8856430b39dc7dbd7c9d572f9f421b90bc87a26771606c60",
+  "cleo_zip_sha256": "c6db4690f802424ce0c8fe20d59adefff811947cae5169ab8f6a1db5be2ff638",
+  "commands": [
+    "RUN_CLEO_REGRESSION=1 python -m unittest -v recovery_experiment.tests.test_bounded_schedule_lifecycle.BoundedScheduleLifecycleTests.test_new_bounded_schedules_parse_and_prove recovery_experiment.tests.test_delayed_isolation.OptionalDelayedIsolationIntegrationTests.test_complete_delayed_isolation_theorem_is_verified recovery_experiment.tests.test_parameterized_certificate.OptionalParameterizedIntegrationTests.test_covered_interior_context_matches_concrete_timed_verification recovery_experiment.tests.test_parameterized_certificate.OptionalParameterizedIntegrationTests.test_parameterized_theorem_is_verified recovery_experiment.tests.test_recovery_experiment.ContextAndFormalTests.test_generated_envelope_parses_when_cleo_is_available recovery_experiment.tests.test_recovery_experiment.OptionalIntegrationTests.test_baseline_recovery_is_verified_only_after_cleo_discharges_obligations recovery_experiment.tests.test_recovery_experiment.OptionalIntegrationTests.test_canonical_phase1_proof_remains_a_regression_baseline recovery_experiment.tests.test_recovery_experiment.OptionalIntegrationTests.test_timed_recovery_contract_discharges_all_nonvacuous_milestones recovery_experiment.tests.test_recovery_model_builder.RecoveryModelBuilderTests.test_generated_intermediate_game_parses_and_new_proof_attempt_succeeds recovery_experiment.tests.test_resource_aware_recovery.ResourceAwareRecoveryTests.test_controlled_safe_hold_cleo_theorem_is_verified recovery_experiment.tests.test_state_dependent_recovery.OptionalStateDependentIntegrationTests.test_safe_interior_context_is_independently_verified recovery_experiment.tests.test_state_dependent_recovery.OptionalStateDependentIntegrationTests.test_symbolic_state_dependent_theorem_is_verified",
+    "python recovery_experiment/procedure_study/cleo/verify_choice.py --output \"$REPLAY_DIR/choice.json\"",
+    "python recovery_experiment/procedure_study/cleo/verify_flow.py --output \"$REPLAY_DIR/flow.json\""
+  ],
+  "configuration": {
+    "CLEO_path": "published CLEO package on PYTHONPATH",
+    "RUN_CLEO_REGRESSION": 1,
+    "cache": "fresh isolated Java user home, shared within the twelve-check suite; separate fresh cache for the Attleboro pair",
+    "proof_budget": "30 seconds per KeYmaera X invocation (unmodified published CLEO)"
+  },
+  "formal_model_sha256": "0f59efc3f7d6b46e3740a5e9c0582a369a9c30e246adeb6c9ed51da54425365d",
+  "model_inventory": {
+    "attack.envelope": "60229403dd5d7e6112f3d6c2f2984c0d9a97728782110239152d98a661200606",
+    "recovery_experiment/bounded_delay_formal.py": "9ac5dd9e6701498a85273a34722acb66594be6d5888c52019cae4291594996e9",
+    "recovery_experiment/bounded_delay_proof_profile.py": "ff98f44bc0d5f16026c6d06fa8146915677f4b675c42e17bbc77635e24c043b1",
+    "recovery_experiment/controlled_safe_hold_formal.py": "92bd91a20726b9899ff0acda9fca95e16e3d58a3ae57b65984127b0d47d6ccac",
+    "recovery_experiment/controlled_safe_hold_proof_profile.py": "f81791a294efc465294536544686c45f588a5a61e902973224907bc683ec52c9",
+    "recovery_experiment/delayed_isolation_formal.py": "78112ca664ccc635659beff1d0a86e1d478d7a53c59c9c7bfa06cecefb23b439",
+    "recovery_experiment/delayed_isolation_proof_profile.py": "3e8f28a0440c05f92eb681fcda84b7523df9046c219cab4057864b53bed1f329",
+    "recovery_experiment/delayed_isolation_recovery_takeover.envelope": "1e681d841db6639bc099018d50c594c6ad0e0cce143b1155d477c3a3776b086f",
+    "recovery_experiment/intermediate_delay_formal.py": "632dfdc2a9894fccd92005d848bd1b7132f88778b27adb19f18e13d979abcc18",
+    "recovery_experiment/intermediate_delay_proof_profile.py": "7d55d24b1e3a1a22e9fc4e04ca02698e7ac4b50bb4c40e9d381cfc1aa0cf2706",
+    "recovery_experiment/parameterized_formal.py": "292302385057dd4d9829bec914198afb0f1962f58b01084ada65d7446557c0f6",
+    "recovery_experiment/parameterized_proof_profile.py": "db7400c6c3d0d19339817473a0c34e5c4c513da67f8e632e461edaf5118f7138",
+    "recovery_experiment/parameterized_recovery_takeover.envelope": "ca5a5d597ee3d461e3c7ea333c67403f2162ba73b5a07b6f14dec3c9dae65423",
+    "recovery_experiment/procedure_study/cleo/attleboro_documented_choice.envelope": "8367be197100a9ac77d3d5e6595213d31c9eaadf02a50f2e3f84f9f752e27c38",
+    "recovery_experiment/procedure_study/cleo/attleboro_sampled_flow.envelope": "4205b2a3b47b672d614b17edee8dae3fc7c5f48171772107ba744d9c4de14e81",
+    "recovery_experiment/proof_records/bounded_3t4/bounded_delay_recovery.generated.envelope": "2b4728ea3b0f03f39da66d79171465ab5b46fa12aa390217a7e713bcc3089695",
+    "recovery_experiment/proof_records/bounded_3t5/bounded_delay_recovery.generated.envelope": "d99d4f7314cf92552e9c9a13dcdcca3b909c7cd79e3d25f321ca733b65e41aac",
+    "recovery_experiment/proof_records/controlled_safe_hold/controlled_safe_hold.generated.envelope": "fe4dbb9dd8d9fdbcf0d01a3a0f65cac88a989d38fa624ff5d22f1a074e543616",
+    "recovery_experiment/proof_records/intermediate_delay_1t/intermediate_delay_recovery.generated.envelope": "0ebfed2ac1eb7e9e00d6d931eee5ed6326fed2c0e8806ac81cfda4287333aac1",
+    "recovery_experiment/recovery_takeover.envelope": "518a84675006776ced09ffdd1a5dcd0f2f83926f162393d34254c7a83d58f75f",
+    "recovery_experiment/state_dependent_formal.py": "5cf8abd72fa7295d6786ced58ca5fcad7d61387996bef3728c8338e7e06b7c3c",
+    "recovery_experiment/state_dependent_proof_profile.py": "45ee5b19ea2cb499cbc4d2d03327b54e1da011c4c7dfe13d0541832e945f9951",
+    "recovery_experiment/state_dependent_recovery_takeover.envelope": "bff94d011109ab1a3489064b20c6163d51246994dd777600effa807edd10a3fc",
+    "recovery_experiment/tests/test_procedure_formal.py": "7468fcb55179377487103a45aca0fb98c46373c48fd67eaaeaa65ffec5445b49",
+    "recovery_experiment/timed_formal.py": "60b7df156f7854d800dca5f617d4e813f30c45b3aecbf082166ef5fb57a577b5",
+    "recovery_experiment/timed_proof_profile.py": "a6648d80926c213ed742f8b4a2a462113b0563a6011e2a916b5af5386c75eb0b",
+    "recovery_experiment/timed_recovery_takeover.envelope": "02ccc01200c38add3e00a83ce34d453a48e127ddd7602be9b245a5108ffeb511"
+  },
+  "profile_scope": "SHA-256 over sorted compact JSON of base proof profiles and the tested modules.",
+  "proof_profile_sha256": "a7c3ba7b74a20a5462fc04379e527fcfc9486cff3b03c2ebaca9230a33be6e3b",
+  "source_and_jar_match_distribution": true,
+  "source_commit": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+  "source_distribution": "CLEO 0.1.0, DOI 10.1184/R1/32320254",
+  "suite_seconds": 158.629,
+  "tests": [
+    {
+      "elapsed_seconds": 54.163,
+      "status": "PASSED",
+      "test_id": "recovery_experiment.tests.test_bounded_schedule_lifecycle.BoundedScheduleLifecycleTests.test_new_bounded_schedules_parse_and_prove"
+    },
+    {
+      "elapsed_seconds": 17.107,
+      "status": "PASSED",
+      "test_id": "recovery_experiment.tests.test_delayed_isolation.OptionalDelayedIsolationIntegrationTests.test_complete_delayed_isolation_theorem_is_verified"
+    },
+    {
+      "elapsed_seconds": 8.595,
+      "status": "PASSED",
+      "test_id": "recovery_experiment.tests.test_parameterized_certificate.OptionalParameterizedIntegrationTests.test_covered_interior_context_matches_concrete_timed_verification"
+    },
+    {
+      "elapsed_seconds": 8.1,
+      "status": "PASSED",
+      "test_id": "recovery_experiment.tests.test_parameterized_certificate.OptionalParameterizedIntegrationTests.test_parameterized_theorem_is_verified"
+    },
+    {
+      "elapsed_seconds": 0.005,
+      "status": "PASSED",
+      "test_id": "recovery_experiment.tests.test_recovery_experiment.ContextAndFormalTests.test_generated_envelope_parses_when_cleo_is_available"
+    },
+    {
+      "elapsed_seconds": 8.773,
+      "status": "PASSED",
+      "test_id": "recovery_experiment.tests.test_recovery_experiment.OptionalIntegrationTests.test_baseline_recovery_is_verified_only_after_cleo_discharges_obligations"
+    },
+    {
+      "elapsed_seconds": 20.657,
+      "status": "PASSED",
+      "test_id": "recovery_experiment.tests.test_recovery_experiment.OptionalIntegrationTests.test_canonical_phase1_proof_remains_a_regression_baseline"
+    },
+    {
+      "elapsed_seconds": 8.111,
+      "status": "PASSED",
+      "test_id": "recovery_experiment.tests.test_recovery_experiment.OptionalIntegrationTests.test_timed_recovery_contract_discharges_all_nonvacuous_milestones"
+    },
+    {
+      "elapsed_seconds": 12.108,
+      "status": "PASSED",
+      "test_id": "recovery_experiment.tests.test_recovery_model_builder.RecoveryModelBuilderTests.test_generated_intermediate_game_parses_and_new_proof_attempt_succeeds"
+    },
+    {
+      "elapsed_seconds": 3.537,
+      "status": "PASSED",
+      "test_id": "recovery_experiment.tests.test_resource_aware_recovery.ResourceAwareRecoveryTests.test_controlled_safe_hold_cleo_theorem_is_verified"
+    },
+    {
+      "elapsed_seconds": 9.056,
+      "status": "PASSED",
+      "test_id": "recovery_experiment.tests.test_state_dependent_recovery.OptionalStateDependentIntegrationTests.test_safe_interior_context_is_independently_verified"
+    },
+    {
+      "elapsed_seconds": 8.416,
+      "status": "PASSED",
+      "test_id": "recovery_experiment.tests.test_state_dependent_recovery.OptionalStateDependentIntegrationTests.test_symbolic_state_dependent_theorem_is_verified"
+    }
+  ],
+  "timestamp": "2026-11-24T02:36:23+00:00",
+  "tool_versions": {
+    "KeYmaera X": "5.0",
+    "bundled_z3": "Z3 version 4.8.9 - 64 bit",
+    "cleo": "0.1.0",
+    "openjdk": "17.0.21.1",
+    "pydantic": "2.14.4",
+    "python": "3.12.16",
+    "z3_python": "4.16.0.0"
+  }
+}

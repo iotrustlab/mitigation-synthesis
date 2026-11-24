@@ -1,0 +1,340 @@
+{
+  "bundles": {
+    "backup_absent_openplc": {
+      "assessment": {
+        "benign_runtime_execution": "NOT_ESTABLISHED",
+        "customer_service": "NOT_ESTABLISHED",
+        "cyber_trust": "UNKNOWN",
+        "device_log_loss_recorded": true,
+        "device_recovery": "NOT_ESTABLISHED",
+        "evaluator_archive_preserved": true,
+        "process_restart": "NOT_ESTABLISHED"
+      },
+      "events": [
+        {
+          "accepted": true,
+          "action": "reset",
+          "reason": "research_reset_completed"
+        },
+        {
+          "accepted": false,
+          "action": "load_backup",
+          "reason": "backup_absent"
+        },
+        {
+          "accepted": false,
+          "action": "start_runtime",
+          "reason": "logic_not_loaded"
+        }
+      ],
+      "input_sha256": {
+        "assessment": "409460e2a0efde60ffad3049d6ca8e75304992e44474202985c3f927314506ba",
+        "events": "aa996b09a7d798044062d4e7a760f1aa030d1940c02fd1761323d33c191cad1c",
+        "runtime": "a55bd11104f318999b58f2686fc786a8af254d33a5b6680ebea53ee12df5abaf",
+        "scenario": "de15388e587abfa6ed5c1364d11aa089fddefba39543d477fb76a7d866997e78"
+      },
+      "inputs": {
+        "backup_available": false,
+        "backup_compatible": true,
+        "backup_reviewed": true,
+        "engineering_access": true,
+        "hostile_influence": null,
+        "process_ready": null
+      },
+      "probe": null,
+      "profile": "siemens_like",
+      "source_label": "research_counterfactual",
+      "terminal": {
+        "cyber_trust": "unknown",
+        "device_bootable": true,
+        "hostile_influence": null,
+        "logic_loaded": false,
+        "process_ready": null,
+        "runtime_evidence": "NOT_RUN",
+        "runtime_executing": false
+      }
+    },
+    "backup_incompatible_fixture": {
+      "assessment": {
+        "benign_runtime_execution": "NOT_ESTABLISHED",
+        "customer_service": "NOT_ESTABLISHED",
+        "cyber_trust": "UNKNOWN",
+        "device_log_loss_recorded": true,
+        "device_recovery": "NOT_ESTABLISHED",
+        "evaluator_archive_preserved": true,
+        "process_restart": "NOT_ESTABLISHED"
+      },
+      "events": [
+        {
+          "accepted": true,
+          "action": "reset",
+          "reason": "research_reset_completed"
+        },
+        {
+          "accepted": false,
+          "action": "load_backup",
+          "reason": "backup_incompatible"
+        },
+        {
+          "accepted": false,
+          "action": "start_runtime",
+          "reason": "logic_not_loaded"
+        }
+      ],
+      "input_sha256": {
+        "assessment": "409460e2a0efde60ffad3049d6ca8e75304992e44474202985c3f927314506ba",
+        "events": "0f8b681edf0c5cf3515d5942a18c7d7cc9637af0df49cd98c403ebb5ab87f1b0",
+        "runtime": "95d2544aa3ab3a6ef23fd480802af60adadd885181a4d0e059f7afcef30ba99e",
+        "scenario": "53af8298def4202ea46e83253f1af972c5d276071bef94fcaa469bba3c3d1e55"
+      },
+      "inputs": {
+        "backup_available": true,
+        "backup_compatible": false,
+        "backup_reviewed": true,
+        "engineering_access": true,
+        "hostile_influence": null,
+        "process_ready": null
+      },
+      "probe": null,
+      "profile": "siemens_like",
+      "source_label": "research_counterfactual",
+      "terminal": {
+        "cyber_trust": "unknown",
+        "device_bootable": true,
+        "hostile_influence": null,
+        "logic_loaded": false,
+        "process_ready": null,
+        "runtime_evidence": "NOT_RUN",
+        "runtime_executing": false
+      }
+    },
+    "backup_unreviewed_fixture": {
+      "assessment": {
+        "benign_runtime_execution": "NOT_ESTABLISHED",
+        "customer_service": "NOT_ESTABLISHED",
+        "cyber_trust": "UNKNOWN",
+        "device_log_loss_recorded": true,
+        "device_recovery": "NOT_ESTABLISHED",
+        "evaluator_archive_preserved": true,
+        "process_restart": "NOT_ESTABLISHED"
+      },
+      "events": [
+        {
+          "accepted": true,
+          "action": "reset",
+          "reason": "research_reset_completed"
+        },
+        {
+          "accepted": false,
+          "action": "load_backup",
+          "reason": "backup_provenance_unresolved"
+        },
+        {
+          "accepted": false,
+          "action": "start_runtime",
+          "reason": "logic_not_loaded"
+        }
+      ],
+      "input_sha256": {
+        "assessment": "409460e2a0efde60ffad3049d6ca8e75304992e44474202985c3f927314506ba",
+        "events": "1605bcdc809c58ec6df5580217c2c911a70763709ff34644538b03713d92a55b",
+        "runtime": "95d2544aa3ab3a6ef23fd480802af60adadd885181a4d0e059f7afcef30ba99e",
+        "scenario": "0c67894a3733505977090223bde552bbf3b245bdcaddceca77e2494d66e7778a"
+      },
+      "inputs": {
+        "backup_available": true,
+        "backup_compatible": true,
+        "backup_reviewed": false,
+        "engineering_access": true,
+        "hostile_influence": null,
+        "process_ready": null
+      },
+      "probe": null,
+      "profile": "siemens_like",
+      "source_label": "research_counterfactual",
+      "terminal": {
+        "cyber_trust": "unknown",
+        "device_bootable": true,
+        "hostile_influence": null,
+        "logic_loaded": false,
+        "process_ready": null,
+        "runtime_evidence": "NOT_RUN",
+        "runtime_executing": false
+      }
+    },
+    "process_not_ready_openplc": {
+      "assessment": {
+        "benign_runtime_execution": "EXECUTED",
+        "customer_service": "NOT_ESTABLISHED",
+        "cyber_trust": "UNKNOWN",
+        "device_log_loss_recorded": true,
+        "device_recovery": "SIMULATED",
+        "evaluator_archive_preserved": true,
+        "process_restart": "NOT_ESTABLISHED"
+      },
+      "events": [
+        {
+          "accepted": true,
+          "action": "reset",
+          "reason": "research_reset_completed"
+        },
+        {
+          "accepted": true,
+          "action": "load_backup",
+          "reason": "reviewed_research_program_loaded"
+        },
+        {
+          "accepted": true,
+          "action": "start_runtime",
+          "reason": "openplc_heartbeat_confirmed"
+        }
+      ],
+      "input_sha256": {
+        "assessment": "3954712005d9f0cc4ff83e8c0c21fd2498841a595bcc325521a24c8723d4810e",
+        "events": "b5ddb8d694385918dd2696b72b461d6c84c68c9c8626d13c0e63dc45548f250f",
+        "runtime": "6cafc9a5527e951002a4418a11920ae3908a962de47b1df8dc9cafd64133025f",
+        "scenario": "53fd22ab96dbe1c875e7781e644278933370ddad9bf9d2684b69778e1f634aee"
+      },
+      "inputs": {
+        "backup_available": true,
+        "backup_compatible": true,
+        "backup_reviewed": true,
+        "engineering_access": true,
+        "hostile_influence": null,
+        "process_ready": false
+      },
+      "probe": {
+        "compile_success": true,
+        "scan_count_after": 21.0,
+        "scan_count_before": 16.0,
+        "status": "CONFIRMED"
+      },
+      "profile": "siemens_like",
+      "source_label": "research_counterfactual",
+      "terminal": {
+        "cyber_trust": "unknown",
+        "device_bootable": true,
+        "hostile_influence": null,
+        "logic_loaded": true,
+        "process_ready": false,
+        "runtime_evidence": "CONFIRMED",
+        "runtime_executing": true
+      }
+    },
+    "siemens_compatible_openplc": {
+      "assessment": {
+        "benign_runtime_execution": "EXECUTED",
+        "customer_service": "NOT_ESTABLISHED",
+        "cyber_trust": "UNKNOWN",
+        "device_log_loss_recorded": true,
+        "device_recovery": "SIMULATED",
+        "evaluator_archive_preserved": true,
+        "process_restart": "NOT_ESTABLISHED"
+      },
+      "events": [
+        {
+          "accepted": true,
+          "action": "reset",
+          "reason": "research_reset_completed"
+        },
+        {
+          "accepted": true,
+          "action": "load_backup",
+          "reason": "reviewed_research_program_loaded"
+        },
+        {
+          "accepted": true,
+          "action": "start_runtime",
+          "reason": "openplc_heartbeat_confirmed"
+        }
+      ],
+      "input_sha256": {
+        "assessment": "3954712005d9f0cc4ff83e8c0c21fd2498841a595bcc325521a24c8723d4810e",
+        "events": "3ce54a1ac2440af24c9300f4632996230b0369053891430a17e1f259d4d19973",
+        "runtime": "a5797b964ed33fe5467b3a3737cf4e4f7de6637cef94739f0ede1cda59d8294c",
+        "scenario": "890f19fa64ab9211e7f4117723e11633876d83de16afe850afa1e509ea48979b"
+      },
+      "inputs": {
+        "backup_available": true,
+        "backup_compatible": true,
+        "backup_reviewed": true,
+        "engineering_access": true,
+        "hostile_influence": null,
+        "process_ready": null
+      },
+      "probe": {
+        "compile_success": true,
+        "scan_count_after": 22.0,
+        "scan_count_before": 16.0,
+        "status": "CONFIRMED"
+      },
+      "profile": "siemens_like",
+      "source_label": "research_fixture_based_on_reported_reset_reload",
+      "terminal": {
+        "cyber_trust": "unknown",
+        "device_bootable": true,
+        "hostile_influence": null,
+        "logic_loaded": true,
+        "process_ready": null,
+        "runtime_evidence": "CONFIRMED",
+        "runtime_executing": true
+      }
+    },
+    "wago_nonbootable_openplc": {
+      "assessment": {
+        "benign_runtime_execution": "NOT_ESTABLISHED",
+        "customer_service": "NOT_ESTABLISHED",
+        "cyber_trust": "UNKNOWN",
+        "device_log_loss_recorded": false,
+        "device_recovery": "NOT_ESTABLISHED",
+        "evaluator_archive_preserved": true,
+        "process_restart": "NOT_ESTABLISHED"
+      },
+      "events": [
+        {
+          "accepted": true,
+          "action": "reset",
+          "reason": "reset_attempted_device_remains_unbootable"
+        },
+        {
+          "accepted": false,
+          "action": "load_backup",
+          "reason": "device_not_bootable"
+        },
+        {
+          "accepted": false,
+          "action": "start_runtime",
+          "reason": "device_not_bootable"
+        }
+      ],
+      "input_sha256": {
+        "assessment": "3af347f5f9c19c500d7846048df8129ba25289738f2ae90df33d821fb85fdc4e",
+        "events": "2fc2ed225dd032bfbf09e0c129c55a9b38f25bc4a8693430432a92b0fc291ec9",
+        "runtime": "9a508a154ed29b63828d8088bd324792b107cca8ad67fb786a0a25ccaa189c47",
+        "scenario": "398b0286db670b513ff69a34274139d747637a91669231c43530a7264f8d908b"
+      },
+      "inputs": {
+        "backup_available": true,
+        "backup_compatible": true,
+        "backup_reviewed": true,
+        "engineering_access": true,
+        "hostile_influence": null,
+        "process_ready": null
+      },
+      "probe": null,
+      "profile": "wago_nonbootable",
+      "source_label": "research_fixture_based_on_reported_failed_reset",
+      "terminal": {
+        "cyber_trust": "unknown",
+        "device_bootable": false,
+        "hostile_influence": null,
+        "logic_loaded": false,
+        "process_ready": null,
+        "runtime_evidence": "NOT_RUN",
+        "runtime_executing": false
+      }
+    }
+  },
+  "case_directory": "sector-energy/poland-2025-chp-recovery",
+  "case_tree": "3bbe96d73b2a450ac238f58504c8a1ff6cf91ee7"
+}

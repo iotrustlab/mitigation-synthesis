@@ -1,0 +1,619 @@
+{
+  "configuration": {
+    "metadata": "Timestamp from the evidence capture. Aggregate hashes bind sorted archive/profile pairs. A null binding denotes observational assessment.",
+    "scope": "Offline research fixtures. All paths relative to the repository or package.",
+    "source": "source_commit identifies the unchanged starting artifact. The manifest fingerprints experiment sources added since that commit."
+  },
+  "expressions": {
+    "controlled-water-automatic-P2-v1": {
+      "components": {
+        "cIntervention": 0,
+        "cResource": 12,
+        "cService": 3,
+        "cTime": 1
+      },
+      "formal_expression": "3*wService + 1*wTime + 0*wIntervention + 12*wResource",
+      "profile": "cost_P2_42979f75cf",
+      "scope": "C0",
+      "units": {
+        "cIntervention": "manual action",
+        "cResource": "J",
+        "cService": "L",
+        "cTime": "s"
+      }
+    },
+    "controlled-water-manual-P3-v1": {
+      "components": {
+        "cIntervention": 1,
+        "cResource": 2,
+        "cService": 6,
+        "cTime": 2
+      },
+      "formal_expression": "6*wService + 2*wTime + 1*wIntervention + 2*wResource",
+      "profile": "cost_P3_758f611e41",
+      "scope": "C0",
+      "units": {
+        "cIntervention": "manual action",
+        "cResource": "J",
+        "cService": "L",
+        "cTime": "s"
+      }
+    }
+  },
+  "formal_model_sha256": "cd9cf33a6160c771a86a5e47080afd6b26e57a064ed42c136c388aef4b539339",
+  "nominal_hard_results": [
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "PROVED",
+      "context_sha256": "334e2c30886032e59452c40efa1fcf4ed2cb8eb9066111e1371e290351798c65",
+      "dependency_states": {
+        "actuator_B": "TRUSTED",
+        "auto_actor": "TRUSTED",
+        "controller_B": "TRUSTED",
+        "delivery_pipe": "TRUSTED",
+        "meter": "TRUSTED",
+        "network_B": "TRUSTED",
+        "power_B": "TRUSTED",
+        "power_feed": "TRUSTED"
+      },
+      "formal_model_sha256": "37278e3b919e707cda1ff8fe06f7deabd1b806f4ddc4f8b641dd56c73a1609dc",
+      "observation": "PROVED",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "profile": "cost_P2_42979f75cf",
+      "proof_for_queried_profile": true,
+      "proof_kind": "recovery",
+      "proof_profile_sha256": "0e2f980faab0612b8cf9ef1fe929e0e3cca827154cdf1f98ce2877056acf55ab",
+      "reason": "Validated universal safety/service/cost and progress obligations.",
+      "safety": "PROVED",
+      "scenario": "C0",
+      "service": "PROVED",
+      "witness": null
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "PROVED",
+      "context_sha256": "334e2c30886032e59452c40efa1fcf4ed2cb8eb9066111e1371e290351798c65",
+      "dependency_states": {
+        "actuator_C": "TRUSTED",
+        "delivery_pipe": "TRUSTED",
+        "interface_C": "TRUSTED",
+        "local_actor": "TRUSTED",
+        "meter": "TRUSTED",
+        "power_C": "TRUSTED",
+        "power_feed": "TRUSTED"
+      },
+      "formal_model_sha256": "50105330332a9c8f268f9a30039c35b4abb45d82360eec2207e1197f6fcd807e",
+      "observation": "PROVED",
+      "procedure": "controlled-water-manual-P3-v1",
+      "profile": "cost_P3_758f611e41",
+      "proof_for_queried_profile": true,
+      "proof_kind": "recovery",
+      "proof_profile_sha256": "e9f68024b262ea339ae037c1c5128daf8efe0377d67cdbfb2ed125136d43d07c",
+      "reason": "Validated universal safety/service/cost and progress obligations.",
+      "safety": "PROVED",
+      "scenario": "C0",
+      "service": "PROVED",
+      "witness": null
+    }
+  ],
+  "profile_bindings": [
+    {
+      "archive_sha256": "1f3ca22445d78f5442043e369bd02574bd9323d3e1298e65ed6c3cc5d0a46240",
+      "profile_sha256": "94065bab228442ff81ba7a81d13089e5826157d275a62d015c46953b13083267"
+    },
+    {
+      "archive_sha256": "2a1aacd88731be185c6434825ba8ae76669a5f7195b3d0f4ea62274393e2e0d0",
+      "profile_sha256": "e5627711bbefe6a6b663b888257151ba2e5aa7010cf5b7084dce87c490ecf2fb"
+    },
+    {
+      "archive_sha256": "3242949d6ed6fcf9a1dea9ea1489979c2fa0de0fae27eacc3a807af177485f27",
+      "profile_sha256": "832d838fc65e3c6083ba32b5078aa05f79a794d4b77760ea9d883d8b86b18cf0"
+    },
+    {
+      "archive_sha256": "37278e3b919e707cda1ff8fe06f7deabd1b806f4ddc4f8b641dd56c73a1609dc",
+      "profile_sha256": "0e2f980faab0612b8cf9ef1fe929e0e3cca827154cdf1f98ce2877056acf55ab"
+    },
+    {
+      "archive_sha256": "3e843171843db12d4b2eff3eac44478714812e79596ee150770d3a7294e44fe8",
+      "profile_sha256": "92b52012c51b8784a6a8afedf6ed6d601da7750be616cc341d6e374947ba8d6f"
+    },
+    {
+      "archive_sha256": "50105330332a9c8f268f9a30039c35b4abb45d82360eec2207e1197f6fcd807e",
+      "profile_sha256": "e9f68024b262ea339ae037c1c5128daf8efe0377d67cdbfb2ed125136d43d07c"
+    },
+    {
+      "archive_sha256": "579683dc662a4545c31357afb96319656ae077e38bd511ad5bf3f2ab9aa8fb5e",
+      "profile_sha256": "c4e37a39db57d915095b70865f2d1c5cf3eb217fe3158ed24561edd1a884b44e"
+    }
+  ],
+  "proof_profile_sha256": "617142430f0bca8f2fac4d502190fbe996f7b68ca0ed6a05d1c0e2ce04340d75",
+  "selections": [
+    {
+      "context_sha256": "334e2c30886032e59452c40efa1fcf4ed2cb8eb9066111e1371e290351798c65",
+      "cost_by_admissible_procedure": {
+        "controlled-water-automatic-P2-v1": "39",
+        "controlled-water-manual-P3-v1": "57"
+      },
+      "pareto_frontier": [
+        "controlled-water-automatic-P2-v1",
+        "controlled-water-manual-P3-v1"
+      ],
+      "policy": "COST-W1",
+      "result": "SELECTED",
+      "scenario": "C0",
+      "weights": [
+        "8",
+        "3",
+        "1",
+        "1"
+      ],
+      "winners": [
+        "controlled-water-automatic-P2-v1"
+      ]
+    },
+    {
+      "context_sha256": "334e2c30886032e59452c40efa1fcf4ed2cb8eb9066111e1371e290351798c65",
+      "cost_by_admissible_procedure": {
+        "controlled-water-automatic-P2-v1": "52",
+        "controlled-water-manual-P3-v1": "19"
+      },
+      "pareto_frontier": [
+        "controlled-water-automatic-P2-v1",
+        "controlled-water-manual-P3-v1"
+      ],
+      "policy": "COST-W2",
+      "result": "SELECTED",
+      "scenario": "C0",
+      "weights": [
+        "1",
+        "1",
+        "3",
+        "4"
+      ],
+      "winners": [
+        "controlled-water-manual-P3-v1"
+      ]
+    },
+    {
+      "context_sha256": "334e2c30886032e59452c40efa1fcf4ed2cb8eb9066111e1371e290351798c65",
+      "cost_by_admissible_procedure": {
+        "controlled-water-automatic-P2-v1": "16",
+        "controlled-water-manual-P3-v1": "11"
+      },
+      "pareto_frontier": [
+        "controlled-water-automatic-P2-v1",
+        "controlled-water-manual-P3-v1"
+      ],
+      "policy": "COST-W3",
+      "result": "SELECTED",
+      "scenario": "C0",
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "winners": [
+        "controlled-water-manual-P3-v1"
+      ]
+    },
+    {
+      "context_sha256": "7e17b2e17e5b17c1725d7f620b6dccf6596d90e98fc5840db7747a1549597fa7",
+      "cost_by_admissible_procedure": {
+        "controlled-water-manual-P3-v1": "57"
+      },
+      "pareto_frontier": [
+        "controlled-water-manual-P3-v1"
+      ],
+      "policy": "COST-W1",
+      "result": "SELECTED",
+      "scenario": "C1",
+      "weights": [
+        "8",
+        "3",
+        "1",
+        "1"
+      ],
+      "winners": [
+        "controlled-water-manual-P3-v1"
+      ]
+    },
+    {
+      "context_sha256": "7e17b2e17e5b17c1725d7f620b6dccf6596d90e98fc5840db7747a1549597fa7",
+      "cost_by_admissible_procedure": {
+        "controlled-water-manual-P3-v1": "19"
+      },
+      "pareto_frontier": [
+        "controlled-water-manual-P3-v1"
+      ],
+      "policy": "COST-W2",
+      "result": "SELECTED",
+      "scenario": "C1",
+      "weights": [
+        "1",
+        "1",
+        "3",
+        "4"
+      ],
+      "winners": [
+        "controlled-water-manual-P3-v1"
+      ]
+    },
+    {
+      "context_sha256": "7e17b2e17e5b17c1725d7f620b6dccf6596d90e98fc5840db7747a1549597fa7",
+      "cost_by_admissible_procedure": {
+        "controlled-water-manual-P3-v1": "11"
+      },
+      "pareto_frontier": [
+        "controlled-water-manual-P3-v1"
+      ],
+      "policy": "COST-W3",
+      "result": "SELECTED",
+      "scenario": "C1",
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "winners": [
+        "controlled-water-manual-P3-v1"
+      ]
+    },
+    {
+      "context_sha256": "38411672dd7b464c5f28322abcbb42acea530575552d74477293ac5b0f9d1cc0",
+      "cost_by_admissible_procedure": {
+        "controlled-water-automatic-P2-v1": "39"
+      },
+      "pareto_frontier": [
+        "controlled-water-automatic-P2-v1"
+      ],
+      "policy": "COST-W1",
+      "result": "SELECTED",
+      "scenario": "C2",
+      "weights": [
+        "8",
+        "3",
+        "1",
+        "1"
+      ],
+      "winners": [
+        "controlled-water-automatic-P2-v1"
+      ]
+    },
+    {
+      "context_sha256": "38411672dd7b464c5f28322abcbb42acea530575552d74477293ac5b0f9d1cc0",
+      "cost_by_admissible_procedure": {
+        "controlled-water-automatic-P2-v1": "52"
+      },
+      "pareto_frontier": [
+        "controlled-water-automatic-P2-v1"
+      ],
+      "policy": "COST-W2",
+      "result": "SELECTED",
+      "scenario": "C2",
+      "weights": [
+        "1",
+        "1",
+        "3",
+        "4"
+      ],
+      "winners": [
+        "controlled-water-automatic-P2-v1"
+      ]
+    },
+    {
+      "context_sha256": "38411672dd7b464c5f28322abcbb42acea530575552d74477293ac5b0f9d1cc0",
+      "cost_by_admissible_procedure": {
+        "controlled-water-automatic-P2-v1": "16"
+      },
+      "pareto_frontier": [
+        "controlled-water-automatic-P2-v1"
+      ],
+      "policy": "COST-W3",
+      "result": "SELECTED",
+      "scenario": "C2",
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "winners": [
+        "controlled-water-automatic-P2-v1"
+      ]
+    },
+    {
+      "context_sha256": "cb32a6ad2c31da7fdb04d634e3184d8ad43b48e4800b4bd7c6f6d5971ab07121",
+      "cost_by_admissible_procedure": {},
+      "pareto_frontier": [],
+      "policy": "COST-W1",
+      "result": "NO_ASSURED_RECOVERY",
+      "scenario": "C3",
+      "weights": [
+        "8",
+        "3",
+        "1",
+        "1"
+      ],
+      "winners": []
+    },
+    {
+      "context_sha256": "cb32a6ad2c31da7fdb04d634e3184d8ad43b48e4800b4bd7c6f6d5971ab07121",
+      "cost_by_admissible_procedure": {},
+      "pareto_frontier": [],
+      "policy": "COST-W2",
+      "result": "NO_ASSURED_RECOVERY",
+      "scenario": "C3",
+      "weights": [
+        "1",
+        "1",
+        "3",
+        "4"
+      ],
+      "winners": []
+    },
+    {
+      "context_sha256": "cb32a6ad2c31da7fdb04d634e3184d8ad43b48e4800b4bd7c6f6d5971ab07121",
+      "cost_by_admissible_procedure": {},
+      "pareto_frontier": [],
+      "policy": "COST-W3",
+      "result": "NO_ASSURED_RECOVERY",
+      "scenario": "C3",
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "winners": []
+    },
+    {
+      "context_sha256": "84118b54bcf28f49a98e5f51dd8ce049472e5f6e66000a43369fae455d723476",
+      "cost_by_admissible_procedure": {},
+      "pareto_frontier": [],
+      "policy": "COST-W1",
+      "result": "NO_ASSURED_RECOVERY",
+      "scenario": "C4",
+      "weights": [
+        "8",
+        "3",
+        "1",
+        "1"
+      ],
+      "winners": []
+    },
+    {
+      "context_sha256": "84118b54bcf28f49a98e5f51dd8ce049472e5f6e66000a43369fae455d723476",
+      "cost_by_admissible_procedure": {},
+      "pareto_frontier": [],
+      "policy": "COST-W2",
+      "result": "NO_ASSURED_RECOVERY",
+      "scenario": "C4",
+      "weights": [
+        "1",
+        "1",
+        "3",
+        "4"
+      ],
+      "winners": []
+    },
+    {
+      "context_sha256": "84118b54bcf28f49a98e5f51dd8ce049472e5f6e66000a43369fae455d723476",
+      "cost_by_admissible_procedure": {},
+      "pareto_frontier": [],
+      "policy": "COST-W3",
+      "result": "NO_ASSURED_RECOVERY",
+      "scenario": "C4",
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "winners": []
+    },
+    {
+      "context_sha256": "736fd2cfe6a32fa98bafcdc4ddd318162479f1c68d69c4237d430489379d5a7a",
+      "cost_by_admissible_procedure": {
+        "controlled-water-automatic-P2-v1": "63",
+        "controlled-water-manual-P3-v1": "57"
+      },
+      "pareto_frontier": [
+        "controlled-water-automatic-P2-v1",
+        "controlled-water-manual-P3-v1"
+      ],
+      "policy": "COST-W1",
+      "result": "SELECTED",
+      "scenario": "C5",
+      "weights": [
+        "8",
+        "3",
+        "1",
+        "1"
+      ],
+      "winners": [
+        "controlled-water-manual-P3-v1"
+      ]
+    },
+    {
+      "context_sha256": "736fd2cfe6a32fa98bafcdc4ddd318162479f1c68d69c4237d430489379d5a7a",
+      "cost_by_admissible_procedure": {
+        "controlled-water-automatic-P2-v1": "55",
+        "controlled-water-manual-P3-v1": "19"
+      },
+      "pareto_frontier": [
+        "controlled-water-automatic-P2-v1",
+        "controlled-water-manual-P3-v1"
+      ],
+      "policy": "COST-W2",
+      "result": "SELECTED",
+      "scenario": "C5",
+      "weights": [
+        "1",
+        "1",
+        "3",
+        "4"
+      ],
+      "winners": [
+        "controlled-water-manual-P3-v1"
+      ]
+    },
+    {
+      "context_sha256": "736fd2cfe6a32fa98bafcdc4ddd318162479f1c68d69c4237d430489379d5a7a",
+      "cost_by_admissible_procedure": {
+        "controlled-water-automatic-P2-v1": "19",
+        "controlled-water-manual-P3-v1": "11"
+      },
+      "pareto_frontier": [
+        "controlled-water-automatic-P2-v1",
+        "controlled-water-manual-P3-v1"
+      ],
+      "policy": "COST-W3",
+      "result": "SELECTED",
+      "scenario": "C5",
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "winners": [
+        "controlled-water-manual-P3-v1"
+      ]
+    },
+    {
+      "context_sha256": "a8c0b1a681ff85ba64ce79db40b221dc18f2a01b14442a69cac465fbbf5e0d21",
+      "cost_by_admissible_procedure": {
+        "controlled-water-automatic-P2-v1": "39"
+      },
+      "pareto_frontier": [
+        "controlled-water-automatic-P2-v1"
+      ],
+      "policy": "COST-W1",
+      "result": "SELECTED",
+      "scenario": "C6",
+      "weights": [
+        "8",
+        "3",
+        "1",
+        "1"
+      ],
+      "winners": [
+        "controlled-water-automatic-P2-v1"
+      ]
+    },
+    {
+      "context_sha256": "a8c0b1a681ff85ba64ce79db40b221dc18f2a01b14442a69cac465fbbf5e0d21",
+      "cost_by_admissible_procedure": {
+        "controlled-water-automatic-P2-v1": "52"
+      },
+      "pareto_frontier": [
+        "controlled-water-automatic-P2-v1"
+      ],
+      "policy": "COST-W2",
+      "result": "SELECTED",
+      "scenario": "C6",
+      "weights": [
+        "1",
+        "1",
+        "3",
+        "4"
+      ],
+      "winners": [
+        "controlled-water-automatic-P2-v1"
+      ]
+    },
+    {
+      "context_sha256": "a8c0b1a681ff85ba64ce79db40b221dc18f2a01b14442a69cac465fbbf5e0d21",
+      "cost_by_admissible_procedure": {
+        "controlled-water-automatic-P2-v1": "16"
+      },
+      "pareto_frontier": [
+        "controlled-water-automatic-P2-v1"
+      ],
+      "policy": "COST-W3",
+      "result": "SELECTED",
+      "scenario": "C6",
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "winners": [
+        "controlled-water-automatic-P2-v1"
+      ]
+    },
+    {
+      "context_sha256": "2065eb705c14d2c1ec350f6409e1ab6fed2dcbbae3d7271e9452e26acd7dc268",
+      "cost_by_admissible_procedure": {},
+      "pareto_frontier": [],
+      "policy": "COST-W1",
+      "result": "NO_ASSURED_RECOVERY",
+      "scenario": "C7",
+      "weights": [
+        "8",
+        "3",
+        "1",
+        "1"
+      ],
+      "winners": []
+    },
+    {
+      "context_sha256": "2065eb705c14d2c1ec350f6409e1ab6fed2dcbbae3d7271e9452e26acd7dc268",
+      "cost_by_admissible_procedure": {},
+      "pareto_frontier": [],
+      "policy": "COST-W2",
+      "result": "NO_ASSURED_RECOVERY",
+      "scenario": "C7",
+      "weights": [
+        "1",
+        "1",
+        "3",
+        "4"
+      ],
+      "winners": []
+    },
+    {
+      "context_sha256": "2065eb705c14d2c1ec350f6409e1ab6fed2dcbbae3d7271e9452e26acd7dc268",
+      "cost_by_admissible_procedure": {},
+      "pareto_frontier": [],
+      "policy": "COST-W3",
+      "result": "NO_ASSURED_RECOVERY",
+      "scenario": "C7",
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "winners": []
+    }
+  ],
+  "source_commit": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+  "source_scope": "Controlled research benchmark with fixed common water contract.",
+  "timestamp": "2026-11-24T02:34:26+00:00",
+  "tool_versions": {
+    "CLEO": "unused in new dL studies",
+    "Java": "17.0.21.1",
+    "KeYmaera X": "5.1.1",
+    "Z3": "4.15.4"
+  },
+  "units": [
+    "L",
+    "s",
+    "manual action",
+    "J"
+  ],
+  "weight_order": [
+    "wService",
+    "wTime",
+    "wIntervention",
+    "wResource"
+  ]
+}

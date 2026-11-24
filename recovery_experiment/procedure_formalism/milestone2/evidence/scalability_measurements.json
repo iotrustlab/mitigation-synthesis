@@ -1,0 +1,7703 @@
+{
+  "configuration": {
+    "clock": "perf_counter_ns",
+    "command": "z3 -in -smt2 -T:10",
+    "compromise": "First round-half-up(N*percentage/100) nodes in deterministic node order.",
+    "logic": "QF_LRA",
+    "plant": "Initially empty, a delivered unit fills one unit of volume over one tick. A trusted observer reads final volume.",
+    "query_order": [
+      "reachable initial state and execution",
+      "violation of safety, positive service or evidence"
+    ],
+    "sharing": "Rotate each node's owners, with 1, ceil(K/2), or K owners respectively.",
+    "timeout_seconds": 10
+  },
+  "rows": [
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "classification_ns": 4260,
+      "compromised_nodes": 0,
+      "dependency_references": 8,
+      "joint_branch_count": 1,
+      "model_bytes": 758,
+      "model_generation_ns": 50841,
+      "model_sha256": "079b3ba93eace7d4741bd97722f93cf9fe364e1c85d710edfb309bd522b3d810",
+      "nodes": 8,
+      "obligations": 2,
+      "outcomes": [
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "dbf977a271f707c0b49ce8d9095faa279a514b4c5aa99fad29c2685354c6b1e7",
+      "solver_wall_ns": 9021187,
+      "spec_generation_ns": 83771
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "classification_ns": 2800,
+      "compromised_nodes": 0,
+      "dependency_references": 8,
+      "joint_branch_count": 1,
+      "model_bytes": 758,
+      "model_generation_ns": 77181,
+      "model_sha256": "079b3ba93eace7d4741bd97722f93cf9fe364e1c85d710edfb309bd522b3d810",
+      "nodes": 8,
+      "obligations": 2,
+      "outcomes": [
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "dbf977a271f707c0b49ce8d9095faa279a514b4c5aa99fad29c2685354c6b1e7",
+      "solver_wall_ns": 9136348,
+      "spec_generation_ns": 129322
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "classification_ns": 2270,
+      "compromised_nodes": 0,
+      "dependency_references": 8,
+      "joint_branch_count": 1,
+      "model_bytes": 758,
+      "model_generation_ns": 75651,
+      "model_sha256": "079b3ba93eace7d4741bd97722f93cf9fe364e1c85d710edfb309bd522b3d810",
+      "nodes": 8,
+      "obligations": 2,
+      "outcomes": [
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "dbf977a271f707c0b49ce8d9095faa279a514b4c5aa99fad29c2685354c6b1e7",
+      "solver_wall_ns": 8726633,
+      "spec_generation_ns": 151912
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2
+      ],
+      "candidates": 1,
+      "classification_ns": 3170,
+      "compromised_nodes": 1,
+      "dependency_references": 8,
+      "joint_branch_count": 2,
+      "model_bytes": 767,
+      "model_generation_ns": 71721,
+      "model_sha256": "fc66d7b7d319ff3ad93edebb8a4320af4aa9e37edef44ae87f9342f40f83f89a",
+      "nodes": 8,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8835905,
+      "spec_generation_ns": 80321
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2
+      ],
+      "candidates": 1,
+      "classification_ns": 2970,
+      "compromised_nodes": 1,
+      "dependency_references": 8,
+      "joint_branch_count": 2,
+      "model_bytes": 767,
+      "model_generation_ns": 62891,
+      "model_sha256": "fc66d7b7d319ff3ad93edebb8a4320af4aa9e37edef44ae87f9342f40f83f89a",
+      "nodes": 8,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8741474,
+      "spec_generation_ns": 101751
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2
+      ],
+      "candidates": 1,
+      "classification_ns": 3270,
+      "compromised_nodes": 1,
+      "dependency_references": 8,
+      "joint_branch_count": 2,
+      "model_bytes": 767,
+      "model_generation_ns": 57441,
+      "model_sha256": "fc66d7b7d319ff3ad93edebb8a4320af4aa9e37edef44ae87f9342f40f83f89a",
+      "nodes": 8,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8622842,
+      "spec_generation_ns": 113652
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4
+      ],
+      "candidates": 1,
+      "classification_ns": 2690,
+      "compromised_nodes": 2,
+      "dependency_references": 8,
+      "joint_branch_count": 4,
+      "model_bytes": 776,
+      "model_generation_ns": 60931,
+      "model_sha256": "ac32c89213ad67207a488a11c093da7c3e7f8f9c53deba9eec4212572cf87c03",
+      "nodes": 8,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8623642,
+      "spec_generation_ns": 93601
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4
+      ],
+      "candidates": 1,
+      "classification_ns": 2900,
+      "compromised_nodes": 2,
+      "dependency_references": 8,
+      "joint_branch_count": 4,
+      "model_bytes": 776,
+      "model_generation_ns": 77621,
+      "model_sha256": "ac32c89213ad67207a488a11c093da7c3e7f8f9c53deba9eec4212572cf87c03",
+      "nodes": 8,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8680373,
+      "spec_generation_ns": 92391
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4
+      ],
+      "candidates": 1,
+      "classification_ns": 2680,
+      "compromised_nodes": 2,
+      "dependency_references": 8,
+      "joint_branch_count": 4,
+      "model_bytes": 776,
+      "model_generation_ns": 60701,
+      "model_sha256": "ac32c89213ad67207a488a11c093da7c3e7f8f9c53deba9eec4212572cf87c03",
+      "nodes": 8,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8155646,
+      "spec_generation_ns": 89441
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16
+      ],
+      "candidates": 1,
+      "classification_ns": 2900,
+      "compromised_nodes": 4,
+      "dependency_references": 8,
+      "joint_branch_count": 16,
+      "model_bytes": 794,
+      "model_generation_ns": 62451,
+      "model_sha256": "9e37c4f480c80617b49b13ac3ac980b08bc92839328c926daa6dc2a67a17565b",
+      "nodes": 8,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8616262,
+      "spec_generation_ns": 88281
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16
+      ],
+      "candidates": 1,
+      "classification_ns": 3160,
+      "compromised_nodes": 4,
+      "dependency_references": 8,
+      "joint_branch_count": 16,
+      "model_bytes": 794,
+      "model_generation_ns": 69081,
+      "model_sha256": "9e37c4f480c80617b49b13ac3ac980b08bc92839328c926daa6dc2a67a17565b",
+      "nodes": 8,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8656773,
+      "spec_generation_ns": 89961
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16
+      ],
+      "candidates": 1,
+      "classification_ns": 3010,
+      "compromised_nodes": 4,
+      "dependency_references": 8,
+      "joint_branch_count": 16,
+      "model_bytes": 794,
+      "model_generation_ns": 65640,
+      "model_sha256": "9e37c4f480c80617b49b13ac3ac980b08bc92839328c926daa6dc2a67a17565b",
+      "nodes": 8,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8335799,
+      "spec_generation_ns": 91562
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "classification_ns": 3250,
+      "compromised_nodes": 0,
+      "dependency_references": 8,
+      "joint_branch_count": 1,
+      "model_bytes": 1015,
+      "model_generation_ns": 51970,
+      "model_sha256": "3f16e114fe54c351d864c7e68bd4202a684c0aa49ec76ef224c5bbef7739a3d6",
+      "nodes": 8,
+      "obligations": 4,
+      "outcomes": [
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "ef41c826b6930f3b8f34b1a9e6c3b760ad8b1456ec251178901b6949fbfadd07",
+      "solver_wall_ns": 8219557,
+      "spec_generation_ns": 115332
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "classification_ns": 2720,
+      "compromised_nodes": 0,
+      "dependency_references": 8,
+      "joint_branch_count": 1,
+      "model_bytes": 1015,
+      "model_generation_ns": 54531,
+      "model_sha256": "3f16e114fe54c351d864c7e68bd4202a684c0aa49ec76ef224c5bbef7739a3d6",
+      "nodes": 8,
+      "obligations": 4,
+      "outcomes": [
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "ef41c826b6930f3b8f34b1a9e6c3b760ad8b1456ec251178901b6949fbfadd07",
+      "solver_wall_ns": 8791464,
+      "spec_generation_ns": 115961
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "classification_ns": 2880,
+      "compromised_nodes": 0,
+      "dependency_references": 16,
+      "joint_branch_count": 1,
+      "model_bytes": 1087,
+      "model_generation_ns": 53031,
+      "model_sha256": "aa2e6677c9f9943e8eeb40ccc094b3b4dbcb0737ecad08d6a88f634d53b9a4fb",
+      "nodes": 8,
+      "obligations": 4,
+      "outcomes": [
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "ef41c826b6930f3b8f34b1a9e6c3b760ad8b1456ec251178901b6949fbfadd07",
+      "solver_wall_ns": 9088158,
+      "spec_generation_ns": 125921
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        1
+      ],
+      "candidates": 2,
+      "classification_ns": 3560,
+      "compromised_nodes": 1,
+      "dependency_references": 8,
+      "joint_branch_count": 2,
+      "model_bytes": 1024,
+      "model_generation_ns": 78411,
+      "model_sha256": "70ef20c3ad3a4c0c49b07d3dd9cb2eac4eaad69f2ababdd4d6a272d48c0075a9",
+      "nodes": 8,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "PROVED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "b8c687571623420d32e22265c621e10ccc7e014ad6c90488a2861043628e201c",
+      "solver_wall_ns": 8843915,
+      "spec_generation_ns": 139132
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        1
+      ],
+      "candidates": 2,
+      "classification_ns": 1940,
+      "compromised_nodes": 1,
+      "dependency_references": 8,
+      "joint_branch_count": 2,
+      "model_bytes": 1024,
+      "model_generation_ns": 79901,
+      "model_sha256": "70ef20c3ad3a4c0c49b07d3dd9cb2eac4eaad69f2ababdd4d6a272d48c0075a9",
+      "nodes": 8,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "PROVED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "b8c687571623420d32e22265c621e10ccc7e014ad6c90488a2861043628e201c",
+      "solver_wall_ns": 9039758,
+      "spec_generation_ns": 157392
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        2,
+        2
+      ],
+      "candidates": 2,
+      "classification_ns": 3220,
+      "compromised_nodes": 1,
+      "dependency_references": 16,
+      "joint_branch_count": 2,
+      "model_bytes": 1096,
+      "model_generation_ns": 47261,
+      "model_sha256": "1adda764ca778b2f3684a739fdc64a557891384ab87903d58c8d5f3b51e4f5d6",
+      "nodes": 8,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8731504,
+      "spec_generation_ns": 101411
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2
+      ],
+      "candidates": 2,
+      "classification_ns": 2780,
+      "compromised_nodes": 2,
+      "dependency_references": 8,
+      "joint_branch_count": 4,
+      "model_bytes": 1033,
+      "model_generation_ns": 64241,
+      "model_sha256": "4e9b193a59ffb55c44118e4c948a7fc6efb219563d4bb2277145a5d1a02fff1f",
+      "nodes": 8,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8894796,
+      "spec_generation_ns": 157692
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2
+      ],
+      "candidates": 2,
+      "classification_ns": 2840,
+      "compromised_nodes": 2,
+      "dependency_references": 8,
+      "joint_branch_count": 4,
+      "model_bytes": 1033,
+      "model_generation_ns": 60480,
+      "model_sha256": "4e9b193a59ffb55c44118e4c948a7fc6efb219563d4bb2277145a5d1a02fff1f",
+      "nodes": 8,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8647643,
+      "spec_generation_ns": 116332
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        4,
+        4
+      ],
+      "candidates": 2,
+      "classification_ns": 2760,
+      "compromised_nodes": 2,
+      "dependency_references": 16,
+      "joint_branch_count": 4,
+      "model_bytes": 1105,
+      "model_generation_ns": 89402,
+      "model_sha256": "f1b4ec7843753c2b75b4865c50046a5abf8dbd05bbe044afd8434347a5936cd4",
+      "nodes": 8,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 9053327,
+      "spec_generation_ns": 229603
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4,
+        4
+      ],
+      "candidates": 2,
+      "classification_ns": 4430,
+      "compromised_nodes": 4,
+      "dependency_references": 8,
+      "joint_branch_count": 16,
+      "model_bytes": 1051,
+      "model_generation_ns": 66721,
+      "model_sha256": "9ae5f21bc189c631043518e05a904b7fc28a423d40dc90efe85b1d2890b6a4b3",
+      "nodes": 8,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 9221990,
+      "spec_generation_ns": 113371
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4,
+        4
+      ],
+      "candidates": 2,
+      "classification_ns": 2760,
+      "compromised_nodes": 4,
+      "dependency_references": 8,
+      "joint_branch_count": 16,
+      "model_bytes": 1051,
+      "model_generation_ns": 66751,
+      "model_sha256": "9ae5f21bc189c631043518e05a904b7fc28a423d40dc90efe85b1d2890b6a4b3",
+      "nodes": 8,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8683413,
+      "spec_generation_ns": 116582
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        16,
+        16
+      ],
+      "candidates": 2,
+      "classification_ns": 3030,
+      "compromised_nodes": 4,
+      "dependency_references": 16,
+      "joint_branch_count": 16,
+      "model_bytes": 1123,
+      "model_generation_ns": 92852,
+      "model_sha256": "b8977dfe333e72246a1a4c8da45d422d2e9a595a38c459bc2d0eb9cfb486507f",
+      "nodes": 8,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8794224,
+      "spec_generation_ns": 157062
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 3570,
+      "compromised_nodes": 0,
+      "dependency_references": 8,
+      "joint_branch_count": 1,
+      "model_bytes": 1529,
+      "model_generation_ns": 55330,
+      "model_sha256": "d9b29be37d63753aa7b01cfd99fb113c99c53a4d23bc76d5b0b4a12f6ac26492",
+      "nodes": 8,
+      "obligations": 8,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "3a4461be2e9eed07f79997bdc9ff3fccd0679c3a880a52d33b14d2db5c389e2d",
+      "solver_wall_ns": 8433580,
+      "spec_generation_ns": 160813
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 3050,
+      "compromised_nodes": 0,
+      "dependency_references": 16,
+      "joint_branch_count": 1,
+      "model_bytes": 1601,
+      "model_generation_ns": 56150,
+      "model_sha256": "e5a9f4ffabd10117f20ab2e69e9051f4cac4e9ca673e207b013438b2da22b2e8",
+      "nodes": 8,
+      "obligations": 8,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "3a4461be2e9eed07f79997bdc9ff3fccd0679c3a880a52d33b14d2db5c389e2d",
+      "solver_wall_ns": 8727444,
+      "spec_generation_ns": 172243
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 3130,
+      "compromised_nodes": 0,
+      "dependency_references": 32,
+      "joint_branch_count": 1,
+      "model_bytes": 1745,
+      "model_generation_ns": 57030,
+      "model_sha256": "599570a8ddceb3342264078f3f5387633cb111f7984ed27bbdb768d0fc86217f",
+      "nodes": 8,
+      "obligations": 8,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "3a4461be2e9eed07f79997bdc9ff3fccd0679c3a880a52d33b14d2db5c389e2d",
+      "solver_wall_ns": 8553622,
+      "spec_generation_ns": 186723
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 2050,
+      "compromised_nodes": 1,
+      "dependency_references": 8,
+      "joint_branch_count": 2,
+      "model_bytes": 1538,
+      "model_generation_ns": 61311,
+      "model_sha256": "7d1c115a8c0be10c849d5a3f35fbf001c7f8b10e73a1d247594bcb59717c6498",
+      "nodes": 8,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "31032db5ca6043b5b7d4eaa6b43c4783fd551585beb4a40d7f3d19cc0154caed",
+      "solver_wall_ns": 9023387,
+      "spec_generation_ns": 160042
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 3480,
+      "compromised_nodes": 1,
+      "dependency_references": 16,
+      "joint_branch_count": 2,
+      "model_bytes": 1610,
+      "model_generation_ns": 46961,
+      "model_sha256": "489611e315aeafe8944f8b06fdd9a09030963e092a18e5ac2b15c84a85018476",
+      "nodes": 8,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "b762e37156acf0fba718e45f1efe492b57bdf08a8878cb997cfca3aec76f1b8a",
+      "solver_wall_ns": 8782584,
+      "spec_generation_ns": 140991
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "candidates": 4,
+      "classification_ns": 2850,
+      "compromised_nodes": 1,
+      "dependency_references": 32,
+      "joint_branch_count": 2,
+      "model_bytes": 1754,
+      "model_generation_ns": 66871,
+      "model_sha256": "5172e0ddc75b7400826c6cc140e8748006b411108f133df7ef2fcebb71ba6566",
+      "nodes": 8,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 8255808,
+      "spec_generation_ns": 188002
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 2440,
+      "compromised_nodes": 2,
+      "dependency_references": 8,
+      "joint_branch_count": 4,
+      "model_bytes": 1547,
+      "model_generation_ns": 60631,
+      "model_sha256": "500c4ee8aadf210ed252cd93b66bf70f04b2009395337a29177fbbf9ff09f345",
+      "nodes": 8,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "b762e37156acf0fba718e45f1efe492b57bdf08a8878cb997cfca3aec76f1b8a",
+      "solver_wall_ns": 8927196,
+      "spec_generation_ns": 166422
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        2,
+        4,
+        2,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 3800,
+      "compromised_nodes": 2,
+      "dependency_references": 16,
+      "joint_branch_count": 4,
+      "model_bytes": 1619,
+      "model_generation_ns": 49161,
+      "model_sha256": "26c75b9c55c1cb9af3395a26641c6d404895f86bf26f9e8efae285e2dec7283d",
+      "nodes": 8,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "b977cebf4a57bbacd52763de4c9845dc90054ef2e718500ace5d8886675e8d61",
+      "solver_wall_ns": 8872545,
+      "spec_generation_ns": 137152
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 4,
+      "classification_ns": 3190,
+      "compromised_nodes": 2,
+      "dependency_references": 32,
+      "joint_branch_count": 4,
+      "model_bytes": 1763,
+      "model_generation_ns": 69831,
+      "model_sha256": "e2062748177048c9195febe2669c283359e2bd1914dc991c85dd73acc95d9b8c",
+      "nodes": 8,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 9036948,
+      "spec_generation_ns": 193782
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "candidates": 4,
+      "classification_ns": 3300,
+      "compromised_nodes": 4,
+      "dependency_references": 8,
+      "joint_branch_count": 16,
+      "model_bytes": 1565,
+      "model_generation_ns": 94732,
+      "model_sha256": "cd012d7d585f51bc300dbf063405d1833f354b6f1735cec7f709902db68d042a",
+      "nodes": 8,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 8697143,
+      "spec_generation_ns": 184952
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 4,
+      "classification_ns": 3460,
+      "compromised_nodes": 4,
+      "dependency_references": 16,
+      "joint_branch_count": 16,
+      "model_bytes": 1637,
+      "model_generation_ns": 72171,
+      "model_sha256": "5f13328714c72b8a6af4aaae4ebfdc33e9a2f935688aa28586bf9e22ba76ae09",
+      "nodes": 8,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 9299141,
+      "spec_generation_ns": 171832
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "candidates": 4,
+      "classification_ns": 2920,
+      "compromised_nodes": 4,
+      "dependency_references": 32,
+      "joint_branch_count": 16,
+      "model_bytes": 1781,
+      "model_generation_ns": 70671,
+      "model_sha256": "1bfae24d2068f95b1d87c08369d00096f4420497cd040a8d78be96a8a1725960",
+      "nodes": 8,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 8823835,
+      "spec_generation_ns": 184912
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 7791,
+      "compromised_nodes": 0,
+      "dependency_references": 8,
+      "joint_branch_count": 1,
+      "model_bytes": 2557,
+      "model_generation_ns": 63371,
+      "model_sha256": "5b67ed3a28f8d85d963c4babc8ad0bd44474b1a31ae371004bd3342cb2c3c0af",
+      "nodes": 8,
+      "obligations": 16,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "830199514ae4ad736266c78271225a4c0809851fbf29990d8048da394d2bb959",
+      "solver_wall_ns": 8853465,
+      "spec_generation_ns": 243183
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3720,
+      "compromised_nodes": 0,
+      "dependency_references": 32,
+      "joint_branch_count": 1,
+      "model_bytes": 2773,
+      "model_generation_ns": 61551,
+      "model_sha256": "987a23e30ef107e4825d714422d9e2bd4aaa9afabc4d0e3dbfa0784b7b3cebe5",
+      "nodes": 8,
+      "obligations": 16,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "830199514ae4ad736266c78271225a4c0809851fbf29990d8048da394d2bb959",
+      "solver_wall_ns": 8578542,
+      "spec_generation_ns": 272953
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3450,
+      "compromised_nodes": 0,
+      "dependency_references": 64,
+      "joint_branch_count": 1,
+      "model_bytes": 3061,
+      "model_generation_ns": 65571,
+      "model_sha256": "5dbc282f709ac8c76188ce274f80b06ffeaf3555e27764350f20cb3bf19c9f84",
+      "nodes": 8,
+      "obligations": 16,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "830199514ae4ad736266c78271225a4c0809851fbf29990d8048da394d2bb959",
+      "solver_wall_ns": 9213170,
+      "spec_generation_ns": 297594
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 2740,
+      "compromised_nodes": 1,
+      "dependency_references": 8,
+      "joint_branch_count": 2,
+      "model_bytes": 2566,
+      "model_generation_ns": 67100,
+      "model_sha256": "dc1363af071b04251a48ac435b439ad2fbd868457a7d63b82e53323dd2b70f1d",
+      "nodes": 8,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "9727e68ab5e7fd4700b00d9621727627d1d12631f729a46f90e660a74f9ba0d7",
+      "solver_wall_ns": 8333599,
+      "spec_generation_ns": 246964
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3730,
+      "compromised_nodes": 1,
+      "dependency_references": 32,
+      "joint_branch_count": 2,
+      "model_bytes": 2782,
+      "model_generation_ns": 58831,
+      "model_sha256": "3649401cf28f971d50eb69149d51e9b1a4933803e177f52b6cfbc61fd067e33a",
+      "nodes": 8,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "0a3fe8924ad4e2da22af177844f29d989dff470fb78e888bd4f514d33fedef8c",
+      "solver_wall_ns": 8503521,
+      "spec_generation_ns": 247373
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "candidates": 8,
+      "classification_ns": 2890,
+      "compromised_nodes": 1,
+      "dependency_references": 64,
+      "joint_branch_count": 2,
+      "model_bytes": 3070,
+      "model_generation_ns": 97371,
+      "model_sha256": "b5f7bb0c1937f886d2aaf9e4ac4b30a4f05b8d8d2962b941792874bbde183c24",
+      "nodes": 8,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 8754614,
+      "spec_generation_ns": 352365
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3560,
+      "compromised_nodes": 2,
+      "dependency_references": 8,
+      "joint_branch_count": 4,
+      "model_bytes": 2575,
+      "model_generation_ns": 72961,
+      "model_sha256": "304d1f5da702a02c3512bb1d124ebebb30e1b4fa80088683ca4e606b3dc681cd",
+      "nodes": 8,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "0ae6ed95301a31b0423830d266f3c38b080f34e8dd057be3efeaa26bcfea93aa",
+      "solver_wall_ns": 8572922,
+      "spec_generation_ns": 230653
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        2,
+        4,
+        4,
+        4,
+        2,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3691,
+      "compromised_nodes": 2,
+      "dependency_references": 32,
+      "joint_branch_count": 4,
+      "model_bytes": 2791,
+      "model_generation_ns": 75661,
+      "model_sha256": "abd196729f66bd941354ff3dabecc6c30fe5b7f50ec74fbc23f1d06f4c404755",
+      "nodes": 8,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "b1f4b1a15fbf4b89803adcc8de237d4f0c49b1bd67755d8d1e0e6418664b6b99",
+      "solver_wall_ns": 8786524,
+      "spec_generation_ns": 440146
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 8,
+      "classification_ns": 3590,
+      "compromised_nodes": 2,
+      "dependency_references": 64,
+      "joint_branch_count": 4,
+      "model_bytes": 3079,
+      "model_generation_ns": 76701,
+      "model_sha256": "8ab34adcc95528915c4fc1a58de40941bf0917847012e591d2b864073982478a",
+      "nodes": 8,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 8569332,
+      "spec_generation_ns": 316294
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3580,
+      "compromised_nodes": 4,
+      "dependency_references": 8,
+      "joint_branch_count": 16,
+      "model_bytes": 2593,
+      "model_generation_ns": 79471,
+      "model_sha256": "f743a9443d741efdcad15ed0e7a24069b8137217ba9d1aa848fd6170a4008ad5",
+      "nodes": 8,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "0a3fe8924ad4e2da22af177844f29d989dff470fb78e888bd4f514d33fedef8c",
+      "solver_wall_ns": 8510480,
+      "spec_generation_ns": 280674
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        2,
+        4,
+        8,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3300,
+      "compromised_nodes": 4,
+      "dependency_references": 32,
+      "joint_branch_count": 16,
+      "model_bytes": 2809,
+      "model_generation_ns": 75281,
+      "model_sha256": "5cc11783bac87af94970a1505840fc573da3b90a5108e424099fdaf0d3bd65e8",
+      "nodes": 8,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "a1eb00c08bcb9315189fccb2797d372a3a62159edd7e2594e7eefa9e18aad111",
+      "solver_wall_ns": 8487661,
+      "spec_generation_ns": 266753
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "candidates": 8,
+      "classification_ns": 3680,
+      "compromised_nodes": 4,
+      "dependency_references": 64,
+      "joint_branch_count": 16,
+      "model_bytes": 3097,
+      "model_generation_ns": 85161,
+      "model_sha256": "fe0271ad51f2a37dcc0b69fb8b1edeb21ce431b30fa951611ad579fb95c08e9b",
+      "nodes": 8,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 9038438,
+      "spec_generation_ns": 316704
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "classification_ns": 2340,
+      "compromised_nodes": 0,
+      "dependency_references": 16,
+      "joint_branch_count": 1,
+      "model_bytes": 1224,
+      "model_generation_ns": 78271,
+      "model_sha256": "9e0d8e81232ecab10a317366aef25e7ddd5f011734c19accba65cffef0047282",
+      "nodes": 16,
+      "obligations": 2,
+      "outcomes": [
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "dbf977a271f707c0b49ce8d9095faa279a514b4c5aa99fad29c2685354c6b1e7",
+      "solver_wall_ns": 8048255,
+      "spec_generation_ns": 118092
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "classification_ns": 2790,
+      "compromised_nodes": 0,
+      "dependency_references": 16,
+      "joint_branch_count": 1,
+      "model_bytes": 1224,
+      "model_generation_ns": 79311,
+      "model_sha256": "9e0d8e81232ecab10a317366aef25e7ddd5f011734c19accba65cffef0047282",
+      "nodes": 16,
+      "obligations": 2,
+      "outcomes": [
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "dbf977a271f707c0b49ce8d9095faa279a514b4c5aa99fad29c2685354c6b1e7",
+      "solver_wall_ns": 8621642,
+      "spec_generation_ns": 104721
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "classification_ns": 3260,
+      "compromised_nodes": 0,
+      "dependency_references": 16,
+      "joint_branch_count": 1,
+      "model_bytes": 1224,
+      "model_generation_ns": 77701,
+      "model_sha256": "9e0d8e81232ecab10a317366aef25e7ddd5f011734c19accba65cffef0047282",
+      "nodes": 16,
+      "obligations": 2,
+      "outcomes": [
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "dbf977a271f707c0b49ce8d9095faa279a514b4c5aa99fad29c2685354c6b1e7",
+      "solver_wall_ns": 9120879,
+      "spec_generation_ns": 111751
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4
+      ],
+      "candidates": 1,
+      "classification_ns": 2740,
+      "compromised_nodes": 2,
+      "dependency_references": 16,
+      "joint_branch_count": 4,
+      "model_bytes": 1242,
+      "model_generation_ns": 88661,
+      "model_sha256": "8dfae0838d463447d3b7b70c1c3fda95cb378d27d05100d56d777e77618315fd",
+      "nodes": 16,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8578392,
+      "spec_generation_ns": 118342
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4
+      ],
+      "candidates": 1,
+      "classification_ns": 2660,
+      "compromised_nodes": 2,
+      "dependency_references": 16,
+      "joint_branch_count": 4,
+      "model_bytes": 1242,
+      "model_generation_ns": 87441,
+      "model_sha256": "8dfae0838d463447d3b7b70c1c3fda95cb378d27d05100d56d777e77618315fd",
+      "nodes": 16,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8618612,
+      "spec_generation_ns": 113082
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4
+      ],
+      "candidates": 1,
+      "classification_ns": 1820,
+      "compromised_nodes": 2,
+      "dependency_references": 16,
+      "joint_branch_count": 4,
+      "model_bytes": 1242,
+      "model_generation_ns": 81191,
+      "model_sha256": "8dfae0838d463447d3b7b70c1c3fda95cb378d27d05100d56d777e77618315fd",
+      "nodes": 16,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8213917,
+      "spec_generation_ns": 108472
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16
+      ],
+      "candidates": 1,
+      "classification_ns": 6260,
+      "compromised_nodes": 4,
+      "dependency_references": 16,
+      "joint_branch_count": 16,
+      "model_bytes": 1260,
+      "model_generation_ns": 73721,
+      "model_sha256": "22d6621bb7e99a5f4ea427ef099f1540e1eb26030f6cc07a87a38aa2c4b675c8",
+      "nodes": 16,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 9229500,
+      "spec_generation_ns": 87731
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16
+      ],
+      "candidates": 1,
+      "classification_ns": 2990,
+      "compromised_nodes": 4,
+      "dependency_references": 16,
+      "joint_branch_count": 16,
+      "model_bytes": 1260,
+      "model_generation_ns": 98411,
+      "model_sha256": "22d6621bb7e99a5f4ea427ef099f1540e1eb26030f6cc07a87a38aa2c4b675c8",
+      "nodes": 16,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8994797,
+      "spec_generation_ns": 125121
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16
+      ],
+      "candidates": 1,
+      "classification_ns": 3200,
+      "compromised_nodes": 4,
+      "dependency_references": 16,
+      "joint_branch_count": 16,
+      "model_bytes": 1260,
+      "model_generation_ns": 95272,
+      "model_sha256": "22d6621bb7e99a5f4ea427ef099f1540e1eb26030f6cc07a87a38aa2c4b675c8",
+      "nodes": 16,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8696993,
+      "spec_generation_ns": 112301
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        256
+      ],
+      "candidates": 1,
+      "classification_ns": 2800,
+      "compromised_nodes": 8,
+      "dependency_references": 16,
+      "joint_branch_count": 256,
+      "model_bytes": 1296,
+      "model_generation_ns": 103061,
+      "model_sha256": "0eb59575e22c4523dea02012702e6cd52f306f12231c3db14360fcc64c2d0a0d",
+      "nodes": 16,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8531021,
+      "spec_generation_ns": 117652
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        256
+      ],
+      "candidates": 1,
+      "classification_ns": 2420,
+      "compromised_nodes": 8,
+      "dependency_references": 16,
+      "joint_branch_count": 256,
+      "model_bytes": 1296,
+      "model_generation_ns": 99731,
+      "model_sha256": "0eb59575e22c4523dea02012702e6cd52f306f12231c3db14360fcc64c2d0a0d",
+      "nodes": 16,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8509721,
+      "spec_generation_ns": 112711
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        256
+      ],
+      "candidates": 1,
+      "classification_ns": 2690,
+      "compromised_nodes": 8,
+      "dependency_references": 16,
+      "joint_branch_count": 256,
+      "model_bytes": 1296,
+      "model_generation_ns": 105171,
+      "model_sha256": "0eb59575e22c4523dea02012702e6cd52f306f12231c3db14360fcc64c2d0a0d",
+      "nodes": 16,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 9179860,
+      "spec_generation_ns": 119412
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "classification_ns": 3190,
+      "compromised_nodes": 0,
+      "dependency_references": 16,
+      "joint_branch_count": 1,
+      "model_bytes": 1481,
+      "model_generation_ns": 75641,
+      "model_sha256": "5b5b3bb55b5d4f3a0fe83943df69e44c76de31b3d4af80c293f7a23b57e85d7c",
+      "nodes": 16,
+      "obligations": 4,
+      "outcomes": [
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "ef41c826b6930f3b8f34b1a9e6c3b760ad8b1456ec251178901b6949fbfadd07",
+      "solver_wall_ns": 8480160,
+      "spec_generation_ns": 141152
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "classification_ns": 3090,
+      "compromised_nodes": 0,
+      "dependency_references": 16,
+      "joint_branch_count": 1,
+      "model_bytes": 1481,
+      "model_generation_ns": 83551,
+      "model_sha256": "5b5b3bb55b5d4f3a0fe83943df69e44c76de31b3d4af80c293f7a23b57e85d7c",
+      "nodes": 16,
+      "obligations": 4,
+      "outcomes": [
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "ef41c826b6930f3b8f34b1a9e6c3b760ad8b1456ec251178901b6949fbfadd07",
+      "solver_wall_ns": 8431870,
+      "spec_generation_ns": 150152
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "classification_ns": 2760,
+      "compromised_nodes": 0,
+      "dependency_references": 32,
+      "joint_branch_count": 1,
+      "model_bytes": 1631,
+      "model_generation_ns": 78781,
+      "model_sha256": "176676337daced510b4b4bb78c01b98e27eaf559a17da9f8daf33d28d5be018d",
+      "nodes": 16,
+      "obligations": 4,
+      "outcomes": [
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "ef41c826b6930f3b8f34b1a9e6c3b760ad8b1456ec251178901b6949fbfadd07",
+      "solver_wall_ns": 9193790,
+      "spec_generation_ns": 160242
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2
+      ],
+      "candidates": 2,
+      "classification_ns": 2570,
+      "compromised_nodes": 2,
+      "dependency_references": 16,
+      "joint_branch_count": 4,
+      "model_bytes": 1499,
+      "model_generation_ns": 95152,
+      "model_sha256": "59b20e16043c7297362cc6db206bd7e5eb1e8d41c663fdd0395d5c2a5a48e147",
+      "nodes": 16,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8376439,
+      "spec_generation_ns": 142612
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2
+      ],
+      "candidates": 2,
+      "classification_ns": 2890,
+      "compromised_nodes": 2,
+      "dependency_references": 16,
+      "joint_branch_count": 4,
+      "model_bytes": 1499,
+      "model_generation_ns": 87511,
+      "model_sha256": "59b20e16043c7297362cc6db206bd7e5eb1e8d41c663fdd0395d5c2a5a48e147",
+      "nodes": 16,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8758264,
+      "spec_generation_ns": 154532
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        4,
+        4
+      ],
+      "candidates": 2,
+      "classification_ns": 3130,
+      "compromised_nodes": 2,
+      "dependency_references": 32,
+      "joint_branch_count": 4,
+      "model_bytes": 1649,
+      "model_generation_ns": 91781,
+      "model_sha256": "80c965d1200374311cb64107c015e3f4fecda5d6e1684abf23336d438c459be9",
+      "nodes": 16,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 9187109,
+      "spec_generation_ns": 162203
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4,
+        4
+      ],
+      "candidates": 2,
+      "classification_ns": 2950,
+      "compromised_nodes": 4,
+      "dependency_references": 16,
+      "joint_branch_count": 16,
+      "model_bytes": 1517,
+      "model_generation_ns": 94261,
+      "model_sha256": "6ca0553e5122ac2042763efd8e8050b93caf93b7106ae52ba442c67a5b6a30c3",
+      "nodes": 16,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 9000327,
+      "spec_generation_ns": 149132
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4,
+        4
+      ],
+      "candidates": 2,
+      "classification_ns": 2760,
+      "compromised_nodes": 4,
+      "dependency_references": 16,
+      "joint_branch_count": 16,
+      "model_bytes": 1517,
+      "model_generation_ns": 135061,
+      "model_sha256": "6ca0553e5122ac2042763efd8e8050b93caf93b7106ae52ba442c67a5b6a30c3",
+      "nodes": 16,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 9182830,
+      "spec_generation_ns": 162593
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        16,
+        16
+      ],
+      "candidates": 2,
+      "classification_ns": 2960,
+      "compromised_nodes": 4,
+      "dependency_references": 32,
+      "joint_branch_count": 16,
+      "model_bytes": 1667,
+      "model_generation_ns": 93382,
+      "model_sha256": "8f866f921007ec12ea3e3ebe5bbad769eca194c1ab06b04823ca1da0d6e25669",
+      "nodes": 16,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8938316,
+      "spec_generation_ns": 158712
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16,
+        16
+      ],
+      "candidates": 2,
+      "classification_ns": 3690,
+      "compromised_nodes": 8,
+      "dependency_references": 16,
+      "joint_branch_count": 256,
+      "model_bytes": 1553,
+      "model_generation_ns": 99811,
+      "model_sha256": "b011612eb50a526be1befcd4e672fd5b22bc56fcd2b19485b15940da2b734950",
+      "nodes": 16,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 9232880,
+      "spec_generation_ns": 138872
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16,
+        16
+      ],
+      "candidates": 2,
+      "classification_ns": 3080,
+      "compromised_nodes": 8,
+      "dependency_references": 16,
+      "joint_branch_count": 256,
+      "model_bytes": 1553,
+      "model_generation_ns": 149322,
+      "model_sha256": "b011612eb50a526be1befcd4e672fd5b22bc56fcd2b19485b15940da2b734950",
+      "nodes": 16,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8875275,
+      "spec_generation_ns": 231553
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        256,
+        256
+      ],
+      "candidates": 2,
+      "classification_ns": 4750,
+      "compromised_nodes": 8,
+      "dependency_references": 32,
+      "joint_branch_count": 256,
+      "model_bytes": 1703,
+      "model_generation_ns": 104521,
+      "model_sha256": "3e88e2ab794b2eda5d4b8026ba038bf26b44b008dff767c3c7f4434af071fc0d",
+      "nodes": 16,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 9071278,
+      "spec_generation_ns": 156362
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 3710,
+      "compromised_nodes": 0,
+      "dependency_references": 16,
+      "joint_branch_count": 1,
+      "model_bytes": 1995,
+      "model_generation_ns": 79751,
+      "model_sha256": "831e79fbed5a5ca7b7863bac20cbb2fb1598430924e997dbac7697aef75f1593",
+      "nodes": 16,
+      "obligations": 8,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "3a4461be2e9eed07f79997bdc9ff3fccd0679c3a880a52d33b14d2db5c389e2d",
+      "solver_wall_ns": 8631042,
+      "spec_generation_ns": 189252
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 3120,
+      "compromised_nodes": 0,
+      "dependency_references": 32,
+      "joint_branch_count": 1,
+      "model_bytes": 2145,
+      "model_generation_ns": 84321,
+      "model_sha256": "72703dea44d094be63d651c83ac5260f5acfc38e9a502ab1ea4ef4ef2f6b5d19",
+      "nodes": 16,
+      "obligations": 8,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "3a4461be2e9eed07f79997bdc9ff3fccd0679c3a880a52d33b14d2db5c389e2d",
+      "solver_wall_ns": 8584892,
+      "spec_generation_ns": 209202
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 2220,
+      "compromised_nodes": 0,
+      "dependency_references": 64,
+      "joint_branch_count": 1,
+      "model_bytes": 2445,
+      "model_generation_ns": 88012,
+      "model_sha256": "20f575baee294702c3c9b5659b64c39e76af03842f36881bf9954926bf742120",
+      "nodes": 16,
+      "obligations": 8,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "3a4461be2e9eed07f79997bdc9ff3fccd0679c3a880a52d33b14d2db5c389e2d",
+      "solver_wall_ns": 8801004,
+      "spec_generation_ns": 229343
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 3630,
+      "compromised_nodes": 2,
+      "dependency_references": 16,
+      "joint_branch_count": 4,
+      "model_bytes": 2013,
+      "model_generation_ns": 79791,
+      "model_sha256": "c60949285ec5400065e419809560cf27cb51026a17f37786dcc9fd12fa8abe3b",
+      "nodes": 16,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "b762e37156acf0fba718e45f1efe492b57bdf08a8878cb997cfca3aec76f1b8a",
+      "solver_wall_ns": 8615912,
+      "spec_generation_ns": 158453
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        2,
+        4,
+        2,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 3430,
+      "compromised_nodes": 2,
+      "dependency_references": 32,
+      "joint_branch_count": 4,
+      "model_bytes": 2163,
+      "model_generation_ns": 96191,
+      "model_sha256": "b246f1692f5ec060f9cc7d439c966924b7fe4c93fc143ee6833159200c58a666",
+      "nodes": 16,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "b977cebf4a57bbacd52763de4c9845dc90054ef2e718500ace5d8886675e8d61",
+      "solver_wall_ns": 8996257,
+      "spec_generation_ns": 207323
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 4,
+      "classification_ns": 2220,
+      "compromised_nodes": 2,
+      "dependency_references": 64,
+      "joint_branch_count": 4,
+      "model_bytes": 2463,
+      "model_generation_ns": 140001,
+      "model_sha256": "7e935a554c6100accf5192be2d53df1579a10efc02f31079a6c2f44198f748e5",
+      "nodes": 16,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 9885599,
+      "spec_generation_ns": 304584
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "candidates": 4,
+      "classification_ns": 5181,
+      "compromised_nodes": 4,
+      "dependency_references": 16,
+      "joint_branch_count": 16,
+      "model_bytes": 2031,
+      "model_generation_ns": 78501,
+      "model_sha256": "c031c55d0b6964ec799e96ed60fe7e0e5a5c483b7a09b3401dd38a0cbb350e6c",
+      "nodes": 16,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 9609035,
+      "spec_generation_ns": 158992
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 4,
+      "classification_ns": 2700,
+      "compromised_nodes": 4,
+      "dependency_references": 32,
+      "joint_branch_count": 16,
+      "model_bytes": 2181,
+      "model_generation_ns": 105652,
+      "model_sha256": "39e7eddb77e66b4a15521d397632b57baa46a2f85726304ebacb9626aa54a60f",
+      "nodes": 16,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 9236560,
+      "spec_generation_ns": 246593
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "candidates": 4,
+      "classification_ns": 3200,
+      "compromised_nodes": 4,
+      "dependency_references": 64,
+      "joint_branch_count": 16,
+      "model_bytes": 2481,
+      "model_generation_ns": 92301,
+      "model_sha256": "a6fe5489094ecde1854d3fbbbfa5830b3646079f50024261bf55195868623524",
+      "nodes": 16,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 8646113,
+      "spec_generation_ns": 247323
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 4,
+      "classification_ns": 3050,
+      "compromised_nodes": 8,
+      "dependency_references": 16,
+      "joint_branch_count": 256,
+      "model_bytes": 2067,
+      "model_generation_ns": 104351,
+      "model_sha256": "3c4c168bc11c4e68a50e73ba9bb7bfde04c5f0dc16d83057dc4ef0955a4d111f",
+      "nodes": 16,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 8745234,
+      "spec_generation_ns": 190873
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "candidates": 4,
+      "classification_ns": 3611,
+      "compromised_nodes": 8,
+      "dependency_references": 32,
+      "joint_branch_count": 256,
+      "model_bytes": 2217,
+      "model_generation_ns": 146062,
+      "model_sha256": "5ea1ceb84df101f6e7f7fdc4de1be51e950fa1f1fdafcefdf88909485a1714f6",
+      "nodes": 16,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 9050587,
+      "spec_generation_ns": 246494
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "candidates": 4,
+      "classification_ns": 3910,
+      "compromised_nodes": 8,
+      "dependency_references": 64,
+      "joint_branch_count": 256,
+      "model_bytes": 2517,
+      "model_generation_ns": 115781,
+      "model_sha256": "64c94a7c2d2c1637a2c778f76c9bc270e7f379e4d6cef17ce72abbb4dde4338b",
+      "nodes": 16,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 9438403,
+      "spec_generation_ns": 236513
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 4050,
+      "compromised_nodes": 0,
+      "dependency_references": 16,
+      "joint_branch_count": 1,
+      "model_bytes": 3023,
+      "model_generation_ns": 118531,
+      "model_sha256": "4f397e9ffcd71e32e504443e2950d8f12563318cdc51ff4f65c53d7f2ea84bd6",
+      "nodes": 16,
+      "obligations": 16,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "830199514ae4ad736266c78271225a4c0809851fbf29990d8048da394d2bb959",
+      "solver_wall_ns": 9134299,
+      "spec_generation_ns": 389015
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3190,
+      "compromised_nodes": 0,
+      "dependency_references": 64,
+      "joint_branch_count": 1,
+      "model_bytes": 3473,
+      "model_generation_ns": 134231,
+      "model_sha256": "666091cb05ee155a8dffd5adad5559a99a98efbb4f044860c1317ce9754d7a80",
+      "nodes": 16,
+      "obligations": 16,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "830199514ae4ad736266c78271225a4c0809851fbf29990d8048da394d2bb959",
+      "solver_wall_ns": 8852766,
+      "spec_generation_ns": 389405
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3060,
+      "compromised_nodes": 0,
+      "dependency_references": 128,
+      "joint_branch_count": 1,
+      "model_bytes": 4073,
+      "model_generation_ns": 88121,
+      "model_sha256": "a76e95710f51b7e132f7331234d0a168e23555823a50b203127cc0ee00203fde",
+      "nodes": 16,
+      "obligations": 16,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "830199514ae4ad736266c78271225a4c0809851fbf29990d8048da394d2bb959",
+      "solver_wall_ns": 8556462,
+      "spec_generation_ns": 366305
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3260,
+      "compromised_nodes": 2,
+      "dependency_references": 16,
+      "joint_branch_count": 4,
+      "model_bytes": 3041,
+      "model_generation_ns": 102291,
+      "model_sha256": "8c679bd4250bf8ae9d082861a323cbff00a74a261ae57d888c999ce88b9b2dc6",
+      "nodes": 16,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "0ae6ed95301a31b0423830d266f3c38b080f34e8dd057be3efeaa26bcfea93aa",
+      "solver_wall_ns": 8600522,
+      "spec_generation_ns": 310404
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        2,
+        4,
+        4,
+        4,
+        2,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3590,
+      "compromised_nodes": 2,
+      "dependency_references": 64,
+      "joint_branch_count": 4,
+      "model_bytes": 3491,
+      "model_generation_ns": 89301,
+      "model_sha256": "734ddb4dc5b4140361fe98f47f8d6be034df3089690d04a4b4cc633385b88802",
+      "nodes": 16,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "b1f4b1a15fbf4b89803adcc8de237d4f0c49b1bd67755d8d1e0e6418664b6b99",
+      "solver_wall_ns": 8344159,
+      "spec_generation_ns": 299434
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 8,
+      "classification_ns": 3210,
+      "compromised_nodes": 2,
+      "dependency_references": 128,
+      "joint_branch_count": 4,
+      "model_bytes": 4091,
+      "model_generation_ns": 100291,
+      "model_sha256": "13cb37d44864bf7f8afa0cb12cf789a1d757c946b237fd2948f7dd33c0eded82",
+      "nodes": 16,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 8909576,
+      "spec_generation_ns": 397066
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 2840,
+      "compromised_nodes": 4,
+      "dependency_references": 16,
+      "joint_branch_count": 16,
+      "model_bytes": 3059,
+      "model_generation_ns": 94281,
+      "model_sha256": "6d40322c8e66a27dfdafe1c628087d97b5a3e1ff6cce6e67dd746da52a4d9bd3",
+      "nodes": 16,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "0a3fe8924ad4e2da22af177844f29d989dff470fb78e888bd4f514d33fedef8c",
+      "solver_wall_ns": 7929893,
+      "spec_generation_ns": 250884
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        2,
+        4,
+        8,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3110,
+      "compromised_nodes": 4,
+      "dependency_references": 64,
+      "joint_branch_count": 16,
+      "model_bytes": 3509,
+      "model_generation_ns": 99561,
+      "model_sha256": "caaa708848a97b4ac7ae21a74ccd9c912a346569e8717790110ce4f93f3e515a",
+      "nodes": 16,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "a1eb00c08bcb9315189fccb2797d372a3a62159edd7e2594e7eefa9e18aad111",
+      "solver_wall_ns": 8879886,
+      "spec_generation_ns": 278614
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "candidates": 8,
+      "classification_ns": 4210,
+      "compromised_nodes": 4,
+      "dependency_references": 128,
+      "joint_branch_count": 16,
+      "model_bytes": 4109,
+      "model_generation_ns": 94461,
+      "model_sha256": "1a40795a8971cf08f76544bd7b8bcca7e6bc5d9879e83052de4b9da129e6e9ae",
+      "nodes": 16,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 8699653,
+      "spec_generation_ns": 339695
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "candidates": 8,
+      "classification_ns": 3530,
+      "compromised_nodes": 8,
+      "dependency_references": 16,
+      "joint_branch_count": 256,
+      "model_bytes": 3095,
+      "model_generation_ns": 100331,
+      "model_sha256": "6d7aed919802f5ea12dc2d8b644ec1a8dbe7f60cfce9a506b9afc02be4293f2d",
+      "nodes": 16,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 8545711,
+      "spec_generation_ns": 257834
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "candidates": 8,
+      "classification_ns": 3610,
+      "compromised_nodes": 8,
+      "dependency_references": 64,
+      "joint_branch_count": 256,
+      "model_bytes": 3545,
+      "model_generation_ns": 160032,
+      "model_sha256": "2a1d2db516b51e4ba5533eb18757fb78d170d1b4da074921c691c7bae782b1e1",
+      "nodes": 16,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 9250391,
+      "spec_generation_ns": 571147
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256
+      ],
+      "candidates": 8,
+      "classification_ns": 5590,
+      "compromised_nodes": 8,
+      "dependency_references": 128,
+      "joint_branch_count": 256,
+      "model_bytes": 4145,
+      "model_generation_ns": 163022,
+      "model_sha256": "c65950c8c71bd774637967e74b20b4e1be1376892e9442741ed1534b1fa6bbb9",
+      "nodes": 16,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 8393389,
+      "spec_generation_ns": 568108
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "classification_ns": 2430,
+      "compromised_nodes": 0,
+      "dependency_references": 32,
+      "joint_branch_count": 1,
+      "model_bytes": 2168,
+      "model_generation_ns": 190832,
+      "model_sha256": "927e06fe8983af18340f83e19c2f08082b3d7a41c3037b6536bd08f4a3449c86",
+      "nodes": 32,
+      "obligations": 2,
+      "outcomes": [
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "dbf977a271f707c0b49ce8d9095faa279a514b4c5aa99fad29c2685354c6b1e7",
+      "solver_wall_ns": 8060685,
+      "spec_generation_ns": 239833
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "classification_ns": 2240,
+      "compromised_nodes": 0,
+      "dependency_references": 32,
+      "joint_branch_count": 1,
+      "model_bytes": 2168,
+      "model_generation_ns": 112382,
+      "model_sha256": "927e06fe8983af18340f83e19c2f08082b3d7a41c3037b6536bd08f4a3449c86",
+      "nodes": 32,
+      "obligations": 2,
+      "outcomes": [
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "dbf977a271f707c0b49ce8d9095faa279a514b4c5aa99fad29c2685354c6b1e7",
+      "solver_wall_ns": 7842402,
+      "spec_generation_ns": 149002
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "classification_ns": 3580,
+      "compromised_nodes": 0,
+      "dependency_references": 32,
+      "joint_branch_count": 1,
+      "model_bytes": 2168,
+      "model_generation_ns": 103531,
+      "model_sha256": "927e06fe8983af18340f83e19c2f08082b3d7a41c3037b6536bd08f4a3449c86",
+      "nodes": 32,
+      "obligations": 2,
+      "outcomes": [
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "dbf977a271f707c0b49ce8d9095faa279a514b4c5aa99fad29c2685354c6b1e7",
+      "solver_wall_ns": 9276951,
+      "spec_generation_ns": 126352
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        8
+      ],
+      "candidates": 1,
+      "classification_ns": 2660,
+      "compromised_nodes": 3,
+      "dependency_references": 32,
+      "joint_branch_count": 8,
+      "model_bytes": 2195,
+      "model_generation_ns": 201103,
+      "model_sha256": "6a58488696de748dca7abd5007ee67814db90c28cedd599cb44d3980629f53f5",
+      "nodes": 32,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 9219650,
+      "spec_generation_ns": 225023
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        8
+      ],
+      "candidates": 1,
+      "classification_ns": 1790,
+      "compromised_nodes": 3,
+      "dependency_references": 32,
+      "joint_branch_count": 8,
+      "model_bytes": 2195,
+      "model_generation_ns": 119852,
+      "model_sha256": "6a58488696de748dca7abd5007ee67814db90c28cedd599cb44d3980629f53f5",
+      "nodes": 32,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8181006,
+      "spec_generation_ns": 159722
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        8
+      ],
+      "candidates": 1,
+      "classification_ns": 2710,
+      "compromised_nodes": 3,
+      "dependency_references": 32,
+      "joint_branch_count": 8,
+      "model_bytes": 2195,
+      "model_generation_ns": 107002,
+      "model_sha256": "6a58488696de748dca7abd5007ee67814db90c28cedd599cb44d3980629f53f5",
+      "nodes": 32,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8277347,
+      "spec_generation_ns": 126442
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        256
+      ],
+      "candidates": 1,
+      "classification_ns": 2770,
+      "compromised_nodes": 8,
+      "dependency_references": 32,
+      "joint_branch_count": 256,
+      "model_bytes": 2240,
+      "model_generation_ns": 134521,
+      "model_sha256": "7931ae2d78b708002646cecc5f9ca17973ff32bcb07045638c850e3ad68ecdd0",
+      "nodes": 32,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8210527,
+      "spec_generation_ns": 155932
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        256
+      ],
+      "candidates": 1,
+      "classification_ns": 3060,
+      "compromised_nodes": 8,
+      "dependency_references": 32,
+      "joint_branch_count": 256,
+      "model_bytes": 2240,
+      "model_generation_ns": 133201,
+      "model_sha256": "7931ae2d78b708002646cecc5f9ca17973ff32bcb07045638c850e3ad68ecdd0",
+      "nodes": 32,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8493761,
+      "spec_generation_ns": 145652
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        256
+      ],
+      "candidates": 1,
+      "classification_ns": 2840,
+      "compromised_nodes": 8,
+      "dependency_references": 32,
+      "joint_branch_count": 256,
+      "model_bytes": 2240,
+      "model_generation_ns": 128542,
+      "model_sha256": "7931ae2d78b708002646cecc5f9ca17973ff32bcb07045638c850e3ad68ecdd0",
+      "nodes": 32,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8220727,
+      "spec_generation_ns": 146982
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536
+      ],
+      "candidates": 1,
+      "classification_ns": 2520,
+      "compromised_nodes": 16,
+      "dependency_references": 32,
+      "joint_branch_count": 65536,
+      "model_bytes": 2318,
+      "model_generation_ns": 152062,
+      "model_sha256": "26c18e434889dec331391f66c3426b1eaafd0649085f90a465a5661ef92bb517",
+      "nodes": 32,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8462310,
+      "spec_generation_ns": 160632
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536
+      ],
+      "candidates": 1,
+      "classification_ns": 2480,
+      "compromised_nodes": 16,
+      "dependency_references": 32,
+      "joint_branch_count": 65536,
+      "model_bytes": 2318,
+      "model_generation_ns": 244033,
+      "model_sha256": "26c18e434889dec331391f66c3426b1eaafd0649085f90a465a5661ef92bb517",
+      "nodes": 32,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8457010,
+      "spec_generation_ns": 161803
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536
+      ],
+      "candidates": 1,
+      "classification_ns": 2320,
+      "compromised_nodes": 16,
+      "dependency_references": 32,
+      "joint_branch_count": 65536,
+      "model_bytes": 2318,
+      "model_generation_ns": 145442,
+      "model_sha256": "26c18e434889dec331391f66c3426b1eaafd0649085f90a465a5661ef92bb517",
+      "nodes": 32,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8089615,
+      "spec_generation_ns": 149212
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "classification_ns": 2740,
+      "compromised_nodes": 0,
+      "dependency_references": 32,
+      "joint_branch_count": 1,
+      "model_bytes": 2425,
+      "model_generation_ns": 115151,
+      "model_sha256": "bb6a17460507549ec87b614ad532ec6d578e85b34b80db69d53e27c0ce15f95a",
+      "nodes": 32,
+      "obligations": 4,
+      "outcomes": [
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "ef41c826b6930f3b8f34b1a9e6c3b760ad8b1456ec251178901b6949fbfadd07",
+      "solver_wall_ns": 8411190,
+      "spec_generation_ns": 175372
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "classification_ns": 2670,
+      "compromised_nodes": 0,
+      "dependency_references": 32,
+      "joint_branch_count": 1,
+      "model_bytes": 2425,
+      "model_generation_ns": 184883,
+      "model_sha256": "bb6a17460507549ec87b614ad532ec6d578e85b34b80db69d53e27c0ce15f95a",
+      "nodes": 32,
+      "obligations": 4,
+      "outcomes": [
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "ef41c826b6930f3b8f34b1a9e6c3b760ad8b1456ec251178901b6949fbfadd07",
+      "solver_wall_ns": 8782064,
+      "spec_generation_ns": 216113
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "classification_ns": 4950,
+      "compromised_nodes": 0,
+      "dependency_references": 64,
+      "joint_branch_count": 1,
+      "model_bytes": 2735,
+      "model_generation_ns": 168782,
+      "model_sha256": "f418565d976717075dcb2ed1f96f1d67d87c040138df6241e47ef7146bb71539",
+      "nodes": 32,
+      "obligations": 4,
+      "outcomes": [
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "ef41c826b6930f3b8f34b1a9e6c3b760ad8b1456ec251178901b6949fbfadd07",
+      "solver_wall_ns": 8781705,
+      "spec_generation_ns": 291784
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4,
+        2
+      ],
+      "candidates": 2,
+      "classification_ns": 2780,
+      "compromised_nodes": 3,
+      "dependency_references": 32,
+      "joint_branch_count": 8,
+      "model_bytes": 2452,
+      "model_generation_ns": 130951,
+      "model_sha256": "c6ec0857f69bc94ff5aca7c3458eb98f94011e98272fd61350f33c96588eca34",
+      "nodes": 32,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8260028,
+      "spec_generation_ns": 199443
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4,
+        2
+      ],
+      "candidates": 2,
+      "classification_ns": 4180,
+      "compromised_nodes": 3,
+      "dependency_references": 32,
+      "joint_branch_count": 8,
+      "model_bytes": 2452,
+      "model_generation_ns": 127742,
+      "model_sha256": "c6ec0857f69bc94ff5aca7c3458eb98f94011e98272fd61350f33c96588eca34",
+      "nodes": 32,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8701173,
+      "spec_generation_ns": 174282
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        8,
+        8
+      ],
+      "candidates": 2,
+      "classification_ns": 2770,
+      "compromised_nodes": 3,
+      "dependency_references": 64,
+      "joint_branch_count": 8,
+      "model_bytes": 2762,
+      "model_generation_ns": 134582,
+      "model_sha256": "81b1665663a97fd40f5dac4541cd2132f70c56a8f6a92a2a43c6c46b5fad3b5e",
+      "nodes": 32,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8501801,
+      "spec_generation_ns": 211922
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16,
+        16
+      ],
+      "candidates": 2,
+      "classification_ns": 3380,
+      "compromised_nodes": 8,
+      "dependency_references": 32,
+      "joint_branch_count": 256,
+      "model_bytes": 2497,
+      "model_generation_ns": 279724,
+      "model_sha256": "76ab9b4f24972acedcd935f9e9a95c05cf824533415617f036eb75e78b991e05",
+      "nodes": 32,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8487770,
+      "spec_generation_ns": 234393
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16,
+        16
+      ],
+      "candidates": 2,
+      "classification_ns": 3960,
+      "compromised_nodes": 8,
+      "dependency_references": 32,
+      "joint_branch_count": 256,
+      "model_bytes": 2497,
+      "model_generation_ns": 133672,
+      "model_sha256": "76ab9b4f24972acedcd935f9e9a95c05cf824533415617f036eb75e78b991e05",
+      "nodes": 32,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8542471,
+      "spec_generation_ns": 185292
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        256,
+        256
+      ],
+      "candidates": 2,
+      "classification_ns": 2980,
+      "compromised_nodes": 8,
+      "dependency_references": 64,
+      "joint_branch_count": 256,
+      "model_bytes": 2807,
+      "model_generation_ns": 131742,
+      "model_sha256": "42b26e7f85342d97c1e9c7a9e571157bfdc74c90f16b042d88b5b14b9b2d80a5",
+      "nodes": 32,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8296568,
+      "spec_generation_ns": 296923
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        256,
+        256
+      ],
+      "candidates": 2,
+      "classification_ns": 2810,
+      "compromised_nodes": 16,
+      "dependency_references": 32,
+      "joint_branch_count": 65536,
+      "model_bytes": 2575,
+      "model_generation_ns": 147652,
+      "model_sha256": "de7030edb3145b7d72a14b4a7c40e809ec692a0cff3b7c9c0a572e8aaf228244",
+      "nodes": 32,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8879895,
+      "spec_generation_ns": 176243
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        256,
+        256
+      ],
+      "candidates": 2,
+      "classification_ns": 3480,
+      "compromised_nodes": 16,
+      "dependency_references": 32,
+      "joint_branch_count": 65536,
+      "model_bytes": 2575,
+      "model_generation_ns": 147972,
+      "model_sha256": "de7030edb3145b7d72a14b4a7c40e809ec692a0cff3b7c9c0a572e8aaf228244",
+      "nodes": 32,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8481620,
+      "spec_generation_ns": 179303
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        65536,
+        65536
+      ],
+      "candidates": 2,
+      "classification_ns": 2930,
+      "compromised_nodes": 16,
+      "dependency_references": 64,
+      "joint_branch_count": 65536,
+      "model_bytes": 2885,
+      "model_generation_ns": 151442,
+      "model_sha256": "e6c93d48fbfd169e094cd746788068ff6198fa053ff47fcea8b5fcce172f09f0",
+      "nodes": 32,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8855596,
+      "spec_generation_ns": 206023
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 2230,
+      "compromised_nodes": 0,
+      "dependency_references": 32,
+      "joint_branch_count": 1,
+      "model_bytes": 2939,
+      "model_generation_ns": 190963,
+      "model_sha256": "f17ac7ee716a146a4286d45583091afa2f1d99ea4ef7bbf82832dc5769e2f92b",
+      "nodes": 32,
+      "obligations": 8,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "3a4461be2e9eed07f79997bdc9ff3fccd0679c3a880a52d33b14d2db5c389e2d",
+      "solver_wall_ns": 8257187,
+      "spec_generation_ns": 265933
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 3020,
+      "compromised_nodes": 0,
+      "dependency_references": 64,
+      "joint_branch_count": 1,
+      "model_bytes": 3249,
+      "model_generation_ns": 110071,
+      "model_sha256": "997b970fb130e7a83e97cb201cc5b62e505229dd80b5bedfcd57f353201ed0e8",
+      "nodes": 32,
+      "obligations": 8,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "3a4461be2e9eed07f79997bdc9ff3fccd0679c3a880a52d33b14d2db5c389e2d",
+      "solver_wall_ns": 8907726,
+      "spec_generation_ns": 229163
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 2950,
+      "compromised_nodes": 0,
+      "dependency_references": 128,
+      "joint_branch_count": 1,
+      "model_bytes": 3869,
+      "model_generation_ns": 214332,
+      "model_sha256": "871542982484da629e281f742613c35b7d871caba0f467eb96265a8c0ec8cffc",
+      "nodes": 32,
+      "obligations": 8,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "3a4461be2e9eed07f79997bdc9ff3fccd0679c3a880a52d33b14d2db5c389e2d",
+      "solver_wall_ns": 8560412,
+      "spec_generation_ns": 408386
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 3070,
+      "compromised_nodes": 3,
+      "dependency_references": 32,
+      "joint_branch_count": 8,
+      "model_bytes": 2966,
+      "model_generation_ns": 127502,
+      "model_sha256": "5bebfc5ea37af367a846a658dc85fd2eec733d976c5edb3bbd9a4228b865de30",
+      "nodes": 32,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "b977cebf4a57bbacd52763de4c9845dc90054ef2e718500ace5d8886675e8d61",
+      "solver_wall_ns": 9171239,
+      "spec_generation_ns": 230163
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        2,
+        4,
+        4,
+        2
+      ],
+      "candidates": 4,
+      "classification_ns": 3290,
+      "compromised_nodes": 3,
+      "dependency_references": 64,
+      "joint_branch_count": 8,
+      "model_bytes": 3276,
+      "model_generation_ns": 111642,
+      "model_sha256": "e8cbd5d6b7aff4538a546218f1144a9790943689ad685bacf7f122d1b3038b17",
+      "nodes": 32,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 8883635,
+      "spec_generation_ns": 359324
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "candidates": 4,
+      "classification_ns": 2900,
+      "compromised_nodes": 3,
+      "dependency_references": 128,
+      "joint_branch_count": 8,
+      "model_bytes": 3896,
+      "model_generation_ns": 138111,
+      "model_sha256": "88bed124c58a2c0a306ca8e23cfbe710724a079788e271c0c4b087792b6ab69d",
+      "nodes": 32,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 8336919,
+      "spec_generation_ns": 298634
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 4,
+      "classification_ns": 2590,
+      "compromised_nodes": 8,
+      "dependency_references": 32,
+      "joint_branch_count": 256,
+      "model_bytes": 3011,
+      "model_generation_ns": 232823,
+      "model_sha256": "ced961e6aaae4b602b9670e49570af8a1a723f316738a049a0ac6f64583fec0c",
+      "nodes": 32,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 8160097,
+      "spec_generation_ns": 232983
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "candidates": 4,
+      "classification_ns": 2780,
+      "compromised_nodes": 8,
+      "dependency_references": 64,
+      "joint_branch_count": 256,
+      "model_bytes": 3321,
+      "model_generation_ns": 137722,
+      "model_sha256": "f0d41270ff149283b39346d82a106c8ec727925b72a2f60d21d91e1d7d8a925f",
+      "nodes": 32,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 8490980,
+      "spec_generation_ns": 247143
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "candidates": 4,
+      "classification_ns": 3170,
+      "compromised_nodes": 8,
+      "dependency_references": 128,
+      "joint_branch_count": 256,
+      "model_bytes": 3941,
+      "model_generation_ns": 146462,
+      "model_sha256": "f5f9adf2ccb34ae9034764179d45e1f2a7d870356ff2e31edcc3e94d85154280",
+      "nodes": 32,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 8737284,
+      "spec_generation_ns": 287163
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "candidates": 4,
+      "classification_ns": 2510,
+      "compromised_nodes": 16,
+      "dependency_references": 32,
+      "joint_branch_count": 65536,
+      "model_bytes": 3089,
+      "model_generation_ns": 152232,
+      "model_sha256": "a5500ea71a3b15c4db8678bc6f5459c4656ea2fa93aeca9897c3b860b65cffbf",
+      "nodes": 32,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 8166947,
+      "spec_generation_ns": 222723
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "candidates": 4,
+      "classification_ns": 2340,
+      "compromised_nodes": 16,
+      "dependency_references": 64,
+      "joint_branch_count": 65536,
+      "model_bytes": 3399,
+      "model_generation_ns": 150582,
+      "model_sha256": "025693999ae22ea94294020a0196631d6303b6fa64d79729a7abc105dfc09c8d",
+      "nodes": 32,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 8614722,
+      "spec_generation_ns": 247003
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "candidates": 4,
+      "classification_ns": 2750,
+      "compromised_nodes": 16,
+      "dependency_references": 128,
+      "joint_branch_count": 65536,
+      "model_bytes": 4019,
+      "model_generation_ns": 150442,
+      "model_sha256": "bb5bc8acc8cf6725a6412e82d270cbddc4b72145932e4ab9b0688fba63aa3bf2",
+      "nodes": 32,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 8584102,
+      "spec_generation_ns": 272413
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3370,
+      "compromised_nodes": 0,
+      "dependency_references": 32,
+      "joint_branch_count": 1,
+      "model_bytes": 3967,
+      "model_generation_ns": 120452,
+      "model_sha256": "18e7eda21a8a3c41870ae79f0fe288cea0025af31affd69366e9da82472ee77e",
+      "nodes": 32,
+      "obligations": 16,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "830199514ae4ad736266c78271225a4c0809851fbf29990d8048da394d2bb959",
+      "solver_wall_ns": 8444469,
+      "spec_generation_ns": 299814
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3430,
+      "compromised_nodes": 0,
+      "dependency_references": 128,
+      "joint_branch_count": 1,
+      "model_bytes": 4897,
+      "model_generation_ns": 125301,
+      "model_sha256": "4cf8a4942f12ed17abc45ab63469ce6f7946ef479cfbee298691afc62036251e",
+      "nodes": 32,
+      "obligations": 16,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "830199514ae4ad736266c78271225a4c0809851fbf29990d8048da394d2bb959",
+      "solver_wall_ns": 8314919,
+      "spec_generation_ns": 388765
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3220,
+      "compromised_nodes": 0,
+      "dependency_references": 256,
+      "joint_branch_count": 1,
+      "model_bytes": 6137,
+      "model_generation_ns": 138372,
+      "model_sha256": "7f6790a3e1e67efec7ae4ff8842b44ec345f707a1ac2b7f990b680db5496e7af",
+      "nodes": 32,
+      "obligations": 16,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "830199514ae4ad736266c78271225a4c0809851fbf29990d8048da394d2bb959",
+      "solver_wall_ns": 8414370,
+      "spec_generation_ns": 469686
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3520,
+      "compromised_nodes": 3,
+      "dependency_references": 32,
+      "joint_branch_count": 8,
+      "model_bytes": 3994,
+      "model_generation_ns": 132862,
+      "model_sha256": "663fe81bc20aed74b4e08ff8ceeb9d70e3c48423148dbf5bd74862e8b5f2f3ad",
+      "nodes": 32,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "f72bd8e68eba00be187ee235b92e85b3b6d382830fa84c71a41992bc243c8717",
+      "solver_wall_ns": 8760634,
+      "spec_generation_ns": 332734
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        2,
+        4,
+        8,
+        8,
+        4,
+        2,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3300,
+      "compromised_nodes": 3,
+      "dependency_references": 128,
+      "joint_branch_count": 8,
+      "model_bytes": 4924,
+      "model_generation_ns": 140882,
+      "model_sha256": "82d847481e7b3d3fa83a699d555f4aec90f9965f0254830032969cad34747d47",
+      "nodes": 32,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "06008fd918690ad7af2700d91c74046657cc86365a9604e3e20a85f4feef827a",
+      "solver_wall_ns": 8417929,
+      "spec_generation_ns": 390525
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "candidates": 8,
+      "classification_ns": 3570,
+      "compromised_nodes": 3,
+      "dependency_references": 256,
+      "joint_branch_count": 8,
+      "model_bytes": 6164,
+      "model_generation_ns": 149802,
+      "model_sha256": "503531df7af61d606ecfd9bd4d6e237d3f36da68dea870a06c4b78b09078e42d",
+      "nodes": 32,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 8765094,
+      "spec_generation_ns": 468086
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "candidates": 8,
+      "classification_ns": 3200,
+      "compromised_nodes": 8,
+      "dependency_references": 32,
+      "joint_branch_count": 256,
+      "model_bytes": 4039,
+      "model_generation_ns": 145362,
+      "model_sha256": "10ddd50008fe4c6930a2b6d2ee3c8ed06c523010f60357df082c1c052022ea84",
+      "nodes": 32,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 9498283,
+      "spec_generation_ns": 303114
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "candidates": 8,
+      "classification_ns": 3570,
+      "compromised_nodes": 8,
+      "dependency_references": 128,
+      "joint_branch_count": 256,
+      "model_bytes": 4969,
+      "model_generation_ns": 146202,
+      "model_sha256": "cf73de0acb011c4b6851c9f0721de84a55671d833ca6972dbf9560c36bb159a7",
+      "nodes": 32,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 8579471,
+      "spec_generation_ns": 382835
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256
+      ],
+      "candidates": 8,
+      "classification_ns": 3450,
+      "compromised_nodes": 8,
+      "dependency_references": 256,
+      "joint_branch_count": 256,
+      "model_bytes": 6209,
+      "model_generation_ns": 162492,
+      "model_sha256": "f16c8a872f1b17b046945b25d27c8dce79052566b1fc7986f7e6abcba5c74923",
+      "nodes": 32,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 8925526,
+      "spec_generation_ns": 468866
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 8,
+      "classification_ns": 2730,
+      "compromised_nodes": 16,
+      "dependency_references": 32,
+      "joint_branch_count": 65536,
+      "model_bytes": 4117,
+      "model_generation_ns": 150482,
+      "model_sha256": "c2922d3f10dd53d9e84c1f36aba4f4c3f985ab75a70e326691def6db945ce117",
+      "nodes": 32,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 8938987,
+      "spec_generation_ns": 289844
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256
+      ],
+      "candidates": 8,
+      "classification_ns": 3560,
+      "compromised_nodes": 16,
+      "dependency_references": 128,
+      "joint_branch_count": 65536,
+      "model_bytes": 5047,
+      "model_generation_ns": 146572,
+      "model_sha256": "2512ba40e8b50ad350ae7ac7d7ec01aae5fae6385e58cb13b14f15ca9a532f72",
+      "nodes": 32,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 9862949,
+      "spec_generation_ns": 347254
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "candidates": 8,
+      "classification_ns": 3500,
+      "compromised_nodes": 16,
+      "dependency_references": 256,
+      "joint_branch_count": 65536,
+      "model_bytes": 6287,
+      "model_generation_ns": 172713,
+      "model_sha256": "627c7a9d85e22da3d5bacafd31819a7edb785360a303dd0c51b9d2d1a911748d",
+      "nodes": 32,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 10030930,
+      "spec_generation_ns": 471166
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "classification_ns": 2710,
+      "compromised_nodes": 0,
+      "dependency_references": 64,
+      "joint_branch_count": 1,
+      "model_bytes": 4056,
+      "model_generation_ns": 234493,
+      "model_sha256": "de64e7813d5c1d6c06ff1781754c3174e3a759c31151bfe07ca9b1bccc4f579a",
+      "nodes": 64,
+      "obligations": 2,
+      "outcomes": [
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "dbf977a271f707c0b49ce8d9095faa279a514b4c5aa99fad29c2685354c6b1e7",
+      "solver_wall_ns": 8867115,
+      "spec_generation_ns": 239653
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "classification_ns": 2620,
+      "compromised_nodes": 0,
+      "dependency_references": 64,
+      "joint_branch_count": 1,
+      "model_bytes": 4056,
+      "model_generation_ns": 197142,
+      "model_sha256": "de64e7813d5c1d6c06ff1781754c3174e3a759c31151bfe07ca9b1bccc4f579a",
+      "nodes": 64,
+      "obligations": 2,
+      "outcomes": [
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "dbf977a271f707c0b49ce8d9095faa279a514b4c5aa99fad29c2685354c6b1e7",
+      "solver_wall_ns": 8520141,
+      "spec_generation_ns": 244353
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "classification_ns": 2580,
+      "compromised_nodes": 0,
+      "dependency_references": 64,
+      "joint_branch_count": 1,
+      "model_bytes": 4056,
+      "model_generation_ns": 192092,
+      "model_sha256": "de64e7813d5c1d6c06ff1781754c3174e3a759c31151bfe07ca9b1bccc4f579a",
+      "nodes": 64,
+      "obligations": 2,
+      "outcomes": [
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "dbf977a271f707c0b49ce8d9095faa279a514b4c5aa99fad29c2685354c6b1e7",
+      "solver_wall_ns": 8867115,
+      "spec_generation_ns": 239113
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        64
+      ],
+      "candidates": 1,
+      "classification_ns": 2370,
+      "compromised_nodes": 6,
+      "dependency_references": 64,
+      "joint_branch_count": 64,
+      "model_bytes": 4110,
+      "model_generation_ns": 212223,
+      "model_sha256": "72ad6be797e1176a2352c398a877d5cfa6b2433327a00ef49652337796b2dc71",
+      "nodes": 64,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8601712,
+      "spec_generation_ns": 238603
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        64
+      ],
+      "candidates": 1,
+      "classification_ns": 2870,
+      "compromised_nodes": 6,
+      "dependency_references": 64,
+      "joint_branch_count": 64,
+      "model_bytes": 4110,
+      "model_generation_ns": 213053,
+      "model_sha256": "72ad6be797e1176a2352c398a877d5cfa6b2433327a00ef49652337796b2dc71",
+      "nodes": 64,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8809185,
+      "spec_generation_ns": 252563
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        64
+      ],
+      "candidates": 1,
+      "classification_ns": 2700,
+      "compromised_nodes": 6,
+      "dependency_references": 64,
+      "joint_branch_count": 64,
+      "model_bytes": 4110,
+      "model_generation_ns": 361615,
+      "model_sha256": "72ad6be797e1176a2352c398a877d5cfa6b2433327a00ef49652337796b2dc71",
+      "nodes": 64,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8913986,
+      "spec_generation_ns": 313424
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536
+      ],
+      "candidates": 1,
+      "classification_ns": 2700,
+      "compromised_nodes": 16,
+      "dependency_references": 64,
+      "joint_branch_count": 65536,
+      "model_bytes": 4206,
+      "model_generation_ns": 229763,
+      "model_sha256": "c75c5a33332b5ec06cad0e46312540fe31a518078b38ffe277b99f8c85606542",
+      "nodes": 64,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 9367412,
+      "spec_generation_ns": 239883
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536
+      ],
+      "candidates": 1,
+      "classification_ns": 2520,
+      "compromised_nodes": 16,
+      "dependency_references": 64,
+      "joint_branch_count": 65536,
+      "model_bytes": 4206,
+      "model_generation_ns": 233003,
+      "model_sha256": "c75c5a33332b5ec06cad0e46312540fe31a518078b38ffe277b99f8c85606542",
+      "nodes": 64,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 9131709,
+      "spec_generation_ns": 239233
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536
+      ],
+      "candidates": 1,
+      "classification_ns": 2681,
+      "compromised_nodes": 16,
+      "dependency_references": 64,
+      "joint_branch_count": 65536,
+      "model_bytes": 4206,
+      "model_generation_ns": 279543,
+      "model_sha256": "c75c5a33332b5ec06cad0e46312540fe31a518078b38ffe277b99f8c85606542",
+      "nodes": 64,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 8928366,
+      "spec_generation_ns": 290244
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4294967296
+      ],
+      "candidates": 1,
+      "classification_ns": 2200,
+      "compromised_nodes": 32,
+      "dependency_references": 64,
+      "joint_branch_count": 4294967296,
+      "model_bytes": 4366,
+      "model_generation_ns": 261743,
+      "model_sha256": "e5848e31ce396e95f64b9c7cc44f6c28a8107cb8516a064be49312e3c62096f8",
+      "nodes": 64,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 9111259,
+      "spec_generation_ns": 242523
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4294967296
+      ],
+      "candidates": 1,
+      "classification_ns": 1870,
+      "compromised_nodes": 32,
+      "dependency_references": 64,
+      "joint_branch_count": 4294967296,
+      "model_bytes": 4366,
+      "model_generation_ns": 253044,
+      "model_sha256": "e5848e31ce396e95f64b9c7cc44f6c28a8107cb8516a064be49312e3c62096f8",
+      "nodes": 64,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 10018370,
+      "spec_generation_ns": 240383
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4294967296
+      ],
+      "candidates": 1,
+      "classification_ns": 4450,
+      "compromised_nodes": 32,
+      "dependency_references": 64,
+      "joint_branch_count": 4294967296,
+      "model_bytes": 4366,
+      "model_generation_ns": 243463,
+      "model_sha256": "e5848e31ce396e95f64b9c7cc44f6c28a8107cb8516a064be49312e3c62096f8",
+      "nodes": 64,
+      "obligations": 2,
+      "outcomes": [
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "9cd32ab88561dc52e7be94a3d4b43a913793544ce434e6d132fd2d615a755a83",
+      "solver_wall_ns": 9611805,
+      "spec_generation_ns": 198993
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "classification_ns": 2820,
+      "compromised_nodes": 0,
+      "dependency_references": 64,
+      "joint_branch_count": 1,
+      "model_bytes": 4313,
+      "model_generation_ns": 200123,
+      "model_sha256": "7fc363561a955e29b8ed9d7d792c9248965daa4f48e95f646648111c42bd95c6",
+      "nodes": 64,
+      "obligations": 4,
+      "outcomes": [
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "ef41c826b6930f3b8f34b1a9e6c3b760ad8b1456ec251178901b6949fbfadd07",
+      "solver_wall_ns": 8653013,
+      "spec_generation_ns": 276603
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "classification_ns": 3760,
+      "compromised_nodes": 0,
+      "dependency_references": 64,
+      "joint_branch_count": 1,
+      "model_bytes": 4313,
+      "model_generation_ns": 200592,
+      "model_sha256": "7fc363561a955e29b8ed9d7d792c9248965daa4f48e95f646648111c42bd95c6",
+      "nodes": 64,
+      "obligations": 4,
+      "outcomes": [
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "ef41c826b6930f3b8f34b1a9e6c3b760ad8b1456ec251178901b6949fbfadd07",
+      "solver_wall_ns": 9627505,
+      "spec_generation_ns": 266144
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "classification_ns": 2670,
+      "compromised_nodes": 0,
+      "dependency_references": 128,
+      "joint_branch_count": 1,
+      "model_bytes": 4943,
+      "model_generation_ns": 325534,
+      "model_sha256": "2cf541066a487b9bb2506a62e9d5c3cf36adef57f126c9409a4ad2f6a1129001",
+      "nodes": 64,
+      "obligations": 4,
+      "outcomes": [
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "ef41c826b6930f3b8f34b1a9e6c3b760ad8b1456ec251178901b6949fbfadd07",
+      "solver_wall_ns": 8897086,
+      "spec_generation_ns": 517457
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        8,
+        8
+      ],
+      "candidates": 2,
+      "classification_ns": 2640,
+      "compromised_nodes": 6,
+      "dependency_references": 64,
+      "joint_branch_count": 64,
+      "model_bytes": 4367,
+      "model_generation_ns": 219402,
+      "model_sha256": "fd8aa38bf926e9a91dc5772899a7360ec72e0a307cc6910c26e32150c56e1237",
+      "nodes": 64,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8889626,
+      "spec_generation_ns": 268104
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        8,
+        8
+      ],
+      "candidates": 2,
+      "classification_ns": 2990,
+      "compromised_nodes": 6,
+      "dependency_references": 64,
+      "joint_branch_count": 64,
+      "model_bytes": 4367,
+      "model_generation_ns": 210013,
+      "model_sha256": "fd8aa38bf926e9a91dc5772899a7360ec72e0a307cc6910c26e32150c56e1237",
+      "nodes": 64,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8845865,
+      "spec_generation_ns": 270914
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        64,
+        64
+      ],
+      "candidates": 2,
+      "classification_ns": 1980,
+      "compromised_nodes": 6,
+      "dependency_references": 128,
+      "joint_branch_count": 64,
+      "model_bytes": 4997,
+      "model_generation_ns": 234683,
+      "model_sha256": "e8de87151901c4b017e1995ce368380720b0915d35c4b332c1f362ae2dbc4468",
+      "nodes": 64,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 9468384,
+      "spec_generation_ns": 324684
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        256,
+        256
+      ],
+      "candidates": 2,
+      "classification_ns": 3170,
+      "compromised_nodes": 16,
+      "dependency_references": 64,
+      "joint_branch_count": 65536,
+      "model_bytes": 4463,
+      "model_generation_ns": 213683,
+      "model_sha256": "5442c062a260891d123c65af297aa0cd088ff57d3bf1ca66705f04cf255609ed",
+      "nodes": 64,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 9338351,
+      "spec_generation_ns": 226623
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        256,
+        256
+      ],
+      "candidates": 2,
+      "classification_ns": 2780,
+      "compromised_nodes": 16,
+      "dependency_references": 64,
+      "joint_branch_count": 65536,
+      "model_bytes": 4463,
+      "model_generation_ns": 236643,
+      "model_sha256": "5442c062a260891d123c65af297aa0cd088ff57d3bf1ca66705f04cf255609ed",
+      "nodes": 64,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8896636,
+      "spec_generation_ns": 268803
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        65536,
+        65536
+      ],
+      "candidates": 2,
+      "classification_ns": 2670,
+      "compromised_nodes": 16,
+      "dependency_references": 128,
+      "joint_branch_count": 65536,
+      "model_bytes": 5093,
+      "model_generation_ns": 240984,
+      "model_sha256": "2d49254b2b47675bfa7807a3ae0f83200ad31fba1b18f30fc97b92c57f6c7782",
+      "nodes": 64,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8626982,
+      "spec_generation_ns": 324254
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536,
+        65536
+      ],
+      "candidates": 2,
+      "classification_ns": 2750,
+      "compromised_nodes": 32,
+      "dependency_references": 64,
+      "joint_branch_count": 4294967296,
+      "model_bytes": 4623,
+      "model_generation_ns": 262753,
+      "model_sha256": "2761b08eff330bb1939a7b613e0a566e840a75b59920dc6b0fed3c7442b383b1",
+      "nodes": 64,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 9229171,
+      "spec_generation_ns": 277064
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536,
+        65536
+      ],
+      "candidates": 2,
+      "classification_ns": 2680,
+      "compromised_nodes": 32,
+      "dependency_references": 64,
+      "joint_branch_count": 4294967296,
+      "model_bytes": 4623,
+      "model_generation_ns": 279604,
+      "model_sha256": "2761b08eff330bb1939a7b613e0a566e840a75b59920dc6b0fed3c7442b383b1",
+      "nodes": 64,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 8828895,
+      "spec_generation_ns": 270823
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        4294967296,
+        4294967296
+      ],
+      "candidates": 2,
+      "classification_ns": 2690,
+      "compromised_nodes": 32,
+      "dependency_references": 128,
+      "joint_branch_count": 4294967296,
+      "model_bytes": 5253,
+      "model_generation_ns": 269644,
+      "model_sha256": "9bbeba5f5ae8fe0423804c25109b473652a0e0135b6e01af6980b876702379d1",
+      "nodes": 64,
+      "obligations": 4,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "e419ba0b61354cb4ab90598c8955ecbe726e14a2a485224abf68aa7f2f967be5",
+      "solver_wall_ns": 9652016,
+      "spec_generation_ns": 323874
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 1700,
+      "compromised_nodes": 0,
+      "dependency_references": 64,
+      "joint_branch_count": 1,
+      "model_bytes": 4827,
+      "model_generation_ns": 199973,
+      "model_sha256": "e4d4753cd4137bb3c220ec1161b677bc3786ef469a7447a039ced2d8194c3f99",
+      "nodes": 64,
+      "obligations": 8,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "3a4461be2e9eed07f79997bdc9ff3fccd0679c3a880a52d33b14d2db5c389e2d",
+      "solver_wall_ns": 9706536,
+      "spec_generation_ns": 320684
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 4480,
+      "compromised_nodes": 0,
+      "dependency_references": 128,
+      "joint_branch_count": 1,
+      "model_bytes": 5457,
+      "model_generation_ns": 189843,
+      "model_sha256": "41a8ad6243401917d2bc178c9895768f800d88303673515445bd242921b83868",
+      "nodes": 64,
+      "obligations": 8,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "3a4461be2e9eed07f79997bdc9ff3fccd0679c3a880a52d33b14d2db5c389e2d",
+      "solver_wall_ns": 9150839,
+      "spec_generation_ns": 308404
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "classification_ns": 2720,
+      "compromised_nodes": 0,
+      "dependency_references": 256,
+      "joint_branch_count": 1,
+      "model_bytes": 6717,
+      "model_generation_ns": 224792,
+      "model_sha256": "b6b151df2b3b4fe635aa521da2b13cc218e0450901541863fd7c35482f50172c",
+      "nodes": 64,
+      "obligations": 8,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "3a4461be2e9eed07f79997bdc9ff3fccd0679c3a880a52d33b14d2db5c389e2d",
+      "solver_wall_ns": 9133719,
+      "spec_generation_ns": 473737
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4,
+        4,
+        2,
+        2
+      ],
+      "candidates": 4,
+      "classification_ns": 2750,
+      "compromised_nodes": 6,
+      "dependency_references": 64,
+      "joint_branch_count": 64,
+      "model_bytes": 4881,
+      "model_generation_ns": 210012,
+      "model_sha256": "38d95e70157731ffa29b8945f2d083a05c69cb75af241a0de6eb8d65b4dabd89",
+      "nodes": 64,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 8923217,
+      "spec_generation_ns": 304954
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        8,
+        16,
+        8,
+        4
+      ],
+      "candidates": 4,
+      "classification_ns": 2800,
+      "compromised_nodes": 6,
+      "dependency_references": 128,
+      "joint_branch_count": 64,
+      "model_bytes": 5511,
+      "model_generation_ns": 235913,
+      "model_sha256": "534ebec798625a2a2631725a3454cd59e083573e5e2a68c116f0fb638d4b35f1",
+      "nodes": 64,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 9243210,
+      "spec_generation_ns": 386135
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "candidates": 4,
+      "classification_ns": 2790,
+      "compromised_nodes": 6,
+      "dependency_references": 256,
+      "joint_branch_count": 64,
+      "model_bytes": 6771,
+      "model_generation_ns": 237063,
+      "model_sha256": "822788ee4280e684223bc0d55fe8dc15bd57aec89f928eb732f29b7e8de029a9",
+      "nodes": 64,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 9478483,
+      "spec_generation_ns": 458586
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "candidates": 4,
+      "classification_ns": 3100,
+      "compromised_nodes": 16,
+      "dependency_references": 64,
+      "joint_branch_count": 65536,
+      "model_bytes": 4977,
+      "model_generation_ns": 389725,
+      "model_sha256": "413cd76bd699665a4316e8fcddcd712ddbf65d487dd1884680cd12a583570bc4",
+      "nodes": 64,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 8725844,
+      "spec_generation_ns": 431575
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "candidates": 4,
+      "classification_ns": 2830,
+      "compromised_nodes": 16,
+      "dependency_references": 128,
+      "joint_branch_count": 65536,
+      "model_bytes": 5607,
+      "model_generation_ns": 241483,
+      "model_sha256": "cbf3fb001082041e991fb388d0e43f65f69a29deee84200164195b744b0c0bac",
+      "nodes": 64,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 9298111,
+      "spec_generation_ns": 372945
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "candidates": 4,
+      "classification_ns": 2860,
+      "compromised_nodes": 16,
+      "dependency_references": 256,
+      "joint_branch_count": 65536,
+      "model_bytes": 6867,
+      "model_generation_ns": 258163,
+      "model_sha256": "f0899d52090b499531e441d568c327f35d90dd968306f5b87ba34727943cf496",
+      "nodes": 64,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 9353892,
+      "spec_generation_ns": 470876
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "candidates": 4,
+      "classification_ns": 1930,
+      "compromised_nodes": 32,
+      "dependency_references": 64,
+      "joint_branch_count": 4294967296,
+      "model_bytes": 5137,
+      "model_generation_ns": 263683,
+      "model_sha256": "2865cdb1f0ed6a745749c46b5806d4693a87f1304f4f2d58f89525a3b7d80a04",
+      "nodes": 64,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 9733867,
+      "spec_generation_ns": 317135
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "candidates": 4,
+      "classification_ns": 3360,
+      "compromised_nodes": 32,
+      "dependency_references": 128,
+      "joint_branch_count": 4294967296,
+      "model_bytes": 5767,
+      "model_generation_ns": 441746,
+      "model_sha256": "66371e44035d67e62a0031c5f46cdc9008d467346d3e0b92a94ab0f9ac80f994",
+      "nodes": 64,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 10057001,
+      "spec_generation_ns": 408745
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296
+      ],
+      "candidates": 4,
+      "classification_ns": 3000,
+      "compromised_nodes": 32,
+      "dependency_references": 256,
+      "joint_branch_count": 4294967296,
+      "model_bytes": 7027,
+      "model_generation_ns": 294284,
+      "model_sha256": "6db69531cf1f826686c7d71f82a10e33e0f06089f636ec63b0f0de37e8611379",
+      "nodes": 64,
+      "obligations": 8,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "106a315dde3bcb1d13820d699b28052bda18570a766c6593ada4711056c40e48",
+      "solver_wall_ns": 9865639,
+      "spec_generation_ns": 470626
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3520,
+      "compromised_nodes": 0,
+      "dependency_references": 64,
+      "joint_branch_count": 1,
+      "model_bytes": 5855,
+      "model_generation_ns": 204152,
+      "model_sha256": "f2c6a04be5c707c64ea724d507fbfcedfcaa210774972317dd11faffd25dda38",
+      "nodes": 64,
+      "obligations": 16,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "830199514ae4ad736266c78271225a4c0809851fbf29990d8048da394d2bb959",
+      "solver_wall_ns": 9235221,
+      "spec_generation_ns": 432386
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3540,
+      "compromised_nodes": 0,
+      "dependency_references": 256,
+      "joint_branch_count": 1,
+      "model_bytes": 7745,
+      "model_generation_ns": 207973,
+      "model_sha256": "b2a459dfc9a20a57c5459628c716bb434c06f1c886b122e430a30948f54c6bac",
+      "nodes": 64,
+      "obligations": 16,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "830199514ae4ad736266c78271225a4c0809851fbf29990d8048da394d2bb959",
+      "solver_wall_ns": 9554944,
+      "spec_generation_ns": 758900
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 3591,
+      "compromised_nodes": 0,
+      "dependency_references": 512,
+      "joint_branch_count": 1,
+      "model_bytes": 10265,
+      "model_generation_ns": 247803,
+      "model_sha256": "08442e60860b1e84bd87b667896d3020ade83c66f807925a1bebd124dd5edec2",
+      "nodes": 64,
+      "obligations": 16,
+      "outcomes": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 0,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "830199514ae4ad736266c78271225a4c0809851fbf29990d8048da394d2bb959",
+      "solver_wall_ns": 9139409,
+      "spec_generation_ns": 1139125
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "classification_ns": 1950,
+      "compromised_nodes": 6,
+      "dependency_references": 64,
+      "joint_branch_count": 64,
+      "model_bytes": 5909,
+      "model_generation_ns": 225453,
+      "model_sha256": "31607c2ea4660c06ec72f773854a512d156b41f401198e1ded3b9b3ae7338012",
+      "nodes": 64,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "unsat",
+        "sat",
+        "unsat"
+      ],
+      "solver_output_sha256": "06008fd918690ad7af2700d91c74046657cc86365a9604e3e20a85f4feef827a",
+      "solver_wall_ns": 9718236,
+      "spec_generation_ns": 396865
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        4,
+        4,
+        8,
+        16,
+        16,
+        16,
+        8,
+        4
+      ],
+      "candidates": 8,
+      "classification_ns": 3960,
+      "compromised_nodes": 6,
+      "dependency_references": 256,
+      "joint_branch_count": 64,
+      "model_bytes": 7799,
+      "model_generation_ns": 373624,
+      "model_sha256": "b5e5a63627142d85be7e51d2276c77b2a07abd49b23267bd5c531f3f4a7d5b5c",
+      "nodes": 64,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 9346862,
+      "spec_generation_ns": 690329
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "candidates": 8,
+      "classification_ns": 2920,
+      "compromised_nodes": 6,
+      "dependency_references": 512,
+      "joint_branch_count": 64,
+      "model_bytes": 10319,
+      "model_generation_ns": 271173,
+      "model_sha256": "88b06915a5ec3f1a138540d6206495443e2736eb81181f4f9ce0ef80ff2f42e0",
+      "nodes": 64,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 10,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 9437873,
+      "spec_generation_ns": 762710
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 8,
+      "classification_ns": 4040,
+      "compromised_nodes": 16,
+      "dependency_references": 64,
+      "joint_branch_count": 65536,
+      "model_bytes": 6005,
+      "model_generation_ns": 235693,
+      "model_sha256": "5e201a6c2df945086840a1dcf5d1f2fa96558a3f674ae2895238762cd735304d",
+      "nodes": 64,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 9154590,
+      "spec_generation_ns": 387945
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256
+      ],
+      "candidates": 8,
+      "classification_ns": 3070,
+      "compromised_nodes": 16,
+      "dependency_references": 256,
+      "joint_branch_count": 65536,
+      "model_bytes": 7895,
+      "model_generation_ns": 267274,
+      "model_sha256": "b0db8f9f5d044aa2c25313426ed7568dfc02992a22d9257c10157e07606ab8a6",
+      "nodes": 64,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 9771937,
+      "spec_generation_ns": 567477
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "candidates": 8,
+      "classification_ns": 3110,
+      "compromised_nodes": 16,
+      "dependency_references": 512,
+      "joint_branch_count": 65536,
+      "model_bytes": 10415,
+      "model_generation_ns": 264893,
+      "model_sha256": "f8a5697ea4b8d5e6925144a5500391945ab1e7df67105ede69b76841842f3ddd",
+      "nodes": 64,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 25,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 9564265,
+      "spec_generation_ns": 709360
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "candidates": 8,
+      "classification_ns": 3300,
+      "compromised_nodes": 32,
+      "dependency_references": 64,
+      "joint_branch_count": 4294967296,
+      "model_bytes": 6165,
+      "model_generation_ns": 274223,
+      "model_sha256": "81bebeafbb3d0820c8f8337b6e70f5e9ab698085d5c32650ec4a7a9e8d1cdcac",
+      "nodes": 64,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "low",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 9729627,
+      "spec_generation_ns": 415696
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "candidates": 8,
+      "classification_ns": 3640,
+      "compromised_nodes": 32,
+      "dependency_references": 256,
+      "joint_branch_count": 4294967296,
+      "model_bytes": 8055,
+      "model_generation_ns": 281334,
+      "model_sha256": "53b860b41db31a37f0b543ca04b89f9130213e35396a115dec893001bbefc923",
+      "nodes": 64,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "medium",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 10416456,
+      "spec_generation_ns": 553007
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296
+      ],
+      "candidates": 8,
+      "classification_ns": 3560,
+      "compromised_nodes": 32,
+      "dependency_references": 512,
+      "joint_branch_count": 4294967296,
+      "model_bytes": 10575,
+      "model_generation_ns": 322854,
+      "model_sha256": "75a55d551ea9f8b4434fe6c95e20f08298d7204e2143c7ca588b96e9d639dd49",
+      "nodes": 64,
+      "obligations": 16,
+      "outcomes": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "percent": 50,
+      "return_code": 0,
+      "sharing": "high",
+      "solver_answers": [
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat",
+        "sat"
+      ],
+      "solver_output_sha256": "85fc7916f99431326194cbc0b21a10f7fd845fafd494d8cfcb535ee14df3dd80",
+      "solver_wall_ns": 11170566,
+      "spec_generation_ns": 761850
+    }
+  ],
+  "solver_sha256": "1bfaf5bbe81fd0b7800500ee08eef426aaabe18f8b9c4c4c32adffcd72f86cd5",
+  "source_commit": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+  "timestamp": "2026-11-24T02:31:05+00:00",
+  "tool_versions": {
+    "z3": "Z3 version 4.15.4 - 64 bit"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "archive_bytes": 553,
+  "archive_sha256": "2cb995a2a63956cc21e5a663549f957198408848f0120ad63b5473d5230b2c40",
+  "case": "attleboro-command-domain-overlap-v1",
+  "cleo": "not used",
+  "command": "java -Duser.home=WORKSPACE -Xss20M -jar tool.jar -launch -prove model.kyx -tool z3 -z3path solver -timeout 60 -out result.kyp",
+  "configuration": "Fresh isolated prover home per family replay, 60 s per obligation.",
+  "dependencies": 1,
+  "horizon": "constant selector throughout start",
+  "jar_sha256": "c72cb700992e4c9fbf052113917e039ced43fa6c512493fe5473964e18b691bb",
+  "java": "openjdk version \"17.0.21.1\" 2026-11-17",
+  "kind": "experiment",
+  "model_generation_ns": 4010,
+  "obligations": {
+    "exclusive_command_modes": {
+      "duration_ms": 21,
+      "proof_sha256": "63593da9488723c5de0bf086bbffe2421721de4da19aa1f284d84554577a7fb0",
+      "status": "PROVED"
+    }
+  },
+  "optional_lemma_initialization_restricted": true,
+  "plant_states": 0,
+  "procedure_id": "attleboro-command-domain-overlap-v1",
+  "proof_profile_sha256": "f6d304c7a874b89a08fe6c8f3e3561bbf8992b9737741b1256d64bd4ed451ddd",
+  "prover": "KeYmaera X 5.1.1",
+  "return_code": 0,
+  "source_commit": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+  "status": "PROVED",
+  "timestamp": "2026-11-24T02:30:11+00:00",
+  "wall_seconds": 2.393,
+  "z3": "Z3 version 4.15.4 - 64 bit"
+}

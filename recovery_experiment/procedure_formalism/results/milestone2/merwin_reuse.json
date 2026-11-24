@@ -1,0 +1,902 @@
+{
+  "case_specific": [
+    "HCC auxiliary/mode guard",
+    "synchronizer and relay comparisons",
+    "contact",
+    "gated rotor, torque and three-sample MW conversion"
+  ],
+  "common_boundary_count": 5,
+  "common_functional_boundaries": [
+    "actor",
+    "controller",
+    "delivery",
+    "plant",
+    "observer"
+  ],
+  "configuration": {
+    "metadata": "Timestamp from the evidence capture. Aggregate hashes bind sorted archive/profile pairs. A null binding denotes observational assessment.",
+    "scope": "Offline research fixtures. All paths relative to the repository or package.",
+    "source": "source_commit identifies the unchanged starting artifact. The manifest fingerprints experiment sources added since that commit."
+  },
+  "formal_model_sha256": "26e809f22ec860f92b19c2d764335cd1267f9dd160d5e249d3ac0b06fe81c840",
+  "hydro_specific_boundaries": [
+    "off-grid rolling and settlement",
+    "synchronization"
+  ],
+  "mutations": "Regenerate typed node relations or initial values. The contract and proof tactic are unchanged for the violation queries.",
+  "numerical_reduction": "Trace-conditioned fixed-point specializer with independent Z3 ground arithmetic checks",
+  "procedures": [
+    {
+      "actor": "local_operator",
+      "actor_ready_time": null,
+      "actuator": "breaker",
+      "attacker_effects": {},
+      "authority_requirements": [
+        "present local operator and normal lube pump and oil level"
+      ],
+      "case_id": "merwin",
+      "communication_path": null,
+      "controller": "sequencer",
+      "controller_guard": "present local operator and normal lube pump and oil level",
+      "controller_transition": "Accept local start. At speed accept local sync, then a fresh close request.",
+      "cost_vector_definition": [
+        "service_deficit",
+        "restoration_delay",
+        "human_effort",
+        "intervention_count",
+        "resource_use",
+        "evidence_gap_duration"
+      ],
+      "deadline": null,
+      "delivered_actuation_relation": "Require close output and later contact confirmation.",
+      "evidence_status_by_field": {
+        "actor": "SOURCE_BACKED",
+        "actor_ready_time": "UNKNOWN",
+        "actuator": "RESEARCH_AUTHORED",
+        "attacker_effects": "UNKNOWN",
+        "authority_requirements": "SOURCE_BACKED",
+        "case_id": "RESEARCH_AUTHORED",
+        "communication_path": "RESEARCH_AUTHORED",
+        "controller": "RESEARCH_AUTHORED",
+        "controller_guard": "RESEARCH_AUTHORED",
+        "controller_transition": "RESEARCH_AUTHORED",
+        "cost_vector_definition": "RESEARCH_AUTHORED",
+        "deadline": "UNKNOWN",
+        "delivered_actuation_relation": "RESEARCH_AUTHORED",
+        "freshness_requirement": "UNKNOWN",
+        "horizon": "UNKNOWN",
+        "initial_state": "RESEARCH_AUTHORED",
+        "interface": "RESEARCH_AUTHORED",
+        "observation_relation": "RESEARCH_AUTHORED",
+        "observer": "RESEARCH_AUTHORED",
+        "output_stage": "RESEARCH_AUTHORED",
+        "plant_model": "RESEARCH_AUTHORED",
+        "procedure_id": "RESEARCH_AUTHORED",
+        "required_dependencies": "RESEARCH_AUTHORED",
+        "role": "SOURCE_BACKED",
+        "safety_definition": "UNKNOWN",
+        "service_definition": "RESEARCH_AUTHORED",
+        "shared_dependencies": "RESEARCH_AUTHORED",
+        "source_references": "RESEARCH_AUTHORED",
+        "version": "RESEARCH_AUTHORED"
+      },
+      "freshness_requirement": "Maximum acceptable observation age is unspecified.",
+      "horizon": null,
+      "initial_state": {
+        "active_mode": "hcc_remote_auto",
+        "auxNormal": 1,
+        "contactOperable": 1,
+        "generationCoupled": 1,
+        "meterFresh": 1,
+        "plantReady": 1,
+        "remoteMode": 1,
+        "syncAvailable": 1
+      },
+      "interface": "panel",
+      "observation_relation": "Ordered speed, sync, close command, contact, then three consecutive same-row samples running with closed contact and at least 1 MW.",
+      "observer": "power_meter",
+      "output_stage": "breaker_command",
+      "plant_model": "olmsted-derived-hydro-simulator",
+      "procedure_id": "merwin-local-manual",
+      "required_dependencies": {
+        "breaker": {
+          "kind": "ACTUATOR",
+          "node_id": "breaker",
+          "notes": "Physical breaker contact. Operational trust has not been established.",
+          "owner": "research backend",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "breaker_command": {
+          "kind": "OUTPUT_STAGE",
+          "node_id": "breaker_command",
+          "notes": "Close output. Operational trust has not been established.",
+          "owner": "research controller",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "hydro_unit": {
+          "kind": "PHYSICAL_PROCESS",
+          "node_id": "hydro_unit",
+          "notes": "Representative Olmsted-derived unit. Operational trust has not been established.",
+          "owner": "research backend",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "local_operator": {
+          "kind": "HUMAN_ACTOR",
+          "node_id": "local_operator",
+          "notes": "Historical local operator role. Operational trust has not been established.",
+          "owner": "station",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hold-no-start"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "UNKNOWN",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "lube": {
+          "kind": "PHYSICAL_PROCESS",
+          "node_id": "lube",
+          "notes": "Guide-bearing lubrication and oil level. Operational trust has not been established.",
+          "owner": "station",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "UNKNOWN",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "panel": {
+          "kind": "INTERFACE",
+          "node_id": "panel",
+          "notes": "Local command interface. Operational trust has not been established.",
+          "owner": "station",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hold-no-start"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "UNKNOWN",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "power_meter": {
+          "kind": "OBSERVER",
+          "node_id": "power_meter",
+          "notes": "Same-row contact and power observation. Operational trust has not been established.",
+          "owner": "research backend",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "sequencer": {
+          "kind": "CONTROLLER",
+          "node_id": "sequencer",
+          "notes": "Mode-sensitive start logic. Operational trust has not been established.",
+          "owner": "research controller",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+            "merwin-hold-no-start"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "synchronization": {
+          "kind": "PROTECTION",
+          "node_id": "synchronization",
+          "notes": "Synchronization before breaker close. Operational trust has not been established.",
+          "owner": "research backend",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        }
+      },
+      "role": "local operator",
+      "safety_definition": "Safe startup or continued hold bounds are unspecified.",
+      "service_definition": "Initial representative grid generation.",
+      "shared_dependencies": [
+        "local_operator",
+        "panel",
+        "lube",
+        "sequencer",
+        "synchronization",
+        "breaker_command",
+        "breaker",
+        "hydro_unit",
+        "power_meter"
+      ],
+      "source_references": [
+        "PROCEDURE_EXPERIMENT_RECEIPT.md",
+        "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+        "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/evaluate.py"
+      ],
+      "version": "1"
+    },
+    {
+      "actor": "local_operator",
+      "actor_ready_time": null,
+      "actuator": "breaker",
+      "attacker_effects": {},
+      "authority_requirements": [
+        "present local operator and normal lube pump and oil level"
+      ],
+      "case_id": "merwin",
+      "communication_path": null,
+      "controller": "sequencer",
+      "controller_guard": "present local operator and normal lube pump and oil level",
+      "controller_transition": "Accept local start, then roll, synchronize and issue automatic close.",
+      "cost_vector_definition": [
+        "service_deficit",
+        "restoration_delay",
+        "human_effort",
+        "intervention_count",
+        "resource_use",
+        "evidence_gap_duration"
+      ],
+      "deadline": null,
+      "delivered_actuation_relation": "Require close output and later contact confirmation.",
+      "evidence_status_by_field": {
+        "actor": "SOURCE_BACKED",
+        "actor_ready_time": "UNKNOWN",
+        "actuator": "RESEARCH_AUTHORED",
+        "attacker_effects": "UNKNOWN",
+        "authority_requirements": "SOURCE_BACKED",
+        "case_id": "RESEARCH_AUTHORED",
+        "communication_path": "RESEARCH_AUTHORED",
+        "controller": "RESEARCH_AUTHORED",
+        "controller_guard": "RESEARCH_AUTHORED",
+        "controller_transition": "RESEARCH_AUTHORED",
+        "cost_vector_definition": "RESEARCH_AUTHORED",
+        "deadline": "UNKNOWN",
+        "delivered_actuation_relation": "RESEARCH_AUTHORED",
+        "freshness_requirement": "UNKNOWN",
+        "horizon": "UNKNOWN",
+        "initial_state": "RESEARCH_AUTHORED",
+        "interface": "RESEARCH_AUTHORED",
+        "observation_relation": "RESEARCH_AUTHORED",
+        "observer": "RESEARCH_AUTHORED",
+        "output_stage": "RESEARCH_AUTHORED",
+        "plant_model": "RESEARCH_AUTHORED",
+        "procedure_id": "RESEARCH_AUTHORED",
+        "required_dependencies": "RESEARCH_AUTHORED",
+        "role": "SOURCE_BACKED",
+        "safety_definition": "UNKNOWN",
+        "service_definition": "RESEARCH_AUTHORED",
+        "shared_dependencies": "RESEARCH_AUTHORED",
+        "source_references": "RESEARCH_AUTHORED",
+        "version": "RESEARCH_AUTHORED"
+      },
+      "freshness_requirement": "Maximum acceptable observation age is unspecified.",
+      "horizon": null,
+      "initial_state": {
+        "active_mode": "hcc_remote_auto",
+        "auxNormal": 1,
+        "contactOperable": 1,
+        "generationCoupled": 1,
+        "meterFresh": 1,
+        "plantReady": 1,
+        "remoteMode": 1,
+        "syncAvailable": 1
+      },
+      "interface": "panel",
+      "observation_relation": "Ordered speed, sync, close command, contact, then three consecutive same-row samples running with closed contact and at least 1 MW.",
+      "observer": "power_meter",
+      "output_stage": "breaker_command",
+      "plant_model": "olmsted-derived-hydro-simulator",
+      "procedure_id": "merwin-local-auto",
+      "required_dependencies": {
+        "breaker": {
+          "kind": "ACTUATOR",
+          "node_id": "breaker",
+          "notes": "Physical breaker contact. Operational trust has not been established.",
+          "owner": "research backend",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "breaker_command": {
+          "kind": "OUTPUT_STAGE",
+          "node_id": "breaker_command",
+          "notes": "Close output. Operational trust has not been established.",
+          "owner": "research controller",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "hydro_unit": {
+          "kind": "PHYSICAL_PROCESS",
+          "node_id": "hydro_unit",
+          "notes": "Representative Olmsted-derived unit. Operational trust has not been established.",
+          "owner": "research backend",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "local_operator": {
+          "kind": "HUMAN_ACTOR",
+          "node_id": "local_operator",
+          "notes": "Historical local operator role. Operational trust has not been established.",
+          "owner": "station",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hold-no-start"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "UNKNOWN",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "lube": {
+          "kind": "PHYSICAL_PROCESS",
+          "node_id": "lube",
+          "notes": "Guide-bearing lubrication and oil level. Operational trust has not been established.",
+          "owner": "station",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "UNKNOWN",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "panel": {
+          "kind": "INTERFACE",
+          "node_id": "panel",
+          "notes": "Local command interface. Operational trust has not been established.",
+          "owner": "station",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hold-no-start"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "UNKNOWN",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "power_meter": {
+          "kind": "OBSERVER",
+          "node_id": "power_meter",
+          "notes": "Same-row contact and power observation. Operational trust has not been established.",
+          "owner": "research backend",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "sequencer": {
+          "kind": "CONTROLLER",
+          "node_id": "sequencer",
+          "notes": "Mode-sensitive start logic. Operational trust has not been established.",
+          "owner": "research controller",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+            "merwin-hold-no-start"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "synchronization": {
+          "kind": "PROTECTION",
+          "node_id": "synchronization",
+          "notes": "Synchronization before breaker close. Operational trust has not been established.",
+          "owner": "research backend",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        }
+      },
+      "role": "local operator",
+      "safety_definition": "Safe startup or continued hold bounds are unspecified.",
+      "service_definition": "Initial representative grid generation.",
+      "shared_dependencies": [
+        "local_operator",
+        "panel",
+        "lube",
+        "sequencer",
+        "synchronization",
+        "breaker_command",
+        "breaker",
+        "hydro_unit",
+        "power_meter"
+      ],
+      "source_references": [
+        "PROCEDURE_EXPERIMENT_RECEIPT.md",
+        "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+        "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/evaluate.py"
+      ],
+      "version": "1"
+    },
+    {
+      "actor": "hcc_operator",
+      "actor_ready_time": 31,
+      "actuator": "breaker",
+      "attacker_effects": {},
+      "authority_requirements": [
+        "present HCC operator, working link and normal auxiliaries"
+      ],
+      "case_id": "merwin",
+      "communication_path": "hcc_link",
+      "controller": "sequencer",
+      "controller_guard": "present HCC operator, working link and normal auxiliaries",
+      "controller_transition": "Accept HCC start in remote-auto, then roll, synchronize and issue automatic close.",
+      "cost_vector_definition": [
+        "service_deficit",
+        "restoration_delay",
+        "human_effort",
+        "intervention_count",
+        "resource_use",
+        "evidence_gap_duration"
+      ],
+      "deadline": 1296,
+      "delivered_actuation_relation": "Require close output and later contact confirmation.",
+      "evidence_status_by_field": {
+        "actor": "SOURCE_BACKED",
+        "actor_ready_time": "RESEARCH_AUTHORED",
+        "actuator": "RESEARCH_AUTHORED",
+        "attacker_effects": "RESEARCH_AUTHORED",
+        "authority_requirements": "SOURCE_BACKED",
+        "case_id": "RESEARCH_AUTHORED",
+        "communication_path": "RESEARCH_AUTHORED",
+        "controller": "RESEARCH_AUTHORED",
+        "controller_guard": "RESEARCH_AUTHORED",
+        "controller_transition": "RESEARCH_AUTHORED",
+        "cost_vector_definition": "RESEARCH_AUTHORED",
+        "deadline": "RESEARCH_AUTHORED",
+        "delivered_actuation_relation": "RESEARCH_AUTHORED",
+        "freshness_requirement": "RESEARCH_AUTHORED",
+        "horizon": "RESEARCH_AUTHORED",
+        "initial_state": "RESEARCH_AUTHORED",
+        "interface": "RESEARCH_AUTHORED",
+        "observation_relation": "RESEARCH_AUTHORED",
+        "observer": "RESEARCH_AUTHORED",
+        "output_stage": "RESEARCH_AUTHORED",
+        "plant_model": "RESEARCH_AUTHORED",
+        "procedure_id": "RESEARCH_AUTHORED",
+        "required_dependencies": "RESEARCH_AUTHORED",
+        "role": "SOURCE_BACKED",
+        "safety_definition": "RESEARCH_AUTHORED",
+        "service_definition": "RESEARCH_AUTHORED",
+        "shared_dependencies": "RESEARCH_AUTHORED",
+        "source_references": "RESEARCH_AUTHORED",
+        "version": "RESEARCH_AUTHORED"
+      },
+      "freshness_requirement": "All three service samples are fresh.",
+      "horizon": 1296,
+      "initial_state": {
+        "active_mode": "hcc_remote_auto",
+        "auxNormal": 1,
+        "contactOperable": 1,
+        "generationCoupled": 1,
+        "meterFresh": 1,
+        "plantReady": 1,
+        "remoteMode": 1,
+        "syncAvailable": 1
+      },
+      "interface": "scada",
+      "observation_relation": "The trusted power channel samples actual generation on the same three polls.",
+      "observer": "power_meter",
+      "output_stage": "breaker_command",
+      "plant_model": "merwin-trace-conditioned-gate-rotor-generator-v1",
+      "procedure_id": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "required_dependencies": {
+        "auxiliaries": {
+          "kind": "PHYSICAL_PROCESS",
+          "node_id": "auxiliaries",
+          "notes": "Normal auxiliaries required in Remote Auto. Operational trust has not been established.",
+          "owner": "station",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "breaker": {
+          "kind": "ACTUATOR",
+          "node_id": "breaker",
+          "notes": "Physical breaker contact. Operational trust has not been established.",
+          "owner": "research backend",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "breaker_command": {
+          "kind": "OUTPUT_STAGE",
+          "node_id": "breaker_command",
+          "notes": "Close output. Operational trust has not been established.",
+          "owner": "research controller",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "hcc_link": {
+          "kind": "COMMUNICATION_PATH",
+          "node_id": "hcc_link",
+          "notes": "Research remote path. Operational trust has not been established.",
+          "owner": "representative backend",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "hcc_operator": {
+          "kind": "HUMAN_ACTOR",
+          "node_id": "hcc_operator",
+          "notes": "Historical HCC operator role. Operational trust has not been established.",
+          "owner": "HCC",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "hydro_unit": {
+          "kind": "PHYSICAL_PROCESS",
+          "node_id": "hydro_unit",
+          "notes": "Representative Olmsted-derived unit. Operational trust has not been established.",
+          "owner": "research backend",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "power_meter": {
+          "kind": "OBSERVER",
+          "node_id": "power_meter",
+          "notes": "Same-row contact and power observation. Operational trust has not been established.",
+          "owner": "research backend",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "scada": {
+          "kind": "INTERFACE",
+          "node_id": "scada",
+          "notes": "Remote-auto command interface. Operational trust has not been established.",
+          "owner": "HCC",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "sequencer": {
+          "kind": "CONTROLLER",
+          "node_id": "sequencer",
+          "notes": "Mode-sensitive start logic. Operational trust has not been established.",
+          "owner": "research controller",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+            "merwin-hold-no-start"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "synchronization": {
+          "kind": "PROTECTION",
+          "node_id": "synchronization",
+          "notes": "Synchronization before breaker close. Operational trust has not been established.",
+          "owner": "research backend",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        }
+      },
+      "role": "HCC operator",
+      "safety_definition": "Per-scan gate in [0,100]%, speed in [0,110]%, relay-permitted contact.",
+      "service_definition": "Three consecutive recorded-clock samples with running state, closed contact and at least 1 MW.",
+      "shared_dependencies": [
+        "sequencer",
+        "synchronization",
+        "breaker_command",
+        "breaker",
+        "hydro_unit",
+        "power_meter"
+      ],
+      "source_references": [
+        "PROCEDURE_EXPERIMENT_RECEIPT.md",
+        "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+        "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/evaluate.py"
+      ],
+      "version": "1"
+    },
+    {
+      "actor": "local_operator",
+      "actor_ready_time": null,
+      "actuator": null,
+      "attacker_effects": {},
+      "authority_requirements": [
+        "withhold startup"
+      ],
+      "case_id": "merwin",
+      "communication_path": null,
+      "controller": "sequencer",
+      "controller_guard": "withhold startup",
+      "controller_transition": "Issue no start request.",
+      "cost_vector_definition": [
+        "service_deficit",
+        "restoration_delay",
+        "human_effort",
+        "intervention_count",
+        "resource_use",
+        "evidence_gap_duration"
+      ],
+      "deadline": null,
+      "delivered_actuation_relation": "Withhold start.",
+      "evidence_status_by_field": {
+        "actor": "SOURCE_BACKED",
+        "actor_ready_time": "UNKNOWN",
+        "actuator": "RESEARCH_AUTHORED",
+        "attacker_effects": "UNKNOWN",
+        "authority_requirements": "RESEARCH_AUTHORED",
+        "case_id": "RESEARCH_AUTHORED",
+        "communication_path": "RESEARCH_AUTHORED",
+        "controller": "RESEARCH_AUTHORED",
+        "controller_guard": "RESEARCH_AUTHORED",
+        "controller_transition": "RESEARCH_AUTHORED",
+        "cost_vector_definition": "RESEARCH_AUTHORED",
+        "deadline": "UNKNOWN",
+        "delivered_actuation_relation": "RESEARCH_AUTHORED",
+        "freshness_requirement": "UNKNOWN",
+        "horizon": "UNKNOWN",
+        "initial_state": "RESEARCH_AUTHORED",
+        "interface": "RESEARCH_AUTHORED",
+        "observation_relation": "RESEARCH_AUTHORED",
+        "observer": "RESEARCH_AUTHORED",
+        "output_stage": "RESEARCH_AUTHORED",
+        "plant_model": "RESEARCH_AUTHORED",
+        "procedure_id": "RESEARCH_AUTHORED",
+        "required_dependencies": "RESEARCH_AUTHORED",
+        "role": "SOURCE_BACKED",
+        "safety_definition": "UNKNOWN",
+        "service_definition": "RESEARCH_AUTHORED",
+        "shared_dependencies": "RESEARCH_AUTHORED",
+        "source_references": "RESEARCH_AUTHORED",
+        "version": "RESEARCH_AUTHORED"
+      },
+      "freshness_requirement": "Maximum acceptable observation age is unspecified.",
+      "horizon": null,
+      "initial_state": {
+        "active_mode": "hcc_remote_auto",
+        "auxNormal": 1,
+        "contactOperable": 1,
+        "generationCoupled": 1,
+        "meterFresh": 1,
+        "plantReady": 1,
+        "remoteMode": 1,
+        "syncAvailable": 1
+      },
+      "interface": "panel",
+      "observation_relation": "No generation credit.",
+      "observer": null,
+      "output_stage": null,
+      "plant_model": null,
+      "procedure_id": "merwin-hold-no-start",
+      "required_dependencies": {
+        "local_operator": {
+          "kind": "HUMAN_ACTOR",
+          "node_id": "local_operator",
+          "notes": "Historical local operator role. Operational trust has not been established.",
+          "owner": "station",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hold-no-start"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "UNKNOWN",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "panel": {
+          "kind": "INTERFACE",
+          "node_id": "panel",
+          "notes": "Local command interface. Operational trust has not been established.",
+          "owner": "station",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hold-no-start"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "UNKNOWN",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        },
+        "sequencer": {
+          "kind": "CONTROLLER",
+          "node_id": "sequencer",
+          "notes": "Mode-sensitive start logic. Operational trust has not been established.",
+          "owner": "research controller",
+          "provenance": "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+          "required_by": [
+            "merwin-local-manual",
+            "merwin-local-auto",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+            "merwin-hold-no-start"
+          ],
+          "source_status": "RESEARCH_AUTHORED",
+          "status": "TRUSTED",
+          "threat_effect": "Finite Boolean stage signal or inhibited branch."
+        }
+      },
+      "role": "local operator",
+      "safety_definition": "Safe startup or continued hold bounds are unspecified.",
+      "service_definition": "No positive generation claim.",
+      "shared_dependencies": [
+        "local_operator",
+        "panel",
+        "sequencer"
+      ],
+      "source_references": [
+        "PROCEDURE_EXPERIMENT_RECEIPT.md",
+        "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/source_assessment.md",
+        "iotrustlab/sphere-usecases@716e6d2e07ea00e7639f66567e3720fb6d1c2218:sector-energy/merwin-hydro/evaluate.py"
+      ],
+      "version": "1"
+    }
+  ],
+  "profile_bindings": [
+    {
+      "archive_sha256": "69474c7456831aae1355c6417de2a68f82114aaf9c85450c0d49ad9ae8ee2937",
+      "profile_sha256": "44775b2d8aea2ee80bb92efbcdc5ecfeb2fc916f59800450172962274c51e8c8"
+    },
+    {
+      "archive_sha256": "7b7027586bceeb68e2bca9680994e37194d6dd1df05b15c707e586aca72d15b2",
+      "profile_sha256": "c62b173de2478851d1f7a32559b84989dcb3b278b51ac76deab87dc16c872de2"
+    },
+    {
+      "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+      "profile_sha256": "148dc12aef7300fe03c9e354e2bdbf06f7b05e7837acb57897fa1ae689110647"
+    },
+    {
+      "archive_sha256": "cf6fb6b3aea67835415a0253c3c2b6c67281a57802be28b4ab2cd01bfb292cb5",
+      "profile_sha256": "2c8e083aa88c0a3ed1f16e1fdacdc18d72513bea5656fbf5a7252ad6ca8bab3b"
+    },
+    {
+      "archive_sha256": "ed8e68b5cdaf2e8d8f2dd7cce862a93e0832b0166f79d7ac1b8970779087b22b",
+      "profile_sha256": "59367d632343550a9570602d410fd76103293ae650dc008fe92d282290062c5e"
+    }
+  ],
+  "proof_profile_sha256": "05d4e4f50515b77886236be9ff78ce43a8132d32f6f271eed970714ff6ba61d5",
+  "schema": "RecoveryProcedure and the four historical procedure schemas with one incident-scoped node registry",
+  "shared_unchanged": [
+    "DependencyNode",
+    "dependency_semantics.transition",
+    "formal_ir.Assignment",
+    "formal_ir.Stage",
+    "formal_ir.executions",
+    "formal_ir.hybrid_program",
+    "verify._solve"
+  ],
+  "source_commit": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+  "tactic": "Same finite dL prefix/composition and reachability tactic as Attleboro",
+  "timestamp": "2026-11-24T02:34:26+00:00",
+  "tool_versions": {
+    "CLEO": "unused in new dL studies",
+    "Java": "17.0.21.1",
+    "KeYmaera X": "5.1.1",
+    "Z3": "4.15.4"
+  }
+}

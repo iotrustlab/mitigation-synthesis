@@ -1,0 +1,245 @@
+{
+  "configuration": {
+    "cache": "Fresh isolated user home per replay; derived-lemma cache shared across cases.",
+    "command": "java -Duser.home=WORKSPACE -Xss20M -jar tool.jar -launch -prove model.kyx -tool z3 -z3path solver -timeout 60 -out result.kyp",
+    "jar_sha256": "c72cb700992e4c9fbf052113917e039ced43fa6c512493fe5473964e18b691bb",
+    "scope": "Fresh Milestone 1 replay, canonical measurement records retained for deterministic JSON regeneration."
+  },
+  "formal_model_sha256": "f9598ab139f7a3fea303f888196c6a5db98434b02d3045f6edc3a1183ae4fa69",
+  "historical_authority_archives": [
+    {
+      "archive": "nonvacuity",
+      "arithmetic_backend": "Z3",
+      "entries": {
+        "Attleboro bad power branch is reachable witness 2026": "PROVED",
+        "Attleboro held reset branch is reachable witness 2026": "PROVED"
+      },
+      "model_sha256": "07e3dbe4aa62cc02dd0ccc98292006f6a75158a45628791c075d4981304d36e0",
+      "proof_artifact_sha256": {
+        "remote_authority_nonvacuity-remote_authority_nonvacuity.kyx-Attleboro%2Bbad%2Bpower%2Bbranch%2Bis%2Breachable%2Bwitness%2B2026.kyp": "4077f8e64111cbd62e82adff00dae8476817181806fa26ffac4dc0bebdb6021f",
+        "remote_authority_nonvacuity-remote_authority_nonvacuity.kyx-Attleboro%2Bheld%2Breset%2Bbranch%2Bis%2Breachable%2Bwitness%2B2026.kyp": "35271565622f0545c06e677a0969c412625e7371d052078e4eb04380866a2920"
+      },
+      "proof_scope": "two concrete preconditions and reachable one-scan poststates",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "archive": "authority",
+      "arithmetic_backend": "Z3",
+      "entries": {
+        "Generator or utility loss blocks remote start demand": "PROVED",
+        "Utility return without a new reset blocks remote start demand": "PROVED"
+      },
+      "model_sha256": "0a8d8e93051eca6668caa4995d1828851b2c225ee575f987620a582095540c18",
+      "proof_artifact_sha256": {
+        "remote_authority-remote_authority.kyx-Generator%2Bor%2Butility%2Bloss%2Bblocks%2Bremote%2Bstart%2Bdemand.kyp": "57a397d7ee18bccca235a64597b1a83dce38dfc11568d3f8faa03a8dab3b09ea",
+        "remote_authority-remote_authority.kyx-Utility%2Breturn%2Bwithout%2Ba%2Bnew%2Breset%2Bblocks%2Bremote%2Bstart%2Bdemand.kyp": "86545a6c454f73a06c6db49f42e7f459f555baeb9cb10f81eddb8c7d3d25bd52"
+      },
+      "proof_scope": "controller remote authority after one scan, for two precondition classes only",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "VERIFIED"
+    }
+  ],
+  "historical_regression_count": 4,
+  "initial_branch": "feature/procedure-aware-recovery",
+  "inventory_construction": "sha256sum of individual worktree file digests in git ls-files -z order, with two spaces before each filename and a trailing newline per entry",
+  "inventory_sha256": "4b9a60b58ae28c62a8af42f5b2ec582bf9fac929be6d22796e4f15c788c4d1b2",
+  "machine_readable_regeneration": {
+    "attleboro_mutation_matrix.json": "157d96985eccaa45516139d25bd54fd8736c5b96740f6a67025d12e0967f2d99",
+    "attleboro_positive.json": "f5d297940544cd19bec1d2ab0d57c3c2d791f5803f93448ac2150ad31db4d1ea",
+    "baseline_comparison.json": "ec10bc8958281991904da99f82911493eca0f987e29990d8baccc1672e7faf48",
+    "chp_schema_assessment.json": "edce26a37e7b4b5b3978a3444e56346e84e2daa8f20e7e07ec2ea84c0ca03165",
+    "cost_vectors.json": "881bbdf23cced977ce503453c43349055ffee4660c50cfccb53aedb18bb61655",
+    "merwin_schema_assessment.json": "17ae3c2f2d631e4525777b94d10c1b2a35b75f8f7ebf4d787415072f7a5c7676",
+    "proof_summary.json": "b962efadd037c4f08370d9dc9756f83c88a4b254056b4dace84fea774d56164e"
+  },
+  "milestone1_suite": {
+    "passed": 33,
+    "ran": 33
+  },
+  "new_obligations": {
+    "M0": {
+      "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+      "obligations": {
+        "end_to_end": {
+          "duration_ms": 216,
+          "proof_sha256": "49621e563057068af159482970c79e3b58da1a9d37e51ad8df256545cd267e6a",
+          "status": "PROVED"
+        },
+        "execution_witness": {
+          "duration_ms": 188,
+          "proof_sha256": "4716ac57f6ea9fdec076fa5ccf24af9698d0e94fc3a27b5e77f98d8301aa4e8b",
+          "status": "PROVED"
+        },
+        "precondition_witness": {
+          "duration_ms": 14,
+          "proof_sha256": "d4bd6169e8c5ec54e2aec92e0a554ff32b60bd9deb4d075fcf058a7cfe8eabd0",
+          "status": "PROVED"
+        },
+        "retained_start": {
+          "duration_ms": 63,
+          "proof_sha256": "20bec7f0612fc9f13790ed9e085408f030d7baa648a0cf24886ed53cd1737943",
+          "status": "PROVED"
+        },
+        "stage_actor": {
+          "duration_ms": 16,
+          "proof_sha256": "837f8d7e153fea4ceb6c36f12001ae9368dd530899aa07df1f1072eb4474c4c8",
+          "status": "PROVED"
+        },
+        "stage_controller": {
+          "duration_ms": 23,
+          "proof_sha256": "4f34a0e94c12127b3487b6bf827ecf5bd881ab2557ee134a7ac5c45620d02d69",
+          "status": "PROVED"
+        },
+        "stage_delivery": {
+          "duration_ms": 21,
+          "proof_sha256": "d1de151795b07f0e0b83133379a3ae95400dd4dbd03ceeb89fdc148a413a315d",
+          "status": "PROVED"
+        },
+        "stage_observer": {
+          "duration_ms": 241,
+          "proof_sha256": "d16f75b64fdf992f100cacc7efcd001c79294853d90745aa7dd5ebc4aabafed9",
+          "status": "PROVED"
+        },
+        "stage_plant": {
+          "duration_ms": 275,
+          "proof_sha256": "6eb0f806cd4d45db87dd8626d0157f11c95f98c7086d95f1ae13daf0d53a95a1",
+          "status": "PROVED"
+        }
+      },
+      "proof_profile_sha256": "06fd1329a994323e295be80c3672a68a88328a289d0fb8d2e8388baf1ba9f306",
+      "status": "PROVED",
+      "wall_seconds": 8.008
+    },
+    "M1": {
+      "archive_sha256": "7d8184f810e2b7075cb6b3d58d19005c6a1a55db562fd129abc27877a102313f",
+      "obligations": {
+        "violation": {
+          "duration_ms": 385,
+          "proof_sha256": "21e29956b8f14e36d76b989761db072aea7d51bae34ba194f754c3f026e404b3",
+          "status": "PROVED"
+        }
+      },
+      "proof_profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86",
+      "status": "PROVED",
+      "wall_seconds": 2.889
+    },
+    "M13": {
+      "archive_sha256": "2d30c6538c3b3de57c5b8ec26b68656331b1be9e90c02b62debc0f5054462ccf",
+      "obligations": {
+        "violation": {
+          "duration_ms": 335,
+          "proof_sha256": "0e15d7c152a83fba8877bc42872a5cddad51c502e496fd6865a1a106317aaa22",
+          "status": "PROVED"
+        }
+      },
+      "proof_profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86",
+      "status": "PROVED",
+      "wall_seconds": 2.916
+    },
+    "M2": {
+      "archive_sha256": "a6eb6a160d76251131e5d14c4ac1f7310f21f0383d91651e2d1e4ab0fa8b63dc",
+      "obligations": {
+        "violation": {
+          "duration_ms": 301,
+          "proof_sha256": "1eeba1fcde39b76b4b194c86dd421e18ca33bdd2ea76942e8daa4441020d94b4",
+          "status": "PROVED"
+        }
+      },
+      "proof_profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86",
+      "status": "PROVED",
+      "wall_seconds": 2.842
+    },
+    "M4": {
+      "archive_sha256": "02e8b4934d84889e80cf51efd276d4f384705fd6fb496016448eb6eebb0655e4",
+      "obligations": {
+        "violation": {
+          "duration_ms": 380,
+          "proof_sha256": "1d5ea26e8bc950251cfb2e71c02df46265c3468110ae68b7878000f1738cdc06",
+          "status": "PROVED"
+        }
+      },
+      "proof_profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86",
+      "status": "PROVED",
+      "wall_seconds": 2.928
+    },
+    "M5": {
+      "archive_sha256": "94bcde2c484a8f5318b5c27f20161093b357acd4ad854c28a6b1a017ce67ad8c",
+      "obligations": {
+        "violation": {
+          "duration_ms": 388,
+          "proof_sha256": "b6d69ec09686eb685d6443d441750cf75f40ce751d0859b8b6fd4d93631c68c6",
+          "status": "PROVED"
+        }
+      },
+      "proof_profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86",
+      "status": "PROVED",
+      "wall_seconds": 2.894
+    },
+    "M7": {
+      "archive_sha256": "189bb34b8243289ee519befbbca7ccd69ac5cd7753f054bd158a03f1bb9fdfd9",
+      "obligations": {
+        "violation": {
+          "duration_ms": 390,
+          "proof_sha256": "eeadefb75843d06acba1d7a668ea0b8ae9ef627e7dfd8fff204eb98429d87de7",
+          "status": "PROVED"
+        }
+      },
+      "proof_profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86",
+      "status": "PROVED",
+      "wall_seconds": 2.941
+    },
+    "M8": {
+      "archive_sha256": "d78e84e3954ad3674355cb27c0ba141111243e0a4f5333c1b01d2dfcec6c6bf1",
+      "obligations": {
+        "violation": {
+          "duration_ms": 395,
+          "proof_sha256": "b2fd176609d1d3f34d78d3c00c576569bb47272e758d5e0d81173590b2105278",
+          "status": "PROVED"
+        }
+      },
+      "proof_profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86",
+      "status": "PROVED",
+      "wall_seconds": 2.913
+    },
+    "M9": {
+      "archive_sha256": "a4f1a60c3262b6ee9def3051f7eb300b014989bfbf0e0ae41709b9d3b6195c02",
+      "obligations": {
+        "violation": {
+          "duration_ms": 390,
+          "proof_sha256": "25eee6057164fd3072dce2a3b1445b260c9895f80c399bfe4823b3132005aa8d",
+          "status": "PROVED"
+        }
+      },
+      "proof_profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86",
+      "status": "PROVED",
+      "wall_seconds": 2.914
+    }
+  },
+  "proof_profile_sha256": "f0e68013cc34b524162e69a2124023815e418abb84a398c937fb5a9ac7903906",
+  "protected_digests_verified": 76,
+  "remote_archive_bytes": 29643,
+  "remote_archive_render_ns": 2841197,
+  "remote_end_to_end": "PROVED",
+  "remote_head": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+  "result": "REPRODUCED",
+  "source_commit": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+  "source_trace_correspondence": "22 of 22 bundles, 727 rows",
+  "standard_suite": {
+    "errors": 0,
+    "passed": 194,
+    "ran": 206,
+    "skipped": 12
+  },
+  "timestamp": "2026-11-24T02:30:12+00:00",
+  "tool_versions": {
+    "KeYmaera X": "5.1.1",
+    "cleo": "not used for this baseline",
+    "java": "openjdk version \"17.0.21.1\" 2026-11-17",
+    "python": "3.10.12",
+    "z3": "Z3 version 4.15.4 - 64 bit"
+  },
+  "tracked_files_hashed": 234
+}

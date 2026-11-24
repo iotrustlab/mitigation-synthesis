@@ -1,0 +1,173 @@
+{
+  "boundary": "The fixed hydraulic pressure, gate-command and synchronization-telemetry trajectory, zero-order hold and integer precision are research assumptions. No as-built or unconditioned startup guarantee.",
+  "configuration": {
+    "metadata": "Timestamp from the evidence capture. Aggregate hashes bind sorted archive/profile pairs. A null binding denotes observational assessment.",
+    "scope": "Offline research fixtures. All paths relative to the repository or package.",
+    "source": "source_commit identifies the unchanged starting artifact. The manifest fingerprints experiment sources added since that commit."
+  },
+  "formal_model_hash": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+  "formal_model_sha256": "26e809f22ec860f92b19c2d764335cd1267f9dd160d5e249d3ac0b06fe81c840",
+  "modes": [
+    "merwin-local-manual",
+    "merwin-local-auto",
+    "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+    "merwin-hold-no-start"
+  ],
+  "numerical_certificate": {
+    "checked_scans": 1296,
+    "command": "z3 -in",
+    "configuration": "QF integer arithmetic on fully instantiated steps",
+    "input_sha256": "bf46262404d99ce5c354c550e8d24af1a8f573c2a427f04b2544a6803a26a45d",
+    "result_sha256": "a8e086e89293d32b6a58773ed1fd039a3383aef7b7a8b71bf43ae68d80f80fc6",
+    "smt_sha256": "c588a76b2dbf9e4959b0500055e6ea169c82f5698bfef29efc805561f0db95a0",
+    "source_commit": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+    "source_trace_sha256": "7cfe891e497d6f27100f385ec7e19e4ca6d9face9077c1d1cd7ff1a14007b2fa",
+    "status": "unsat",
+    "timestamp": "2026-11-24T02:34:04+00:00",
+    "trajectory": {
+      "horizon_ticks": 1296,
+      "max_gate": 59999991,
+      "max_open_speed": 100918894,
+      "mechanical_micro_mw": [
+        16020700,
+        16245779,
+        16342334
+      ],
+      "phase_milli_deg": -2135,
+      "service_ticks": [
+        1285,
+        1291,
+        1296
+      ],
+      "settled_tick": 652,
+      "speed_at_sync": 100038406,
+      "start_tick": 31,
+      "sync_tick": 1281,
+      "voltage_milli_pu": 1030
+    },
+    "wall_seconds": 0.098323,
+    "z3": "Z3 version 4.15.4 - 64 bit"
+  },
+  "procedure_id": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+  "profile": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+  "profile_bindings": [
+    {
+      "archive_sha256": "69474c7456831aae1355c6417de2a68f82114aaf9c85450c0d49ad9ae8ee2937",
+      "profile_sha256": "44775b2d8aea2ee80bb92efbcdc5ecfeb2fc916f59800450172962274c51e8c8"
+    },
+    {
+      "archive_sha256": "7b7027586bceeb68e2bca9680994e37194d6dd1df05b15c707e586aca72d15b2",
+      "profile_sha256": "c62b173de2478851d1f7a32559b84989dcb3b278b51ac76deab87dc16c872de2"
+    },
+    {
+      "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+      "profile_sha256": "148dc12aef7300fe03c9e354e2bdbf06f7b05e7837acb57897fa1ae689110647"
+    },
+    {
+      "archive_sha256": "cf6fb6b3aea67835415a0253c3c2b6c67281a57802be28b4ab2cd01bfb292cb5",
+      "profile_sha256": "2c8e083aa88c0a3ed1f16e1fdacdc18d72513bea5656fbf5a7252ad6ca8bab3b"
+    },
+    {
+      "archive_sha256": "ed8e68b5cdaf2e8d8f2dd7cce862a93e0832b0166f79d7ac1b8970779087b22b",
+      "profile_sha256": "59367d632343550a9570602d410fd76103293ae650dc008fe92d282290062c5e"
+    }
+  ],
+  "proof": {
+    "archive_bytes": 35334,
+    "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+    "case": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+    "cleo": "not used",
+    "command": "java -Duser.home=WORKSPACE -Xss20M -jar tool.jar -launch -prove model.kyx -tool z3 -z3path solver -timeout 60 -out result.kyp",
+    "configuration": "Fresh isolated prover home per family replay, 60 s per obligation.",
+    "dependencies": 10,
+    "family_profile_construction_ns": 8276069,
+    "horizon": "1296 mandatory 100 ms scans (129.6 s)",
+    "jar_sha256": "c72cb700992e4c9fbf052113917e039ced43fa6c512493fe5473964e18b691bb",
+    "java": "openjdk version \"17.0.21.1\" 2026-11-17",
+    "kind": "experiment",
+    "model_generation_ns": 70931,
+    "obligations": {
+      "actor_controller": {
+        "duration_ms": 20,
+        "proof_sha256": "ccb0dee041905b195697916eb9bbeb0686316a48a5744917e2b676423dfd1407",
+        "status": "PROVED"
+      },
+      "delivery": {
+        "duration_ms": 84,
+        "proof_sha256": "1d9dc0505191f86266766c4799b47f0eedcb7dee25158093307798ea9607e667",
+        "status": "PROVED"
+      },
+      "end_to_end": {
+        "duration_ms": 316,
+        "proof_sha256": "c83d6111892e8005d733f033db9be76958211d8c3eceed105319827325728831",
+        "status": "PROVED"
+      },
+      "execution_witness": {
+        "duration_ms": 223,
+        "proof_sha256": "dbe385093927bb63d19ed469f8acda207d283b359398b8514836995c5b70bda6",
+        "status": "PROVED"
+      },
+      "observation": {
+        "duration_ms": 352,
+        "proof_sha256": "f2970ea997b99765053a39c584fe5be7007e29b3f9898bdc83d3e82b116ecd6c",
+        "status": "PROVED"
+      },
+      "plant": {
+        "duration_ms": 297,
+        "proof_sha256": "587010a890cb21dbc38e883067050d544d6c74fe3846b45f4fe0cbaebcd4f26c",
+        "status": "PROVED"
+      },
+      "roll_sync": {
+        "duration_ms": 56,
+        "proof_sha256": "16c97880100895044c6c5844e6607b56877992d79400b0e0efc3affafe1d55ad",
+        "status": "PROVED"
+      }
+    },
+    "optional_lemma_initialization_restricted": true,
+    "plant_states": 4,
+    "procedure_id": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+    "proof_profile_sha256": "148dc12aef7300fe03c9e354e2bdbf06f7b05e7837acb57897fa1ae689110647",
+    "prover": "KeYmaera X 5.1.1",
+    "return_code": 0,
+    "source_commit": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+    "status": "PROVED",
+    "timestamp": "2026-11-24T02:34:13+00:00",
+    "wall_seconds": 8.703,
+    "z3": "Z3 version 4.15.4 - 64 bit"
+  },
+  "proof_profile_hash": "148dc12aef7300fe03c9e354e2bdbf06f7b05e7837acb57897fa1ae689110647",
+  "proof_profile_sha256": "05d4e4f50515b77886236be9ff78ce43a8132d32f6f271eed970714ff6ba61d5",
+  "reduction_input_sha256": "bf46262404d99ce5c354c550e8d24af1a8f573c2a427f04b2544a6803a26a45d",
+  "reduction_verified": true,
+  "result": "PROVED",
+  "selected_mode": "HCC Remote Auto",
+  "source_commit": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+  "timestamp": "2026-11-24T02:34:26+00:00",
+  "tool_versions": {
+    "CLEO": "unused in new dL studies",
+    "Java": "17.0.21.1",
+    "KeYmaera X": "5.1.1",
+    "Z3": "4.15.4"
+  },
+  "trace_conditioned_reduction": {
+    "horizon_ticks": 1296,
+    "max_gate": 59999991,
+    "max_open_speed": 100918894,
+    "mechanical_micro_mw": [
+      16020700,
+      16245779,
+      16342334
+    ],
+    "phase_milli_deg": -2135,
+    "service_ticks": [
+      1285,
+      1291,
+      1296
+    ],
+    "settled_tick": 652,
+    "speed_at_sync": 100038406,
+    "start_tick": 31,
+    "sync_tick": 1281,
+    "voltage_milli_pu": 1030
+  }
+}

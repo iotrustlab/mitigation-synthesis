@@ -1,0 +1,203 @@
+{
+  "configuration": {
+    "metadata": "Timestamp from the evidence capture. Aggregate hashes bind sorted archive/profile pairs. A null binding denotes observational assessment.",
+    "scope": "Offline research fixtures. All paths relative to the repository or package.",
+    "source": "source_commit identifies the unchanged starting artifact. The manifest fingerprints experiment sources added since that commit."
+  },
+  "formal_model_sha256": "f53c0c2b45802c1f4c6d1e06c9188ea99a5636c314901f35e8337ae43dc83e41",
+  "milestone1_schema_identity": "attleboro-local-hand-v1",
+  "mutations_record": {
+    "archive_bytes": 49411,
+    "archive_sha256": "125a0438f7a92b7d624667a011c1f82da3c64ee03c3a822d02672e3ce4baf498",
+    "case": "attleboro-hand-dependency-mutations-v1",
+    "cleo": "not used",
+    "command": "java -Duser.home=WORKSPACE -Xss20M -jar tool.jar -launch -prove model.kyx -tool z3 -z3path solver -timeout 60 -out result.kyp",
+    "configuration": "Fresh isolated prover home per family replay, 60 s per obligation.",
+    "dependencies": 8,
+    "horizon": "3 ticks from readiness",
+    "jar_sha256": "c72cb700992e4c9fbf052113917e039ced43fa6c512493fe5473964e18b691bb",
+    "java": "openjdk version \"17.0.21.1\" 2026-11-17",
+    "kind": "experiment",
+    "model_generation_ns": 70861,
+    "obligations": {
+      "H10_disabled": {
+        "duration_ms": 134,
+        "proof_sha256": "34ec2f6192b920a15249743156f9b77ae416da48fd999565bef6139ce39ffa04",
+        "status": "PROVED"
+      },
+      "H1_disabled": {
+        "duration_ms": 184,
+        "proof_sha256": "c9cc1dfccdb135dd3f14bcbe5e3b5ab992161ef0e7042a907d9249a76d1bc756",
+        "status": "PROVED"
+      },
+      "H2_violation": {
+        "duration_ms": 216,
+        "proof_sha256": "f17fde6ed2eafa34c448858ff8c78b915bf0f8fd288dc8b3ecccbabd6176fda9",
+        "status": "PROVED"
+      },
+      "H3_violation": {
+        "duration_ms": 176,
+        "proof_sha256": "60685b66a29496663fad3e670abdc492540aade2cabcb2b60369fb59622ed457",
+        "status": "PROVED"
+      },
+      "H4_disabled": {
+        "duration_ms": 145,
+        "proof_sha256": "64d6e8c48cf4a15f1783643f91b693f4ee821a133fefe836c7204898ac828115",
+        "status": "PROVED"
+      },
+      "H5_disabled": {
+        "duration_ms": 141,
+        "proof_sha256": "cb92a88d3c5c87933c2b35361e463e7ea3a420fa0124269130c795cbfcb57b0d",
+        "status": "PROVED"
+      },
+      "H6_violation": {
+        "duration_ms": 159,
+        "proof_sha256": "996959d77d0e3d88412f63f5cf1b8b2f0924f3d5d59f5483dd5c5ce549ea06f4",
+        "status": "PROVED"
+      },
+      "H7_violation": {
+        "duration_ms": 156,
+        "proof_sha256": "16ffed6879de65d47481137ca19d95f5e5e2e2bf93652b89bea14fdbca3a8aa9",
+        "status": "PROVED"
+      },
+      "H8_violation": {
+        "duration_ms": 156,
+        "proof_sha256": "71a51684ef9c6a6e4adbb8652b0787ba8e591ddfac764106ee465772987c38fa",
+        "status": "PROVED"
+      },
+      "H9_violation": {
+        "duration_ms": 164,
+        "proof_sha256": "c742e1826769a22c66a7a134fb657dcb039ef3da498f518a7ac1af1c119aef8e",
+        "status": "PROVED"
+      }
+    },
+    "optional_lemma_initialization_restricted": true,
+    "plant_states": 3,
+    "procedure_id": "attleboro-hand-dependency-mutations-v1",
+    "proof_profile_sha256": "c1bf1bdc3578cd4027d6e15346eee801f1dd8cccc6d96919fb95e86b84392850",
+    "prover": "KeYmaera X 5.1.1",
+    "return_code": 0,
+    "source_commit": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+    "status": "PROVED",
+    "timestamp": "2026-11-24T02:30:09+00:00",
+    "wall_seconds": 5.127,
+    "z3": "Z3 version 4.15.4 - 64 bit"
+  },
+  "nominal_witness": {
+    "accepted": 1,
+    "delivered": 1,
+    "drive": 1,
+    "established": 1,
+    "fresh": 1,
+    "observed": "32/5",
+    "physical": 1,
+    "pressure": "246/5",
+    "q": "32/5",
+    "ready": 0,
+    "received": 1,
+    "request": 1,
+    "run": 1,
+    "safe": 1,
+    "t": 3,
+    "trusted": 1
+  },
+  "observed_late_hand_trace_sha256": "1e7dd13efe5d0856dafa080e0c5fb553d0a26f3838761bbce211a0087b6e313e",
+  "procedure": "attleboro-local-hand-end-to-end-recovery-v1",
+  "profile_bindings": [
+    {
+      "archive_sha256": "125a0438f7a92b7d624667a011c1f82da3c64ee03c3a822d02672e3ce4baf498",
+      "profile_sha256": "c1bf1bdc3578cd4027d6e15346eee801f1dd8cccc6d96919fb95e86b84392850"
+    },
+    {
+      "archive_sha256": "2cb995a2a63956cc21e5a663549f957198408848f0120ad63b5473d5230b2c40",
+      "profile_sha256": "f6d304c7a874b89a08fe6c8f3e3561bbf8992b9737741b1256d64bd4ed451ddd"
+    },
+    {
+      "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+      "profile_sha256": "1abb76da65e26ec0bcc3aceb75b3b7440987fdba222a6aec3c1ba1b7260dcffe"
+    }
+  ],
+  "proof_profile_sha256": "5f0d5b8f6bb0e4e8ca93bd2e79a41065a219999c64f74119e6a06e5ed7ae636f",
+  "record": {
+    "archive_bytes": 23239,
+    "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+    "case": "attleboro-local-hand-end-to-end-recovery-v1",
+    "cleo": "not used",
+    "command": "java -Duser.home=WORKSPACE -Xss20M -jar tool.jar -launch -prove model.kyx -tool z3 -z3path solver -timeout 60 -out result.kyp",
+    "configuration": "Fresh isolated prover home per family replay, 60 s per obligation.",
+    "dependencies": 8,
+    "horizon": "3 ticks of 100 ms",
+    "jar_sha256": "c72cb700992e4c9fbf052113917e039ced43fa6c512493fe5473964e18b691bb",
+    "java": "openjdk version \"17.0.21.1\" 2026-11-17",
+    "kind": "experiment",
+    "model_generation_ns": 85561,
+    "obligations": {
+      "end_to_end": {
+        "duration_ms": 189,
+        "proof_sha256": "74e72e3169084877ff088149f5575cb7a3fd6b66b418b7cb383d219207c71b66",
+        "status": "PROVED"
+      },
+      "execution_witness": {
+        "duration_ms": 153,
+        "proof_sha256": "626c36906e5e06dbaa2599475f9e08c500e0ef58d3d87016f42548a3e91babd7",
+        "status": "PROVED"
+      },
+      "precondition_witness": {
+        "duration_ms": 13,
+        "proof_sha256": "4952edff87010ee9d6517aa792114838241b3f39890af69f5eb7c1085940f8cf",
+        "status": "PROVED"
+      },
+      "stage_actor": {
+        "duration_ms": 15,
+        "proof_sha256": "9bc8e8ef09c79c664a5c0a1230f47182c51566e36356af702d6a3c166ca48aac",
+        "status": "PROVED"
+      },
+      "stage_controller": {
+        "duration_ms": 18,
+        "proof_sha256": "1dc3da5d3a475328af2f11ed350f2dc2f3341ce8938ae131e591a83972d91c7c",
+        "status": "PROVED"
+      },
+      "stage_delivery": {
+        "duration_ms": 17,
+        "proof_sha256": "16948a5882d58b934e82c075ae973596647e1db794dc2d0666b9010c5c0ca5f6",
+        "status": "PROVED"
+      },
+      "stage_observer": {
+        "duration_ms": 223,
+        "proof_sha256": "8e1dd40028f096309f2be3b166ad85a3b6c90cf4d343667edf71a85fdd307204",
+        "status": "PROVED"
+      },
+      "stage_plant": {
+        "duration_ms": 165,
+        "proof_sha256": "764f51f43397c89e02481aa9e958d2e5dee07b1e892b2aab11eaa2c52d0b3ef0",
+        "status": "PROVED"
+      }
+    },
+    "optional_lemma_initialization_restricted": true,
+    "plant_states": 3,
+    "procedure_id": "attleboro-local-hand-end-to-end-recovery-v1",
+    "proof_profile_sha256": "1abb76da65e26ec0bcc3aceb75b3b7440987fdba222a6aec3c1ba1b7260dcffe",
+    "prover": "KeYmaera X 5.1.1",
+    "return_code": 0,
+    "source_commit": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+    "status": "PROVED",
+    "timestamp": "2026-11-24T02:30:04+00:00",
+    "wall_seconds": 7.563,
+    "z3": "Z3 version 4.15.4 - 64 bit"
+  },
+  "result": "PROVED",
+  "sampled_plant_states": [
+    "flow",
+    "run delay",
+    "pressure derived from flow"
+  ],
+  "source_commit": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+  "source_tree": "ec3319f9d3ac41352df2a21253f4af3aab7f22ca",
+  "timestamp": "2026-11-24T02:34:26+00:00",
+  "tool_versions": {
+    "CLEO": "unused in new dL studies",
+    "Java": "17.0.21.1",
+    "KeYmaera X": "5.1.1",
+    "Z3": "4.15.4"
+  }
+}

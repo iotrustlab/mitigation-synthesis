@@ -1,0 +1,397 @@
+{
+  "accounting": "Per-archive wall time includes JVM startup and proof export. Tactic times exclude startup. Render times cover archive serialization after profile construction. Counts of signals are distinct dependency-mediated resource outputs in the nominal path. Plant coordinates follow each abstraction. The Merwin arithmetic reduction is measured separately.",
+  "configuration": {
+    "metadata": "Timestamp from the evidence capture. Aggregate hashes bind sorted archive/profile pairs. A null binding denotes observational assessment.",
+    "scope": "Offline research fixtures. All paths relative to the repository or package.",
+    "source": "source_commit identifies the unchanged starting artifact. The manifest fingerprints experiment sources added since that commit."
+  },
+  "deep_nominal_obligation_count": 34,
+  "formal_model_sha256": "c0e9a17f4d034a7c1b8e1920b86a1d90f60640c3c93b8fb6ff3a8157c079c168",
+  "new_dL_obligations": 49,
+  "new_dL_obligations_proved": 49,
+  "profile_bindings": [
+    {
+      "archive_sha256": "02e8b4934d84889e80cf51efd276d4f384705fd6fb496016448eb6eebb0655e4",
+      "profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86"
+    },
+    {
+      "archive_sha256": "125a0438f7a92b7d624667a011c1f82da3c64ee03c3a822d02672e3ce4baf498",
+      "profile_sha256": "c1bf1bdc3578cd4027d6e15346eee801f1dd8cccc6d96919fb95e86b84392850"
+    },
+    {
+      "archive_sha256": "189bb34b8243289ee519befbbca7ccd69ac5cd7753f054bd158a03f1bb9fdfd9",
+      "profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86"
+    },
+    {
+      "archive_sha256": "1f3ca22445d78f5442043e369bd02574bd9323d3e1298e65ed6c3cc5d0a46240",
+      "profile_sha256": "94065bab228442ff81ba7a81d13089e5826157d275a62d015c46953b13083267"
+    },
+    {
+      "archive_sha256": "2a1aacd88731be185c6434825ba8ae76669a5f7195b3d0f4ea62274393e2e0d0",
+      "profile_sha256": "e5627711bbefe6a6b663b888257151ba2e5aa7010cf5b7084dce87c490ecf2fb"
+    },
+    {
+      "archive_sha256": "2cb995a2a63956cc21e5a663549f957198408848f0120ad63b5473d5230b2c40",
+      "profile_sha256": "f6d304c7a874b89a08fe6c8f3e3561bbf8992b9737741b1256d64bd4ed451ddd"
+    },
+    {
+      "archive_sha256": "2d30c6538c3b3de57c5b8ec26b68656331b1be9e90c02b62debc0f5054462ccf",
+      "profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86"
+    },
+    {
+      "archive_sha256": "3242949d6ed6fcf9a1dea9ea1489979c2fa0de0fae27eacc3a807af177485f27",
+      "profile_sha256": "832d838fc65e3c6083ba32b5078aa05f79a794d4b77760ea9d883d8b86b18cf0"
+    },
+    {
+      "archive_sha256": "37278e3b919e707cda1ff8fe06f7deabd1b806f4ddc4f8b641dd56c73a1609dc",
+      "profile_sha256": "0e2f980faab0612b8cf9ef1fe929e0e3cca827154cdf1f98ce2877056acf55ab"
+    },
+    {
+      "archive_sha256": "3e843171843db12d4b2eff3eac44478714812e79596ee150770d3a7294e44fe8",
+      "profile_sha256": "92b52012c51b8784a6a8afedf6ed6d601da7750be616cc341d6e374947ba8d6f"
+    },
+    {
+      "archive_sha256": "50105330332a9c8f268f9a30039c35b4abb45d82360eec2207e1197f6fcd807e",
+      "profile_sha256": "e9f68024b262ea339ae037c1c5128daf8efe0377d67cdbfb2ed125136d43d07c"
+    },
+    {
+      "archive_sha256": "579683dc662a4545c31357afb96319656ae077e38bd511ad5bf3f2ab9aa8fb5e",
+      "profile_sha256": "c4e37a39db57d915095b70865f2d1c5cf3eb217fe3158ed24561edd1a884b44e"
+    },
+    {
+      "archive_sha256": "69474c7456831aae1355c6417de2a68f82114aaf9c85450c0d49ad9ae8ee2937",
+      "profile_sha256": "44775b2d8aea2ee80bb92efbcdc5ecfeb2fc916f59800450172962274c51e8c8"
+    },
+    {
+      "archive_sha256": "7b7027586bceeb68e2bca9680994e37194d6dd1df05b15c707e586aca72d15b2",
+      "profile_sha256": "c62b173de2478851d1f7a32559b84989dcb3b278b51ac76deab87dc16c872de2"
+    },
+    {
+      "archive_sha256": "7d8184f810e2b7075cb6b3d58d19005c6a1a55db562fd129abc27877a102313f",
+      "profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86"
+    },
+    {
+      "archive_sha256": "94bcde2c484a8f5318b5c27f20161093b357acd4ad854c28a6b1a017ce67ad8c",
+      "profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86"
+    },
+    {
+      "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+      "profile_sha256": "148dc12aef7300fe03c9e354e2bdbf06f7b05e7837acb57897fa1ae689110647"
+    },
+    {
+      "archive_sha256": "a4f1a60c3262b6ee9def3051f7eb300b014989bfbf0e0ae41709b9d3b6195c02",
+      "profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86"
+    },
+    {
+      "archive_sha256": "a6eb6a160d76251131e5d14c4ac1f7310f21f0383d91651e2d1e4ab0fa8b63dc",
+      "profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86"
+    },
+    {
+      "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+      "profile_sha256": "1abb76da65e26ec0bcc3aceb75b3b7440987fdba222a6aec3c1ba1b7260dcffe"
+    },
+    {
+      "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+      "profile_sha256": "06fd1329a994323e295be80c3672a68a88328a289d0fb8d2e8388baf1ba9f306"
+    },
+    {
+      "archive_sha256": "cf6fb6b3aea67835415a0253c3c2b6c67281a57802be28b4ab2cd01bfb292cb5",
+      "profile_sha256": "2c8e083aa88c0a3ed1f16e1fdacdc18d72513bea5656fbf5a7252ad6ca8bab3b"
+    },
+    {
+      "archive_sha256": "d78e84e3954ad3674355cb27c0ba141111243e0a4f5333c1b01d2dfcec6c6bf1",
+      "profile_sha256": "44e5f6b1e5f545a3bc0cd2defd97f6959298d391941b8bffbae2bca013561b86"
+    },
+    {
+      "archive_sha256": "ed8e68b5cdaf2e8d8f2dd7cce862a93e0832b0166f79d7ac1b8970779087b22b",
+      "profile_sha256": "59367d632343550a9570602d410fd76103293ae650dc008fe92d282290062c5e"
+    }
+  ],
+  "proof_profile_sha256": "404ec5f89475ed08e127eb6611481eac68d239397acca498136238a0097aa231",
+  "rows": [
+    {
+      "archive_bytes": 29643,
+      "archive_render_ns": 2841197,
+      "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+      "dependency_controlled_signals": 11,
+      "horizon": "3 x 100 ms",
+      "obligations": 9,
+      "obligations_detail": {
+        "end_to_end": {
+          "duration_ms": 216,
+          "proof_sha256": "49621e563057068af159482970c79e3b58da1a9d37e51ad8df256545cd267e6a",
+          "status": "PROVED"
+        },
+        "execution_witness": {
+          "duration_ms": 188,
+          "proof_sha256": "4716ac57f6ea9fdec076fa5ccf24af9698d0e94fc3a27b5e77f98d8301aa4e8b",
+          "status": "PROVED"
+        },
+        "precondition_witness": {
+          "duration_ms": 14,
+          "proof_sha256": "d4bd6169e8c5ec54e2aec92e0a554ff32b60bd9deb4d075fcf058a7cfe8eabd0",
+          "status": "PROVED"
+        },
+        "retained_start": {
+          "duration_ms": 63,
+          "proof_sha256": "20bec7f0612fc9f13790ed9e085408f030d7baa648a0cf24886ed53cd1737943",
+          "status": "PROVED"
+        },
+        "stage_actor": {
+          "duration_ms": 16,
+          "proof_sha256": "837f8d7e153fea4ceb6c36f12001ae9368dd530899aa07df1f1072eb4474c4c8",
+          "status": "PROVED"
+        },
+        "stage_controller": {
+          "duration_ms": 23,
+          "proof_sha256": "4f34a0e94c12127b3487b6bf827ecf5bd881ab2557ee134a7ac5c45620d02d69",
+          "status": "PROVED"
+        },
+        "stage_delivery": {
+          "duration_ms": 21,
+          "proof_sha256": "d1de151795b07f0e0b83133379a3ae95400dd4dbd03ceeb89fdc148a413a315d",
+          "status": "PROVED"
+        },
+        "stage_observer": {
+          "duration_ms": 241,
+          "proof_sha256": "d16f75b64fdf992f100cacc7efcd001c79294853d90745aa7dd5ebc4aabafed9",
+          "status": "PROVED"
+        },
+        "stage_plant": {
+          "duration_ms": 275,
+          "proof_sha256": "6eb0f806cd4d45db87dd8626d0157f11c95f98c7086d95f1ae13daf0d53a95a1",
+          "status": "PROVED"
+        }
+      },
+      "plant_state_count": 3,
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_wall_seconds": 8.008,
+      "proved": 9,
+      "tactic_ms": {
+        "composition": 216,
+        "controller": 23,
+        "plant": 275
+      },
+      "unresolved": 0
+    },
+    {
+      "archive_bytes": 23239,
+      "archive_render_ns": 85561,
+      "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+      "dependency_controlled_signals": 8,
+      "horizon": "3 ticks of 100 ms",
+      "obligations": 8,
+      "obligations_detail": {
+        "end_to_end": {
+          "duration_ms": 189,
+          "proof_sha256": "74e72e3169084877ff088149f5575cb7a3fd6b66b418b7cb383d219207c71b66",
+          "status": "PROVED"
+        },
+        "execution_witness": {
+          "duration_ms": 153,
+          "proof_sha256": "626c36906e5e06dbaa2599475f9e08c500e0ef58d3d87016f42548a3e91babd7",
+          "status": "PROVED"
+        },
+        "precondition_witness": {
+          "duration_ms": 13,
+          "proof_sha256": "4952edff87010ee9d6517aa792114838241b3f39890af69f5eb7c1085940f8cf",
+          "status": "PROVED"
+        },
+        "stage_actor": {
+          "duration_ms": 15,
+          "proof_sha256": "9bc8e8ef09c79c664a5c0a1230f47182c51566e36356af702d6a3c166ca48aac",
+          "status": "PROVED"
+        },
+        "stage_controller": {
+          "duration_ms": 18,
+          "proof_sha256": "1dc3da5d3a475328af2f11ed350f2dc2f3341ce8938ae131e591a83972d91c7c",
+          "status": "PROVED"
+        },
+        "stage_delivery": {
+          "duration_ms": 17,
+          "proof_sha256": "16948a5882d58b934e82c075ae973596647e1db794dc2d0666b9010c5c0ca5f6",
+          "status": "PROVED"
+        },
+        "stage_observer": {
+          "duration_ms": 223,
+          "proof_sha256": "8e1dd40028f096309f2be3b166ad85a3b6c90cf4d343667edf71a85fdd307204",
+          "status": "PROVED"
+        },
+        "stage_plant": {
+          "duration_ms": 165,
+          "proof_sha256": "764f51f43397c89e02481aa9e958d2e5dee07b1e892b2aab11eaa2c52d0b3ef0",
+          "status": "PROVED"
+        }
+      },
+      "plant_state_count": 3,
+      "procedure": "attleboro-local-hand-end-to-end-recovery-v1",
+      "proof_wall_seconds": 7.563,
+      "proved": 8,
+      "tactic_ms": {
+        "composition": 189,
+        "controller": 18,
+        "plant": 165
+      },
+      "unresolved": 0
+    },
+    {
+      "archive_bytes": 8997,
+      "archive_render_ns": 50281,
+      "archive_sha256": "37278e3b919e707cda1ff8fe06f7deabd1b806f4ddc4f8b641dd56c73a1609dc",
+      "dependency_controlled_signals": 8,
+      "horizon": "4 s, service from 2 s",
+      "obligations": 5,
+      "obligations_detail": {
+        "composition": {
+          "duration_ms": 88,
+          "proof_sha256": "841d2504633c594a5c37e9933eb17b0ad360e9ec94f37304e11c6e10da8fe88f",
+          "status": "PROVED"
+        },
+        "controller": {
+          "duration_ms": 15,
+          "proof_sha256": "e972f91df120f4b3c7d059f34f3d9979db724093a1b8b17a0db7397aa94b46d5",
+          "status": "PROVED"
+        },
+        "nonvacuity": {
+          "duration_ms": 77,
+          "proof_sha256": "879bf5eb77e9e69de147b9829869f1db84c9abac01c9ab9964835c7616ca1759",
+          "status": "PROVED"
+        },
+        "plant": {
+          "duration_ms": 47,
+          "proof_sha256": "7594d18158bee94041d017ac63f583418a64641927b0ed11cbd92223135ff077",
+          "status": "PROVED"
+        },
+        "rate_integral": {
+          "duration_ms": 509,
+          "proof_sha256": "74129326505600084f407bd1e0bfec652f07faf03c50567225c768188ef7b31f",
+          "status": "PROVED"
+        }
+      },
+      "plant_state_count": 1,
+      "procedure": "controlled-water-automatic-P2-v1",
+      "proof_wall_seconds": 7.164,
+      "proved": 5,
+      "tactic_ms": {
+        "composition": 88,
+        "controller": 15,
+        "plant": 47
+      },
+      "unresolved": 0
+    },
+    {
+      "archive_bytes": 8993,
+      "archive_render_ns": 19310,
+      "archive_sha256": "50105330332a9c8f268f9a30039c35b4abb45d82360eec2207e1197f6fcd807e",
+      "dependency_controlled_signals": 7,
+      "horizon": "4 s, service from 2 s",
+      "obligations": 5,
+      "obligations_detail": {
+        "composition": {
+          "duration_ms": 104,
+          "proof_sha256": "ffb1ed61ec1a8210cb9c754ea7f3b87e4be9bf23c53cb761266ce1d9afc915af",
+          "status": "PROVED"
+        },
+        "controller": {
+          "duration_ms": 22,
+          "proof_sha256": "bf98f459591fca909a7e05c9cc5e3434689e2faf0dd1573432128916a6179ecc",
+          "status": "PROVED"
+        },
+        "nonvacuity": {
+          "duration_ms": 77,
+          "proof_sha256": "ab6fc03b6643934c7061134e1a77a280fd9f2e1d8ee21dfc453d33cfac4e0a68",
+          "status": "PROVED"
+        },
+        "plant": {
+          "duration_ms": 48,
+          "proof_sha256": "22a56972c9ebf38e2741dc84209cfa242fbf695e0adb00bf956c87fb15df850d",
+          "status": "PROVED"
+        },
+        "rate_integral": {
+          "duration_ms": 400,
+          "proof_sha256": "014b6f277f39b0c9a3dacebb64955e794aabf54316256289e8d76d2c7ae40e64",
+          "status": "PROVED"
+        }
+      },
+      "plant_state_count": 1,
+      "procedure": "controlled-water-manual-P3-v1",
+      "proof_wall_seconds": 3.158,
+      "proved": 5,
+      "tactic_ms": {
+        "composition": 104,
+        "controller": 22,
+        "plant": 48
+      },
+      "unresolved": 0
+    },
+    {
+      "archive_bytes": 35334,
+      "archive_render_ns": 70931,
+      "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+      "dependency_controlled_signals": 10,
+      "horizon": "1296 mandatory 100 ms scans (129.6 s)",
+      "obligations": 7,
+      "obligations_detail": {
+        "actor_controller": {
+          "duration_ms": 20,
+          "proof_sha256": "ccb0dee041905b195697916eb9bbeb0686316a48a5744917e2b676423dfd1407",
+          "status": "PROVED"
+        },
+        "delivery": {
+          "duration_ms": 84,
+          "proof_sha256": "1d9dc0505191f86266766c4799b47f0eedcb7dee25158093307798ea9607e667",
+          "status": "PROVED"
+        },
+        "end_to_end": {
+          "duration_ms": 316,
+          "proof_sha256": "c83d6111892e8005d733f033db9be76958211d8c3eceed105319827325728831",
+          "status": "PROVED"
+        },
+        "execution_witness": {
+          "duration_ms": 223,
+          "proof_sha256": "dbe385093927bb63d19ed469f8acda207d283b359398b8514836995c5b70bda6",
+          "status": "PROVED"
+        },
+        "observation": {
+          "duration_ms": 352,
+          "proof_sha256": "f2970ea997b99765053a39c584fe5be7007e29b3f9898bdc83d3e82b116ecd6c",
+          "status": "PROVED"
+        },
+        "plant": {
+          "duration_ms": 297,
+          "proof_sha256": "587010a890cb21dbc38e883067050d544d6c74fe3846b45f4fe0cbaebcd4f26c",
+          "status": "PROVED"
+        },
+        "roll_sync": {
+          "duration_ms": 56,
+          "proof_sha256": "16c97880100895044c6c5844e6607b56877992d79400b0e0efc3affafe1d55ad",
+          "status": "PROVED"
+        }
+      },
+      "plant_arithmetic_certificate": {
+        "checked_scans": 1296,
+        "smt_sha256": "c588a76b2dbf9e4959b0500055e6ea169c82f5698bfef29efc805561f0db95a0",
+        "status": "unsat",
+        "wall_seconds": 0.098323
+      },
+      "plant_state_count": 4,
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "proof_wall_seconds": 8.703,
+      "proved": 7,
+      "tactic_ms": {
+        "composition": 316,
+        "controller": 20,
+        "plant": 297
+      },
+      "unresolved": 0
+    }
+  ],
+  "source_commit": "c817476a8f1e92a7d801652e583d4e8d0a23096a",
+  "timestamp": "2026-11-24T02:34:26+00:00",
+  "tool_versions": {
+    "CLEO": "unused in new dL studies",
+    "Java": "17.0.21.1",
+    "KeYmaera X": "5.1.1",
+    "Z3": "4.15.4"
+  }
+}
