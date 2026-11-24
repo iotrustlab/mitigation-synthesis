@@ -1,0 +1,26 @@
+# Canonical cases for bounded recovery
+
+The six cases reuse the published incident inputs in the historical experiment snapshot `fa719386e782766f01a8db770d7b128ccba3ad99`. The [case records](../results/paper_v2/canonical_semantic_cases.json) list each input state, assigned dependencies, checked theorems and witness. Each proof link identifies a particular formula in a particular archive. The [obligation matrix](../results/paper_v2/proof_obligation_matrix.json) gives five positive fixed-procedure profiles and five specific adverse witnesses. It lists all eight obligation categories for each positive profile, including three inapplicable historical-facility costs. Several rows are explicitly justified by different conjuncts of one checked theorem.
+
+| Case | Input and decisive transition | Evidence and interpretation |
+| --- | --- | --- |
+| S1. Trusted Remote (M0) | Authorized operator at tick zero, powered and eligible Remote path, stopped pump, trusted delivery and fresh water meter. Each of three 100 ms scans advances the clock. | Actual flow is 0, 4 and 6.4 L/s, with final pressure 49.2 psi and matching observations. The universal box, execution diamond and premise witness cover the research fixture and its sampled horizon. Longer sustained delivery, between-scan hydraulics, current-site staffing and meter integrity require independent evidence. |
+| S2. Known compromised delivery (M5) | The healthy PLC sets its output to one. The downstream stage independently chooses a persistent delivered bit. | The new specific diamond reaches zero delivered demand, physical flow and observed flow at the deadline. This admissible violation refutes the stated guarantee under the stipulated threat alphabet. |
+| S3. Unknown delivery integrity (M13) | The same initial request and a union of the nominal copy and adverse output relations are allowed. | A new diamond reaches the same adverse outcome. The widened universal guarantee fails. Incident evidence cannot decide integrity, so the incident classification is UNKNOWN. |
+| S4. Local Hand (H0, H1, H2) | Generator power, local selection and the shared drive, pump and water path are required. Readiness is measured from the original request time. | A ready authorized operator gives PROVED. An absent operator disables the required stage and gives REJECTED. One tick late reaches the same satisfactory flow at tick four, beyond deadline three, and gives REJECTED. The held-over response time makes the late branch an actual timed run. |
+| S5. HCC Remote Auto (MER0, MER6, MER10) | The startup uses pinned forcing and synchronization readings. Breaker demand, conducting contact and delivered generation are distinct quantities. | Nominal startup has three credible positive samples. A known inoperable contact admits close demand with zero MW at all three polls, giving REJECTED. An unknown contact admits that outcome in the widened model, leaving incident recovery UNKNOWN. Generation and shaft response follow the reduced research plant and ideal-grid assumption. |
+| S6. CHP lifecycle (CHP0) | A reviewed compatible backup passes the simulated reset and boot conditions. Benign replacement logic has recorded runtime and heartbeat evidence. | The bounded device milestone is established. There is no site process model, output evidence or identified supply mechanism proving service. Process and customer outcomes remain UNKNOWN. No dL prover was invoked for this observational claim. |
+
+The five positive profiles use 15 new dL entries for premise satisfiability, scheduled boundary and nominal evidence production/correspondence. Five additional dL entries prove the exact adverse endpoints for M5, M13, H2, MER6 and MER10. A prefix traversal checks that every admitted finite semantic choice has a successor, so a later guard cannot silently drop it. For controlled water symbolic policy weights occur only in the final unguarded assignment and do not affect this traversal. KeYmaera X proves the full universal cost formula for arbitrary nonnegative weights in the original composition theorem.
+
+## Replay
+
+Use the original pinned KeYmaera X 5.1.1 archive, Z3 4.15.4 and OpenJDK 17. From the experiment repository root, set `KEYMAERAX_JAR` to the local JAR and put `java` and `z3` on the command search path. Keep fresh timing observations in a separate output directory. To verify the published records, the report command validates regenerated formulas against each original archive, certificate and proof hash.
+
+```sh
+python3 -m recovery_experiment.procedure_formalism.paper_v2.formal --output replay-formal
+python3 -m recovery_experiment.procedure_formalism.paper_v2.formal_reports --output replay-reports
+python3 -m unittest recovery_experiment.tests.test_paper_v2_formal
+```
+
+Compare the models and proof exports under `replay-formal/` with `recovery_experiment/procedure_formalism/paper_v2/formal_evidence/`. The new profile names are revision-specific. Archive headers retain the shared renderer’s historical base identifier. The revision proof index records the frozen input snapshot and actual tool versions. Tactic times in the matrix belong to the proof file identified in the row; E2 measures fresh repeated end-to-end timings independently.

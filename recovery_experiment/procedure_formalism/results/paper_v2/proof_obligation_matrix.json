@@ -1,0 +1,1005 @@
+{
+  "fixed_procedure_rows": [
+    {
+      "archive_sha256": "6c827c244c2d7173670b0a489293ca782e3cbeccc2aeae6866d617a70e92fc49",
+      "case": "M0",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_M0.kyx",
+      "justification": "Concrete premise witness.",
+      "obligation": "O1",
+      "paper_claim": "At least one valuation satisfies the incident assumptions.",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_M0/O1_premises.kyp",
+      "proof_sha256": "0d9b9f5e779bc6f0d192cc04e3ee56282cedd68bcd082253e7296713860be7c6",
+      "status": "PROVED",
+      "tactic_ms": 91,
+      "theorem": "v2_M0_O1_premises",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+      "case": "M0",
+      "formal_artifact": "models/M0.kyx",
+      "justification": "Diamond with stronger terminal service postcondition.",
+      "obligation": "O2",
+      "paper_claim": "An execution reaches the end of the specified bounded program from each admitted initial state.",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_record": "proof_records/M0/execution_witness.kyp",
+      "proof_sha256": "4716ac57f6ea9fdec076fa5ccf24af9698d0e94fc3a27b5e77f98d8301aa4e8b",
+      "status": "PROVED",
+      "tactic_ms": 192,
+      "theorem": "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_execution_witness",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "6c827c244c2d7173670b0a489293ca782e3cbeccc2aeae6866d617a70e92fc49",
+      "case": "M0",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_M0.kyx",
+      "justification": "Deadline box and exhaustive semantic-prefix successor check.",
+      "obligation": "O3",
+      "paper_claim": "Admitted semantic prefixes extend to the scheduled boundary in the nominal model.",
+      "prefix_totality": {
+        "blocked_prefixes": 0,
+        "reachable_prefixes_checked": 48,
+        "scope": "All valuations allowed by this case's guarded semantic assignments.",
+        "stage_widths": [
+          {
+            "prefixes_at_exit": 1,
+            "stage": "actor"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "controller"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "delivery"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "plant"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "observer"
+          }
+        ],
+        "terminal_paths": 1
+      },
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_M0/O3_boundary.kyp",
+      "proof_sha256": "4512dfcb01180a1e60af73dcaee0753a61aaac875ee389e0f1edc9c75de57b99",
+      "status": "PROVED",
+      "tactic_ms": 1167,
+      "theorem": "v2_M0_O3_boundary",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+      "case": "M0",
+      "formal_artifact": "models/M0.kyx",
+      "justification": "Safety conjunct of the bound composition proof.",
+      "obligation": "O4",
+      "paper_claim": "All covered physical states meet the case safety contract.",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_record": "proof_records/M0/end_to_end.kyp",
+      "proof_sha256": "49621e563057068af159482970c79e3b58da1a9d37e51ad8df256545cd267e6a",
+      "status": "PROVED",
+      "tactic_ms": 223,
+      "theorem": "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_end_to_end",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+      "case": "M0",
+      "formal_artifact": "models/M0.kyx",
+      "justification": "Physical-service conjunct of the bound composition proof.",
+      "obligation": "O5",
+      "paper_claim": "Physical service holds over the domain-specific sample set or service interval.",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_record": "proof_records/M0/end_to_end.kyp",
+      "proof_sha256": "49621e563057068af159482970c79e3b58da1a9d37e51ad8df256545cd267e6a",
+      "status": "PROVED",
+      "tactic_ms": 223,
+      "theorem": "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_end_to_end",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "6c827c244c2d7173670b0a489293ca782e3cbeccc2aeae6866d617a70e92fc49",
+      "case": "M0",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_M0.kyx",
+      "justification": "Full-program box for evidence and its matching readings.",
+      "obligation": "O6",
+      "paper_claim": "The procedure produces credible observations matching the measured physical values.",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_M0/O6_correspondence.kyp",
+      "proof_sha256": "f80b65e3014237b622f9a13006ee9e3d2721b0a2178188ae47adc8afbd3ef154",
+      "status": "PROVED",
+      "tactic_ms": 889,
+      "theorem": "v2_M0_O6_correspondence",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+      "case": "M0",
+      "formal_artifact": "models/M0.kyx",
+      "justification": "Bound end-to-end box.",
+      "obligation": "O7",
+      "paper_claim": "Every completed execution meets safety, physical service and evidence requirements on time.",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_record": "proof_records/M0/end_to_end.kyp",
+      "proof_sha256": "49621e563057068af159482970c79e3b58da1a9d37e51ad8df256545cd267e6a",
+      "status": "PROVED",
+      "tactic_ms": 223,
+      "theorem": "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_end_to_end",
+      "unresolved_reason": null
+    },
+    {
+      "case": "M0",
+      "formal_artifact": null,
+      "obligation": "O8",
+      "paper_claim": "The exact component costs and weighted identity hold for all nonnegative coefficients.",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "proof_record": null,
+      "status": "NOT_APPLICABLE",
+      "tactic_ms": null,
+      "unresolved_reason": "No common-context cost contract specified."
+    },
+    {
+      "archive_sha256": "f8aebb4cdd544966dd4711de2bd900fc186592a4775c76295892047208d5682d",
+      "case": "H0",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_H0.kyx",
+      "justification": "Concrete premise witness.",
+      "obligation": "O1",
+      "paper_claim": "At least one valuation satisfies the incident assumptions.",
+      "procedure": "attleboro-local-hand-v1",
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_H0/O1_premises.kyp",
+      "proof_sha256": "d2ab50a83a37ab4e16899741332e4e04f3e1428e859680b097da60a9cb45cdc4",
+      "status": "PROVED",
+      "tactic_ms": 189,
+      "theorem": "v2_H0_O1_premises",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+      "case": "H0",
+      "formal_artifact": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+      "justification": "Diamond with stronger terminal service postcondition.",
+      "obligation": "O2",
+      "paper_claim": "An execution reaches the end of the specified bounded program from each admitted initial state.",
+      "procedure": "attleboro-local-hand-v1",
+      "proof_record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/execution_witness.kyp",
+      "proof_sha256": "626c36906e5e06dbaa2599475f9e08c500e0ef58d3d87016f42548a3e91babd7",
+      "status": "PROVED",
+      "tactic_ms": 153,
+      "theorem": "attleboro-local-hand-end-to-end-recovery-v1_execution_witness",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "f8aebb4cdd544966dd4711de2bd900fc186592a4775c76295892047208d5682d",
+      "case": "H0",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_H0.kyx",
+      "justification": "Deadline box and exhaustive semantic-prefix successor check.",
+      "obligation": "O3",
+      "paper_claim": "Admitted semantic prefixes extend to the scheduled boundary in the nominal model.",
+      "prefix_totality": {
+        "blocked_prefixes": 0,
+        "reachable_prefixes_checked": 45,
+        "scope": "All valuations allowed by this case's guarded semantic assignments.",
+        "stage_widths": [
+          {
+            "prefixes_at_exit": 1,
+            "stage": "actor"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "controller"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "delivery"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "plant"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "observer"
+          }
+        ],
+        "terminal_paths": 1
+      },
+      "procedure": "attleboro-local-hand-v1",
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_H0/O3_boundary.kyp",
+      "proof_sha256": "8bb79b88275bc703c86703a902c34221c7f88c055df9bd28e2dda6f9949ddf28",
+      "status": "PROVED",
+      "tactic_ms": 1347,
+      "theorem": "v2_H0_O3_boundary",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+      "case": "H0",
+      "formal_artifact": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+      "justification": "Safety conjunct of the bound composition proof.",
+      "obligation": "O4",
+      "paper_claim": "All covered physical states meet the case safety contract.",
+      "procedure": "attleboro-local-hand-v1",
+      "proof_record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/end_to_end.kyp",
+      "proof_sha256": "74e72e3169084877ff088149f5575cb7a3fd6b66b418b7cb383d219207c71b66",
+      "status": "PROVED",
+      "tactic_ms": 189,
+      "theorem": "attleboro-local-hand-end-to-end-recovery-v1_end_to_end",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+      "case": "H0",
+      "formal_artifact": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+      "justification": "Physical-service conjunct of the bound composition proof.",
+      "obligation": "O5",
+      "paper_claim": "Physical service holds over the domain-specific sample set or service interval.",
+      "procedure": "attleboro-local-hand-v1",
+      "proof_record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/end_to_end.kyp",
+      "proof_sha256": "74e72e3169084877ff088149f5575cb7a3fd6b66b418b7cb383d219207c71b66",
+      "status": "PROVED",
+      "tactic_ms": 189,
+      "theorem": "attleboro-local-hand-end-to-end-recovery-v1_end_to_end",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "f8aebb4cdd544966dd4711de2bd900fc186592a4775c76295892047208d5682d",
+      "case": "H0",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_H0.kyx",
+      "justification": "Full-program box for evidence and its matching readings.",
+      "obligation": "O6",
+      "paper_claim": "The procedure produces credible observations matching the measured physical values.",
+      "procedure": "attleboro-local-hand-v1",
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_H0/O6_correspondence.kyp",
+      "proof_sha256": "86cbd39e82b55a978c480ea159168d97b2b3dc8f86118239b4373228330ff272",
+      "status": "PROVED",
+      "tactic_ms": 1168,
+      "theorem": "v2_H0_O6_correspondence",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+      "case": "H0",
+      "formal_artifact": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+      "justification": "Bound end-to-end box.",
+      "obligation": "O7",
+      "paper_claim": "Every completed execution meets safety, physical service and evidence requirements on time.",
+      "procedure": "attleboro-local-hand-v1",
+      "proof_record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/end_to_end.kyp",
+      "proof_sha256": "74e72e3169084877ff088149f5575cb7a3fd6b66b418b7cb383d219207c71b66",
+      "status": "PROVED",
+      "tactic_ms": 189,
+      "theorem": "attleboro-local-hand-end-to-end-recovery-v1_end_to_end",
+      "unresolved_reason": null
+    },
+    {
+      "case": "H0",
+      "formal_artifact": null,
+      "obligation": "O8",
+      "paper_claim": "The exact component costs and weighted identity hold for all nonnegative coefficients.",
+      "procedure": "attleboro-local-hand-v1",
+      "proof_record": null,
+      "status": "NOT_APPLICABLE",
+      "tactic_ms": null,
+      "unresolved_reason": "No common-context cost contract specified."
+    },
+    {
+      "archive_sha256": "2a0050c6fca97dd90b53f15e1aac17fd9073e6b9e89b47ae856fc9abafc16c9e",
+      "case": "MER0",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_MER0.kyx",
+      "justification": "Concrete premise witness.",
+      "obligation": "O1",
+      "paper_claim": "At least one valuation satisfies the incident assumptions.",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_MER0/O1_premises.kyp",
+      "proof_sha256": "46618d8f97deaa3bec04f6d095f1a3d6ba0d695a346520cec1edf4381fccb815",
+      "status": "PROVED",
+      "tactic_ms": 151,
+      "theorem": "v2_MER0_O1_premises",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+      "case": "MER0",
+      "formal_artifact": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+      "justification": "Diamond with stronger terminal service postcondition.",
+      "obligation": "O2",
+      "paper_claim": "An execution reaches the end of the specified bounded program from each admitted initial state.",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "proof_record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/execution_witness.kyp",
+      "proof_sha256": "dbe385093927bb63d19ed469f8acda207d283b359398b8514836995c5b70bda6",
+      "status": "PROVED",
+      "tactic_ms": 223,
+      "theorem": "merwin-hcc-remote-auto-end-to-end-recovery-v1_execution_witness",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "2a0050c6fca97dd90b53f15e1aac17fd9073e6b9e89b47ae856fc9abafc16c9e",
+      "case": "MER0",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_MER0.kyx",
+      "justification": "Deadline box and exhaustive semantic-prefix successor check.",
+      "obligation": "O3",
+      "paper_claim": "Admitted semantic prefixes extend to the scheduled boundary in the nominal model.",
+      "plant_reduction": "milestone2/evidence/merwin_plant_reduction.json",
+      "prefix_totality": {
+        "blocked_prefixes": 0,
+        "reachable_prefixes_checked": 51,
+        "scope": "All valuations allowed by this case's guarded semantic assignments.",
+        "stage_widths": [
+          {
+            "prefixes_at_exit": 1,
+            "stage": "actor"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "controller"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "roll"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "synchronization"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "delivery"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "plant"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "observer"
+          }
+        ],
+        "terminal_paths": 1
+      },
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_MER0/O3_boundary.kyp",
+      "proof_sha256": "a42186e2e1873b2b77d253b5251252e011292c60660a849e18be13bdaf287bd6",
+      "status": "PROVED",
+      "tactic_ms": 2594,
+      "theorem": "v2_MER0_O3_boundary",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+      "case": "MER0",
+      "formal_artifact": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+      "justification": "Safety conjunct of the bound composition proof.",
+      "obligation": "O4",
+      "paper_claim": "All covered physical states meet the case safety contract.",
+      "plant_reduction": "milestone2/evidence/merwin_plant_reduction.json",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "proof_record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/end_to_end.kyp",
+      "proof_sha256": "c83d6111892e8005d733f033db9be76958211d8c3eceed105319827325728831",
+      "status": "PROVED",
+      "tactic_ms": 316,
+      "theorem": "merwin-hcc-remote-auto-end-to-end-recovery-v1_end_to_end",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+      "case": "MER0",
+      "formal_artifact": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+      "justification": "Physical-service conjunct of the bound composition proof.",
+      "obligation": "O5",
+      "paper_claim": "Physical service holds over the domain-specific sample set or service interval.",
+      "plant_reduction": "milestone2/evidence/merwin_plant_reduction.json",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "proof_record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/end_to_end.kyp",
+      "proof_sha256": "c83d6111892e8005d733f033db9be76958211d8c3eceed105319827325728831",
+      "status": "PROVED",
+      "tactic_ms": 316,
+      "theorem": "merwin-hcc-remote-auto-end-to-end-recovery-v1_end_to_end",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "2a0050c6fca97dd90b53f15e1aac17fd9073e6b9e89b47ae856fc9abafc16c9e",
+      "case": "MER0",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_MER0.kyx",
+      "justification": "Full-program box for evidence and its matching readings.",
+      "obligation": "O6",
+      "paper_claim": "The procedure produces credible observations matching the measured physical values.",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_MER0/O6_correspondence.kyp",
+      "proof_sha256": "2d70eac5ec8f9e4bc1a629688835b8d395a6e724324b56d36fc1dacdd76c707c",
+      "status": "PROVED",
+      "tactic_ms": 2134,
+      "theorem": "v2_MER0_O6_correspondence",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+      "case": "MER0",
+      "formal_artifact": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+      "justification": "Bound end-to-end box.",
+      "obligation": "O7",
+      "paper_claim": "Every completed execution meets safety, physical service and evidence requirements on time.",
+      "plant_reduction": "milestone2/evidence/merwin_plant_reduction.json",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "proof_record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/end_to_end.kyp",
+      "proof_sha256": "c83d6111892e8005d733f033db9be76958211d8c3eceed105319827325728831",
+      "status": "PROVED",
+      "tactic_ms": 316,
+      "theorem": "merwin-hcc-remote-auto-end-to-end-recovery-v1_end_to_end",
+      "unresolved_reason": null
+    },
+    {
+      "case": "MER0",
+      "formal_artifact": null,
+      "obligation": "O8",
+      "paper_claim": "The exact component costs and weighted identity hold for all nonnegative coefficients.",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "proof_record": null,
+      "status": "NOT_APPLICABLE",
+      "tactic_ms": null,
+      "unresolved_reason": "No common-context cost contract specified."
+    },
+    {
+      "archive_sha256": "af7e0be97aa8c4a007671b0a83ffaf7d19b0c87109d1a636f8b67f0459fdd0c3",
+      "case": "P2",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_P2.kyx",
+      "justification": "Concrete premise witness.",
+      "obligation": "O1",
+      "paper_claim": "At least one valuation satisfies the incident assumptions.",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_P2/O1_premises.kyp",
+      "proof_sha256": "a20aee52259665329d2552f3a3fabb611225674c027582412189de4ceefb645e",
+      "status": "PROVED",
+      "tactic_ms": 174,
+      "theorem": "v2_P2_O1_premises",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "37278e3b919e707cda1ff8fe06f7deabd1b806f4ddc4f8b641dd56c73a1609dc",
+      "case": "P2",
+      "formal_artifact": "milestone2/evidence/models/cost_P2_42979f75cf.kyx",
+      "justification": "Diamond with stronger terminal service postcondition.",
+      "obligation": "O2",
+      "paper_claim": "An execution reaches the end of the specified bounded program from each admitted initial state.",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "proof_record": "milestone2/evidence/proof_records/cost_P2_42979f75cf/nonvacuity.kyp",
+      "proof_sha256": "879bf5eb77e9e69de147b9829869f1db84c9abac01c9ab9964835c7616ca1759",
+      "status": "PROVED",
+      "tactic_ms": 77,
+      "theorem": "cost_P2_42979f75cf_nonvacuity",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "af7e0be97aa8c4a007671b0a83ffaf7d19b0c87109d1a636f8b67f0459fdd0c3",
+      "case": "P2",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_P2.kyx",
+      "justification": "Deadline box and exhaustive semantic-prefix successor check.",
+      "obligation": "O3",
+      "paper_claim": "Admitted semantic prefixes extend to the scheduled boundary in the nominal model.",
+      "prefix_totality": {
+        "blocked_prefixes": 0,
+        "reachable_prefixes_checked": 25,
+        "scope": "All valuations allowed by this case's guarded semantic assignments.",
+        "stage_widths": [
+          {
+            "prefixes_at_exit": 1,
+            "stage": "authority"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "controller"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "delivery"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "plant"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "observation"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "cost"
+          }
+        ],
+        "terminal_paths": 1
+      },
+      "procedure": "controlled-water-automatic-P2-v1",
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_P2/O3_boundary.kyp",
+      "proof_sha256": "d506cae599e80379b73739e43f399c6e8867fa5fd466fc64d3229e24e0902919",
+      "status": "PROVED",
+      "tactic_ms": 717,
+      "theorem": "v2_P2_O3_boundary",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "37278e3b919e707cda1ff8fe06f7deabd1b806f4ddc4f8b641dd56c73a1609dc",
+      "case": "P2",
+      "continuous_phase_lemma": {
+        "archive_sha256": "37278e3b919e707cda1ff8fe06f7deabd1b806f4ddc4f8b641dd56c73a1609dc",
+        "formal_artifact": "milestone2/evidence/models/cost_P2_42979f75cf.kyx",
+        "proof_record": "milestone2/evidence/proof_records/cost_P2_42979f75cf/rate_integral.kyp",
+        "proof_sha256": "74129326505600084f407bd1e0bfec652f07faf03c50567225c768188ef7b31f",
+        "tactic_ms": 509,
+        "theorem": "cost_P2_42979f75cf_rate_integral"
+      },
+      "formal_artifact": "milestone2/evidence/models/cost_P2_42979f75cf.kyx",
+      "justification": "Safety conjunct of the bound composition proof.",
+      "obligation": "O4",
+      "paper_claim": "All covered physical states meet the case safety contract.",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "proof_record": "milestone2/evidence/proof_records/cost_P2_42979f75cf/composition.kyp",
+      "proof_sha256": "841d2504633c594a5c37e9933eb17b0ad360e9ec94f37304e11c6e10da8fe88f",
+      "status": "PROVED",
+      "tactic_ms": 88,
+      "theorem": "cost_P2_42979f75cf_composition",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "37278e3b919e707cda1ff8fe06f7deabd1b806f4ddc4f8b641dd56c73a1609dc",
+      "case": "P2",
+      "continuous_phase_lemma": {
+        "archive_sha256": "37278e3b919e707cda1ff8fe06f7deabd1b806f4ddc4f8b641dd56c73a1609dc",
+        "formal_artifact": "milestone2/evidence/models/cost_P2_42979f75cf.kyx",
+        "proof_record": "milestone2/evidence/proof_records/cost_P2_42979f75cf/rate_integral.kyp",
+        "proof_sha256": "74129326505600084f407bd1e0bfec652f07faf03c50567225c768188ef7b31f",
+        "tactic_ms": 509,
+        "theorem": "cost_P2_42979f75cf_rate_integral"
+      },
+      "formal_artifact": "milestone2/evidence/models/cost_P2_42979f75cf.kyx",
+      "justification": "Physical-service conjunct of the bound composition proof.",
+      "obligation": "O5",
+      "paper_claim": "Physical service holds over the domain-specific sample set or service interval.",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "proof_record": "milestone2/evidence/proof_records/cost_P2_42979f75cf/composition.kyp",
+      "proof_sha256": "841d2504633c594a5c37e9933eb17b0ad360e9ec94f37304e11c6e10da8fe88f",
+      "status": "PROVED",
+      "tactic_ms": 88,
+      "theorem": "cost_P2_42979f75cf_composition",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "af7e0be97aa8c4a007671b0a83ffaf7d19b0c87109d1a636f8b67f0459fdd0c3",
+      "case": "P2",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_P2.kyx",
+      "justification": "Full-program box for evidence and its matching readings.",
+      "obligation": "O6",
+      "paper_claim": "The procedure produces credible observations matching the measured physical values.",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_P2/O6_correspondence.kyp",
+      "proof_sha256": "1241c6b179e8742376206ce5e7603c9bd83e69ab31b4dc398d4f02e05cf4aa51",
+      "status": "PROVED",
+      "tactic_ms": 466,
+      "theorem": "v2_P2_O6_correspondence",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "37278e3b919e707cda1ff8fe06f7deabd1b806f4ddc4f8b641dd56c73a1609dc",
+      "case": "P2",
+      "formal_artifact": "milestone2/evidence/models/cost_P2_42979f75cf.kyx",
+      "justification": "Bound end-to-end box.",
+      "obligation": "O7",
+      "paper_claim": "Every completed execution meets safety, physical service and evidence requirements on time.",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "proof_record": "milestone2/evidence/proof_records/cost_P2_42979f75cf/composition.kyp",
+      "proof_sha256": "841d2504633c594a5c37e9933eb17b0ad360e9ec94f37304e11c6e10da8fe88f",
+      "status": "PROVED",
+      "tactic_ms": 88,
+      "theorem": "cost_P2_42979f75cf_composition",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "37278e3b919e707cda1ff8fe06f7deabd1b806f4ddc4f8b641dd56c73a1609dc",
+      "case": "P2",
+      "continuous_phase_lemma": {
+        "archive_sha256": "37278e3b919e707cda1ff8fe06f7deabd1b806f4ddc4f8b641dd56c73a1609dc",
+        "formal_artifact": "milestone2/evidence/models/cost_P2_42979f75cf.kyx",
+        "proof_record": "milestone2/evidence/proof_records/cost_P2_42979f75cf/rate_integral.kyp",
+        "proof_sha256": "74129326505600084f407bd1e0bfec652f07faf03c50567225c768188ef7b31f",
+        "tactic_ms": 509,
+        "theorem": "cost_P2_42979f75cf_rate_integral"
+      },
+      "formal_artifact": "milestone2/evidence/models/cost_P2_42979f75cf.kyx",
+      "justification": "Weighted identity and components in the bound end-to-end box.",
+      "obligation": "O8",
+      "paper_claim": "The exact component costs and weighted identity hold for all nonnegative coefficients.",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "proof_record": "milestone2/evidence/proof_records/cost_P2_42979f75cf/composition.kyp",
+      "proof_sha256": "841d2504633c594a5c37e9933eb17b0ad360e9ec94f37304e11c6e10da8fe88f",
+      "status": "PROVED",
+      "tactic_ms": 88,
+      "theorem": "cost_P2_42979f75cf_composition",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "8f240aeaf6bc60969d103ebab16551c0de2032bc30df1c39e1f34411db960184",
+      "case": "P3",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_P3.kyx",
+      "justification": "Concrete premise witness.",
+      "obligation": "O1",
+      "paper_claim": "At least one valuation satisfies the incident assumptions.",
+      "procedure": "controlled-water-manual-P3-v1",
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_P3/O1_premises.kyp",
+      "proof_sha256": "3a478d6db507b431fd4eb1743583c54f008e1eb7ce15ab360b77d37810173c47",
+      "status": "PROVED",
+      "tactic_ms": 199,
+      "theorem": "v2_P3_O1_premises",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "50105330332a9c8f268f9a30039c35b4abb45d82360eec2207e1197f6fcd807e",
+      "case": "P3",
+      "formal_artifact": "milestone2/evidence/models/cost_P3_758f611e41.kyx",
+      "justification": "Diamond with stronger terminal service postcondition.",
+      "obligation": "O2",
+      "paper_claim": "An execution reaches the end of the specified bounded program from each admitted initial state.",
+      "procedure": "controlled-water-manual-P3-v1",
+      "proof_record": "milestone2/evidence/proof_records/cost_P3_758f611e41/nonvacuity.kyp",
+      "proof_sha256": "ab6fc03b6643934c7061134e1a77a280fd9f2e1d8ee21dfc453d33cfac4e0a68",
+      "status": "PROVED",
+      "tactic_ms": 77,
+      "theorem": "cost_P3_758f611e41_nonvacuity",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "8f240aeaf6bc60969d103ebab16551c0de2032bc30df1c39e1f34411db960184",
+      "case": "P3",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_P3.kyx",
+      "justification": "Deadline box and exhaustive semantic-prefix successor check.",
+      "obligation": "O3",
+      "paper_claim": "Admitted semantic prefixes extend to the scheduled boundary in the nominal model.",
+      "prefix_totality": {
+        "blocked_prefixes": 0,
+        "reachable_prefixes_checked": 25,
+        "scope": "All valuations allowed by this case's guarded semantic assignments.",
+        "stage_widths": [
+          {
+            "prefixes_at_exit": 1,
+            "stage": "authority"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "controller"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "delivery"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "plant"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "observation"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "cost"
+          }
+        ],
+        "terminal_paths": 1
+      },
+      "procedure": "controlled-water-manual-P3-v1",
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_P3/O3_boundary.kyp",
+      "proof_sha256": "c00fd18de562b9b92d7f7f0f6fcbabc918b56aa41c66f11cdf354e84ffa274fe",
+      "status": "PROVED",
+      "tactic_ms": 727,
+      "theorem": "v2_P3_O3_boundary",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "50105330332a9c8f268f9a30039c35b4abb45d82360eec2207e1197f6fcd807e",
+      "case": "P3",
+      "continuous_phase_lemma": {
+        "archive_sha256": "50105330332a9c8f268f9a30039c35b4abb45d82360eec2207e1197f6fcd807e",
+        "formal_artifact": "milestone2/evidence/models/cost_P3_758f611e41.kyx",
+        "proof_record": "milestone2/evidence/proof_records/cost_P3_758f611e41/rate_integral.kyp",
+        "proof_sha256": "014b6f277f39b0c9a3dacebb64955e794aabf54316256289e8d76d2c7ae40e64",
+        "tactic_ms": 400,
+        "theorem": "cost_P3_758f611e41_rate_integral"
+      },
+      "formal_artifact": "milestone2/evidence/models/cost_P3_758f611e41.kyx",
+      "justification": "Safety conjunct of the bound composition proof.",
+      "obligation": "O4",
+      "paper_claim": "All covered physical states meet the case safety contract.",
+      "procedure": "controlled-water-manual-P3-v1",
+      "proof_record": "milestone2/evidence/proof_records/cost_P3_758f611e41/composition.kyp",
+      "proof_sha256": "ffb1ed61ec1a8210cb9c754ea7f3b87e4be9bf23c53cb761266ce1d9afc915af",
+      "status": "PROVED",
+      "tactic_ms": 104,
+      "theorem": "cost_P3_758f611e41_composition",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "50105330332a9c8f268f9a30039c35b4abb45d82360eec2207e1197f6fcd807e",
+      "case": "P3",
+      "continuous_phase_lemma": {
+        "archive_sha256": "50105330332a9c8f268f9a30039c35b4abb45d82360eec2207e1197f6fcd807e",
+        "formal_artifact": "milestone2/evidence/models/cost_P3_758f611e41.kyx",
+        "proof_record": "milestone2/evidence/proof_records/cost_P3_758f611e41/rate_integral.kyp",
+        "proof_sha256": "014b6f277f39b0c9a3dacebb64955e794aabf54316256289e8d76d2c7ae40e64",
+        "tactic_ms": 400,
+        "theorem": "cost_P3_758f611e41_rate_integral"
+      },
+      "formal_artifact": "milestone2/evidence/models/cost_P3_758f611e41.kyx",
+      "justification": "Physical-service conjunct of the bound composition proof.",
+      "obligation": "O5",
+      "paper_claim": "Physical service holds over the domain-specific sample set or service interval.",
+      "procedure": "controlled-water-manual-P3-v1",
+      "proof_record": "milestone2/evidence/proof_records/cost_P3_758f611e41/composition.kyp",
+      "proof_sha256": "ffb1ed61ec1a8210cb9c754ea7f3b87e4be9bf23c53cb761266ce1d9afc915af",
+      "status": "PROVED",
+      "tactic_ms": 104,
+      "theorem": "cost_P3_758f611e41_composition",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "8f240aeaf6bc60969d103ebab16551c0de2032bc30df1c39e1f34411db960184",
+      "case": "P3",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_P3.kyx",
+      "justification": "Full-program box for evidence and its matching readings.",
+      "obligation": "O6",
+      "paper_claim": "The procedure produces credible observations matching the measured physical values.",
+      "procedure": "controlled-water-manual-P3-v1",
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_P3/O6_correspondence.kyp",
+      "proof_sha256": "92b54adb3b2cf207db2ea3d3813412b25877f4e9091bb0da8f987bfbc492a1cb",
+      "status": "PROVED",
+      "tactic_ms": 484,
+      "theorem": "v2_P3_O6_correspondence",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "50105330332a9c8f268f9a30039c35b4abb45d82360eec2207e1197f6fcd807e",
+      "case": "P3",
+      "formal_artifact": "milestone2/evidence/models/cost_P3_758f611e41.kyx",
+      "justification": "Bound end-to-end box.",
+      "obligation": "O7",
+      "paper_claim": "Every completed execution meets safety, physical service and evidence requirements on time.",
+      "procedure": "controlled-water-manual-P3-v1",
+      "proof_record": "milestone2/evidence/proof_records/cost_P3_758f611e41/composition.kyp",
+      "proof_sha256": "ffb1ed61ec1a8210cb9c754ea7f3b87e4be9bf23c53cb761266ce1d9afc915af",
+      "status": "PROVED",
+      "tactic_ms": 104,
+      "theorem": "cost_P3_758f611e41_composition",
+      "unresolved_reason": null
+    },
+    {
+      "archive_sha256": "50105330332a9c8f268f9a30039c35b4abb45d82360eec2207e1197f6fcd807e",
+      "case": "P3",
+      "continuous_phase_lemma": {
+        "archive_sha256": "50105330332a9c8f268f9a30039c35b4abb45d82360eec2207e1197f6fcd807e",
+        "formal_artifact": "milestone2/evidence/models/cost_P3_758f611e41.kyx",
+        "proof_record": "milestone2/evidence/proof_records/cost_P3_758f611e41/rate_integral.kyp",
+        "proof_sha256": "014b6f277f39b0c9a3dacebb64955e794aabf54316256289e8d76d2c7ae40e64",
+        "tactic_ms": 400,
+        "theorem": "cost_P3_758f611e41_rate_integral"
+      },
+      "formal_artifact": "milestone2/evidence/models/cost_P3_758f611e41.kyx",
+      "justification": "Weighted identity and components in the bound end-to-end box.",
+      "obligation": "O8",
+      "paper_claim": "The exact component costs and weighted identity hold for all nonnegative coefficients.",
+      "procedure": "controlled-water-manual-P3-v1",
+      "proof_record": "milestone2/evidence/proof_records/cost_P3_758f611e41/composition.kyp",
+      "proof_sha256": "ffb1ed61ec1a8210cb9c754ea7f3b87e4be9bf23c53cb761266ce1d9afc915af",
+      "status": "PROVED",
+      "tactic_ms": 104,
+      "theorem": "cost_P3_758f611e41_composition",
+      "unresolved_reason": null
+    }
+  ],
+  "interpretation": "Rows reuse some theorems. Tactic milliseconds belong to the identified theorem, and must not be summed across rows.",
+  "new_dL_theorems": 20,
+  "specific_reachability_witnesses": {
+    "H2": {
+      "archive_sha256": "86080831bcb06ab45bd6c34174dacc84a28a3b312a79c37c79c8b99baec8df57",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_H2.kyx",
+      "prefix_totality": {
+        "blocked_prefixes": 0,
+        "reachable_prefixes_checked": 45,
+        "scope": "All valuations allowed by this case's guarded semantic assignments.",
+        "stage_widths": [
+          {
+            "prefixes_at_exit": 1,
+            "stage": "actor"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "controller"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "delivery"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "plant"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "observer"
+          }
+        ],
+        "terminal_paths": 1
+      },
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_H2/specific_witness.kyp",
+      "proof_sha256": "32fd88a9b85b622b683f7065f387c8f1b5347597508533bde490a8e98dccf458",
+      "tactic_ms": 1263,
+      "theorem": "v2_H2_specific_witness",
+      "witness_postcondition": "ready=1 & t>deadline & physical=1"
+    },
+    "M13": {
+      "archive_sha256": "beaed1c5327912f9a8332f5f120b551770d15591df91d5bdc6f89eadf300328d",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_M13.kyx",
+      "prefix_totality": {
+        "blocked_prefixes": 0,
+        "reachable_prefixes_checked": 87,
+        "scope": "All valuations allowed by this case's guarded semantic assignments.",
+        "stage_widths": [
+          {
+            "prefixes_at_exit": 1,
+            "stage": "actor"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "controller"
+          },
+          {
+            "prefixes_at_exit": 2,
+            "stage": "delivery"
+          },
+          {
+            "prefixes_at_exit": 2,
+            "stage": "plant"
+          },
+          {
+            "prefixes_at_exit": 2,
+            "stage": "observer"
+          }
+        ],
+        "terminal_paths": 2
+      },
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_M13/specific_witness.kyp",
+      "proof_sha256": "4549ac89c787b15cca7b4368dba9e3ca764a76da21d88b4d8daf2437425db61a",
+      "tactic_ms": 1424,
+      "theorem": "v2_M13_specific_witness",
+      "witness_postcondition": "output=1 & delivered=0 & q=0 & observed=0 & t=deadline & established=0"
+    },
+    "M5": {
+      "archive_sha256": "bffb7f37f708c5939ec1e0e282a3d032165f15a675464250d87ee4a449fc8867",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_M5.kyx",
+      "prefix_totality": {
+        "blocked_prefixes": 0,
+        "reachable_prefixes_checked": 87,
+        "scope": "All valuations allowed by this case's guarded semantic assignments.",
+        "stage_widths": [
+          {
+            "prefixes_at_exit": 1,
+            "stage": "actor"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "controller"
+          },
+          {
+            "prefixes_at_exit": 2,
+            "stage": "delivery"
+          },
+          {
+            "prefixes_at_exit": 2,
+            "stage": "plant"
+          },
+          {
+            "prefixes_at_exit": 2,
+            "stage": "observer"
+          }
+        ],
+        "terminal_paths": 2
+      },
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_M5/specific_witness.kyp",
+      "proof_sha256": "3e4fb6915fedf3452ceff31252061237c94fd2779f7388be4bd1b05ddf204fa8",
+      "tactic_ms": 1586,
+      "theorem": "v2_M5_specific_witness",
+      "witness_postcondition": "output=1 & delivered=0 & q=0 & observed=0 & t=deadline & established=0"
+    },
+    "MER10": {
+      "archive_sha256": "b1b64234f8769bebfbd1d384d118084211471ab8dc85986048e6ed25a258c35f",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_MER10.kyx",
+      "prefix_totality": {
+        "blocked_prefixes": 0,
+        "reachable_prefixes_checked": 82,
+        "scope": "All valuations allowed by this case's guarded semantic assignments.",
+        "stage_widths": [
+          {
+            "prefixes_at_exit": 1,
+            "stage": "actor"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "controller"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "roll"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "synchronization"
+          },
+          {
+            "prefixes_at_exit": 2,
+            "stage": "delivery"
+          },
+          {
+            "prefixes_at_exit": 2,
+            "stage": "plant"
+          },
+          {
+            "prefixes_at_exit": 2,
+            "stage": "observer"
+          }
+        ],
+        "terminal_paths": 2
+      },
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_MER10/specific_witness.kyp",
+      "proof_sha256": "f7411e0e0f5d299410eb5f873deedd28004cb92497ba5429bb8a5c5cd29ba42a",
+      "tactic_ms": 1367,
+      "theorem": "v2_MER10_specific_witness",
+      "witness_postcondition": "closeCmd=1 & contact=0 & mw1=0 & mw2=0 & mw3=0 & service=0"
+    },
+    "MER6": {
+      "archive_sha256": "53493fbf163e812d30a24f174b6556f9af363cb40eb839a56b10bae740ca5e56",
+      "formal_artifact": "paper_v2/formal_evidence/models/v2_MER6.kyx",
+      "prefix_totality": {
+        "blocked_prefixes": 0,
+        "reachable_prefixes_checked": 51,
+        "scope": "All valuations allowed by this case's guarded semantic assignments.",
+        "stage_widths": [
+          {
+            "prefixes_at_exit": 1,
+            "stage": "actor"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "controller"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "roll"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "synchronization"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "delivery"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "plant"
+          },
+          {
+            "prefixes_at_exit": 1,
+            "stage": "observer"
+          }
+        ],
+        "terminal_paths": 1
+      },
+      "proof_record": "paper_v2/formal_evidence/proof_records/v2_MER6/specific_witness.kyp",
+      "proof_sha256": "e7cea1901365b6b91fb174c868393819f6d28ae7eb4d3ddc465e769123495aed",
+      "tactic_ms": 1622,
+      "theorem": "v2_MER6_specific_witness",
+      "witness_postcondition": "closeCmd=1 & contact=0 & mw1=0 & mw2=0 & mw3=0 & service=0"
+    }
+  }
+}

@@ -1,0 +1,7992 @@
+{
+  "cells": [
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 6380,
+        "median": 4975.0,
+        "median_order_interval": [
+          4680,
+          5310
+        ],
+        "minimum": 3590,
+        "p95": 5980
+      },
+      "dependency_references": 8,
+      "encoding_ns": {
+        "maximum": 64601,
+        "median": 57846.0,
+        "median_order_interval": [
+          55971,
+          58390
+        ],
+        "minimum": 52771,
+        "p95": 60121
+      },
+      "end_to_end_ns": {
+        "maximum": 10298132,
+        "median": 9727032.5,
+        "median_order_interval": [
+          9542360,
+          9792294
+        ],
+        "minimum": 9267126,
+        "p95": 10059708
+      },
+      "expected_solver_answers": "SU",
+      "expected_verdicts": [
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 758,
+      "model_sha256": "079b3ba93eace7d4741bd97722f93cf9fe364e1c85d710edfb309bd522b3d810",
+      "nodes": 8,
+      "percent": 0,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 10131179,
+        "median": 9569165.0,
+        "median_order_interval": [
+          9394768,
+          9634111
+        ],
+        "minimum": 9118753,
+        "p95": 9900335
+      },
+      "spec_ns": {
+        "maximum": 130622,
+        "median": 94136.5,
+        "median_order_interval": [
+          92261,
+          95392
+        ],
+        "minimum": 84531,
+        "p95": 114931
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4
+      ],
+      "candidates": 1,
+      "compromised_nodes": 2,
+      "decision_ns": {
+        "maximum": 6700,
+        "median": 4950.0,
+        "median_order_interval": [
+          4660,
+          5230
+        ],
+        "minimum": 4150,
+        "p95": 6190
+      },
+      "dependency_references": 8,
+      "encoding_ns": {
+        "maximum": 72421,
+        "median": 68506.5,
+        "median_order_interval": [
+          67521,
+          69252
+        ],
+        "minimum": 63661,
+        "p95": 72271
+      },
+      "end_to_end_ns": {
+        "maximum": 10375643,
+        "median": 9800705.0,
+        "median_order_interval": [
+          9738024,
+          9931776
+        ],
+        "minimum": 9498150,
+        "p95": 10197540
+      },
+      "expected_solver_answers": "SS",
+      "expected_verdicts": [
+        "REJECTED"
+      ],
+      "joint_branch_count": 4,
+      "model_bytes": 776,
+      "model_sha256": "ac32c89213ad67207a488a11c093da7c3e7f8f9c53deba9eec4212572cf87c03",
+      "nodes": 8,
+      "percent": 25,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 10200940,
+        "median": 9634922.0,
+        "median_order_interval": [
+          9567981,
+          9764633
+        ],
+        "minimum": 9336877,
+        "p95": 10027798
+      },
+      "solver_peak_rss_kib_probes": [
+        29952,
+        29952,
+        29952
+      ],
+      "spec_ns": {
+        "maximum": 106181,
+        "median": 94041.0,
+        "median_order_interval": [
+          92302,
+          95701
+        ],
+        "minimum": 84521,
+        "p95": 102701
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16
+      ],
+      "candidates": 1,
+      "compromised_nodes": 4,
+      "decision_ns": {
+        "maximum": 6530,
+        "median": 4870.0,
+        "median_order_interval": [
+          4661,
+          5130
+        ],
+        "minimum": 3770,
+        "p95": 6270
+      },
+      "dependency_references": 8,
+      "encoding_ns": {
+        "maximum": 93181,
+        "median": 72801.5,
+        "median_order_interval": [
+          72121,
+          73811
+        ],
+        "minimum": 67131,
+        "p95": 80681
+      },
+      "end_to_end_ns": {
+        "maximum": 10261481,
+        "median": 9930615.0,
+        "median_order_interval": [
+          9820025,
+          9999117
+        ],
+        "minimum": 9512670,
+        "p95": 10177800
+      },
+      "expected_solver_answers": "SS",
+      "expected_verdicts": [
+        "REJECTED"
+      ],
+      "joint_branch_count": 16,
+      "model_bytes": 794,
+      "model_sha256": "9e37c4f480c80617b49b13ac3ac980b08bc92839328c926daa6dc2a67a17565b",
+      "nodes": 8,
+      "percent": 50,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 10090198,
+        "median": 9756713.0,
+        "median_order_interval": [
+          9648373,
+          9824964
+        ],
+        "minimum": 9338947,
+        "p95": 10003427
+      },
+      "spec_ns": {
+        "maximum": 99951,
+        "median": 94026.5,
+        "median_order_interval": [
+          92682,
+          96312
+        ],
+        "minimum": 82921,
+        "p95": 99472
+      }
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 6390,
+        "median": 5210.0,
+        "median_order_interval": [
+          4930,
+          5440
+        ],
+        "minimum": 3660,
+        "p95": 6031
+      },
+      "dependency_references": 16,
+      "encoding_ns": {
+        "maximum": 66141,
+        "median": 60396.0,
+        "median_order_interval": [
+          59081,
+          61151
+        ],
+        "minimum": 56061,
+        "p95": 63991
+      },
+      "end_to_end_ns": {
+        "maximum": 13156067,
+        "median": 9794999.0,
+        "median_order_interval": [
+          9640041,
+          9904215
+        ],
+        "minimum": 9331517,
+        "p95": 10578627
+      },
+      "expected_solver_answers": "SUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 1087,
+      "model_sha256": "aa2e6677c9f9943e8eeb40ccc094b3b4dbcb0737ecad08d6a88f634d53b9a4fb",
+      "nodes": 8,
+      "percent": 0,
+      "queries": 4,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 12961074,
+        "median": 9608506.5,
+        "median_order_interval": [
+          9451578,
+          9712832
+        ],
+        "minimum": 9151064,
+        "p95": 10376553
+      },
+      "spec_ns": {
+        "maximum": 135322,
+        "median": 125417.0,
+        "median_order_interval": [
+          122172,
+          127362
+        ],
+        "minimum": 117312,
+        "p95": 133392
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        1
+      ],
+      "candidates": 2,
+      "compromised_nodes": 1,
+      "decision_ns": {
+        "maximum": 7550,
+        "median": 5330.0,
+        "median_order_interval": [
+          5100,
+          5470
+        ],
+        "minimum": 3490,
+        "p95": 6170
+      },
+      "dependency_references": 8,
+      "encoding_ns": {
+        "maximum": 72011,
+        "median": 66681.0,
+        "median_order_interval": [
+          66001,
+          68011
+        ],
+        "minimum": 63241,
+        "p95": 71931
+      },
+      "end_to_end_ns": {
+        "maximum": 10761509,
+        "median": 9858955.5,
+        "median_order_interval": [
+          9789043,
+          10077668
+        ],
+        "minimum": 9511579,
+        "p95": 10265201
+      },
+      "expected_solver_answers": "SSSU",
+      "expected_verdicts": [
+        "REJECTED",
+        "PROVED"
+      ],
+      "joint_branch_count": 2,
+      "model_bytes": 1024,
+      "model_sha256": "70ef20c3ad3a4c0c49b07d3dd9cb2eac4eaad69f2ababdd4d6a272d48c0075a9",
+      "nodes": 8,
+      "percent": 10,
+      "queries": 4,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 10562426,
+        "median": 9666222.0,
+        "median_order_interval": [
+          9605411,
+          9884396
+        ],
+        "minimum": 9332697,
+        "p95": 10072148
+      },
+      "spec_ns": {
+        "maximum": 123842,
+        "median": 116216.5,
+        "median_order_interval": [
+          114832,
+          118162
+        ],
+        "minimum": 107182,
+        "p95": 121552
+      }
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "candidates": 4,
+      "compromised_nodes": 1,
+      "decision_ns": {
+        "maximum": 6090,
+        "median": 5355.0,
+        "median_order_interval": [
+          5040,
+          5580
+        ],
+        "minimum": 3140,
+        "p95": 5970
+      },
+      "dependency_references": 32,
+      "encoding_ns": {
+        "maximum": 89041,
+        "median": 70766.0,
+        "median_order_interval": [
+          69041,
+          71741
+        ],
+        "minimum": 65511,
+        "p95": 75991
+      },
+      "end_to_end_ns": {
+        "maximum": 10549396,
+        "median": 10152219.0,
+        "median_order_interval": [
+          9970687,
+          10248121
+        ],
+        "minimum": 8866450,
+        "p95": 10521085
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 2,
+      "model_bytes": 1754,
+      "model_sha256": "5172e0ddc75b7400826c6cc140e8748006b411108f133df7ef2fcebb71ba6566",
+      "nodes": 8,
+      "percent": 10,
+      "queries": 8,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 10291182,
+        "median": 9897815.5,
+        "median_order_interval": [
+          9720733,
+          9978476
+        ],
+        "minimum": 8618536,
+        "p95": 10262861
+      },
+      "spec_ns": {
+        "maximum": 185173,
+        "median": 176033.0,
+        "median_order_interval": [
+          173882,
+          177883
+        ],
+        "minimum": 163762,
+        "p95": 182123
+      }
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 4,
+      "compromised_nodes": 2,
+      "decision_ns": {
+        "maximum": 6470,
+        "median": 5195.0,
+        "median_order_interval": [
+          4880,
+          5540
+        ],
+        "minimum": 4080,
+        "p95": 5870
+      },
+      "dependency_references": 32,
+      "encoding_ns": {
+        "maximum": 79352,
+        "median": 73956.0,
+        "median_order_interval": [
+          73141,
+          74971
+        ],
+        "minimum": 70681,
+        "p95": 78121
+      },
+      "end_to_end_ns": {
+        "maximum": 10608087,
+        "median": 10205390.5,
+        "median_order_interval": [
+          10160019,
+          10282532
+        ],
+        "minimum": 9760254,
+        "p95": 10516774
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 4,
+      "model_bytes": 1763,
+      "model_sha256": "e2062748177048c9195febe2669c283359e2bd1914dc991c85dd73acc95d9b8c",
+      "nodes": 8,
+      "percent": 25,
+      "queries": 8,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 10352393,
+        "median": 9949317.0,
+        "median_order_interval": [
+          9891486,
+          10024928
+        ],
+        "minimum": 9499640,
+        "p95": 10251980
+      },
+      "spec_ns": {
+        "maximum": 186353,
+        "median": 177163.0,
+        "median_order_interval": [
+          175403,
+          178163
+        ],
+        "minimum": 169253,
+        "p95": 184992
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "compromised_nodes": 2,
+      "decision_ns": {
+        "maximum": 6950,
+        "median": 5160.5,
+        "median_order_interval": [
+          5020,
+          5460
+        ],
+        "minimum": 4280,
+        "p95": 6610
+      },
+      "dependency_references": 8,
+      "encoding_ns": {
+        "maximum": 108382,
+        "median": 74521.0,
+        "median_order_interval": [
+          73141,
+          76591
+        ],
+        "minimum": 67742,
+        "p95": 89691
+      },
+      "end_to_end_ns": {
+        "maximum": 10457474,
+        "median": 10017507.0,
+        "median_order_interval": [
+          9957867,
+          10152760
+        ],
+        "minimum": 9655482,
+        "p95": 10428124
+      },
+      "expected_solver_answers": "SSSSSUSU",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 4,
+      "model_bytes": 1547,
+      "model_sha256": "500c4ee8aadf210ed252cd93b66bf70f04b2009395337a29177fbbf9ff09f345",
+      "nodes": 8,
+      "percent": 25,
+      "queries": 8,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 10226021,
+        "median": 9777528.5,
+        "median_order_interval": [
+          9720473,
+          9927756
+        ],
+        "minimum": 9415148,
+        "p95": 10205530
+      },
+      "spec_ns": {
+        "maximum": 163363,
+        "median": 154352.5,
+        "median_order_interval": [
+          152493,
+          156073
+        ],
+        "minimum": 144932,
+        "p95": 160443
+      }
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 8,
+      "compromised_nodes": 2,
+      "decision_ns": {
+        "maximum": 7280,
+        "median": 5720.0,
+        "median_order_interval": [
+          5450,
+          6060
+        ],
+        "minimum": 3991,
+        "p95": 7130
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 124622,
+        "median": 81326.5,
+        "median_order_interval": [
+          79952,
+          82741
+        ],
+        "minimum": 75091,
+        "p95": 87552
+      },
+      "end_to_end_ns": {
+        "maximum": 11221786,
+        "median": 10622896.5,
+        "median_order_interval": [
+          10564446,
+          10719589
+        ],
+        "minimum": 10288422,
+        "p95": 10937582
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 4,
+      "model_bytes": 3079,
+      "model_sha256": "8ab34adcc95528915c4fc1a58de40941bf0917847012e591d2b864073982478a",
+      "nodes": 8,
+      "percent": 25,
+      "queries": 16,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 10823790,
+        "median": 10263806.5,
+        "median_order_interval": [
+          10186990,
+          10327383
+        ],
+        "minimum": 9929726,
+        "p95": 10544366
+      },
+      "spec_ns": {
+        "maximum": 318695,
+        "median": 272494.5,
+        "median_order_interval": [
+          269624,
+          276184
+        ],
+        "minimum": 263164,
+        "p95": 314195
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "compromised_nodes": 4,
+      "decision_ns": {
+        "maximum": 6930,
+        "median": 5645.0,
+        "median_order_interval": [
+          5480,
+          5970
+        ],
+        "minimum": 3480,
+        "p95": 6501
+      },
+      "dependency_references": 8,
+      "encoding_ns": {
+        "maximum": 87781,
+        "median": 80276.0,
+        "median_order_interval": [
+          79341,
+          82001
+        ],
+        "minimum": 75451,
+        "p95": 87111
+      },
+      "end_to_end_ns": {
+        "maximum": 10780180,
+        "median": 10404128.0,
+        "median_order_interval": [
+          10273801,
+          10469275
+        ],
+        "minimum": 10057619,
+        "p95": 10677168
+      },
+      "expected_solver_answers": "SSSSSSSSSUSUSUSU",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 16,
+      "model_bytes": 2593,
+      "model_sha256": "f743a9443d741efdcad15ed0e7a24069b8137217ba9d1aa848fd6170a4008ad5",
+      "nodes": 8,
+      "percent": 50,
+      "queries": 16,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 10465165,
+        "median": 10091758.0,
+        "median_order_interval": [
+          9978106,
+          10150770
+        ],
+        "minimum": 9748144,
+        "p95": 10365703
+      },
+      "spec_ns": {
+        "maximum": 231864,
+        "median": 224849.0,
+        "median_order_interval": [
+          221534,
+          226033
+        ],
+        "minimum": 215203,
+        "p95": 231384
+      }
+    },
+    {
+      "actual_fanout": 16,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 16,
+      "compromised_nodes": 2,
+      "decision_ns": {
+        "maximum": 7570,
+        "median": 6310.5,
+        "median_order_interval": [
+          6150,
+          6551
+        ],
+        "minimum": 4310,
+        "p95": 7430
+      },
+      "dependency_references": 128,
+      "encoding_ns": {
+        "maximum": 126322,
+        "median": 95286.5,
+        "median_order_interval": [
+          93201,
+          96271
+        ],
+        "minimum": 88831,
+        "p95": 104271
+      },
+      "end_to_end_ns": {
+        "maximum": 12037909,
+        "median": 11377963.5,
+        "median_order_interval": [
+          11270777,
+          11497821
+        ],
+        "minimum": 10843491,
+        "p95": 12015829
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 4,
+      "model_bytes": 5771,
+      "model_sha256": "a7d265e50d0119d9e4892ab770b0bc6aa70d534f12ab49147c346b5d011fcc81",
+      "nodes": 8,
+      "percent": 25,
+      "queries": 32,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 11480250,
+        "median": 10812740.0,
+        "median_order_interval": [
+          10717938,
+          10943912
+        ],
+        "minimum": 10279382,
+        "p95": 11441370
+      },
+      "solver_peak_rss_kib_probes": [
+        29952,
+        29952,
+        29952
+      ],
+      "spec_ns": {
+        "maximum": 503008,
+        "median": 459543.0,
+        "median_order_interval": [
+          458297,
+          467178
+        ],
+        "minimum": 446397,
+        "p95": 483708
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16
+      ],
+      "candidates": 1,
+      "compromised_nodes": 4,
+      "decision_ns": {
+        "maximum": 7040,
+        "median": 5130.0,
+        "median_order_interval": [
+          4861,
+          5380
+        ],
+        "minimum": 3570,
+        "p95": 5840
+      },
+      "dependency_references": 16,
+      "encoding_ns": {
+        "maximum": 115372,
+        "median": 94111.5,
+        "median_order_interval": [
+          92591,
+          96462
+        ],
+        "minimum": 86982,
+        "p95": 106461
+      },
+      "end_to_end_ns": {
+        "maximum": 10658597,
+        "median": 10101418.5,
+        "median_order_interval": [
+          10020818,
+          10185901
+        ],
+        "minimum": 9689543,
+        "p95": 10522575
+      },
+      "expected_solver_answers": "SS",
+      "expected_verdicts": [
+        "REJECTED"
+      ],
+      "joint_branch_count": 16,
+      "model_bytes": 1260,
+      "model_sha256": "22d6621bb7e99a5f4ea427ef099f1540e1eb26030f6cc07a87a38aa2c4b675c8",
+      "nodes": 16,
+      "percent": 25,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 10451274,
+        "median": 9889300.5,
+        "median_order_interval": [
+          9810005,
+          9968388
+        ],
+        "minimum": 9479589,
+        "p95": 10312152
+      },
+      "spec_ns": {
+        "maximum": 153183,
+        "median": 113051.5,
+        "median_order_interval": [
+          110572,
+          114372
+        ],
+        "minimum": 103871,
+        "p95": 118532
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        256
+      ],
+      "candidates": 1,
+      "compromised_nodes": 8,
+      "decision_ns": {
+        "maximum": 5910,
+        "median": 5200.0,
+        "median_order_interval": [
+          4900,
+          5320
+        ],
+        "minimum": 3630,
+        "p95": 5680
+      },
+      "dependency_references": 16,
+      "encoding_ns": {
+        "maximum": 106982,
+        "median": 101332.0,
+        "median_order_interval": [
+          99901,
+          102571
+        ],
+        "minimum": 97131,
+        "p95": 106952
+      },
+      "end_to_end_ns": {
+        "maximum": 10720028,
+        "median": 10214620.5,
+        "median_order_interval": [
+          10116098,
+          10318132
+        ],
+        "minimum": 9722163,
+        "p95": 10566475
+      },
+      "expected_solver_answers": "SS",
+      "expected_verdicts": [
+        "REJECTED"
+      ],
+      "joint_branch_count": 256,
+      "model_bytes": 1296,
+      "model_sha256": "0eb59575e22c4523dea02012702e6cd52f306f12231c3db14360fcc64c2d0a0d",
+      "nodes": 16,
+      "percent": 50,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 10497345,
+        "median": 9985057.0,
+        "median_order_interval": [
+          9894666,
+          10100370
+        ],
+        "minimum": 9512340,
+        "p95": 10349452
+      },
+      "spec_ns": {
+        "maximum": 153892,
+        "median": 111386.5,
+        "median_order_interval": [
+          110802,
+          112832
+        ],
+        "minimum": 105732,
+        "p95": 139362
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 7270,
+        "median": 4980.0,
+        "median_order_interval": [
+          4840,
+          5310
+        ],
+        "minimum": 3661,
+        "p95": 6071
+      },
+      "dependency_references": 16,
+      "encoding_ns": {
+        "maximum": 92191,
+        "median": 80436.0,
+        "median_order_interval": [
+          79481,
+          82111
+        ],
+        "minimum": 75751,
+        "p95": 87221
+      },
+      "end_to_end_ns": {
+        "maximum": 10418073,
+        "median": 10063468.0,
+        "median_order_interval": [
+          9848605,
+          10136739
+        ],
+        "minimum": 9598051,
+        "p95": 10389373
+      },
+      "expected_solver_answers": "SUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 1481,
+      "model_sha256": "5b5b3bb55b5d4f3a0fe83943df69e44c76de31b3d4af80c293f7a23b57e85d7c",
+      "nodes": 16,
+      "percent": 0,
+      "queries": 4,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 10187480,
+        "median": 9843159.0,
+        "median_order_interval": [
+          9619621,
+          9915336
+        ],
+        "minimum": 9365398,
+        "p95": 10173680
+      },
+      "spec_ns": {
+        "maximum": 146372,
+        "median": 135982.0,
+        "median_order_interval": [
+          134332,
+          137622
+        ],
+        "minimum": 130622,
+        "p95": 143042
+      }
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 6300,
+        "median": 5435.0,
+        "median_order_interval": [
+          5190,
+          5630
+        ],
+        "minimum": 4020,
+        "p95": 6081
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 96281,
+        "median": 87291.5,
+        "median_order_interval": [
+          86372,
+          88271
+        ],
+        "minimum": 80031,
+        "p95": 92322
+      },
+      "end_to_end_ns": {
+        "maximum": 10941712,
+        "median": 10242741.5,
+        "median_order_interval": [
+          10108490,
+          10352733
+        ],
+        "minimum": 9628331,
+        "p95": 10782469
+      },
+      "expected_solver_answers": "SUSUSUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 2445,
+      "model_sha256": "20f575baee294702c3c9b5659b64c39e76af03842f36881bf9954926bf742120",
+      "nodes": 16,
+      "percent": 0,
+      "queries": 8,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 10624037,
+        "median": 9930931.5,
+        "median_order_interval": [
+          9799635,
+          10040447
+        ],
+        "minimum": 9318997,
+        "p95": 10474615
+      },
+      "spec_ns": {
+        "maximum": 264004,
+        "median": 215908.5,
+        "median_order_interval": [
+          215144,
+          217423
+        ],
+        "minimum": 205133,
+        "p95": 259855
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "compromised_nodes": 2,
+      "decision_ns": {
+        "maximum": 6440,
+        "median": 5280.0,
+        "median_order_interval": [
+          4940,
+          5760
+        ],
+        "minimum": 3560,
+        "p95": 6380
+      },
+      "dependency_references": 16,
+      "encoding_ns": {
+        "maximum": 98891,
+        "median": 94036.0,
+        "median_order_interval": [
+          93001,
+          95972
+        ],
+        "minimum": 87191,
+        "p95": 98511
+      },
+      "end_to_end_ns": {
+        "maximum": 11388669,
+        "median": 10290426.5,
+        "median_order_interval": [
+          10197090,
+          10362603
+        ],
+        "minimum": 9780004,
+        "p95": 10621927
+      },
+      "expected_solver_answers": "SSSSSUSU",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 4,
+      "model_bytes": 2013,
+      "model_sha256": "c60949285ec5400065e419809560cf27cb51026a17f37786dcc9fd12fa8abe3b",
+      "nodes": 16,
+      "percent": 10,
+      "queries": 8,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11099475,
+        "median": 10018697.5,
+        "median_order_interval": [
+          9927276,
+          10086099
+        ],
+        "minimum": 9499780,
+        "p95": 10349763
+      },
+      "spec_ns": {
+        "maximum": 204184,
+        "median": 175128.0,
+        "median_order_interval": [
+          172773,
+          179602
+        ],
+        "minimum": 166773,
+        "p95": 184393
+      }
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "candidates": 4,
+      "compromised_nodes": 4,
+      "decision_ns": {
+        "maximum": 6510,
+        "median": 5370.0,
+        "median_order_interval": [
+          5090,
+          5590
+        ],
+        "minimum": 4140,
+        "p95": 6200
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 109692,
+        "median": 102916.5,
+        "median_order_interval": [
+          100061,
+          104802
+        ],
+        "minimum": 96771,
+        "p95": 109061
+      },
+      "end_to_end_ns": {
+        "maximum": 10770949,
+        "median": 10512690.5,
+        "median_order_interval": [
+          10411093,
+          10582407
+        ],
+        "minimum": 10082769,
+        "p95": 10758899
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 16,
+      "model_bytes": 2481,
+      "model_sha256": "a6fe5489094ecde1854d3fbbbfa5830b3646079f50024261bf55195868623524",
+      "nodes": 16,
+      "percent": 25,
+      "queries": 8,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 10435614,
+        "median": 10182725.5,
+        "median_order_interval": [
+          10087748,
+          10266251
+        ],
+        "minimum": 9770724,
+        "p95": 10430294
+      },
+      "spec_ns": {
+        "maximum": 257194,
+        "median": 214878.0,
+        "median_order_interval": [
+          211523,
+          217323
+        ],
+        "minimum": 204243,
+        "p95": 236363
+      }
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 8,
+      "compromised_nodes": 2,
+      "decision_ns": {
+        "maximum": 6830,
+        "median": 5360.0,
+        "median_order_interval": [
+          5260,
+          5760
+        ],
+        "minimum": 4590,
+        "p95": 6820
+      },
+      "dependency_references": 128,
+      "encoding_ns": {
+        "maximum": 145282,
+        "median": 107431.5,
+        "median_order_interval": [
+          105402,
+          108981
+        ],
+        "minimum": 100751,
+        "p95": 117932
+      },
+      "end_to_end_ns": {
+        "maximum": 11629892,
+        "median": 10900076.5,
+        "median_order_interval": [
+          10721659,
+          11030323
+        ],
+        "minimum": 10445144,
+        "p95": 11471960
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 4,
+      "model_bytes": 4091,
+      "model_sha256": "13cb37d44864bf7f8afa0cb12cf789a1d757c946b237fd2948f7dd33c0eded82",
+      "nodes": 16,
+      "percent": 10,
+      "queries": 16,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 11180755,
+        "median": 10456480.0,
+        "median_order_interval": [
+          10273322,
+          10589446
+        ],
+        "minimum": 10006487,
+        "p95": 11014553
+      },
+      "spec_ns": {
+        "maximum": 349075,
+        "median": 334315.0,
+        "median_order_interval": [
+          332555,
+          336535
+        ],
+        "minimum": 323125,
+        "p95": 343356
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "compromised_nodes": 4,
+      "decision_ns": {
+        "maximum": 6860,
+        "median": 5725.0,
+        "median_order_interval": [
+          5391,
+          6051
+        ],
+        "minimum": 4140,
+        "p95": 6690
+      },
+      "dependency_references": 16,
+      "encoding_ns": {
+        "maximum": 109962,
+        "median": 101542.0,
+        "median_order_interval": [
+          100672,
+          104201
+        ],
+        "minimum": 97162,
+        "p95": 106302
+      },
+      "end_to_end_ns": {
+        "maximum": 12202522,
+        "median": 10559411.0,
+        "median_order_interval": [
+          10405524,
+          10729028
+        ],
+        "minimum": 10128870,
+        "p95": 10941492
+      },
+      "expected_solver_answers": "SSSSSSSSSUSUSUSU",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 16,
+      "model_bytes": 3059,
+      "model_sha256": "6d40322c8e66a27dfdafe1c628087d97b5a3e1ff6cce6e67dd746da52a4d9bd3",
+      "nodes": 16,
+      "percent": 25,
+      "queries": 16,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11835246,
+        "median": 10210740.0,
+        "median_order_interval": [
+          10046628,
+          10378042
+        ],
+        "minimum": 9774264,
+        "p95": 10582686
+      },
+      "spec_ns": {
+        "maximum": 267724,
+        "median": 247429.0,
+        "median_order_interval": [
+          245034,
+          249764
+        ],
+        "minimum": 237623,
+        "p95": 259505
+      }
+    },
+    {
+      "actual_fanout": 16,
+      "candidate_branch_counts": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "candidates": 16,
+      "compromised_nodes": 4,
+      "decision_ns": {
+        "maximum": 8530,
+        "median": 6065.0,
+        "median_order_interval": [
+          5590,
+          6450
+        ],
+        "minimum": 4780,
+        "p95": 7090
+      },
+      "dependency_references": 256,
+      "encoding_ns": {
+        "maximum": 153212,
+        "median": 129157.0,
+        "median_order_interval": [
+          128253,
+          130722
+        ],
+        "minimum": 123592,
+        "p95": 149252
+      },
+      "end_to_end_ns": {
+        "maximum": 12542538,
+        "median": 12026558.5,
+        "median_order_interval": [
+          11907807,
+          12107330
+        ],
+        "minimum": 10939062,
+        "p95": 12280093
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 16,
+      "model_bytes": 7425,
+      "model_sha256": "e677e4ca190426fcb279d6df449f67208c344ac260729b0603babf33b0b18ed6",
+      "nodes": 16,
+      "percent": 25,
+      "queries": 32,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 11830016,
+        "median": 11305832.5,
+        "median_order_interval": [
+          11220356,
+          11379719
+        ],
+        "minimum": 10229491,
+        "p95": 11561651
+      },
+      "spec_ns": {
+        "maximum": 594610,
+        "median": 573284.0,
+        "median_order_interval": [
+          571289,
+          577090
+        ],
+        "minimum": 558079,
+        "p95": 589629
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 16,
+      "compromised_nodes": 8,
+      "decision_ns": {
+        "maximum": 7500,
+        "median": 6245.0,
+        "median_order_interval": [
+          6110,
+          6350
+        ],
+        "minimum": 4050,
+        "p95": 7320
+      },
+      "dependency_references": 16,
+      "encoding_ns": {
+        "maximum": 125561,
+        "median": 119432.0,
+        "median_order_interval": [
+          117222,
+          120272
+        ],
+        "minimum": 114292,
+        "p95": 124412
+      },
+      "end_to_end_ns": {
+        "maximum": 11868857,
+        "median": 11300367.5,
+        "median_order_interval": [
+          11191507,
+          11455670
+        ],
+        "minimum": 10899972,
+        "p95": 11793935
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSUSUSUSUSUSUSUSU",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 256,
+      "model_bytes": 5211,
+      "model_sha256": "d62abf9977d6334d500a90d2a924db47a042006f754e33c255c44fc1edd656e1",
+      "nodes": 16,
+      "percent": 50,
+      "queries": 32,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11355849,
+        "median": 10777004.5,
+        "median_order_interval": [
+          10668208,
+          10953402
+        ],
+        "minimum": 10383684,
+        "p95": 11286837
+      },
+      "spec_ns": {
+        "maximum": 439727,
+        "median": 387146.0,
+        "median_order_interval": [
+          383156,
+          392147
+        ],
+        "minimum": 375316,
+        "p95": 414416
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        256
+      ],
+      "candidates": 1,
+      "compromised_nodes": 8,
+      "decision_ns": {
+        "maximum": 7641,
+        "median": 5045.0,
+        "median_order_interval": [
+          4740,
+          5450
+        ],
+        "minimum": 3610,
+        "p95": 6830
+      },
+      "dependency_references": 32,
+      "encoding_ns": {
+        "maximum": 191113,
+        "median": 147407.5,
+        "median_order_interval": [
+          145852,
+          149902
+        ],
+        "minimum": 140972,
+        "p95": 184072
+      },
+      "end_to_end_ns": {
+        "maximum": 11035444,
+        "median": 10478585.0,
+        "median_order_interval": [
+          10432245,
+          10560036
+        ],
+        "minimum": 10080858,
+        "p95": 10861860
+      },
+      "expected_solver_answers": "SS",
+      "expected_verdicts": [
+        "REJECTED"
+      ],
+      "joint_branch_count": 256,
+      "model_bytes": 2240,
+      "model_sha256": "7931ae2d78b708002646cecc5f9ca17973ff32bcb07045638c850e3ad68ecdd0",
+      "nodes": 32,
+      "percent": 25,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 10731548,
+        "median": 10176130.0,
+        "median_order_interval": [
+          10131949,
+          10256341
+        ],
+        "minimum": 9777133,
+        "p95": 10559996
+      },
+      "spec_ns": {
+        "maximum": 156562,
+        "median": 150112.0,
+        "median_order_interval": [
+          148723,
+          151233
+        ],
+        "minimum": 139393,
+        "p95": 153982
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536
+      ],
+      "candidates": 1,
+      "compromised_nodes": 16,
+      "decision_ns": {
+        "maximum": 6470,
+        "median": 5160.0,
+        "median_order_interval": [
+          5010,
+          5590
+        ],
+        "minimum": 4010,
+        "p95": 6380
+      },
+      "dependency_references": 32,
+      "encoding_ns": {
+        "maximum": 185853,
+        "median": 160682.0,
+        "median_order_interval": [
+          159122,
+          163652
+        ],
+        "minimum": 154482,
+        "p95": 171063
+      },
+      "end_to_end_ns": {
+        "maximum": 11112455,
+        "median": 10695868.0,
+        "median_order_interval": [
+          10574087,
+          10821650
+        ],
+        "minimum": 10303353,
+        "p95": 11032653
+      },
+      "expected_solver_answers": "SS",
+      "expected_verdicts": [
+        "REJECTED"
+      ],
+      "joint_branch_count": 65536,
+      "model_bytes": 2318,
+      "model_sha256": "26c18e434889dec331391f66c3426b1eaafd0649085f90a465a5661ef92bb517",
+      "nodes": 32,
+      "percent": 50,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 10786820,
+        "median": 10388923.5,
+        "median_order_interval": [
+          10238362,
+          10500295
+        ],
+        "minimum": 9988068,
+        "p95": 10711548
+      },
+      "spec_ns": {
+        "maximum": 190203,
+        "median": 150097.5,
+        "median_order_interval": [
+          146553,
+          152182
+        ],
+        "minimum": 139402,
+        "p95": 187683
+      }
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        65536,
+        65536
+      ],
+      "candidates": 2,
+      "compromised_nodes": 16,
+      "decision_ns": {
+        "maximum": 6441,
+        "median": 5250.0,
+        "median_order_interval": [
+          5090,
+          5440
+        ],
+        "minimum": 3830,
+        "p95": 6301
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 178893,
+        "median": 166358.0,
+        "median_order_interval": [
+          163922,
+          167862
+        ],
+        "minimum": 161343,
+        "p95": 176983
+      },
+      "end_to_end_ns": {
+        "maximum": 11379088,
+        "median": 10988778.0,
+        "median_order_interval": [
+          10879242,
+          11058905
+        ],
+        "minimum": 10627638,
+        "p95": 11350278
+      },
+      "expected_solver_answers": "SSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 65536,
+      "model_bytes": 2885,
+      "model_sha256": "e6c93d48fbfd169e094cd746788068ff6198fa053ff47fcea8b5fcce172f09f0",
+      "nodes": 32,
+      "percent": 50,
+      "queries": 4,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 10988832,
+        "median": 10618897.0,
+        "median_order_interval": [
+          10513916,
+          10688169
+        ],
+        "minimum": 10248341,
+        "p95": 10971642
+      },
+      "spec_ns": {
+        "maximum": 219454,
+        "median": 202748.5,
+        "median_order_interval": [
+          201224,
+          204393
+        ],
+        "minimum": 196764,
+        "p95": 215093
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 6040,
+        "median": 5405.0,
+        "median_order_interval": [
+          5080,
+          5600
+        ],
+        "minimum": 3520,
+        "p95": 5990
+      },
+      "dependency_references": 32,
+      "encoding_ns": {
+        "maximum": 143182,
+        "median": 127477.0,
+        "median_order_interval": [
+          126122,
+          129032
+        ],
+        "minimum": 122112,
+        "p95": 136302
+      },
+      "end_to_end_ns": {
+        "maximum": 11045134,
+        "median": 10546296.0,
+        "median_order_interval": [
+          10395673,
+          10638847
+        ],
+        "minimum": 9999418,
+        "p95": 10923142
+      },
+      "expected_solver_answers": "SUSUSUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 2939,
+      "model_sha256": "f17ac7ee716a146a4286d45583091afa2f1d99ea4ef7bbf82832dc5769e2f92b",
+      "nodes": 32,
+      "percent": 0,
+      "queries": 8,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 10691518,
+        "median": 10201105.5,
+        "median_order_interval": [
+          10043687,
+          10294352
+        ],
+        "minimum": 9653682,
+        "p95": 10561686
+      },
+      "spec_ns": {
+        "maximum": 254674,
+        "median": 214948.5,
+        "median_order_interval": [
+          211053,
+          218313
+        ],
+        "minimum": 203463,
+        "p95": 240624
+      }
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "candidates": 4,
+      "compromised_nodes": 8,
+      "decision_ns": {
+        "maximum": 8450,
+        "median": 5485.0,
+        "median_order_interval": [
+          5260,
+          5750
+        ],
+        "minimum": 4491,
+        "p95": 7170
+      },
+      "dependency_references": 128,
+      "encoding_ns": {
+        "maximum": 169803,
+        "median": 157542.0,
+        "median_order_interval": [
+          156182,
+          159912
+        ],
+        "minimum": 150702,
+        "p95": 165943
+      },
+      "end_to_end_ns": {
+        "maximum": 11517910,
+        "median": 11088049.5,
+        "median_order_interval": [
+          11005504,
+          11163035
+        ],
+        "minimum": 10637808,
+        "p95": 11492931
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 256,
+      "model_bytes": 3941,
+      "model_sha256": "f5f9adf2ccb34ae9034764179d45e1f2a7d870356ff2e31edcc3e94d85154280",
+      "nodes": 32,
+      "percent": 25,
+      "queries": 8,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 11067123,
+        "median": 10640012.0,
+        "median_order_interval": [
+          10555287,
+          10710558
+        ],
+        "minimum": 10181011,
+        "p95": 11037164
+      },
+      "spec_ns": {
+        "maximum": 298155,
+        "median": 287835.0,
+        "median_order_interval": [
+          285284,
+          289935
+        ],
+        "minimum": 279165,
+        "p95": 296395
+      }
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 6990,
+        "median": 5775.0,
+        "median_order_interval": [
+          5490,
+          5940
+        ],
+        "minimum": 4850,
+        "p95": 6770
+      },
+      "dependency_references": 256,
+      "encoding_ns": {
+        "maximum": 160852,
+        "median": 148727.0,
+        "median_order_interval": [
+          147793,
+          151052
+        ],
+        "minimum": 144613,
+        "p95": 157622
+      },
+      "end_to_end_ns": {
+        "maximum": 11330837,
+        "median": 11104264.5,
+        "median_order_interval": [
+          10969753,
+          11213226
+        ],
+        "minimum": 10654048,
+        "p95": 11320318
+      },
+      "expected_solver_answers": "SUSUSUSUSUSUSUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 6137,
+      "model_sha256": "7f6790a3e1e67efec7ae4ff8842b44ec345f707a1ac2b7f990b680db5496e7af",
+      "nodes": 32,
+      "percent": 0,
+      "queries": 16,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 10723208,
+        "median": 10488894.5,
+        "median_order_interval": [
+          10355963,
+          10591947
+        ],
+        "minimum": 10043008,
+        "p95": 10692797
+      },
+      "spec_ns": {
+        "maximum": 470147,
+        "median": 456148.0,
+        "median_order_interval": [
+          454487,
+          458188
+        ],
+        "minimum": 447947,
+        "p95": 466778
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "compromised_nodes": 3,
+      "decision_ns": {
+        "maximum": 6820,
+        "median": 5970.5,
+        "median_order_interval": [
+          5400,
+          6140
+        ],
+        "minimum": 4390,
+        "p95": 6740
+      },
+      "dependency_references": 32,
+      "encoding_ns": {
+        "maximum": 151042,
+        "median": 144272.0,
+        "median_order_interval": [
+          142812,
+          146092
+        ],
+        "minimum": 137852,
+        "p95": 148772
+      },
+      "end_to_end_ns": {
+        "maximum": 13972119,
+        "median": 10992148.0,
+        "median_order_interval": [
+          10885870,
+          11069674
+        ],
+        "minimum": 10078428,
+        "p95": 11724134
+      },
+      "expected_solver_answers": "SSSSSSSUSUSUSUSU",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 8,
+      "model_bytes": 3994,
+      "model_sha256": "663fe81bc20aed74b4e08ff8ceeb9d70e3c48423148dbf5bd74862e8b5f2f3ad",
+      "nodes": 32,
+      "percent": 10,
+      "queries": 16,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 13530732,
+        "median": 10560331.5,
+        "median_order_interval": [
+          10442113,
+          10624947
+        ],
+        "minimum": 9641272,
+        "p95": 11274507
+      },
+      "spec_ns": {
+        "maximum": 309425,
+        "median": 287814.5,
+        "median_order_interval": [
+          284174,
+          291874
+        ],
+        "minimum": 276154,
+        "p95": 300165
+      }
+    },
+    {
+      "actual_fanout": 16,
+      "candidate_branch_counts": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "candidates": 16,
+      "compromised_nodes": 3,
+      "decision_ns": {
+        "maximum": 7460,
+        "median": 6480.0,
+        "median_order_interval": [
+          5980,
+          6860
+        ],
+        "minimum": 5090,
+        "p95": 7181
+      },
+      "dependency_references": 512,
+      "encoding_ns": {
+        "maximum": 197643,
+        "median": 189613.0,
+        "median_order_interval": [
+          188333,
+          190853
+        ],
+        "minimum": 181212,
+        "p95": 194753
+      },
+      "end_to_end_ns": {
+        "maximum": 13139077,
+        "median": 12600043.5,
+        "median_order_interval": [
+          12554688,
+          12697969
+        ],
+        "minimum": 12300353,
+        "p95": 13106676
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 8,
+      "model_bytes": 10760,
+      "model_sha256": "372d88c4fbe67a8bebf1ab546372443a24f4c5b6e6585cdd00b7abef72c56f5c",
+      "nodes": 32,
+      "percent": 10,
+      "queries": 32,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 12148421,
+        "median": 11605747.5,
+        "median_order_interval": [
+          11573142,
+          11726105
+        ],
+        "minimum": 11322468,
+        "p95": 12106910
+      },
+      "spec_ns": {
+        "maximum": 818773,
+        "median": 790907.5,
+        "median_order_interval": [
+          786842,
+          796392
+        ],
+        "minimum": 772792,
+        "p95": 813233
+      }
+    },
+    {
+      "actual_fanout": 16,
+      "candidate_branch_counts": [
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256
+      ],
+      "candidates": 16,
+      "compromised_nodes": 8,
+      "decision_ns": {
+        "maximum": 8190,
+        "median": 6375.5,
+        "median_order_interval": [
+          5850,
+          6661
+        ],
+        "minimum": 4880,
+        "p95": 7510
+      },
+      "dependency_references": 512,
+      "encoding_ns": {
+        "maximum": 206303,
+        "median": 199608.0,
+        "median_order_interval": [
+          196923,
+          201313
+        ],
+        "minimum": 191663,
+        "p95": 205883
+      },
+      "end_to_end_ns": {
+        "maximum": 13765536,
+        "median": 13174702.0,
+        "median_order_interval": [
+          12976794,
+          13285240
+        ],
+        "minimum": 12629858,
+        "p95": 13627704
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 256,
+      "model_bytes": 10805,
+      "model_sha256": "c3be4e4a903f5392909a7d1dd60e36de028874ad69d47da0a36e9281ee7f8b67",
+      "nodes": 32,
+      "percent": 25,
+      "queries": 32,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 12755190,
+        "median": 12177441.5,
+        "median_order_interval": [
+          11971449,
+          12275363
+        ],
+        "minimum": 11622533,
+        "p95": 12618868
+      },
+      "spec_ns": {
+        "maximum": 839764,
+        "median": 794467.5,
+        "median_order_interval": [
+          786002,
+          802262
+        ],
+        "minimum": 777262,
+        "p95": 832543
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 16,
+      "compromised_nodes": 8,
+      "decision_ns": {
+        "maximum": 9670,
+        "median": 6040.0,
+        "median_order_interval": [
+          5690,
+          6400
+        ],
+        "minimum": 4890,
+        "p95": 7850
+      },
+      "dependency_references": 32,
+      "encoding_ns": {
+        "maximum": 210594,
+        "median": 162617.5,
+        "median_order_interval": [
+          161812,
+          164833
+        ],
+        "minimum": 153902,
+        "p95": 172493
+      },
+      "end_to_end_ns": {
+        "maximum": 12014809,
+        "median": 11685663.5,
+        "median_order_interval": [
+          11523832,
+          11797476
+        ],
+        "minimum": 10486014,
+        "p95": 11973949
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSUSUSUSUSUSUSUSU",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 256,
+      "model_bytes": 6155,
+      "model_sha256": "6d5d264e23eaccf319a949e2859c34b5044195e5d24da01ca1d48d7558821068",
+      "nodes": 32,
+      "percent": 25,
+      "queries": 32,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11395089,
+        "median": 11087900.0,
+        "median_order_interval": [
+          10917071,
+          11188716
+        ],
+        "minimum": 9891925,
+        "p95": 11362029
+      },
+      "spec_ns": {
+        "maximum": 445877,
+        "median": 433507.0,
+        "median_order_interval": [
+          429596,
+          437917
+        ],
+        "minimum": 421277,
+        "p95": 445657
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 6320,
+        "median": 5120.0,
+        "median_order_interval": [
+          4880,
+          5420
+        ],
+        "minimum": 2920,
+        "p95": 6200
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 224144,
+        "median": 211603.5,
+        "median_order_interval": [
+          207713,
+          214243
+        ],
+        "minimum": 202143,
+        "p95": 222963
+      },
+      "end_to_end_ns": {
+        "maximum": 11594992,
+        "median": 10996998.0,
+        "median_order_interval": [
+          10867620,
+          11080444
+        ],
+        "minimum": 10335433,
+        "p95": 11408479
+      },
+      "expected_solver_answers": "SU",
+      "expected_verdicts": [
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 4056,
+      "model_sha256": "de64e7813d5c1d6c06ff1781754c3174e3a759c31151bfe07ca9b1bccc4f579a",
+      "nodes": 64,
+      "percent": 0,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11152895,
+        "median": 10557536.0,
+        "median_order_interval": [
+          10433324,
+          10639037
+        ],
+        "minimum": 9910266,
+        "p95": 10951492
+      },
+      "spec_ns": {
+        "maximum": 235344,
+        "median": 223628.5,
+        "median_order_interval": [
+          220534,
+          226833
+        ],
+        "minimum": 213423,
+        "p95": 235314
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        64
+      ],
+      "candidates": 1,
+      "compromised_nodes": 6,
+      "decision_ns": {
+        "maximum": 6000,
+        "median": 5140.0,
+        "median_order_interval": [
+          4860,
+          5520
+        ],
+        "minimum": 4150,
+        "p95": 6000
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 248484,
+        "median": 232593.5,
+        "median_order_interval": [
+          230414,
+          234374
+        ],
+        "minimum": 222734,
+        "p95": 243103
+      },
+      "end_to_end_ns": {
+        "maximum": 11600352,
+        "median": 11189055.5,
+        "median_order_interval": [
+          11087825,
+          11247596
+        ],
+        "minimum": 10786210,
+        "p95": 11431599
+      },
+      "expected_solver_answers": "SS",
+      "expected_verdicts": [
+        "REJECTED"
+      ],
+      "joint_branch_count": 64,
+      "model_bytes": 4110,
+      "model_sha256": "72ad6be797e1176a2352c398a877d5cfa6b2433327a00ef49652337796b2dc71",
+      "nodes": 64,
+      "percent": 10,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11104975,
+        "median": 10730299.0,
+        "median_order_interval": [
+          10627208,
+          10790399
+        ],
+        "minimum": 10331703,
+        "p95": 10976102
+      },
+      "spec_ns": {
+        "maximum": 247074,
+        "median": 224344.0,
+        "median_order_interval": [
+          222424,
+          227204
+        ],
+        "minimum": 217034,
+        "p95": 239034
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536
+      ],
+      "candidates": 1,
+      "compromised_nodes": 16,
+      "decision_ns": {
+        "maximum": 6450,
+        "median": 5215.5,
+        "median_order_interval": [
+          4980,
+          5690
+        ],
+        "minimum": 3600,
+        "p95": 6330
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 268694,
+        "median": 251144.0,
+        "median_order_interval": [
+          245454,
+          256134
+        ],
+        "minimum": 238084,
+        "p95": 260774
+      },
+      "end_to_end_ns": {
+        "maximum": 11992318,
+        "median": 11337723.0,
+        "median_order_interval": [
+          11241087,
+          11432069
+        ],
+        "minimum": 10822351,
+        "p95": 11877627
+      },
+      "expected_solver_answers": "SS",
+      "expected_verdicts": [
+        "REJECTED"
+      ],
+      "joint_branch_count": 65536,
+      "model_bytes": 4206,
+      "model_sha256": "c75c5a33332b5ec06cad0e46312540fe31a518078b38ffe277b99f8c85606542",
+      "nodes": 64,
+      "percent": 25,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11504831,
+        "median": 10852255.5,
+        "median_order_interval": [
+          10744169,
+          10962292
+        ],
+        "minimum": 10364613,
+        "p95": 11369169
+      },
+      "solver_peak_rss_kib_probes": [
+        30208,
+        30208,
+        30208
+      ],
+      "spec_ns": {
+        "maximum": 247574,
+        "median": 227288.5,
+        "median_order_interval": [
+          223764,
+          231283
+        ],
+        "minimum": 214764,
+        "p95": 241744
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4294967296
+      ],
+      "candidates": 1,
+      "compromised_nodes": 32,
+      "decision_ns": {
+        "maximum": 6230,
+        "median": 5175.0,
+        "median_order_interval": [
+          4861,
+          5370
+        ],
+        "minimum": 3260,
+        "p95": 6220
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 293955,
+        "median": 279074.5,
+        "median_order_interval": [
+          277594,
+          282344
+        ],
+        "minimum": 273625,
+        "p95": 292405
+      },
+      "end_to_end_ns": {
+        "maximum": 12316134,
+        "median": 11727400.0,
+        "median_order_interval": [
+          11635593,
+          11891046
+        ],
+        "minimum": 10524206,
+        "p95": 12290883
+      },
+      "expected_solver_answers": "SS",
+      "expected_verdicts": [
+        "REJECTED"
+      ],
+      "joint_branch_count": 4294967296,
+      "model_bytes": 4366,
+      "model_sha256": "e5848e31ce396e95f64b9c7cc44f6c28a8107cb8516a064be49312e3c62096f8",
+      "nodes": 64,
+      "percent": 50,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11809206,
+        "median": 11213592.0,
+        "median_order_interval": [
+          11108875,
+          11383529
+        ],
+        "minimum": 10007938,
+        "p95": 11787575
+      },
+      "spec_ns": {
+        "maximum": 241144,
+        "median": 225533.5,
+        "median_order_interval": [
+          223664,
+          227873
+        ],
+        "minimum": 217583,
+        "p95": 240834
+      }
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 6440,
+        "median": 5040.0,
+        "median_order_interval": [
+          4790,
+          5270
+        ],
+        "minimum": 3831,
+        "p95": 5890
+      },
+      "dependency_references": 128,
+      "encoding_ns": {
+        "maximum": 269984,
+        "median": 219598.5,
+        "median_order_interval": [
+          218293,
+          221863
+        ],
+        "minimum": 211863,
+        "p95": 269055
+      },
+      "end_to_end_ns": {
+        "maximum": 11506601,
+        "median": 11073738.5,
+        "median_order_interval": [
+          10997353,
+          11213957
+        ],
+        "minimum": 10704669,
+        "p95": 11474760
+      },
+      "expected_solver_answers": "SUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 4943,
+      "model_sha256": "2cf541066a487b9bb2506a62e9d5c3cf36adef57f126c9409a4ad2f6a1129001",
+      "nodes": 64,
+      "percent": 0,
+      "queries": 4,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 10986473,
+        "median": 10540325.5,
+        "median_order_interval": [
+          10474805,
+          10687139
+        ],
+        "minimum": 10188981,
+        "p95": 10934101
+      },
+      "spec_ns": {
+        "maximum": 334045,
+        "median": 303595.0,
+        "median_order_interval": [
+          301365,
+          306574
+        ],
+        "minimum": 291185,
+        "p95": 319515
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 6490,
+        "median": 5200.5,
+        "median_order_interval": [
+          5110,
+          5390
+        ],
+        "minimum": 3450,
+        "p95": 6040
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 239243,
+        "median": 213563.0,
+        "median_order_interval": [
+          211973,
+          216123
+        ],
+        "minimum": 204863,
+        "p95": 221714
+      },
+      "end_to_end_ns": {
+        "maximum": 11522011,
+        "median": 11010878.5,
+        "median_order_interval": [
+          10892561,
+          11090915
+        ],
+        "minimum": 10561106,
+        "p95": 11479160
+      },
+      "expected_solver_answers": "SUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 4313,
+      "model_sha256": "7fc363561a955e29b8ed9d7d792c9248965daa4f48e95f646648111c42bd95c6",
+      "nodes": 64,
+      "percent": 0,
+      "queries": 4,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11043904,
+        "median": 10553281.5,
+        "median_order_interval": [
+          10421564,
+          10619617
+        ],
+        "minimum": 10084839,
+        "p95": 11008273
+      },
+      "spec_ns": {
+        "maximum": 304545,
+        "median": 249074.0,
+        "median_order_interval": [
+          247864,
+          255234
+        ],
+        "minimum": 244444,
+        "p95": 271985
+      }
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        64,
+        64
+      ],
+      "candidates": 2,
+      "compromised_nodes": 6,
+      "decision_ns": {
+        "maximum": 6420,
+        "median": 5420.5,
+        "median_order_interval": [
+          5100,
+          5640
+        ],
+        "minimum": 4200,
+        "p95": 6240
+      },
+      "dependency_references": 128,
+      "encoding_ns": {
+        "maximum": 294274,
+        "median": 240173.5,
+        "median_order_interval": [
+          236733,
+          243524
+        ],
+        "minimum": 224423,
+        "p95": 256994
+      },
+      "end_to_end_ns": {
+        "maximum": 12112520,
+        "median": 11392895.0,
+        "median_order_interval": [
+          11300898,
+          11494700
+        ],
+        "minimum": 10853491,
+        "p95": 11843436
+      },
+      "expected_solver_answers": "SSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 64,
+      "model_bytes": 4997,
+      "model_sha256": "e8de87151901c4b017e1995ce368380720b0915d35c4b332c1f362ae2dbc4468",
+      "nodes": 64,
+      "percent": 10,
+      "queries": 4,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 11533271,
+        "median": 10841480.5,
+        "median_order_interval": [
+          10752920,
+          10934352
+        ],
+        "minimum": 10324373,
+        "p95": 11277317
+      },
+      "spec_ns": {
+        "maximum": 321335,
+        "median": 306885.0,
+        "median_order_interval": [
+          301315,
+          312505
+        ],
+        "minimum": 290855,
+        "p95": 319295
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        8,
+        8
+      ],
+      "candidates": 2,
+      "compromised_nodes": 6,
+      "decision_ns": {
+        "maximum": 7320,
+        "median": 5355.0,
+        "median_order_interval": [
+          5090,
+          5630
+        ],
+        "minimum": 4380,
+        "p95": 7080
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 273774,
+        "median": 232168.5,
+        "median_order_interval": [
+          227824,
+          234153
+        ],
+        "minimum": 221623,
+        "p95": 252964
+      },
+      "end_to_end_ns": {
+        "maximum": 11719924,
+        "median": 11268977.5,
+        "median_order_interval": [
+          11185066,
+          11393099
+        ],
+        "minimum": 10857551,
+        "p95": 11699304
+      },
+      "expected_solver_answers": "SSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 64,
+      "model_bytes": 4367,
+      "model_sha256": "fd8aa38bf926e9a91dc5772899a7360ec72e0a307cc6910c26e32150c56e1237",
+      "nodes": 64,
+      "percent": 10,
+      "queries": 4,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11195526,
+        "median": 10793770.0,
+        "median_order_interval": [
+          10699718,
+          10902642
+        ],
+        "minimum": 10369954,
+        "p95": 11179406
+      },
+      "spec_ns": {
+        "maximum": 269605,
+        "median": 249929.0,
+        "median_order_interval": [
+          246973,
+          253364
+        ],
+        "minimum": 238194,
+        "p95": 260804
+      }
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        65536,
+        65536
+      ],
+      "candidates": 2,
+      "compromised_nodes": 16,
+      "decision_ns": {
+        "maximum": 6020,
+        "median": 5230.0,
+        "median_order_interval": [
+          5120,
+          5350
+        ],
+        "minimum": 3580,
+        "p95": 5960
+      },
+      "dependency_references": 128,
+      "encoding_ns": {
+        "maximum": 379706,
+        "median": 260589.0,
+        "median_order_interval": [
+          255854,
+          262004
+        ],
+        "minimum": 247034,
+        "p95": 299205
+      },
+      "end_to_end_ns": {
+        "maximum": 12190711,
+        "median": 11654893.5,
+        "median_order_interval": [
+          11579831,
+          11740444
+        ],
+        "minimum": 11078525,
+        "p95": 12089670
+      },
+      "expected_solver_answers": "SSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 65536,
+      "model_bytes": 5093,
+      "model_sha256": "2d49254b2b47675bfa7807a3ae0f83200ad31fba1b18f30fc97b92c57f6c7782",
+      "nodes": 64,
+      "percent": 25,
+      "queries": 4,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 11636812,
+        "median": 11079250.0,
+        "median_order_interval": [
+          11012763,
+          11178275
+        ],
+        "minimum": 10506136,
+        "p95": 11494011
+      },
+      "spec_ns": {
+        "maximum": 367206,
+        "median": 307230.0,
+        "median_order_interval": [
+          302884,
+          309355
+        ],
+        "minimum": 292915,
+        "p95": 333725
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        256,
+        256
+      ],
+      "candidates": 2,
+      "compromised_nodes": 16,
+      "decision_ns": {
+        "maximum": 6300,
+        "median": 5360.0,
+        "median_order_interval": [
+          5030,
+          5550
+        ],
+        "minimum": 4270,
+        "p95": 6260
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 283834,
+        "median": 254044.0,
+        "median_order_interval": [
+          251564,
+          257894
+        ],
+        "minimum": 241354,
+        "p95": 276985
+      },
+      "end_to_end_ns": {
+        "maximum": 12528737,
+        "median": 11541671.5,
+        "median_order_interval": [
+          11495630,
+          11630934
+        ],
+        "minimum": 11110235,
+        "p95": 12284323
+      },
+      "expected_solver_answers": "SSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 65536,
+      "model_bytes": 4463,
+      "model_sha256": "5442c062a260891d123c65af297aa0cd088ff57d3bf1ca66705f04cf255609ed",
+      "nodes": 64,
+      "percent": 25,
+      "queries": 4,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 12012058,
+        "median": 11031404.0,
+        "median_order_interval": [
+          10988652,
+          11112335
+        ],
+        "minimum": 10575297,
+        "p95": 11759024
+      },
+      "spec_ns": {
+        "maximum": 296634,
+        "median": 252249.0,
+        "median_order_interval": [
+          249074,
+          256794
+        ],
+        "minimum": 242093,
+        "p95": 293654
+      }
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        4294967296,
+        4294967296
+      ],
+      "candidates": 2,
+      "compromised_nodes": 32,
+      "decision_ns": {
+        "maximum": 6960,
+        "median": 5525.0,
+        "median_order_interval": [
+          5320,
+          5680
+        ],
+        "minimum": 3990,
+        "p95": 6630
+      },
+      "dependency_references": 128,
+      "encoding_ns": {
+        "maximum": 310144,
+        "median": 290445.0,
+        "median_order_interval": [
+          287515,
+          294454
+        ],
+        "minimum": 278005,
+        "p95": 304415
+      },
+      "end_to_end_ns": {
+        "maximum": 15253629,
+        "median": 12188726.5,
+        "median_order_interval": [
+          12011019,
+          12365094
+        ],
+        "minimum": 11747796,
+        "p95": 12515507
+      },
+      "expected_solver_answers": "SSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 4294967296,
+      "model_bytes": 5253,
+      "model_sha256": "9bbeba5f5ae8fe0423804c25109b473652a0e0135b6e01af6980b876702379d1",
+      "nodes": 64,
+      "percent": 50,
+      "queries": 4,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 14637259,
+        "median": 11586582.0,
+        "median_order_interval": [
+          11420140,
+          11745565
+        ],
+        "minimum": 11143376,
+        "p95": 11888967
+      },
+      "spec_ns": {
+        "maximum": 321835,
+        "median": 304674.0,
+        "median_order_interval": [
+          302085,
+          310535
+        ],
+        "minimum": 296294,
+        "p95": 321395
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536,
+        65536
+      ],
+      "candidates": 2,
+      "compromised_nodes": 32,
+      "decision_ns": {
+        "maximum": 8890,
+        "median": 5390.0,
+        "median_order_interval": [
+          5130,
+          5640
+        ],
+        "minimum": 3980,
+        "p95": 7350
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 302534,
+        "median": 278499.5,
+        "median_order_interval": [
+          276494,
+          283624
+        ],
+        "minimum": 268555,
+        "p95": 293334
+      },
+      "end_to_end_ns": {
+        "maximum": 13018626,
+        "median": 11883492.0,
+        "median_order_interval": [
+          11762255,
+          12049329
+        ],
+        "minimum": 11377569,
+        "p95": 12463766
+      },
+      "expected_solver_answers": "SSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 4294967296,
+      "model_bytes": 4623,
+      "model_sha256": "2761b08eff330bb1939a7b613e0a566e840a75b59920dc6b0fed3c7442b383b1",
+      "nodes": 64,
+      "percent": 50,
+      "queries": 4,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 12468877,
+        "median": 11350993.5,
+        "median_order_interval": [
+          11237796,
+          11488400
+        ],
+        "minimum": 10846700,
+        "p95": 11887167
+      },
+      "spec_ns": {
+        "maximum": 299314,
+        "median": 251199.0,
+        "median_order_interval": [
+          248674,
+          253524
+        ],
+        "minimum": 240054,
+        "p95": 291955
+      }
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 6400,
+        "median": 5340.5,
+        "median_order_interval": [
+          5110,
+          5650
+        ],
+        "minimum": 3910,
+        "p95": 6280
+      },
+      "dependency_references": 256,
+      "encoding_ns": {
+        "maximum": 251524,
+        "median": 232283.5,
+        "median_order_interval": [
+          230393,
+          233003
+        ],
+        "minimum": 219193,
+        "p95": 241344
+      },
+      "end_to_end_ns": {
+        "maximum": 11847066,
+        "median": 11491081.0,
+        "median_order_interval": [
+          11364919,
+          11606252
+        ],
+        "minimum": 11108434,
+        "p95": 11812265
+      },
+      "expected_solver_answers": "SUSUSUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 6717,
+      "model_sha256": "b6b151df2b3b4fe635aa521da2b13cc218e0450901541863fd7c35482f50172c",
+      "nodes": 64,
+      "percent": 0,
+      "queries": 8,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 11160345,
+        "median": 10826350.5,
+        "median_order_interval": [
+          10695539,
+          10939692
+        ],
+        "minimum": 10440214,
+        "p95": 11143285
+      },
+      "spec_ns": {
+        "maximum": 511708,
+        "median": 430921.5,
+        "median_order_interval": [
+          429427,
+          436717
+        ],
+        "minimum": 423416,
+        "p95": 473157
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 7500,
+        "median": 5380.0,
+        "median_order_interval": [
+          5130,
+          5790
+        ],
+        "minimum": 3600,
+        "p95": 6461
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 228663,
+        "median": 214738.0,
+        "median_order_interval": [
+          212963,
+          218503
+        ],
+        "minimum": 206264,
+        "p95": 228634
+      },
+      "end_to_end_ns": {
+        "maximum": 11688364,
+        "median": 11105535.0,
+        "median_order_interval": [
+          11038283,
+          11254357
+        ],
+        "minimum": 10694298,
+        "p95": 11546691
+      },
+      "expected_solver_answers": "SUSUSUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 4827,
+      "model_sha256": "e4d4753cd4137bb3c220ec1161b677bc3786ef469a7447a039ced2d8194c3f99",
+      "nodes": 64,
+      "percent": 0,
+      "queries": 8,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11145145,
+        "median": 10592767.0,
+        "median_order_interval": [
+          10531996,
+          10719779
+        ],
+        "minimum": 10173150,
+        "p95": 11011653
+      },
+      "spec_ns": {
+        "maximum": 346925,
+        "median": 294874.0,
+        "median_order_interval": [
+          292975,
+          301245
+        ],
+        "minimum": 283124,
+        "p95": 346236
+      }
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "candidates": 4,
+      "compromised_nodes": 6,
+      "decision_ns": {
+        "maximum": 6890,
+        "median": 5380.5,
+        "median_order_interval": [
+          5161,
+          5630
+        ],
+        "minimum": 4180,
+        "p95": 6791
+      },
+      "dependency_references": 256,
+      "encoding_ns": {
+        "maximum": 296795,
+        "median": 250364.0,
+        "median_order_interval": [
+          247314,
+          255124
+        ],
+        "minimum": 244444,
+        "p95": 262214
+      },
+      "end_to_end_ns": {
+        "maximum": 12403615,
+        "median": 11858261.0,
+        "median_order_interval": [
+          11771526,
+          11981499
+        ],
+        "minimum": 11436630,
+        "p95": 12261942
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 64,
+      "model_bytes": 6771,
+      "model_sha256": "822788ee4280e684223bc0d55fe8dc15bd57aec89f928eb732f29b7e8de029a9",
+      "nodes": 64,
+      "percent": 10,
+      "queries": 8,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 11698163,
+        "median": 11163365.0,
+        "median_order_interval": [
+          11070235,
+          11286197
+        ],
+        "minimum": 10753729,
+        "p95": 11578792
+      },
+      "spec_ns": {
+        "maximum": 473067,
+        "median": 433142.0,
+        "median_order_interval": [
+          431687,
+          436007
+        ],
+        "minimum": 422507,
+        "p95": 465617
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4,
+        4,
+        2,
+        2
+      ],
+      "candidates": 4,
+      "compromised_nodes": 6,
+      "decision_ns": {
+        "maximum": 6631,
+        "median": 5695.0,
+        "median_order_interval": [
+          5400,
+          5880
+        ],
+        "minimum": 3750,
+        "p95": 6530
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 245724,
+        "median": 234773.5,
+        "median_order_interval": [
+          231753,
+          236843
+        ],
+        "minimum": 225813,
+        "p95": 245454
+      },
+      "end_to_end_ns": {
+        "maximum": 11991269,
+        "median": 11498475.5,
+        "median_order_interval": [
+          11387160,
+          11638633
+        ],
+        "minimum": 10924872,
+        "p95": 11929587
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 64,
+      "model_bytes": 4881,
+      "model_sha256": "38d95e70157731ffa29b8945f2d083a05c69cb75af241a0de6eb8d65b4dabd89",
+      "nodes": 64,
+      "percent": 10,
+      "queries": 8,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11441259,
+        "median": 10969603.0,
+        "median_order_interval": [
+          10840441,
+          11112324
+        ],
+        "minimum": 10375353,
+        "p95": 11386999
+      },
+      "spec_ns": {
+        "maximum": 351156,
+        "median": 294029.0,
+        "median_order_interval": [
+          291264,
+          300514
+        ],
+        "minimum": 280715,
+        "p95": 322335
+      }
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "candidates": 4,
+      "compromised_nodes": 16,
+      "decision_ns": {
+        "maximum": 6490,
+        "median": 5255.0,
+        "median_order_interval": [
+          5051,
+          5590
+        ],
+        "minimum": 3510,
+        "p95": 6130
+      },
+      "dependency_references": 256,
+      "encoding_ns": {
+        "maximum": 377916,
+        "median": 268314.0,
+        "median_order_interval": [
+          266114,
+          270234
+        ],
+        "minimum": 254904,
+        "p95": 300375
+      },
+      "end_to_end_ns": {
+        "maximum": 12681419,
+        "median": 12258367.5,
+        "median_order_interval": [
+          12085690,
+          12374455
+        ],
+        "minimum": 11797376,
+        "p95": 12655209
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 65536,
+      "model_bytes": 6867,
+      "model_sha256": "f0899d52090b499531e441d568c327f35d90dd968306f5b87ba34727943cf496",
+      "nodes": 64,
+      "percent": 25,
+      "queries": 8,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 11968897,
+        "median": 11555886.5,
+        "median_order_interval": [
+          11379019,
+          11675184
+        ],
+        "minimum": 11096405,
+        "p95": 11893747
+      },
+      "spec_ns": {
+        "maximum": 567339,
+        "median": 430892.0,
+        "median_order_interval": [
+          425997,
+          434317
+        ],
+        "minimum": 416766,
+        "p95": 459398
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "candidates": 4,
+      "compromised_nodes": 16,
+      "decision_ns": {
+        "maximum": 6750,
+        "median": 5435.0,
+        "median_order_interval": [
+          5200,
+          5720
+        ],
+        "minimum": 4490,
+        "p95": 6370
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 290505,
+        "median": 252759.0,
+        "median_order_interval": [
+          250494,
+          254874
+        ],
+        "minimum": 243504,
+        "p95": 257424
+      },
+      "end_to_end_ns": {
+        "maximum": 12230432,
+        "median": 11745954.0,
+        "median_order_interval": [
+          11660764,
+          11793175
+        ],
+        "minimum": 11358129,
+        "p95": 12206372
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 65536,
+      "model_bytes": 4977,
+      "model_sha256": "413cd76bd699665a4316e8fcddcd712ddbf65d487dd1884680cd12a583570bc4",
+      "nodes": 64,
+      "percent": 25,
+      "queries": 8,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11677203,
+        "median": 11183456.0,
+        "median_order_interval": [
+          11107865,
+          11238746
+        ],
+        "minimum": 10780020,
+        "p95": 11615713
+      },
+      "spec_ns": {
+        "maximum": 333615,
+        "median": 294059.5,
+        "median_order_interval": [
+          293115,
+          296935
+        ],
+        "minimum": 286515,
+        "p95": 316355
+      }
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296
+      ],
+      "candidates": 4,
+      "compromised_nodes": 32,
+      "decision_ns": {
+        "maximum": 6740,
+        "median": 5520.0,
+        "median_order_interval": [
+          5310,
+          5660
+        ],
+        "minimum": 4290,
+        "p95": 6560
+      },
+      "dependency_references": 256,
+      "encoding_ns": {
+        "maximum": 430327,
+        "median": 299330.0,
+        "median_order_interval": [
+          296745,
+          300624
+        ],
+        "minimum": 287945,
+        "p95": 338325
+      },
+      "end_to_end_ns": {
+        "maximum": 14106941,
+        "median": 12878622.5,
+        "median_order_interval": [
+          12784411,
+          12926513
+        ],
+        "minimum": 11899547,
+        "p95": 13567603
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 4294967296,
+      "model_bytes": 7027,
+      "model_sha256": "6db69531cf1f826686c7d71f82a10e33e0f06089f636ec63b0f0de37e8611379",
+      "nodes": 64,
+      "percent": 50,
+      "queries": 8,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 13323889,
+        "median": 12146935.5,
+        "median_order_interval": [
+          12047020,
+          12194381
+        ],
+        "minimum": 11151265,
+        "p95": 12681739
+      },
+      "spec_ns": {
+        "maximum": 565969,
+        "median": 432451.5,
+        "median_order_interval": [
+          429397,
+          439737
+        ],
+        "minimum": 421047,
+        "p95": 461167
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "candidates": 4,
+      "compromised_nodes": 32,
+      "decision_ns": {
+        "maximum": 6480,
+        "median": 5420.0,
+        "median_order_interval": [
+          5130,
+          5840
+        ],
+        "minimum": 4380,
+        "p95": 6420
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 303785,
+        "median": 280884.5,
+        "median_order_interval": [
+          279444,
+          282864
+        ],
+        "minimum": 274054,
+        "p95": 296774
+      },
+      "end_to_end_ns": {
+        "maximum": 12841691,
+        "median": 12041765.0,
+        "median_order_interval": [
+          11986788,
+          12282594
+        ],
+        "minimum": 11437640,
+        "p95": 12680429
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 4294967296,
+      "model_bytes": 5137,
+      "model_sha256": "2865cdb1f0ed6a745749c46b5806d4693a87f1304f4f2d58f89525a3b7d80a04",
+      "nodes": 64,
+      "percent": 50,
+      "queries": 8,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 12248342,
+        "median": 11457271.0,
+        "median_order_interval": [
+          11397669,
+          11679874
+        ],
+        "minimum": 10850191,
+        "p95": 12096320
+      },
+      "spec_ns": {
+        "maximum": 357656,
+        "median": 296620.0,
+        "median_order_interval": [
+          293235,
+          300035
+        ],
+        "minimum": 281654,
+        "p95": 317936
+      }
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 7100,
+        "median": 5860.0,
+        "median_order_interval": [
+          5370,
+          6150
+        ],
+        "minimum": 4380,
+        "p95": 6840
+      },
+      "dependency_references": 512,
+      "encoding_ns": {
+        "maximum": 284845,
+        "median": 258594.0,
+        "median_order_interval": [
+          255294,
+          259974
+        ],
+        "minimum": 241844,
+        "p95": 266614
+      },
+      "end_to_end_ns": {
+        "maximum": 12642078,
+        "median": 12071340.0,
+        "median_order_interval": [
+          12007940,
+          12214971
+        ],
+        "minimum": 11470101,
+        "p95": 12530117
+      },
+      "expected_solver_answers": "SUSUSUSUSUSUSUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 10265,
+      "model_sha256": "08442e60860b1e84bd87b667896d3020ade83c66f807925a1bebd124dd5edec2",
+      "nodes": 64,
+      "percent": 0,
+      "queries": 16,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 11668563,
+        "median": 11127990.0,
+        "median_order_interval": [
+          11053045,
+          11251326
+        ],
+        "minimum": 10527466,
+        "p95": 11569732
+      },
+      "spec_ns": {
+        "maximum": 734792,
+        "median": 688156.0,
+        "median_order_interval": [
+          682690,
+          693891
+        ],
+        "minimum": 674681,
+        "p95": 719421
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 7400,
+        "median": 5630.0,
+        "median_order_interval": [
+          5400,
+          5750
+        ],
+        "minimum": 4050,
+        "p95": 6840
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 241384,
+        "median": 219068.5,
+        "median_order_interval": [
+          216794,
+          221914
+        ],
+        "minimum": 207413,
+        "p95": 230814
+      },
+      "end_to_end_ns": {
+        "maximum": 12048399,
+        "median": 11464739.5,
+        "median_order_interval": [
+          11201916,
+          11587672
+        ],
+        "minimum": 10799910,
+        "p95": 11764505
+      },
+      "expected_solver_answers": "SUSUSUSUSUSUSUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 5855,
+      "model_sha256": "f2c6a04be5c707c64ea724d507fbfcedfcaa210774972317dd11faffd25dda38",
+      "nodes": 64,
+      "percent": 0,
+      "queries": 16,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11412780,
+        "median": 10874410.5,
+        "median_order_interval": [
+          10606716,
+          10983202
+        ],
+        "minimum": 10173560,
+        "p95": 11163015
+      },
+      "spec_ns": {
+        "maximum": 407996,
+        "median": 369835.5,
+        "median_order_interval": [
+          365896,
+          373706
+        ],
+        "minimum": 355056,
+        "p95": 400776
+      }
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "candidates": 8,
+      "compromised_nodes": 6,
+      "decision_ns": {
+        "maximum": 6860,
+        "median": 5705.0,
+        "median_order_interval": [
+          5440,
+          5900
+        ],
+        "minimum": 4541,
+        "p95": 6620
+      },
+      "dependency_references": 512,
+      "encoding_ns": {
+        "maximum": 321955,
+        "median": 275474.0,
+        "median_order_interval": [
+          272144,
+          278335
+        ],
+        "minimum": 263324,
+        "p95": 307095
+      },
+      "end_to_end_ns": {
+        "maximum": 13361680,
+        "median": 12692464.5,
+        "median_order_interval": [
+          12598889,
+          12851021
+        ],
+        "minimum": 12180072,
+        "p95": 13181307
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 64,
+      "model_bytes": 10319,
+      "model_sha256": "88b06915a5ec3f1a138540d6206495443e2736eb81181f4f9ce0ef80ff2f42e0",
+      "nodes": 64,
+      "percent": 10,
+      "queries": 16,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 12404825,
+        "median": 11726874.5,
+        "median_order_interval": [
+          11631174,
+          11872136
+        ],
+        "minimum": 11224496,
+        "p95": 12211452
+      },
+      "spec_ns": {
+        "maximum": 986086,
+        "median": 684411.0,
+        "median_order_interval": [
+          681101,
+          692321
+        ],
+        "minimum": 673621,
+        "p95": 736121
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "candidates": 8,
+      "compromised_nodes": 6,
+      "decision_ns": {
+        "maximum": 7150,
+        "median": 5935.0,
+        "median_order_interval": [
+          5450,
+          6230
+        ],
+        "minimum": 4340,
+        "p95": 6850
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 275994,
+        "median": 239799.0,
+        "median_order_interval": [
+          237144,
+          241564
+        ],
+        "minimum": 227654,
+        "p95": 271124
+      },
+      "end_to_end_ns": {
+        "maximum": 12720449,
+        "median": 11833530.5,
+        "median_order_interval": [
+          11663464,
+          11947137
+        ],
+        "minimum": 11382830,
+        "p95": 12499326
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSUSU",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 64,
+      "model_bytes": 5909,
+      "model_sha256": "31607c2ea4660c06ec72f773854a512d156b41f401198e1ded3b9b3ae7338012",
+      "nodes": 64,
+      "percent": 10,
+      "queries": 16,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 12086609,
+        "median": 11218051.0,
+        "median_order_interval": [
+          11042864,
+          11318038
+        ],
+        "minimum": 10763950,
+        "p95": 11864907
+      },
+      "spec_ns": {
+        "maximum": 421937,
+        "median": 374290.0,
+        "median_order_interval": [
+          369925,
+          376746
+        ],
+        "minimum": 358236,
+        "p95": 413077
+      }
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "candidates": 8,
+      "compromised_nodes": 16,
+      "decision_ns": {
+        "maximum": 7120,
+        "median": 5935.0,
+        "median_order_interval": [
+          5680,
+          6110
+        ],
+        "minimum": 4690,
+        "p95": 6800
+      },
+      "dependency_references": 512,
+      "encoding_ns": {
+        "maximum": 343975,
+        "median": 295264.5,
+        "median_order_interval": [
+          290844,
+          300934
+        ],
+        "minimum": 283324,
+        "p95": 335946
+      },
+      "end_to_end_ns": {
+        "maximum": 13851717,
+        "median": 13353969.0,
+        "median_order_interval": [
+          13257739,
+          13436261
+        ],
+        "minimum": 12874363,
+        "p95": 13822188
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 65536,
+      "model_bytes": 10415,
+      "model_sha256": "f8a5697ea4b8d5e6925144a5500391945ab1e7df67105ede69b76841842f3ddd",
+      "nodes": 64,
+      "percent": 25,
+      "queries": 16,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 12846501,
+        "median": 12363254.0,
+        "median_order_interval": [
+          12271143,
+          12456916
+        ],
+        "minimum": 11882098,
+        "p95": 12837461
+      },
+      "spec_ns": {
+        "maximum": 710122,
+        "median": 688071.0,
+        "median_order_interval": [
+          680871,
+          690080
+        ],
+        "minimum": 667520,
+        "p95": 709431
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 8,
+      "compromised_nodes": 16,
+      "decision_ns": {
+        "maximum": 8300,
+        "median": 5690.0,
+        "median_order_interval": [
+          5430,
+          6030
+        ],
+        "minimum": 4790,
+        "p95": 7140
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 303495,
+        "median": 257554.0,
+        "median_order_interval": [
+          255494,
+          260674
+        ],
+        "minimum": 251304,
+        "p95": 276514
+      },
+      "end_to_end_ns": {
+        "maximum": 12513516,
+        "median": 12083200.5,
+        "median_order_interval": [
+          12008839,
+          12220751
+        ],
+        "minimum": 11712764,
+        "p95": 12375784
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 65536,
+      "model_bytes": 6005,
+      "model_sha256": "5e201a6c2df945086840a1dcf5d1f2fa96558a3f674ae2895238762cd735304d",
+      "nodes": 64,
+      "percent": 25,
+      "queries": 16,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11868466,
+        "median": 11445165.0,
+        "median_order_interval": [
+          11368159,
+          11574292
+        ],
+        "minimum": 11082725,
+        "p95": 11724684
+      },
+      "spec_ns": {
+        "maximum": 412357,
+        "median": 372086.0,
+        "median_order_interval": [
+          369685,
+          378096
+        ],
+        "minimum": 359155,
+        "p95": 399456
+      }
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296
+      ],
+      "candidates": 8,
+      "compromised_nodes": 32,
+      "decision_ns": {
+        "maximum": 9970,
+        "median": 5840.5,
+        "median_order_interval": [
+          5561,
+          6111
+        ],
+        "minimum": 4660,
+        "p95": 7160
+      },
+      "dependency_references": 512,
+      "encoding_ns": {
+        "maximum": 391387,
+        "median": 326825.0,
+        "median_order_interval": [
+          322574,
+          330666
+        ],
+        "minimum": 313635,
+        "p95": 375826
+      },
+      "end_to_end_ns": {
+        "maximum": 14974594,
+        "median": 14215039.0,
+        "median_order_interval": [
+          14038931,
+          14489207
+        ],
+        "minimum": 13764167,
+        "p95": 14767382
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 4294967296,
+      "model_bytes": 10575,
+      "model_sha256": "75a55d551ea9f8b4434fe6c95e20f08298d7204e2143c7ca588b96e9d639dd49",
+      "nodes": 64,
+      "percent": 50,
+      "queries": 16,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 13917608,
+        "median": 13199342.5,
+        "median_order_interval": [
+          13012545,
+          13424391
+        ],
+        "minimum": 12713781,
+        "p95": 13632164
+      },
+      "spec_ns": {
+        "maximum": 979196,
+        "median": 686446.0,
+        "median_order_interval": [
+          681091,
+          690500
+        ],
+        "minimum": 670171,
+        "p95": 933124
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "candidates": 8,
+      "compromised_nodes": 32,
+      "decision_ns": {
+        "maximum": 7240,
+        "median": 5965.0,
+        "median_order_interval": [
+          5750,
+          6170
+        ],
+        "minimum": 5000,
+        "p95": 7080
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 344725,
+        "median": 286649.0,
+        "median_order_interval": [
+          283474,
+          291414
+        ],
+        "minimum": 278874,
+        "p95": 331425
+      },
+      "end_to_end_ns": {
+        "maximum": 13353890,
+        "median": 12597917.5,
+        "median_order_interval": [
+          12488287,
+          12694610
+        ],
+        "minimum": 12211542,
+        "p95": 13102495
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 4294967296,
+      "model_bytes": 6165,
+      "model_sha256": "81bebeafbb3d0820c8f8337b6e70f5e9ab698085d5c32650ec4a7a9e8d1cdcac",
+      "nodes": 64,
+      "percent": 50,
+      "queries": 16,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 12676559,
+        "median": 11928543.0,
+        "median_order_interval": [
+          11806516,
+          12033499
+        ],
+        "minimum": 11548521,
+        "p95": 12437335
+      },
+      "spec_ns": {
+        "maximum": 403697,
+        "median": 373616.0,
+        "median_order_interval": [
+          370016,
+          377966
+        ],
+        "minimum": 361105,
+        "p95": 401107
+      }
+    },
+    {
+      "actual_fanout": 16,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 16,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 7360,
+        "median": 6230.0,
+        "median_order_interval": [
+          5981,
+          6410
+        ],
+        "minimum": 4260,
+        "p95": 7040
+      },
+      "dependency_references": 1024,
+      "encoding_ns": {
+        "maximum": 355036,
+        "median": 302709.5,
+        "median_order_interval": [
+          299615,
+          304684
+        ],
+        "minimum": 294175,
+        "p95": 317225
+      },
+      "end_to_end_ns": {
+        "maximum": 14136412,
+        "median": 13378735.0,
+        "median_order_interval": [
+          13185946,
+          13484683
+        ],
+        "minimum": 12922524,
+        "p95": 13845937
+      },
+      "expected_solver_answers": "SUSUSUSUSUSUSUSUSUSUSUSUSUSUSUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 17421,
+      "model_sha256": "a3262e5de497b6bf9f7e2306d5e6966f32d2ec48986003811f337501da4a408d",
+      "nodes": 64,
+      "percent": 0,
+      "queries": 32,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 12333693,
+        "median": 11854416.5,
+        "median_order_interval": [
+          11687723,
+          11921458
+        ],
+        "minimum": 11405060,
+        "p95": 12306243
+      },
+      "spec_ns": {
+        "maximum": 1538374,
+        "median": 1210374.0,
+        "median_order_interval": [
+          1205318,
+          1221279
+        ],
+        "minimum": 1186969,
+        "p95": 1255740
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 16,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 7770,
+        "median": 6070.0,
+        "median_order_interval": [
+          5850,
+          6220
+        ],
+        "minimum": 5030,
+        "p95": 6900
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 238174,
+        "median": 228039.0,
+        "median_order_interval": [
+          227374,
+          231333
+        ],
+        "minimum": 215914,
+        "p95": 237163
+      },
+      "end_to_end_ns": {
+        "maximum": 12263012,
+        "median": 11889652.5,
+        "median_order_interval": [
+          11774505,
+          11998829
+        ],
+        "minimum": 11232508,
+        "p95": 12219932
+      },
+      "expected_solver_answers": "SUSUSUSUSUSUSUSUSUSUSUSUSUSUSUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 7971,
+      "model_sha256": "6b060b7f004d21b78a5257d0994e25e9210cfe8df3d61af07c9cd4771e9039c1",
+      "nodes": 64,
+      "percent": 0,
+      "queries": 32,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11485430,
+        "median": 11132110.0,
+        "median_order_interval": [
+          11031483,
+          11219047
+        ],
+        "minimum": 10468566,
+        "p95": 11426550
+      },
+      "spec_ns": {
+        "maximum": 569369,
+        "median": 522433.5,
+        "median_order_interval": [
+          519488,
+          529699
+        ],
+        "minimum": 508088,
+        "p95": 551789
+      }
+    },
+    {
+      "actual_fanout": 16,
+      "candidate_branch_counts": [
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "candidates": 16,
+      "compromised_nodes": 6,
+      "decision_ns": {
+        "maximum": 7750,
+        "median": 6395.0,
+        "median_order_interval": [
+          6160,
+          6610
+        ],
+        "minimum": 5060,
+        "p95": 7740
+      },
+      "dependency_references": 1024,
+      "encoding_ns": {
+        "maximum": 483968,
+        "median": 324010.0,
+        "median_order_interval": [
+          320615,
+          327385
+        ],
+        "minimum": 316015,
+        "p95": 355606
+      },
+      "end_to_end_ns": {
+        "maximum": 16270155,
+        "median": 14394231.5,
+        "median_order_interval": [
+          14290475,
+          14551498
+        ],
+        "minimum": 14092742,
+        "p95": 15096637
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 64,
+      "model_bytes": 17475,
+      "model_sha256": "098b0a53f256bcdae06d9c50eae74e6f2257be8ed7ae79e2f59cc601f1385735",
+      "nodes": 64,
+      "percent": 10,
+      "queries": 32,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 14704311,
+        "median": 12855078.0,
+        "median_order_interval": [
+          12757300,
+          12976914
+        ],
+        "minimum": 12575468,
+        "p95": 13540292
+      },
+      "spec_ns": {
+        "maximum": 1586624,
+        "median": 1216224.0,
+        "median_order_interval": [
+          1205039,
+          1221219
+        ],
+        "minimum": 1191919,
+        "p95": 1265980
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 16,
+      "compromised_nodes": 6,
+      "decision_ns": {
+        "maximum": 7520,
+        "median": 6340.0,
+        "median_order_interval": [
+          6010,
+          6650
+        ],
+        "minimum": 4440,
+        "p95": 7230
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 258994,
+        "median": 245788.5,
+        "median_order_interval": [
+          244114,
+          249184
+        ],
+        "minimum": 236674,
+        "p95": 255434
+      },
+      "end_to_end_ns": {
+        "maximum": 12699189,
+        "median": 12271048.5,
+        "median_order_interval": [
+          12208563,
+          12337444
+        ],
+        "minimum": 11744096,
+        "p95": 12664319
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSUSUSUSUSUSUSUSUSUSU",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 64,
+      "model_bytes": 8025,
+      "model_sha256": "082d27471ca62d18ea19dc7122db046ad6fe6b90ed8840e48d01e0c11dac9fb0",
+      "nodes": 64,
+      "percent": 10,
+      "queries": 32,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11893887,
+        "median": 11496626.0,
+        "median_order_interval": [
+          11431750,
+          11569312
+        ],
+        "minimum": 10973403,
+        "p95": 11887626
+      },
+      "spec_ns": {
+        "maximum": 557839,
+        "median": 522018.5,
+        "median_order_interval": [
+          518739,
+          527698
+        ],
+        "minimum": 510698,
+        "p95": 547008
+      }
+    },
+    {
+      "actual_fanout": 16,
+      "candidate_branch_counts": [
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "candidates": 16,
+      "compromised_nodes": 16,
+      "decision_ns": {
+        "maximum": 7330,
+        "median": 6430.5,
+        "median_order_interval": [
+          6270,
+          6680
+        ],
+        "minimum": 5120,
+        "p95": 7020
+      },
+      "dependency_references": 1024,
+      "encoding_ns": {
+        "maximum": 349575,
+        "median": 341095.5,
+        "median_order_interval": [
+          338385,
+          343455
+        ],
+        "minimum": 330965,
+        "p95": 348266
+      },
+      "end_to_end_ns": {
+        "maximum": 16031002,
+        "median": 15353751.5,
+        "median_order_interval": [
+          15257369,
+          15485923
+        ],
+        "minimum": 14903575,
+        "p95": 15905190
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 65536,
+      "model_bytes": 17571,
+      "model_sha256": "d10413203d59f3f28fbdd8b422a7881b0bc42031fa44de9d6439eff22c4b1512",
+      "nodes": 64,
+      "percent": 25,
+      "queries": 32,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 14456046,
+        "median": 13799252.5,
+        "median_order_interval": [
+          13690806,
+          13887188
+        ],
+        "minimum": 13344210,
+        "p95": 14342095
+      },
+      "solver_peak_rss_kib_probes": [
+        30208,
+        30208,
+        30208
+      ],
+      "spec_ns": {
+        "maximum": 1262179,
+        "median": 1210159.0,
+        "median_order_interval": [
+          1204669,
+          1216239
+        ],
+        "minimum": 1192609,
+        "p95": 1260790
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "candidates": 16,
+      "compromised_nodes": 16,
+      "decision_ns": {
+        "maximum": 8411,
+        "median": 6235.0,
+        "median_order_interval": [
+          5910,
+          6620
+        ],
+        "minimum": 5001,
+        "p95": 7310
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 392956,
+        "median": 264239.0,
+        "median_order_interval": [
+          262024,
+          267434
+        ],
+        "minimum": 254824,
+        "p95": 278295
+      },
+      "end_to_end_ns": {
+        "maximum": 14625479,
+        "median": 12915588.5,
+        "median_order_interval": [
+          12775770,
+          12982243
+        ],
+        "minimum": 12280814,
+        "p95": 13271608
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 65536,
+      "model_bytes": 8121,
+      "model_sha256": "61a86b4f4eca5730d32ec1a7e37a39d63bea9f5a8dec3b4d82a1d219877e8510",
+      "nodes": 64,
+      "percent": 25,
+      "queries": 32,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 13422101,
+        "median": 12110505.5,
+        "median_order_interval": [
+          11981929,
+          12193682
+        ],
+        "minimum": 11508842,
+        "p95": 12461626
+      },
+      "spec_ns": {
+        "maximum": 804512,
+        "median": 521128.0,
+        "median_order_interval": [
+          514118,
+          532368
+        ],
+        "minimum": 510038,
+        "p95": 569379
+      }
+    },
+    {
+      "actual_fanout": 16,
+      "candidate_branch_counts": [
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296
+      ],
+      "candidates": 16,
+      "compromised_nodes": 32,
+      "decision_ns": {
+        "maximum": 8330,
+        "median": 6545.5,
+        "median_order_interval": [
+          6340,
+          6751
+        ],
+        "minimum": 5511,
+        "p95": 7460
+      },
+      "dependency_references": 1024,
+      "encoding_ns": {
+        "maximum": 395626,
+        "median": 372211.0,
+        "median_order_interval": [
+          366576,
+          375056
+        ],
+        "minimum": 355475,
+        "p95": 379196
+      },
+      "end_to_end_ns": {
+        "maximum": 17629597,
+        "median": 16981092.0,
+        "median_order_interval": [
+          16840795,
+          17061788
+        ],
+        "minimum": 16464320,
+        "p95": 17454574
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 4294967296,
+      "model_bytes": 17731,
+      "model_sha256": "7b5aa3e04d1f78dbbf1bd8ca81a3b3aa956e73eb524bdfe25d0126bf858f87d4",
+      "nodes": 64,
+      "percent": 50,
+      "queries": 32,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 15956970,
+        "median": 15389076.5,
+        "median_order_interval": [
+          15271601,
+          15485483
+        ],
+        "minimum": 14829204,
+        "p95": 15887810
+      },
+      "spec_ns": {
+        "maximum": 1286541,
+        "median": 1207198.5,
+        "median_order_interval": [
+          1205309,
+          1214349
+        ],
+        "minimum": 1193668,
+        "p95": 1257100
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "candidates": 16,
+      "compromised_nodes": 32,
+      "decision_ns": {
+        "maximum": 7840,
+        "median": 6275.0,
+        "median_order_interval": [
+          6080,
+          6440
+        ],
+        "minimum": 5240,
+        "p95": 7760
+      },
+      "dependency_references": 64,
+      "encoding_ns": {
+        "maximum": 314875,
+        "median": 295784.5,
+        "median_order_interval": [
+          294175,
+          298944
+        ],
+        "minimum": 287815,
+        "p95": 305685
+      },
+      "end_to_end_ns": {
+        "maximum": 14065271,
+        "median": 13509437.5,
+        "median_order_interval": [
+          13389180,
+          13629014
+        ],
+        "minimum": 12491966,
+        "p95": 14037540
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 4294967296,
+      "model_bytes": 8281,
+      "model_sha256": "2f021f57c5fe0f3ca9dcd24dabeafa41d091f776719c8563f51e108b2e72e8b3",
+      "nodes": 64,
+      "percent": 50,
+      "queries": 32,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 13247288,
+        "median": 12685814.5,
+        "median_order_interval": [
+          12573568,
+          12800622
+        ],
+        "minimum": 11644463,
+        "p95": 13213417
+      },
+      "spec_ns": {
+        "maximum": 559589,
+        "median": 524028.5,
+        "median_order_interval": [
+          520408,
+          528959
+        ],
+        "minimum": 505148,
+        "p95": 545049
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 7840,
+        "median": 5195.0,
+        "median_order_interval": [
+          5010,
+          5610
+        ],
+        "minimum": 3970,
+        "p95": 6800
+      },
+      "dependency_references": 128,
+      "encoding_ns": {
+        "maximum": 438347,
+        "median": 391221.0,
+        "median_order_interval": [
+          386036,
+          397466
+        ],
+        "minimum": 376176,
+        "p95": 427417
+      },
+      "end_to_end_ns": {
+        "maximum": 12654768,
+        "median": 12206838.0,
+        "median_order_interval": [
+          12025920,
+          12325643
+        ],
+        "minimum": 11773735,
+        "p95": 12582277
+      },
+      "expected_solver_answers": "SU",
+      "expected_verdicts": [
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 7916,
+      "model_sha256": "8999ec1ab082cfa28f29a2a0d70f1a76b7bacd24cd42e47f3d57b23b616d6ea8",
+      "nodes": 128,
+      "percent": 0,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 11869826,
+        "median": 11419664.5,
+        "median_order_interval": [
+          11254037,
+          11542091
+        ],
+        "minimum": 11010963,
+        "p95": 11798895
+      },
+      "spec_ns": {
+        "maximum": 413946,
+        "median": 380836.0,
+        "median_order_interval": [
+          374626,
+          390416
+        ],
+        "minimum": 363525,
+        "p95": 412056
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        8192
+      ],
+      "candidates": 1,
+      "compromised_nodes": 13,
+      "decision_ns": {
+        "maximum": 6400,
+        "median": 5340.0,
+        "median_order_interval": [
+          5090,
+          5430
+        ],
+        "minimum": 4040,
+        "p95": 5970
+      },
+      "dependency_references": 128,
+      "encoding_ns": {
+        "maximum": 449307,
+        "median": 420567.0,
+        "median_order_interval": [
+          417337,
+          424747
+        ],
+        "minimum": 407586,
+        "p95": 435457
+      },
+      "end_to_end_ns": {
+        "maximum": 13015064,
+        "median": 12458886.0,
+        "median_order_interval": [
+          12320984,
+          12678860
+        ],
+        "minimum": 11963449,
+        "p95": 12982893
+      },
+      "expected_solver_answers": "SS",
+      "expected_verdicts": [
+        "REJECTED"
+      ],
+      "joint_branch_count": 8192,
+      "model_bytes": 8036,
+      "model_sha256": "e92bad436da2baebb33583be00bdf54f2f626b804c8067bc726517d80ceba4e0",
+      "nodes": 128,
+      "percent": 10,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 12218072,
+        "median": 11652038.5,
+        "median_order_interval": [
+          11514371,
+          11858467
+        ],
+        "minimum": 11149116,
+        "p95": 12170181
+      },
+      "spec_ns": {
+        "maximum": 435667,
+        "median": 384301.0,
+        "median_order_interval": [
+          376526,
+          388076
+        ],
+        "minimum": 364275,
+        "p95": 409086
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        4294967296
+      ],
+      "candidates": 1,
+      "compromised_nodes": 32,
+      "decision_ns": {
+        "maximum": 7020,
+        "median": 5250.0,
+        "median_order_interval": [
+          5050,
+          5840
+        ],
+        "minimum": 4020,
+        "p95": 6781
+      },
+      "dependency_references": 128,
+      "encoding_ns": {
+        "maximum": 3566066,
+        "median": 455192.0,
+        "median_order_interval": [
+          453187,
+          461137
+        ],
+        "minimum": 440227,
+        "p95": 507548
+      },
+      "end_to_end_ns": {
+        "maximum": 18999398,
+        "median": 12916743.5,
+        "median_order_interval": [
+          12797972,
+          12994243
+        ],
+        "minimum": 11733814,
+        "p95": 13470351
+      },
+      "expected_solver_answers": "SS",
+      "expected_verdicts": [
+        "REJECTED"
+      ],
+      "joint_branch_count": 4294967296,
+      "model_bytes": 8226,
+      "model_sha256": "6c42765d5cd35a033e11a733a7d336fb9e3bbac71faf655d11805545972501f0",
+      "nodes": 128,
+      "percent": 25,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 15020776,
+        "median": 12056545.0,
+        "median_order_interval": [
+          11960689,
+          12163872
+        ],
+        "minimum": 10886291,
+        "p95": 12598988
+      },
+      "spec_ns": {
+        "maximum": 441597,
+        "median": 383271.0,
+        "median_order_interval": [
+          376706,
+          387986
+        ],
+        "minimum": 356906,
+        "p95": 421696
+      }
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        8192,
+        8192
+      ],
+      "candidates": 2,
+      "compromised_nodes": 13,
+      "decision_ns": {
+        "maximum": 6600,
+        "median": 5265.0,
+        "median_order_interval": [
+          5060,
+          5480
+        ],
+        "minimum": 3670,
+        "p95": 6140
+      },
+      "dependency_references": 256,
+      "encoding_ns": {
+        "maximum": 496278,
+        "median": 441762.0,
+        "median_order_interval": [
+          433567,
+          446917
+        ],
+        "minimum": 413027,
+        "p95": 476018
+      },
+      "end_to_end_ns": {
+        "maximum": 13412880,
+        "median": 12891518.0,
+        "median_order_interval": [
+          12767711,
+          12955453
+        ],
+        "minimum": 12372725,
+        "p95": 13315029
+      },
+      "expected_solver_answers": "SSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 8192,
+      "model_bytes": 9591,
+      "model_sha256": "4c3f7a30976e5124f249d4e587a1dc303f6aee074b2bb1bf039709d9869ce5f8",
+      "nodes": 128,
+      "percent": 10,
+      "queries": 4,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 12400244,
+        "median": 11920813.0,
+        "median_order_interval": [
+          11797296,
+          11976679
+        ],
+        "minimum": 11439160,
+        "p95": 12356954
+      },
+      "spec_ns": {
+        "maximum": 556569,
+        "median": 519423.5,
+        "median_order_interval": [
+          514338,
+          530999
+        ],
+        "minimum": 500567,
+        "p95": 541828
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536,
+        65536
+      ],
+      "candidates": 2,
+      "compromised_nodes": 32,
+      "decision_ns": {
+        "maximum": 6820,
+        "median": 5345.0,
+        "median_order_interval": [
+          5010,
+          5490
+        ],
+        "minimum": 4310,
+        "p95": 6401
+      },
+      "dependency_references": 128,
+      "encoding_ns": {
+        "maximum": 507898,
+        "median": 454447.0,
+        "median_order_interval": [
+          451007,
+          460518
+        ],
+        "minimum": 445117,
+        "p95": 503898
+      },
+      "end_to_end_ns": {
+        "maximum": 13790657,
+        "median": 13094401.0,
+        "median_order_interval": [
+          12987143,
+          13211348
+        ],
+        "minimum": 12413606,
+        "p95": 13621694
+      },
+      "expected_solver_answers": "SSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 4294967296,
+      "model_bytes": 8483,
+      "model_sha256": "0b497bb8a7064773557e35739873252361a9d2fd772e2dc6d4e88247af6fcdde",
+      "nodes": 128,
+      "percent": 25,
+      "queries": 4,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 12899103,
+        "median": 12181601.5,
+        "median_order_interval": [
+          12131720,
+          12347644
+        ],
+        "minimum": 11555691,
+        "p95": 12743930
+      },
+      "spec_ns": {
+        "maximum": 436747,
+        "median": 412256.0,
+        "median_order_interval": [
+          404136,
+          420527
+        ],
+        "minimum": 391956,
+        "p95": 436317
+      }
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296
+      ],
+      "candidates": 4,
+      "compromised_nodes": 32,
+      "decision_ns": {
+        "maximum": 7150,
+        "median": 5410.5,
+        "median_order_interval": [
+          5091,
+          5740
+        ],
+        "minimum": 3970,
+        "p95": 6541
+      },
+      "dependency_references": 512,
+      "encoding_ns": {
+        "maximum": 564539,
+        "median": 489318.0,
+        "median_order_interval": [
+          487077,
+          495518
+        ],
+        "minimum": 465977,
+        "p95": 534059
+      },
+      "end_to_end_ns": {
+        "maximum": 14957764,
+        "median": 14392150.5,
+        "median_order_interval": [
+          14260325,
+          14450998
+        ],
+        "minimum": 13781817,
+        "p95": 14889094
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 4294967296,
+      "model_bytes": 12891,
+      "model_sha256": "602eec152c28a3d46e0c8ab03c02d5268da5826b87677343d7931646d9dff366",
+      "nodes": 128,
+      "percent": 25,
+      "queries": 8,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 13736725,
+        "median": 13143872.0,
+        "median_order_interval": [
+          13023584,
+          13206238
+        ],
+        "minimum": 12566257,
+        "p95": 13575703
+      },
+      "spec_ns": {
+        "maximum": 776032,
+        "median": 733361.5,
+        "median_order_interval": [
+          731031,
+          736822
+        ],
+        "minimum": 717721,
+        "p95": 763762
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "candidates": 4,
+      "compromised_nodes": 64,
+      "decision_ns": {
+        "maximum": 8310,
+        "median": 5455.0,
+        "median_order_interval": [
+          5260,
+          5800
+        ],
+        "minimum": 3860,
+        "p95": 7200
+      },
+      "dependency_references": 128,
+      "encoding_ns": {
+        "maximum": 586049,
+        "median": 515743.0,
+        "median_order_interval": [
+          510278,
+          519358
+        ],
+        "minimum": 502988,
+        "p95": 544839
+      },
+      "end_to_end_ns": {
+        "maximum": 15063246,
+        "median": 14043070.0,
+        "median_order_interval": [
+          13976480,
+          14285555
+        ],
+        "minimum": 13490933,
+        "p95": 14957275
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 18446744073709551616,
+      "model_bytes": 9317,
+      "model_sha256": "a3283b8b8c8b6c6a14756ada5b6ad267026a6b33315de8c8a3dab419d081caeb",
+      "nodes": 128,
+      "percent": 50,
+      "queries": 8,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 14049990,
+        "median": 13056034.5,
+        "median_order_interval": [
+          12996565,
+          13317129
+        ],
+        "minimum": 12516647,
+        "p95": 13949249
+      },
+      "spec_ns": {
+        "maximum": 484228,
+        "median": 457307.0,
+        "median_order_interval": [
+          451168,
+          465768
+        ],
+        "minimum": 432857,
+        "p95": 479938
+      }
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616
+      ],
+      "candidates": 8,
+      "compromised_nodes": 64,
+      "decision_ns": {
+        "maximum": 7250,
+        "median": 5865.0,
+        "median_order_interval": [
+          5700,
+          6080
+        ],
+        "minimum": 4760,
+        "p95": 7070
+      },
+      "dependency_references": 1024,
+      "encoding_ns": {
+        "maximum": 1110907,
+        "median": 599329.5,
+        "median_order_interval": [
+          596989,
+          602149
+        ],
+        "minimum": 583109,
+        "p95": 640540
+      },
+      "end_to_end_ns": {
+        "maximum": 18818275,
+        "median": 17908986.5,
+        "median_order_interval": [
+          17646379,
+          17972882
+        ],
+        "minimum": 16935687,
+        "p95": 18576591
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 18446744073709551616,
+      "model_bytes": 19431,
+      "model_sha256": "9d041be1d243caffcd0edd8a04c5cbad0b1ca07f7c82d2dc6c4af144dfad98fd",
+      "nodes": 128,
+      "percent": 50,
+      "queries": 16,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 16794483,
+        "median": 16138653.5,
+        "median_order_interval": [
+          15868840,
+          16228334
+        ],
+        "minimum": 15175010,
+        "p95": 16551120
+      },
+      "spec_ns": {
+        "maximum": 1202039,
+        "median": 1157918.5,
+        "median_order_interval": [
+          1152848,
+          1165248
+        ],
+        "minimum": 1139507,
+        "p95": 1194528
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 16,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 8310,
+        "median": 6245.5,
+        "median_order_interval": [
+          5870,
+          6541
+        ],
+        "minimum": 4800,
+        "p95": 7440
+      },
+      "dependency_references": 128,
+      "encoding_ns": {
+        "maximum": 552868,
+        "median": 401586.5,
+        "median_order_interval": [
+          399106,
+          407947
+        ],
+        "minimum": 386976,
+        "p95": 424237
+      },
+      "end_to_end_ns": {
+        "maximum": 13889398,
+        "median": 13137286.5,
+        "median_order_interval": [
+          13039445,
+          13276939
+        ],
+        "minimum": 12670759,
+        "p95": 13511132
+      },
+      "expected_solver_answers": "SUSUSUSUSUSUSUSUSUSUSUSUSUSUSUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 11831,
+      "model_sha256": "2fd99dee4879e3b9238d78df9bf0ae0bcc49c46381e05849f79037d60f634660",
+      "nodes": 128,
+      "percent": 0,
+      "queries": 32,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 12765170,
+        "median": 11972187.5,
+        "median_order_interval": [
+          11865236,
+          12139861
+        ],
+        "minimum": 11580822,
+        "p95": 12374934
+      },
+      "spec_ns": {
+        "maximum": 990715,
+        "median": 713566.0,
+        "median_order_interval": [
+          707991,
+          729081
+        ],
+        "minimum": 687391,
+        "p95": 762352
+      }
+    },
+    {
+      "actual_fanout": 16,
+      "candidate_branch_counts": [
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296,
+        4294967296
+      ],
+      "candidates": 16,
+      "compromised_nodes": 32,
+      "decision_ns": {
+        "maximum": 7400,
+        "median": 6575.0,
+        "median_order_interval": [
+          6140,
+          6740
+        ],
+        "minimum": 5430,
+        "p95": 7230
+      },
+      "dependency_references": 2048,
+      "encoding_ns": {
+        "maximum": 687191,
+        "median": 622569.5,
+        "median_order_interval": [
+          619800,
+          625680
+        ],
+        "minimum": 605080,
+        "p95": 643200
+      },
+      "end_to_end_ns": {
+        "maximum": 20388280,
+        "median": 19919027.5,
+        "median_order_interval": [
+          19779910,
+          20034634
+        ],
+        "minimum": 19419366,
+        "p95": 20170097
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 4294967296,
+      "model_bytes": 31611,
+      "model_sha256": "399e74edf2dfc43ae139776fa52fdfca48e7e84aa2878484a00d855f174af86e",
+      "nodes": 128,
+      "percent": 25,
+      "queries": 32,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 17683978,
+        "median": 17233115.5,
+        "median_order_interval": [
+          17103099,
+          17332472
+        ],
+        "minimum": 16724043,
+        "p95": 17458675
+      },
+      "spec_ns": {
+        "maximum": 2124204,
+        "median": 2063442.5,
+        "median_order_interval": [
+          2052712,
+          2075202
+        ],
+        "minimum": 2034652,
+        "p95": 2113953
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1
+      ],
+      "candidates": 1,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 6640,
+        "median": 5285.0,
+        "median_order_interval": [
+          5200,
+          5590
+        ],
+        "minimum": 4350,
+        "p95": 6350
+      },
+      "dependency_references": 256,
+      "encoding_ns": {
+        "maximum": 797492,
+        "median": 733141.5,
+        "median_order_interval": [
+          728551,
+          743802
+        ],
+        "minimum": 698891,
+        "p95": 780612
+      },
+      "end_to_end_ns": {
+        "maximum": 16488390,
+        "median": 14672270.5,
+        "median_order_interval": [
+          14533599,
+          14896114
+        ],
+        "minimum": 13508762,
+        "p95": 15407352
+      },
+      "expected_solver_answers": "SU",
+      "expected_verdicts": [
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 15852,
+      "model_sha256": "83827f7b9df283cbec9bc0354bc18f313e43264e3effd68effc1eae54a26e3e4",
+      "nodes": 256,
+      "percent": 0,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 13954669,
+        "median": 13191667.5,
+        "median_order_interval": [
+          13078486,
+          13387610
+        ],
+        "minimum": 12072190,
+        "p95": 13783636
+      },
+      "spec_ns": {
+        "maximum": 2626452,
+        "median": 721461.0,
+        "median_order_interval": [
+          714891,
+          730012
+        ],
+        "minimum": 680971,
+        "p95": 824473
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        18446744073709551616
+      ],
+      "candidates": 1,
+      "compromised_nodes": 64,
+      "decision_ns": {
+        "maximum": 6970,
+        "median": 5470.0,
+        "median_order_interval": [
+          5280,
+          5800
+        ],
+        "minimum": 4500,
+        "p95": 6420
+      },
+      "dependency_references": 256,
+      "encoding_ns": {
+        "maximum": 1326171,
+        "median": 870583.0,
+        "median_order_interval": [
+          860604,
+          875053
+        ],
+        "minimum": 839573,
+        "p95": 934085
+      },
+      "end_to_end_ns": {
+        "maximum": 19381704,
+        "median": 16135159.0,
+        "median_order_interval": [
+          15971701,
+          16283926
+        ],
+        "minimum": 15479554,
+        "p95": 16905565
+      },
+      "expected_solver_answers": "SS",
+      "expected_verdicts": [
+        "REJECTED"
+      ],
+      "joint_branch_count": 18446744073709551616,
+      "model_bytes": 16482,
+      "model_sha256": "29dbe7b6a17c88f134cc495409cab51d5020bde3e4c576d2bb9350e2745cc806",
+      "nodes": 256,
+      "percent": 25,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 16921935,
+        "median": 14553169.5,
+        "median_order_interval": [
+          14396726,
+          14661170
+        ],
+        "minimum": 13903959,
+        "p95": 15279680
+      },
+      "spec_ns": {
+        "maximum": 1128088,
+        "median": 719671.0,
+        "median_order_interval": [
+          711392,
+          724651
+        ],
+        "minimum": 682820,
+        "p95": 771572
+      }
+    },
+    {
+      "actual_fanout": 2,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 8090,
+        "median": 5505.0,
+        "median_order_interval": [
+          5150,
+          5790
+        ],
+        "minimum": 4090,
+        "p95": 6630
+      },
+      "dependency_references": 512,
+      "encoding_ns": {
+        "maximum": 796762,
+        "median": 757001.5,
+        "median_order_interval": [
+          748971,
+          762732
+        ],
+        "minimum": 709251,
+        "p95": 790692
+      },
+      "end_to_end_ns": {
+        "maximum": 16163404,
+        "median": 15281440.5,
+        "median_order_interval": [
+          15158269,
+          15342711
+        ],
+        "minimum": 14450138,
+        "p95": 15877229
+      },
+      "expected_solver_answers": "SUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 18815,
+      "model_sha256": "1a31f5b7c53c303de46d3f1cc9c0ae1a377fbdffa222e5ed88993aa2fa4ea6cb",
+      "nodes": 256,
+      "percent": 0,
+      "queries": 4,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 14423037,
+        "median": 13558502.5,
+        "median_order_interval": [
+          13427211,
+          13621263
+        ],
+        "minimum": 12722681,
+        "p95": 14123981
+      },
+      "spec_ns": {
+        "maximum": 1002236,
+        "median": 956345.0,
+        "median_order_interval": [
+          944534,
+          960965
+        ],
+        "minimum": 899575,
+        "p95": 995316
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        8192,
+        8192
+      ],
+      "candidates": 2,
+      "compromised_nodes": 26,
+      "decision_ns": {
+        "maximum": 7750,
+        "median": 5655.0,
+        "median_order_interval": [
+          5360,
+          5761
+        ],
+        "minimum": 3950,
+        "p95": 6700
+      },
+      "dependency_references": 256,
+      "encoding_ns": {
+        "maximum": 824112,
+        "median": 786302.0,
+        "median_order_interval": [
+          780992,
+          794942
+        ],
+        "minimum": 767862,
+        "p95": 811972
+      },
+      "end_to_end_ns": {
+        "maximum": 18381178,
+        "median": 15649221.0,
+        "median_order_interval": [
+          15414163,
+          15762758
+        ],
+        "minimum": 15118149,
+        "p95": 16396047
+      },
+      "expected_solver_answers": "SSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 67108864,
+      "model_bytes": 16359,
+      "model_sha256": "0a8d490bb41fc76fada309d520867f1a1f3311ad4188e884cc8fc35c09b277f8",
+      "nodes": 256,
+      "percent": 10,
+      "queries": 4,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 14898733,
+        "median": 14073661.5,
+        "median_order_interval": [
+          13900478,
+          14224714
+        ],
+        "minimum": 13560073,
+        "p95": 14821353
+      },
+      "spec_ns": {
+        "maximum": 3602436,
+        "median": 751852.0,
+        "median_order_interval": [
+          731882,
+          759231
+        ],
+        "minimum": 702231,
+        "p95": 813203
+      }
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        67108864,
+        67108864,
+        67108864,
+        67108864
+      ],
+      "candidates": 4,
+      "compromised_nodes": 26,
+      "decision_ns": {
+        "maximum": 7700,
+        "median": 5890.0,
+        "median_order_interval": [
+          5491,
+          6090
+        ],
+        "minimum": 4390,
+        "p95": 6610
+      },
+      "dependency_references": 1024,
+      "encoding_ns": {
+        "maximum": 896054,
+        "median": 853003.0,
+        "median_order_interval": [
+          847193,
+          858754
+        ],
+        "minimum": 824873,
+        "p95": 882864
+      },
+      "end_to_end_ns": {
+        "maximum": 20031435,
+        "median": 17516145.0,
+        "median_order_interval": [
+          17315682,
+          17632037
+        ],
+        "minimum": 16820125,
+        "p95": 18199856
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 67108864,
+      "model_bytes": 24991,
+      "model_sha256": "765e0e5babbbd11f01abe4a4319129ba9e75030c83c9c1a970a1c578a58429b8",
+      "nodes": 256,
+      "percent": 10,
+      "queries": 8,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 15932850,
+        "median": 15284785.5,
+        "median_order_interval": [
+          15105538,
+          15430342
+        ],
+        "minimum": 14632600,
+        "p95": 15654126
+      },
+      "spec_ns": {
+        "maximum": 3939072,
+        "median": 1344356.0,
+        "median_order_interval": [
+          1321881,
+          1363182
+        ],
+        "minimum": 1295490,
+        "p95": 1386681
+      }
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616
+      ],
+      "candidates": 4,
+      "compromised_nodes": 64,
+      "decision_ns": {
+        "maximum": 7680,
+        "median": 5765.5,
+        "median_order_interval": [
+          5560,
+          6170
+        ],
+        "minimum": 4640,
+        "p95": 7601
+      },
+      "dependency_references": 1024,
+      "encoding_ns": {
+        "maximum": 989765,
+        "median": 931324.5,
+        "median_order_interval": [
+          926335,
+          939284
+        ],
+        "minimum": 912014,
+        "p95": 982255
+      },
+      "end_to_end_ns": {
+        "maximum": 19625808,
+        "median": 18974774.0,
+        "median_order_interval": [
+          18755305,
+          19054439
+        ],
+        "minimum": 17684639,
+        "p95": 19398544
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 18446744073709551616,
+      "model_bytes": 25371,
+      "model_sha256": "9cb264a82845fbe9ba6bf713bed60a9a21224df3d378af30e020b42fd3db80a0",
+      "nodes": 256,
+      "percent": 25,
+      "queries": 8,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 17295401,
+        "median": 16679748.0,
+        "median_order_interval": [
+          16471259,
+          16781964
+        ],
+        "minimum": 15456034,
+        "p95": 17118569
+      },
+      "spec_ns": {
+        "maximum": 1406162,
+        "median": 1334476.0,
+        "median_order_interval": [
+          1325671,
+          1344411
+        ],
+        "minimum": 1294840,
+        "p95": 1385132
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "candidates": 4,
+      "compromised_nodes": 64,
+      "decision_ns": {
+        "maximum": 6970,
+        "median": 5680.0,
+        "median_order_interval": [
+          5390,
+          5890
+        ],
+        "minimum": 4640,
+        "p95": 6411
+      },
+      "dependency_references": 256,
+      "encoding_ns": {
+        "maximum": 897514,
+        "median": 860998.5,
+        "median_order_interval": [
+          856224,
+          865234
+        ],
+        "minimum": 835743,
+        "p95": 892564
+      },
+      "end_to_end_ns": {
+        "maximum": 17342173,
+        "median": 16808484.0,
+        "median_order_interval": [
+          16731083,
+          16953356
+        ],
+        "minimum": 16302957,
+        "p95": 17327512
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 18446744073709551616,
+      "model_bytes": 17253,
+      "model_sha256": "559a6365ca990348e70390403906575cd366b1fe5beb821d7bbf8b56072fc2b2",
+      "nodes": 256,
+      "percent": 25,
+      "queries": 8,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 15664735,
+        "median": 15129152.5,
+        "median_order_interval": [
+          15078027,
+          15264350
+        ],
+        "minimum": 14689061,
+        "p95": 15606615
+      },
+      "spec_ns": {
+        "maximum": 861904,
+        "median": 804788.0,
+        "median_order_interval": [
+          795523,
+          813983
+        ],
+        "minimum": 759302,
+        "p95": 839583
+      }
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616
+      ],
+      "candidates": 8,
+      "compromised_nodes": 64,
+      "decision_ns": {
+        "maximum": 8030,
+        "median": 6210.0,
+        "median_order_interval": [
+          5990,
+          6341
+        ],
+        "minimum": 5451,
+        "p95": 7570
+      },
+      "dependency_references": 2048,
+      "encoding_ns": {
+        "maximum": 1101477,
+        "median": 1032931.5,
+        "median_order_interval": [
+          1025246,
+          1040276
+        ],
+        "minimum": 1013926,
+        "p95": 1069047
+      },
+      "end_to_end_ns": {
+        "maximum": 23180204,
+        "median": 22176233.5,
+        "median_order_interval": [
+          22016187,
+          22415393
+        ],
+        "minimum": 21469988,
+        "p95": 23082593
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 18446744073709551616,
+      "model_bytes": 37223,
+      "model_sha256": "3b5df870db648e5378b6db34178731553d75eaf07169307ce0b84b8c6c926578",
+      "nodes": 256,
+      "percent": 25,
+      "queries": 16,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 20081465,
+        "median": 18960607.5,
+        "median_order_interval": [
+          18849917,
+          19248963
+        ],
+        "minimum": 18325848,
+        "p95": 19896702
+      },
+      "spec_ns": {
+        "maximum": 2447888,
+        "median": 2114878.0,
+        "median_order_interval": [
+          2099263,
+          2135144
+        ],
+        "minimum": 2066383,
+        "p95": 2208715
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "candidates": 8,
+      "compromised_nodes": 128,
+      "decision_ns": {
+        "maximum": 9010,
+        "median": 6150.5,
+        "median_order_interval": [
+          5931,
+          6310
+        ],
+        "minimum": 5200,
+        "p95": 7920
+      },
+      "dependency_references": 256,
+      "encoding_ns": {
+        "maximum": 1063987,
+        "median": 983450.0,
+        "median_order_interval": [
+          977255,
+          989156
+        ],
+        "minimum": 964765,
+        "p95": 1013315
+      },
+      "end_to_end_ns": {
+        "maximum": 19851081,
+        "median": 19223162.0,
+        "median_order_interval": [
+          19037140,
+          19423786
+        ],
+        "minimum": 18650744,
+        "p95": 19756900
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 340282366920938463463374607431768211456,
+      "model_bytes": 18949,
+      "model_sha256": "ae18eaf0fad46516071aae195ba443a695dedddbe59a9d1e6792e6ce832f601a",
+      "nodes": 256,
+      "percent": 50,
+      "queries": 16,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 18007562,
+        "median": 17323451.5,
+        "median_order_interval": [
+          17146360,
+          17484224
+        ],
+        "minimum": 16720983,
+        "p95": 17836660
+      },
+      "spec_ns": {
+        "maximum": 975285,
+        "median": 916189.0,
+        "median_order_interval": [
+          911645,
+          927595
+        ],
+        "minimum": 861793,
+        "p95": 953245
+      }
+    },
+    {
+      "actual_fanout": 16,
+      "candidate_branch_counts": [
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616,
+        18446744073709551616
+      ],
+      "candidates": 16,
+      "compromised_nodes": 64,
+      "decision_ns": {
+        "maximum": 11770,
+        "median": 6740.5,
+        "median_order_interval": [
+          6400,
+          7130
+        ],
+        "minimum": 5930,
+        "p95": 9880
+      },
+      "dependency_references": 4096,
+      "encoding_ns": {
+        "maximum": 1275830,
+        "median": 1229894.0,
+        "median_order_interval": [
+          1223390,
+          1240110
+        ],
+        "minimum": 1210509,
+        "p95": 1268239
+      },
+      "end_to_end_ns": {
+        "maximum": 30141344,
+        "median": 28741872.5,
+        "median_order_interval": [
+          28559728,
+          28879973
+        ],
+        "minimum": 28105773,
+        "p95": 29653736
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 18446744073709551616,
+      "model_bytes": 60987,
+      "model_sha256": "0ce8825c280907641c19d3ded4a63ef7bcb8eed114a98a371eba499d01cd51be",
+      "nodes": 256,
+      "percent": 25,
+      "queries": 32,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 25046164,
+        "median": 23712598.5,
+        "median_order_interval": [
+          23547609,
+          23874335
+        ],
+        "minimum": 23161515,
+        "p95": 24627637
+      },
+      "spec_ns": {
+        "maximum": 3823781,
+        "median": 3751494.0,
+        "median_order_interval": [
+          3729999,
+          3782310
+        ],
+        "minimum": 3708739,
+        "p95": 3821221
+      }
+    },
+    {
+      "actual_fanout": 16,
+      "candidate_branch_counts": [
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456
+      ],
+      "candidates": 16,
+      "compromised_nodes": 128,
+      "decision_ns": {
+        "maximum": 8820,
+        "median": 6715.0,
+        "median_order_interval": [
+          6550,
+          7000
+        ],
+        "minimum": 5850,
+        "p95": 7470
+      },
+      "dependency_references": 4096,
+      "encoding_ns": {
+        "maximum": 1571174,
+        "median": 1367451.5,
+        "median_order_interval": [
+          1357071,
+          1373792
+        ],
+        "minimum": 1322401,
+        "p95": 1422392
+      },
+      "end_to_end_ns": {
+        "maximum": 36835090,
+        "median": 34988323.5,
+        "median_order_interval": [
+          34708937,
+          35227544
+        ],
+        "minimum": 34102317,
+        "p95": 35744622
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 340282366920938463463374607431768211456,
+      "model_bytes": 61655,
+      "model_sha256": "d8e8377433546d95ba63466c7007be07071a0de555ac4f6e4c0cec1ace4be865",
+      "nodes": 256,
+      "percent": 50,
+      "queries": 32,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 31705239,
+        "median": 29830013.0,
+        "median_order_interval": [
+          29601224,
+          30045152
+        ],
+        "minimum": 29042298,
+        "p95": 30511118
+      },
+      "spec_ns": {
+        "maximum": 4113224,
+        "median": 3762194.5,
+        "median_order_interval": [
+          3735029,
+          3777070
+        ],
+        "minimum": 3669928,
+        "p95": 3854641
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        340282366920938463463374607431768211456
+      ],
+      "candidates": 1,
+      "compromised_nodes": 128,
+      "decision_ns": {
+        "maximum": 6810,
+        "median": 5525.0,
+        "median_order_interval": [
+          5310,
+          5690
+        ],
+        "minimum": 4911,
+        "p95": 6420
+      },
+      "dependency_references": 512,
+      "encoding_ns": {
+        "maximum": 2650942,
+        "median": 1681262.0,
+        "median_order_interval": [
+          1664746,
+          1700356
+        ],
+        "minimum": 1606806,
+        "p95": 1773057
+      },
+      "end_to_end_ns": {
+        "maximum": 30165533,
+        "median": 23002641.5,
+        "median_order_interval": [
+          22777639,
+          23076913
+        ],
+        "minimum": 22315892,
+        "p95": 24171200
+      },
+      "expected_solver_answers": "SS",
+      "expected_verdicts": [
+        "REJECTED"
+      ],
+      "joint_branch_count": 340282366920938463463374607431768211456,
+      "model_bytes": 33022,
+      "model_sha256": "523b723c41421f851ebc5130b39790c0907d4ce980c75c0075b920cd4c56bb86",
+      "nodes": 512,
+      "percent": 25,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 25298566,
+        "median": 19928314.0,
+        "median_order_interval": [
+          19762202,
+          20063934
+        ],
+        "minimum": 19241563,
+        "p95": 21132742
+      },
+      "solver_peak_rss_kib_probes": [
+        32000,
+        32000,
+        32000
+      ],
+      "spec_ns": {
+        "maximum": 2210835,
+        "median": 1374452.0,
+        "median_order_interval": [
+          1366552,
+          1381022
+        ],
+        "minimum": 1298820,
+        "p95": 1721826
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        115792089237316195423570985008687907853269984665640564039457584007913129639936
+      ],
+      "candidates": 1,
+      "compromised_nodes": 256,
+      "decision_ns": {
+        "maximum": 6450,
+        "median": 5580.5,
+        "median_order_interval": [
+          5450,
+          5860
+        ],
+        "minimum": 4790,
+        "p95": 6360
+      },
+      "dependency_references": 512,
+      "encoding_ns": {
+        "maximum": 1982071,
+        "median": 1915290.0,
+        "median_order_interval": [
+          1899150,
+          1928591
+        ],
+        "minimum": 1881290,
+        "p95": 1977851
+      },
+      "end_to_end_ns": {
+        "maximum": 27883339,
+        "median": 25893236.5,
+        "median_order_interval": [
+          25711995,
+          26161361
+        ],
+        "minimum": 25278977,
+        "p95": 27255178
+      },
+      "expected_solver_answers": "SS",
+      "expected_verdicts": [
+        "REJECTED"
+      ],
+      "joint_branch_count": 115792089237316195423570985008687907853269984665640564039457584007913129639936,
+      "model_bytes": 34430,
+      "model_sha256": "1dd37f3cdb81fd50d7311a88d9fb2599baba2192ef89fdebdd65420e34e532f3",
+      "nodes": 512,
+      "percent": 50,
+      "queries": 2,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 23900155,
+        "median": 22607746.0,
+        "median_order_interval": [
+          22469965,
+          22856829
+        ],
+        "minimum": 21899995,
+        "p95": 23252875
+      },
+      "spec_ns": {
+        "maximum": 4031023,
+        "median": 1357871.5,
+        "median_order_interval": [
+          1319241,
+          1371811
+        ],
+        "minimum": 1266140,
+        "p95": 1442552
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        1,
+        1
+      ],
+      "candidates": 2,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 6680,
+        "median": 5540.0,
+        "median_order_interval": [
+          5331,
+          5720
+        ],
+        "minimum": 4470,
+        "p95": 6610
+      },
+      "dependency_references": 512,
+      "encoding_ns": {
+        "maximum": 1485284,
+        "median": 1417622.0,
+        "median_order_interval": [
+          1407442,
+          1421702
+        ],
+        "minimum": 1377191,
+        "p95": 1482633
+      },
+      "end_to_end_ns": {
+        "maximum": 20888918,
+        "median": 19934219.0,
+        "median_order_interval": [
+          19766212,
+          20082985
+        ],
+        "minimum": 19332155,
+        "p95": 20642004
+      },
+      "expected_solver_answers": "SUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 31981,
+      "model_sha256": "d71a6bbc1fdeb92f9ba6a6e146b506c03e67e0990b4895b48610698ff21c963d",
+      "nodes": 512,
+      "percent": 0,
+      "queries": 4,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 18035213,
+        "median": 17090194.0,
+        "median_order_interval": [
+          16948927,
+          17236331
+        ],
+        "minimum": 16460860,
+        "p95": 17760749
+      },
+      "spec_ns": {
+        "maximum": 1705977,
+        "median": 1409017.5,
+        "median_order_interval": [
+          1384052,
+          1429763
+        ],
+        "minimum": 1323851,
+        "p95": 1454723
+      }
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "candidates": 4,
+      "compromised_nodes": 0,
+      "decision_ns": {
+        "maximum": 7460,
+        "median": 5590.0,
+        "median_order_interval": [
+          5420,
+          5880
+        ],
+        "minimum": 4890,
+        "p95": 6690
+      },
+      "dependency_references": 2048,
+      "encoding_ns": {
+        "maximum": 1636396,
+        "median": 1523724.0,
+        "median_order_interval": [
+          1518084,
+          1542364
+        ],
+        "minimum": 1497394,
+        "p95": 1573755
+      },
+      "end_to_end_ns": {
+        "maximum": 24593646,
+        "median": 22576989.5,
+        "median_order_interval": [
+          22440403,
+          22867370
+        ],
+        "minimum": 22079568,
+        "p95": 23804003
+      },
+      "expected_solver_answers": "SUSUSUSU",
+      "expected_verdicts": [
+        "PROVED",
+        "PROVED",
+        "PROVED",
+        "PROVED"
+      ],
+      "joint_branch_count": 1,
+      "model_bytes": 49061,
+      "model_sha256": "e7f588625e211007801a73f9bb069fbb25ffc9e2aaaf5f70d4da619c328f2b19",
+      "nodes": 512,
+      "percent": 0,
+      "queries": 8,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 20078375,
+        "median": 18492616.5,
+        "median_order_interval": [
+          18363429,
+          18797516
+        ],
+        "minimum": 17976083,
+        "p95": 19748480
+      },
+      "spec_ns": {
+        "maximum": 2873455,
+        "median": 2554250.0,
+        "median_order_interval": [
+          2532890,
+          2572461
+        ],
+        "minimum": 2484769,
+        "p95": 2603291
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        8192,
+        8192,
+        8192,
+        4096
+      ],
+      "candidates": 4,
+      "compromised_nodes": 51,
+      "decision_ns": {
+        "maximum": 6460,
+        "median": 5805.0,
+        "median_order_interval": [
+          5650,
+          6040
+        ],
+        "minimum": 4950,
+        "p95": 6450
+      },
+      "dependency_references": 512,
+      "encoding_ns": {
+        "maximum": 1586774,
+        "median": 1517889.0,
+        "median_order_interval": [
+          1510834,
+          1523674
+        ],
+        "minimum": 1483153,
+        "p95": 1579615
+      },
+      "end_to_end_ns": {
+        "maximum": 22926539,
+        "median": 21820444.0,
+        "median_order_interval": [
+          21654091,
+          21952844
+        ],
+        "minimum": 21116792,
+        "p95": 22714326
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 2251799813685248,
+      "model_bytes": 32995,
+      "model_sha256": "2ccc95e95fd4cb47f5eb292a73fa1dbda1c0bf823d72c10922eb14509a3d0a17",
+      "nodes": 512,
+      "percent": 10,
+      "queries": 8,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 19865832,
+        "median": 18791006.0,
+        "median_order_interval": [
+          18660514,
+          19003098
+        ],
+        "minimum": 18130636,
+        "p95": 19678649
+      },
+      "spec_ns": {
+        "maximum": 1851440,
+        "median": 1481193.5,
+        "median_order_interval": [
+          1438483,
+          1496553
+        ],
+        "minimum": 1402692,
+        "p95": 1551305
+      }
+    },
+    {
+      "actual_fanout": 4,
+      "candidate_branch_counts": [
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456
+      ],
+      "candidates": 4,
+      "compromised_nodes": 128,
+      "decision_ns": {
+        "maximum": 6940,
+        "median": 5740.0,
+        "median_order_interval": [
+          5440,
+          5980
+        ],
+        "minimum": 5130,
+        "p95": 6520
+      },
+      "dependency_references": 2048,
+      "encoding_ns": {
+        "maximum": 1871669,
+        "median": 1808813.5,
+        "median_order_interval": [
+          1797778,
+          1821869
+        ],
+        "minimum": 1755607,
+        "p95": 1845559
+      },
+      "end_to_end_ns": {
+        "maximum": 31240250,
+        "median": 28094497.0,
+        "median_order_interval": [
+          27938460,
+          28306014
+        ],
+        "minimum": 27570814,
+        "p95": 28852793
+      },
+      "expected_solver_answers": "SSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 340282366920938463463374607431768211456,
+      "model_bytes": 50359,
+      "model_sha256": "ea1af510493445ad01c714d03ecc4fff9a41e73c97d2bbfa710ddc21e8582365",
+      "nodes": 512,
+      "percent": 25,
+      "queries": 8,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 24474784,
+        "median": 23715513.0,
+        "median_order_interval": [
+          23596502,
+          23912746
+        ],
+        "minimum": 23269497,
+        "p95": 24395173
+      },
+      "spec_ns": {
+        "maximum": 5283653,
+        "median": 2540580.0,
+        "median_order_interval": [
+          2523329,
+          2555560
+        ],
+        "minimum": 2477369,
+        "p95": 2600521
+      }
+    },
+    {
+      "actual_fanout": 8,
+      "candidate_branch_counts": [
+        2251799813685248,
+        2251799813685248,
+        2251799813685248,
+        2251799813685248,
+        2251799813685248,
+        2251799813685248,
+        2251799813685248,
+        2251799813685248
+      ],
+      "candidates": 8,
+      "compromised_nodes": 51,
+      "decision_ns": {
+        "maximum": 7861,
+        "median": 6410.5,
+        "median_order_interval": [
+          6170,
+          6590
+        ],
+        "minimum": 5371,
+        "p95": 7750
+      },
+      "dependency_references": 4096,
+      "encoding_ns": {
+        "maximum": 1899940,
+        "median": 1806953.5,
+        "median_order_interval": [
+          1797529,
+          1814828
+        ],
+        "minimum": 1761528,
+        "p95": 1877029
+      },
+      "end_to_end_ns": {
+        "maximum": 32633102,
+        "median": 29880815.0,
+        "median_order_interval": [
+          29718028,
+          30095605
+        ],
+        "minimum": 29289122,
+        "p95": 30559210
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 2251799813685248,
+      "model_bytes": 72677,
+      "model_sha256": "219bcc21db8f43d6f52b9536a99334c4fc426e23d8e803803ea4600e08f7cb32",
+      "nodes": 512,
+      "percent": 10,
+      "queries": 16,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 24683718,
+        "median": 24009892.0,
+        "median_order_interval": [
+          23870005,
+          24174509
+        ],
+        "minimum": 23431359,
+        "p95": 24601615
+      },
+      "spec_ns": {
+        "maximum": 6837457,
+        "median": 4039358.5,
+        "median_order_interval": [
+          4027774,
+          4059574
+        ],
+        "minimum": 3934602,
+        "p95": 4123985
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "candidates": 8,
+      "compromised_nodes": 128,
+      "decision_ns": {
+        "maximum": 7220,
+        "median": 6155.0,
+        "median_order_interval": [
+          5951,
+          6391
+        ],
+        "minimum": 5150,
+        "p95": 6920
+      },
+      "dependency_references": 512,
+      "encoding_ns": {
+        "maximum": 1745748,
+        "median": 1670401.5,
+        "median_order_interval": [
+          1662647,
+          1697927
+        ],
+        "minimum": 1638796,
+        "p95": 1741178
+      },
+      "end_to_end_ns": {
+        "maximum": 25194036,
+        "median": 24612662.5,
+        "median_order_interval": [
+          24327522,
+          24828249
+        ],
+        "minimum": 23451687,
+        "p95": 25135354
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 340282366920938463463374607431768211456,
+      "model_bytes": 34821,
+      "model_sha256": "b2699589941444a3405b81438a45e9dfcc9b1df75fbd8139ff3f1312f7b54891",
+      "nodes": 512,
+      "percent": 25,
+      "queries": 16,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 21938815,
+        "median": 21316890.0,
+        "median_order_interval": [
+          21073270,
+          21506457
+        ],
+        "minimum": 20134935,
+        "p95": 21853163
+      },
+      "spec_ns": {
+        "maximum": 1661576,
+        "median": 1599840.0,
+        "median_order_interval": [
+          1581895,
+          1615005
+        ],
+        "minimum": 1514604,
+        "p95": 1659716
+      }
+    },
+    {
+      "actual_fanout": 16,
+      "candidate_branch_counts": [
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456,
+        340282366920938463463374607431768211456
+      ],
+      "candidates": 16,
+      "compromised_nodes": 128,
+      "decision_ns": {
+        "maximum": 7710,
+        "median": 6630.0,
+        "median_order_interval": [
+          6430,
+          6890
+        ],
+        "minimum": 5670,
+        "p95": 7310
+      },
+      "dependency_references": 8192,
+      "encoding_ns": {
+        "maximum": 2576240,
+        "median": 2371337.5,
+        "median_order_interval": [
+          2359997,
+          2383647
+        ],
+        "minimum": 2318496,
+        "p95": 2530979
+      },
+      "end_to_end_ns": {
+        "maximum": 50971828,
+        "median": 47331430.5,
+        "median_order_interval": [
+          47145732,
+          47530075
+        ],
+        "minimum": 46648195,
+        "p95": 49112011
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 340282366920938463463374607431768211456,
+      "model_bytes": 119767,
+      "model_sha256": "b274c722c77dc199eb0b86b3b61b9addf52403b64094c84fc796c8580e939642",
+      "nodes": 512,
+      "percent": 25,
+      "queries": 32,
+      "sharing": "high",
+      "solver_ns": {
+        "maximum": 41152625,
+        "median": 37689829.0,
+        "median_order_interval": [
+          37470419,
+          37990749
+        ],
+        "minimum": 37053474,
+        "p95": 39418039
+      },
+      "solver_peak_rss_kib_probes": [
+        32000,
+        32000,
+        32000
+      ],
+      "spec_ns": {
+        "maximum": 7552799,
+        "median": 7239293.5,
+        "median_order_interval": [
+          7222983,
+          7281154
+        ],
+        "minimum": 7112412,
+        "p95": 7369526
+      }
+    },
+    {
+      "actual_fanout": 1,
+      "candidate_branch_counts": [
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "candidates": 16,
+      "compromised_nodes": 256,
+      "decision_ns": {
+        "maximum": 12240,
+        "median": 6490.0,
+        "median_order_interval": [
+          6330,
+          6620
+        ],
+        "minimum": 5730,
+        "p95": 8410
+      },
+      "dependency_references": 512,
+      "encoding_ns": {
+        "maximum": 1982751,
+        "median": 1910100.5,
+        "median_order_interval": [
+          1898930,
+          1927341
+        ],
+        "minimum": 1880020,
+        "p95": 1961111
+      },
+      "end_to_end_ns": {
+        "maximum": 34178149,
+        "median": 31630932.0,
+        "median_order_interval": [
+          31483095,
+          31922782
+        ],
+        "minimum": 30568972,
+        "p95": 32938577
+      },
+      "expected_solver_answers": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "expected_verdicts": [
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED",
+        "REJECTED"
+      ],
+      "joint_branch_count": 115792089237316195423570985008687907853269984665640564039457584007913129639936,
+      "model_bytes": 38345,
+      "model_sha256": "a1c1c02fd448ecfe8a860f72a40983e1b7be3feae2280961a67eb5c57d10a55f",
+      "nodes": 512,
+      "percent": 50,
+      "queries": 32,
+      "sharing": "low",
+      "solver_ns": {
+        "maximum": 28853693,
+        "median": 27801287.5,
+        "median_order_interval": [
+          27674025,
+          28070241
+        ],
+        "minimum": 26848033,
+        "p95": 28754491
+      },
+      "spec_ns": {
+        "maximum": 4627463,
+        "median": 1865774.5,
+        "median_order_interval": [
+          1854009,
+          1874030
+        ],
+        "minimum": 1772278,
+        "p95": 2184885
+      }
+    }
+  ],
+  "method": {
+    "answers": "Pairs per candidate; S=sat, U=unsat. First checks feasibility; second seeks a contract violation.",
+    "branch_counts": "Joint or per-candidate feasible valuations before projecting to service. Solvers need not enumerate them.",
+    "compromise": "First round-half-up(N*percentage/100) nodes in deterministic node order.",
+    "design": "At each node size, all-to-all references at 25% compromise for K=1,4,16; additionally rotate candidate counts over four compromise levels and two sharing levels. At 64 nodes cross all factors. Single-candidate fanout is identical and represented once.",
+    "measured_repetitions_per_cell": 30,
+    "peak_memory": "Three additional GNU time maximum-RSS probes for the solver child in KiB at 8,64,512 nodes with one or 16 candidates at 25% compromise. Probes excluded from all clocks in the summary.",
+    "queries": [
+      "reachable initial state and execution",
+      "violation of safety, positive service or evidence"
+    ],
+    "seed": 20261123,
+    "seed_use": "Fixed SMT search seed; seed Python random.Random once to shuffle cell order independently in each successive warmup and measured round. Workload graph within a cell is fixed.",
+    "solver": "One fresh, single-threaded Z3 process per cell repetition, incremental push/pop within that process. Clock includes startup, input and output.",
+    "statistics": "Median and nearest-rank p95 per cell. Secondary median interval is [10th, 21st] of 30 observations (95.72% under stationary independent sampling).",
+    "timing": "perf_counter_ns from typed specification construction through verdict construction. Report generation, record hashing and serialization are outside the timed section.",
+    "warmups_per_cell": 5,
+    "workload": "Initially empty, a delivered unit fills one unit of volume over one tick. A trusted observer reads final volume."
+  },
+  "raw_csv_sha256": "8a507333408f026affdfba943833b8f80ad6b3f4c5b05a0ac57cf28d3fb961d3",
+  "summary": {
+    "candidate_levels": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "cells": 98,
+    "compromise_levels_percent": [
+      0,
+      10,
+      25,
+      50
+    ],
+    "encoding_bytes_range": [
+      758,
+      119767
+    ],
+    "measured_queries": 37200,
+    "measured_runs": 2940,
+    "memory_probes": 18,
+    "node_levels": [
+      8,
+      16,
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "solver_failures_all_phases": 0,
+    "warmup_runs": 490
+  }
+}

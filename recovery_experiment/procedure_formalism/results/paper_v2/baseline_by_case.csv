@@ -1,0 +1,16 @@
+group,baseline,assessments,retained_proved,retained_rejected,retained_unknown,not_retained_proved,not_retained_rejected,not_retained_unknown,inapplicable_proved,inapplicable_rejected,inapplicable_unknown,applicable,proved_omission
+attleboro_hand,B1,11,1,9,0,0,1,0,0,0,0,11,0
+attleboro_hand,B2,11,1,6,0,0,4,0,0,0,0,11,0
+attleboro_hand,B3,11,0,0,0,0,0,0,1,10,0,0,1
+attleboro_remote_study,B1,21,1,17,1,0,0,0,0,2,0,19,0
+attleboro_remote_study,B2,21,1,11,0,0,6,1,0,2,0,19,0
+attleboro_remote_study,B3,21,1,5,1,0,6,0,0,8,0,13,0
+chp,B1,9,0,4,4,0,1,0,0,0,0,9,0
+chp,B2,9,0,3,4,0,2,0,0,0,0,9,0
+chp,B3,9,0,1,4,0,4,0,0,0,0,9,0
+controlled_cost,B1,16,7,9,0,0,0,0,0,0,0,16,0
+controlled_cost,B2,16,7,4,0,0,5,0,0,0,0,16,0
+controlled_cost,B3,16,4,3,0,0,1,0,3,5,0,8,3
+merwin,B1,11,2,7,1,0,1,0,0,0,0,11,0
+merwin,B2,11,2,5,0,0,3,1,0,0,0,11,0
+merwin,B3,11,2,4,1,0,4,0,0,0,0,11,0

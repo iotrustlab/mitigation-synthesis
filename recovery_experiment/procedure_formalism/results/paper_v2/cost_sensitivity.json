@@ -1,0 +1,561 @@
+{
+  "interpretation": "Illustrative policy points. No distribution or stakeholder utility is assumed.",
+  "method": "Exact rational arithmetic. Vary one coefficient at a time; ties are explicit. Minimum strict crossing is an infimum. For simultaneous relative changes the distance to the tie is |margin| / sum_i |delta_i*w_i|.",
+  "policies": {
+    "COST-W1": {
+      "closest_tie_with_crossing": {
+        "can_cross_in_same_direction": true,
+        "coefficient": "wService",
+        "relative_change": "-3/4",
+        "tie_value": "2"
+      },
+      "one_at_a_time_ties": [
+        {
+          "can_cross_in_same_direction": true,
+          "coefficient": "wService",
+          "relative_change": "-3/4",
+          "tie_value": "2"
+        },
+        {
+          "can_cross_in_same_direction": true,
+          "coefficient": "wResource",
+          "relative_change": "9/5",
+          "tie_value": "14/5"
+        }
+      ],
+      "perturbations": [
+        {
+          "coefficient": "wService",
+          "relative_change": "-1/4",
+          "scores": [
+            "33",
+            "45"
+          ],
+          "selection": "P2"
+        },
+        {
+          "coefficient": "wService",
+          "relative_change": "-1/10",
+          "scores": [
+            "183/5",
+            "261/5"
+          ],
+          "selection": "P2"
+        },
+        {
+          "coefficient": "wService",
+          "relative_change": "1/10",
+          "scores": [
+            "207/5",
+            "309/5"
+          ],
+          "selection": "P2"
+        },
+        {
+          "coefficient": "wService",
+          "relative_change": "1/4",
+          "scores": [
+            "45",
+            "69"
+          ],
+          "selection": "P2"
+        },
+        {
+          "coefficient": "wTime",
+          "relative_change": "-1/4",
+          "scores": [
+            "153/4",
+            "111/2"
+          ],
+          "selection": "P2"
+        },
+        {
+          "coefficient": "wTime",
+          "relative_change": "-1/10",
+          "scores": [
+            "387/10",
+            "282/5"
+          ],
+          "selection": "P2"
+        },
+        {
+          "coefficient": "wTime",
+          "relative_change": "1/10",
+          "scores": [
+            "393/10",
+            "288/5"
+          ],
+          "selection": "P2"
+        },
+        {
+          "coefficient": "wTime",
+          "relative_change": "1/4",
+          "scores": [
+            "159/4",
+            "117/2"
+          ],
+          "selection": "P2"
+        },
+        {
+          "coefficient": "wIntervention",
+          "relative_change": "-1/4",
+          "scores": [
+            "39",
+            "227/4"
+          ],
+          "selection": "P2"
+        },
+        {
+          "coefficient": "wIntervention",
+          "relative_change": "-1/10",
+          "scores": [
+            "39",
+            "569/10"
+          ],
+          "selection": "P2"
+        },
+        {
+          "coefficient": "wIntervention",
+          "relative_change": "1/10",
+          "scores": [
+            "39",
+            "571/10"
+          ],
+          "selection": "P2"
+        },
+        {
+          "coefficient": "wIntervention",
+          "relative_change": "1/4",
+          "scores": [
+            "39",
+            "229/4"
+          ],
+          "selection": "P2"
+        },
+        {
+          "coefficient": "wResource",
+          "relative_change": "-1/4",
+          "scores": [
+            "36",
+            "113/2"
+          ],
+          "selection": "P2"
+        },
+        {
+          "coefficient": "wResource",
+          "relative_change": "-1/10",
+          "scores": [
+            "189/5",
+            "284/5"
+          ],
+          "selection": "P2"
+        },
+        {
+          "coefficient": "wResource",
+          "relative_change": "1/10",
+          "scores": [
+            "201/5",
+            "286/5"
+          ],
+          "selection": "P2"
+        },
+        {
+          "coefficient": "wResource",
+          "relative_change": "1/4",
+          "scores": [
+            "42",
+            "115/2"
+          ],
+          "selection": "P2"
+        }
+      ],
+      "selection": "P2",
+      "signed_P3_minus_P2": 18,
+      "simultaneous_relative_infinity_norm_to_tie": "9/19",
+      "weights": [
+        8,
+        3,
+        1,
+        1
+      ]
+    },
+    "COST-W2": {
+      "closest_tie_with_crossing": {
+        "can_cross_in_same_direction": true,
+        "coefficient": "wResource",
+        "relative_change": "-33/40",
+        "tie_value": "7/10"
+      },
+      "one_at_a_time_ties": [
+        {
+          "can_cross_in_same_direction": true,
+          "coefficient": "wService",
+          "relative_change": "11",
+          "tie_value": "12"
+        },
+        {
+          "can_cross_in_same_direction": true,
+          "coefficient": "wTime",
+          "relative_change": "33",
+          "tie_value": "34"
+        },
+        {
+          "can_cross_in_same_direction": true,
+          "coefficient": "wIntervention",
+          "relative_change": "11",
+          "tie_value": "36"
+        },
+        {
+          "can_cross_in_same_direction": true,
+          "coefficient": "wResource",
+          "relative_change": "-33/40",
+          "tie_value": "7/10"
+        }
+      ],
+      "perturbations": [
+        {
+          "coefficient": "wService",
+          "relative_change": "-1/4",
+          "scores": [
+            "205/4",
+            "35/2"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wService",
+          "relative_change": "-1/10",
+          "scores": [
+            "517/10",
+            "92/5"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wService",
+          "relative_change": "1/10",
+          "scores": [
+            "523/10",
+            "98/5"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wService",
+          "relative_change": "1/4",
+          "scores": [
+            "211/4",
+            "41/2"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wTime",
+          "relative_change": "-1/4",
+          "scores": [
+            "207/4",
+            "37/2"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wTime",
+          "relative_change": "-1/10",
+          "scores": [
+            "519/10",
+            "94/5"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wTime",
+          "relative_change": "1/10",
+          "scores": [
+            "521/10",
+            "96/5"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wTime",
+          "relative_change": "1/4",
+          "scores": [
+            "209/4",
+            "39/2"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wIntervention",
+          "relative_change": "-1/4",
+          "scores": [
+            "52",
+            "73/4"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wIntervention",
+          "relative_change": "-1/10",
+          "scores": [
+            "52",
+            "187/10"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wIntervention",
+          "relative_change": "1/10",
+          "scores": [
+            "52",
+            "193/10"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wIntervention",
+          "relative_change": "1/4",
+          "scores": [
+            "52",
+            "79/4"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wResource",
+          "relative_change": "-1/4",
+          "scores": [
+            "40",
+            "17"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wResource",
+          "relative_change": "-1/10",
+          "scores": [
+            "236/5",
+            "91/5"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wResource",
+          "relative_change": "1/10",
+          "scores": [
+            "284/5",
+            "99/5"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wResource",
+          "relative_change": "1/4",
+          "scores": [
+            "64",
+            "21"
+          ],
+          "selection": "P3"
+        }
+      ],
+      "selection": "P3",
+      "signed_P3_minus_P2": -33,
+      "simultaneous_relative_infinity_norm_to_tie": "33/47",
+      "weights": [
+        1,
+        1,
+        3,
+        4
+      ]
+    },
+    "COST-W3": {
+      "closest_tie_with_crossing": {
+        "can_cross_in_same_direction": true,
+        "coefficient": "wResource",
+        "relative_change": "-1/2",
+        "tie_value": "1/2"
+      },
+      "one_at_a_time_ties": [
+        {
+          "can_cross_in_same_direction": true,
+          "coefficient": "wService",
+          "relative_change": "5/3",
+          "tie_value": "8/3"
+        },
+        {
+          "can_cross_in_same_direction": true,
+          "coefficient": "wTime",
+          "relative_change": "5",
+          "tie_value": "6"
+        },
+        {
+          "can_cross_in_same_direction": true,
+          "coefficient": "wIntervention",
+          "relative_change": "5",
+          "tie_value": "6"
+        },
+        {
+          "can_cross_in_same_direction": true,
+          "coefficient": "wResource",
+          "relative_change": "-1/2",
+          "tie_value": "1/2"
+        }
+      ],
+      "perturbations": [
+        {
+          "coefficient": "wService",
+          "relative_change": "-1/4",
+          "scores": [
+            "61/4",
+            "19/2"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wService",
+          "relative_change": "-1/10",
+          "scores": [
+            "157/10",
+            "52/5"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wService",
+          "relative_change": "1/10",
+          "scores": [
+            "163/10",
+            "58/5"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wService",
+          "relative_change": "1/4",
+          "scores": [
+            "67/4",
+            "25/2"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wTime",
+          "relative_change": "-1/4",
+          "scores": [
+            "63/4",
+            "21/2"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wTime",
+          "relative_change": "-1/10",
+          "scores": [
+            "159/10",
+            "54/5"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wTime",
+          "relative_change": "1/10",
+          "scores": [
+            "161/10",
+            "56/5"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wTime",
+          "relative_change": "1/4",
+          "scores": [
+            "65/4",
+            "23/2"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wIntervention",
+          "relative_change": "-1/4",
+          "scores": [
+            "16",
+            "43/4"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wIntervention",
+          "relative_change": "-1/10",
+          "scores": [
+            "16",
+            "109/10"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wIntervention",
+          "relative_change": "1/10",
+          "scores": [
+            "16",
+            "111/10"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wIntervention",
+          "relative_change": "1/4",
+          "scores": [
+            "16",
+            "45/4"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wResource",
+          "relative_change": "-1/4",
+          "scores": [
+            "13",
+            "21/2"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wResource",
+          "relative_change": "-1/10",
+          "scores": [
+            "74/5",
+            "54/5"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wResource",
+          "relative_change": "1/10",
+          "scores": [
+            "86/5",
+            "56/5"
+          ],
+          "selection": "P3"
+        },
+        {
+          "coefficient": "wResource",
+          "relative_change": "1/4",
+          "scores": [
+            "19",
+            "23/2"
+          ],
+          "selection": "P3"
+        }
+      ],
+      "selection": "P3",
+      "signed_P3_minus_P2": -5,
+      "simultaneous_relative_infinity_norm_to_tie": "1/3",
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  }
+}

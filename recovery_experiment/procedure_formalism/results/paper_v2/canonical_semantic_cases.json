@@ -1,0 +1,984 @@
+[
+  {
+    "case": "S1",
+    "claim_boundary": "Continuous hydraulics, sustained customer supply, current-site meter integrity and staffing are outside this model.",
+    "program_fragment": "Trusted output is copied to the drive; the stopped pump advances through three mandatory scans.",
+    "variants": {
+      "M0": {
+        "attempted_dL_obligations": [
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_end_to_end",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_execution_witness",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_precondition_witness",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_retained_start",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_actor",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_controller",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_delivery",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_observer",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_plant",
+          "v2_M0_O1_premises",
+          "v2_M0_O3_boundary",
+          "v2_M0_O6_correspondence"
+        ],
+        "classification": "PROVED",
+        "dependencies": {
+          "communication": "TRUSTED",
+          "delivery": "TRUSTED",
+          "motor_power": "TRUSTED",
+          "observer": "TRUSTED",
+          "ows": "TRUSTED",
+          "plc": "TRUSTED",
+          "pump": "TRUSTED",
+          "remote_operator": "TRUSTED",
+          "trip_path": "TRUSTED",
+          "vfd": "TRUSTED",
+          "water_path": "TRUSTED"
+        },
+        "input_state": {
+          "authorized": 1,
+          "flow_blocked": 0,
+          "generator_ready": 0,
+          "generator_running": 0,
+          "hand_selected": 0,
+          "initial_flow": 0,
+          "mts_generator": 0,
+          "observation_fresh": 1,
+          "ph_out_of_range": 0,
+          "previous_reset": 0,
+          "remote_selected": 1,
+          "reset_pending": 0,
+          "reset_request": 0,
+          "trip": 0,
+          "utility": 1
+        },
+        "proofs": [
+          {
+            "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+            "formal_artifact": "models/M0.kyx",
+            "proof_record": "proof_records/M0/end_to_end.kyp",
+            "proof_sha256": "49621e563057068af159482970c79e3b58da1a9d37e51ad8df256545cd267e6a",
+            "tactic_ms": 223,
+            "theorem": "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_end_to_end"
+          },
+          {
+            "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+            "formal_artifact": "models/M0.kyx",
+            "proof_record": "proof_records/M0/execution_witness.kyp",
+            "proof_sha256": "4716ac57f6ea9fdec076fa5ccf24af9698d0e94fc3a27b5e77f98d8301aa4e8b",
+            "tactic_ms": 192,
+            "theorem": "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_execution_witness"
+          },
+          {
+            "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+            "formal_artifact": "models/M0.kyx",
+            "proof_record": "proof_records/M0/precondition_witness.kyp",
+            "proof_sha256": "d4bd6169e8c5ec54e2aec92e0a554ff32b60bd9deb4d075fcf058a7cfe8eabd0",
+            "tactic_ms": 13,
+            "theorem": "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_precondition_witness"
+          },
+          {
+            "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+            "formal_artifact": "models/M0.kyx",
+            "proof_record": "proof_records/M0/retained_start.kyp",
+            "proof_sha256": "20bec7f0612fc9f13790ed9e085408f030d7baa648a0cf24886ed53cd1737943",
+            "tactic_ms": 61,
+            "theorem": "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_retained_start"
+          },
+          {
+            "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+            "formal_artifact": "models/M0.kyx",
+            "proof_record": "proof_records/M0/stage_actor.kyp",
+            "proof_sha256": "837f8d7e153fea4ceb6c36f12001ae9368dd530899aa07df1f1072eb4474c4c8",
+            "tactic_ms": 16,
+            "theorem": "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_actor"
+          },
+          {
+            "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+            "formal_artifact": "models/M0.kyx",
+            "proof_record": "proof_records/M0/stage_controller.kyp",
+            "proof_sha256": "4f34a0e94c12127b3487b6bf827ecf5bd881ab2557ee134a7ac5c45620d02d69",
+            "tactic_ms": 26,
+            "theorem": "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_controller"
+          },
+          {
+            "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+            "formal_artifact": "models/M0.kyx",
+            "proof_record": "proof_records/M0/stage_delivery.kyp",
+            "proof_sha256": "d1de151795b07f0e0b83133379a3ae95400dd4dbd03ceeb89fdc148a413a315d",
+            "tactic_ms": 22,
+            "theorem": "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_delivery"
+          },
+          {
+            "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+            "formal_artifact": "models/M0.kyx",
+            "proof_record": "proof_records/M0/stage_observer.kyp",
+            "proof_sha256": "d16f75b64fdf992f100cacc7efcd001c79294853d90745aa7dd5ebc4aabafed9",
+            "tactic_ms": 230,
+            "theorem": "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_observer"
+          },
+          {
+            "archive_sha256": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+            "formal_artifact": "models/M0.kyx",
+            "proof_record": "proof_records/M0/stage_plant.kyp",
+            "proof_sha256": "6eb0f806cd4d45db87dd8626d0157f11c95f98c7086d95f1ae13daf0d53a95a1",
+            "tactic_ms": 231,
+            "theorem": "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_plant"
+          },
+          {
+            "archive_sha256": "6c827c244c2d7173670b0a489293ca782e3cbeccc2aeae6866d617a70e92fc49",
+            "formal_artifact": "paper_v2/formal_evidence/models/v2_M0.kyx",
+            "proof_record": "paper_v2/formal_evidence/proof_records/v2_M0/O1_premises.kyp",
+            "proof_sha256": "0d9b9f5e779bc6f0d192cc04e3ee56282cedd68bcd082253e7296713860be7c6",
+            "tactic_ms": 91,
+            "theorem": "v2_M0_O1_premises"
+          },
+          {
+            "archive_sha256": "6c827c244c2d7173670b0a489293ca782e3cbeccc2aeae6866d617a70e92fc49",
+            "formal_artifact": "paper_v2/formal_evidence/models/v2_M0.kyx",
+            "proof_record": "paper_v2/formal_evidence/proof_records/v2_M0/O3_boundary.kyp",
+            "proof_sha256": "4512dfcb01180a1e60af73dcaee0753a61aaac875ee389e0f1edc9c75de57b99",
+            "tactic_ms": 1167,
+            "theorem": "v2_M0_O3_boundary"
+          },
+          {
+            "archive_sha256": "6c827c244c2d7173670b0a489293ca782e3cbeccc2aeae6866d617a70e92fc49",
+            "formal_artifact": "paper_v2/formal_evidence/models/v2_M0.kyx",
+            "proof_record": "paper_v2/formal_evidence/proof_records/v2_M0/O6_correspondence.kyp",
+            "proof_sha256": "f80b65e3014237b622f9a13006ee9e3d2721b0a2178188ae47adc8afbd3ef154",
+            "tactic_ms": 889,
+            "theorem": "v2_M0_O6_correspondence"
+          }
+        ],
+        "proved_dL_obligations": [
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_end_to_end",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_execution_witness",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_precondition_witness",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_retained_start",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_actor",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_controller",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_delivery",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_observer",
+          "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_plant",
+          "v2_M0_O1_premises",
+          "v2_M0_O3_boundary",
+          "v2_M0_O6_correspondence"
+        ],
+        "source_record": "results/attleboro_mutation_matrix.json",
+        "witness": {
+          "accepted": 1,
+          "delivered": 1,
+          "flow1": 0,
+          "flow2": 4,
+          "flow3": "32/5",
+          "fresh": 1,
+          "observed": "32/5",
+          "output": 1,
+          "pressure": "246/5",
+          "t": 3,
+          "trusted": 1
+        }
+      }
+    },
+    "what_is_established": "Sampled safety, request-to-water service and matching observations at deadline."
+  },
+  {
+    "case": "S2",
+    "claim_boundary": "The counterexample refutes the specified universal guarantee. It does not estimate frequency or imply all executions fail.",
+    "program_fragment": "After controller acceptance, choose a persistent delivered bit from {0,1}.",
+    "variants": {
+      "M5": {
+        "attempted_dL_obligations": [
+          "attleboro-remote-end-to-end-recovery-v1_6c59842db47fe5bf_violation",
+          "v2_M5_specific_witness"
+        ],
+        "classification": "REJECTED",
+        "dependencies": {
+          "communication": "TRUSTED",
+          "delivery": "COMPROMISED",
+          "motor_power": "TRUSTED",
+          "observer": "TRUSTED",
+          "ows": "TRUSTED",
+          "plc": "TRUSTED",
+          "pump": "TRUSTED",
+          "remote_operator": "TRUSTED",
+          "trip_path": "TRUSTED",
+          "vfd": "TRUSTED",
+          "water_path": "TRUSTED"
+        },
+        "input_state": {
+          "authorized": 1,
+          "flow_blocked": 0,
+          "generator_ready": 0,
+          "generator_running": 0,
+          "hand_selected": 0,
+          "initial_flow": 0,
+          "mts_generator": 0,
+          "observation_fresh": 1,
+          "ph_out_of_range": 0,
+          "previous_reset": 0,
+          "remote_selected": 1,
+          "reset_pending": 0,
+          "reset_request": 0,
+          "trip": 0,
+          "utility": 1
+        },
+        "proofs": [
+          {
+            "archive_sha256": "94bcde2c484a8f5318b5c27f20161093b357acd4ad854c28a6b1a017ce67ad8c",
+            "formal_artifact": "models/M5.kyx",
+            "proof_record": "proof_records/M5/violation.kyp",
+            "proof_sha256": "b6d69ec09686eb685d6443d441750cf75f40ce751d0859b8b6fd4d93631c68c6",
+            "tactic_ms": 316,
+            "theorem": "attleboro-remote-end-to-end-recovery-v1_6c59842db47fe5bf_violation"
+          },
+          {
+            "archive_sha256": "bffb7f37f708c5939ec1e0e282a3d032165f15a675464250d87ee4a449fc8867",
+            "formal_artifact": "paper_v2/formal_evidence/models/v2_M5.kyx",
+            "proof_record": "paper_v2/formal_evidence/proof_records/v2_M5/specific_witness.kyp",
+            "proof_sha256": "3e4fb6915fedf3452ceff31252061237c94fd2779f7388be4bd1b05ddf204fa8",
+            "tactic_ms": 1586,
+            "theorem": "v2_M5_specific_witness"
+          }
+        ],
+        "proved_dL_obligations": [
+          "attleboro-remote-end-to-end-recovery-v1_6c59842db47fe5bf_violation",
+          "v2_M5_specific_witness"
+        ],
+        "source_record": "results/attleboro_mutation_matrix.json",
+        "witness": {
+          "accepted": 1,
+          "delivered": 0,
+          "flow1": 0,
+          "flow2": 0,
+          "flow3": 0,
+          "fresh": 1,
+          "observed": 0,
+          "output": 1,
+          "pressure": 30,
+          "t": 3,
+          "trusted": 1
+        }
+      }
+    },
+    "what_is_established": "An allowed suppressed delivery has output one, delivered zero and actual and observed flow zero at the deadline."
+  },
+  {
+    "case": "S3",
+    "claim_boundary": "Actual delivery integrity is unknown. A possible adverse choice cannot settle which incident occurred.",
+    "program_fragment": "Union the nominal output-copy relation with the bounded adverse delivery relation.",
+    "variants": {
+      "M13": {
+        "attempted_dL_obligations": [
+          "attleboro-remote-end-to-end-recovery-v1_aa4b36bfdae88953_violation",
+          "v2_M13_specific_witness"
+        ],
+        "classification": "UNKNOWN",
+        "dependencies": {
+          "communication": "TRUSTED",
+          "delivery": "UNKNOWN",
+          "motor_power": "TRUSTED",
+          "observer": "TRUSTED",
+          "ows": "TRUSTED",
+          "plc": "TRUSTED",
+          "pump": "TRUSTED",
+          "remote_operator": "TRUSTED",
+          "trip_path": "TRUSTED",
+          "vfd": "TRUSTED",
+          "water_path": "TRUSTED"
+        },
+        "input_state": {
+          "authorized": 1,
+          "flow_blocked": 0,
+          "generator_ready": 0,
+          "generator_running": 0,
+          "hand_selected": 0,
+          "initial_flow": 0,
+          "mts_generator": 0,
+          "observation_fresh": 1,
+          "ph_out_of_range": 0,
+          "previous_reset": 0,
+          "remote_selected": 1,
+          "reset_pending": 0,
+          "reset_request": 0,
+          "trip": 0,
+          "utility": 1
+        },
+        "proofs": [
+          {
+            "archive_sha256": "2d30c6538c3b3de57c5b8ec26b68656331b1be9e90c02b62debc0f5054462ccf",
+            "formal_artifact": "models/M13.kyx",
+            "proof_record": "proof_records/M13/violation.kyp",
+            "proof_sha256": "0e15d7c152a83fba8877bc42872a5cddad51c502e496fd6865a1a106317aaa22",
+            "tactic_ms": 398,
+            "theorem": "attleboro-remote-end-to-end-recovery-v1_aa4b36bfdae88953_violation"
+          },
+          {
+            "archive_sha256": "beaed1c5327912f9a8332f5f120b551770d15591df91d5bdc6f89eadf300328d",
+            "formal_artifact": "paper_v2/formal_evidence/models/v2_M13.kyx",
+            "proof_record": "paper_v2/formal_evidence/proof_records/v2_M13/specific_witness.kyp",
+            "proof_sha256": "4549ac89c787b15cca7b4368dba9e3ca764a76da21d88b4d8daf2437425db61a",
+            "tactic_ms": 1424,
+            "theorem": "v2_M13_specific_witness"
+          }
+        ],
+        "proved_dL_obligations": [
+          "attleboro-remote-end-to-end-recovery-v1_aa4b36bfdae88953_violation",
+          "v2_M13_specific_witness"
+        ],
+        "source_record": "results/attleboro_mutation_matrix.json",
+        "witness": {
+          "accepted": 1,
+          "delivered": 0,
+          "flow1": 0,
+          "flow2": 0,
+          "flow3": 0,
+          "fresh": 1,
+          "observed": 0,
+          "output": 1,
+          "pressure": 30,
+          "t": 3,
+          "trusted": 1
+        }
+      }
+    },
+    "what_is_established": "A violating delivery is possible in the widened model. The nominal alternative remains permitted."
+  },
+  {
+    "case": "S4",
+    "claim_boundary": "No installed-site staffing or response-time bound follows from the authority record.",
+    "program_fragment": "Local readiness and selector govern the panel; powered pump, trip path and observer are shared.",
+    "variants": {
+      "H0": {
+        "attempted_dL_obligations": [
+          "attleboro-local-hand-end-to-end-recovery-v1_end_to_end",
+          "attleboro-local-hand-end-to-end-recovery-v1_execution_witness",
+          "attleboro-local-hand-end-to-end-recovery-v1_precondition_witness",
+          "attleboro-local-hand-end-to-end-recovery-v1_stage_actor",
+          "attleboro-local-hand-end-to-end-recovery-v1_stage_controller",
+          "attleboro-local-hand-end-to-end-recovery-v1_stage_delivery",
+          "attleboro-local-hand-end-to-end-recovery-v1_stage_observer",
+          "attleboro-local-hand-end-to-end-recovery-v1_stage_plant",
+          "v2_H0_O1_premises",
+          "v2_H0_O3_boundary",
+          "v2_H0_O6_correspondence"
+        ],
+        "classification": "PROVED",
+        "dependencies": {
+          "hand_panel": "TRUSTED",
+          "local_operator": "TRUSTED",
+          "motor_power": "TRUSTED",
+          "observer": "TRUSTED",
+          "pump": "TRUSTED",
+          "trip_path": "TRUSTED",
+          "vfd": "TRUSTED",
+          "water_path": "TRUSTED"
+        },
+        "input_state": {
+          "authorized": 1,
+          "deadline_tick": 3,
+          "flow_blocked": 0,
+          "generator_ready": 1,
+          "generator_running": 1,
+          "hand_selected": 1,
+          "initial_flow": 0,
+          "mts_generator": 1,
+          "observation_fresh": 1,
+          "ph_out_of_range": 0,
+          "previous_reset": 0,
+          "ready_tick": 0,
+          "remote_selected": 0,
+          "reset_pending": 0,
+          "reset_request": 0,
+          "trip": 0,
+          "utility": 0
+        },
+        "proofs": [
+          {
+            "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+            "formal_artifact": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/end_to_end.kyp",
+            "proof_sha256": "74e72e3169084877ff088149f5575cb7a3fd6b66b418b7cb383d219207c71b66",
+            "tactic_ms": 189,
+            "theorem": "attleboro-local-hand-end-to-end-recovery-v1_end_to_end"
+          },
+          {
+            "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+            "formal_artifact": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/execution_witness.kyp",
+            "proof_sha256": "626c36906e5e06dbaa2599475f9e08c500e0ef58d3d87016f42548a3e91babd7",
+            "tactic_ms": 153,
+            "theorem": "attleboro-local-hand-end-to-end-recovery-v1_execution_witness"
+          },
+          {
+            "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+            "formal_artifact": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/precondition_witness.kyp",
+            "proof_sha256": "4952edff87010ee9d6517aa792114838241b3f39890af69f5eb7c1085940f8cf",
+            "tactic_ms": 13,
+            "theorem": "attleboro-local-hand-end-to-end-recovery-v1_precondition_witness"
+          },
+          {
+            "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+            "formal_artifact": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/stage_actor.kyp",
+            "proof_sha256": "9bc8e8ef09c79c664a5c0a1230f47182c51566e36356af702d6a3c166ca48aac",
+            "tactic_ms": 15,
+            "theorem": "attleboro-local-hand-end-to-end-recovery-v1_stage_actor"
+          },
+          {
+            "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+            "formal_artifact": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/stage_controller.kyp",
+            "proof_sha256": "1dc3da5d3a475328af2f11ed350f2dc2f3341ce8938ae131e591a83972d91c7c",
+            "tactic_ms": 18,
+            "theorem": "attleboro-local-hand-end-to-end-recovery-v1_stage_controller"
+          },
+          {
+            "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+            "formal_artifact": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/stage_delivery.kyp",
+            "proof_sha256": "16948a5882d58b934e82c075ae973596647e1db794dc2d0666b9010c5c0ca5f6",
+            "tactic_ms": 17,
+            "theorem": "attleboro-local-hand-end-to-end-recovery-v1_stage_delivery"
+          },
+          {
+            "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+            "formal_artifact": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/stage_observer.kyp",
+            "proof_sha256": "8e1dd40028f096309f2be3b166ad85a3b6c90cf4d343667edf71a85fdd307204",
+            "tactic_ms": 223,
+            "theorem": "attleboro-local-hand-end-to-end-recovery-v1_stage_observer"
+          },
+          {
+            "archive_sha256": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+            "formal_artifact": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/stage_plant.kyp",
+            "proof_sha256": "764f51f43397c89e02481aa9e958d2e5dee07b1e892b2aab11eaa2c52d0b3ef0",
+            "tactic_ms": 165,
+            "theorem": "attleboro-local-hand-end-to-end-recovery-v1_stage_plant"
+          },
+          {
+            "archive_sha256": "f8aebb4cdd544966dd4711de2bd900fc186592a4775c76295892047208d5682d",
+            "formal_artifact": "paper_v2/formal_evidence/models/v2_H0.kyx",
+            "proof_record": "paper_v2/formal_evidence/proof_records/v2_H0/O1_premises.kyp",
+            "proof_sha256": "d2ab50a83a37ab4e16899741332e4e04f3e1428e859680b097da60a9cb45cdc4",
+            "tactic_ms": 189,
+            "theorem": "v2_H0_O1_premises"
+          },
+          {
+            "archive_sha256": "f8aebb4cdd544966dd4711de2bd900fc186592a4775c76295892047208d5682d",
+            "formal_artifact": "paper_v2/formal_evidence/models/v2_H0.kyx",
+            "proof_record": "paper_v2/formal_evidence/proof_records/v2_H0/O3_boundary.kyp",
+            "proof_sha256": "8bb79b88275bc703c86703a902c34221c7f88c055df9bd28e2dda6f9949ddf28",
+            "tactic_ms": 1347,
+            "theorem": "v2_H0_O3_boundary"
+          },
+          {
+            "archive_sha256": "f8aebb4cdd544966dd4711de2bd900fc186592a4775c76295892047208d5682d",
+            "formal_artifact": "paper_v2/formal_evidence/models/v2_H0.kyx",
+            "proof_record": "paper_v2/formal_evidence/proof_records/v2_H0/O6_correspondence.kyp",
+            "proof_sha256": "86cbd39e82b55a978c480ea159168d97b2b3dc8f86118239b4373228330ff272",
+            "tactic_ms": 1168,
+            "theorem": "v2_H0_O6_correspondence"
+          }
+        ],
+        "proved_dL_obligations": [
+          "attleboro-local-hand-end-to-end-recovery-v1_end_to_end",
+          "attleboro-local-hand-end-to-end-recovery-v1_execution_witness",
+          "attleboro-local-hand-end-to-end-recovery-v1_precondition_witness",
+          "attleboro-local-hand-end-to-end-recovery-v1_stage_actor",
+          "attleboro-local-hand-end-to-end-recovery-v1_stage_controller",
+          "attleboro-local-hand-end-to-end-recovery-v1_stage_delivery",
+          "attleboro-local-hand-end-to-end-recovery-v1_stage_observer",
+          "attleboro-local-hand-end-to-end-recovery-v1_stage_plant",
+          "v2_H0_O1_premises",
+          "v2_H0_O3_boundary",
+          "v2_H0_O6_correspondence"
+        ],
+        "source_record": "results/milestone2/attleboro_hand_mutations.json",
+        "witness": {
+          "accepted": 1,
+          "delivered": 1,
+          "drive": 1,
+          "established": 1,
+          "fresh": 1,
+          "observed": "32/5",
+          "physical": 1,
+          "pressure": "246/5",
+          "q": "32/5",
+          "ready": 0,
+          "received": 1,
+          "request": 1,
+          "run": 1,
+          "safe": 1,
+          "t": 3,
+          "trusted": 1
+        }
+      },
+      "H1": {
+        "attempted_dL_obligations": [
+          "attleboro-hand-dependency-mutations-v1_H1_disabled"
+        ],
+        "classification": "REJECTED",
+        "dependencies": {
+          "hand_panel": "TRUSTED",
+          "local_operator": "UNAVAILABLE",
+          "motor_power": "TRUSTED",
+          "observer": "TRUSTED",
+          "pump": "TRUSTED",
+          "trip_path": "TRUSTED",
+          "vfd": "TRUSTED",
+          "water_path": "TRUSTED"
+        },
+        "input_state": {
+          "authorized": 1,
+          "deadline_tick": 3,
+          "flow_blocked": 0,
+          "generator_ready": 1,
+          "generator_running": 1,
+          "hand_selected": 1,
+          "initial_flow": 0,
+          "mts_generator": 1,
+          "observation_fresh": 1,
+          "ph_out_of_range": 0,
+          "previous_reset": 0,
+          "ready_tick": 0,
+          "remote_selected": 0,
+          "reset_pending": 0,
+          "reset_request": 0,
+          "trip": 0,
+          "utility": 0
+        },
+        "proofs": [
+          {
+            "archive_sha256": "125a0438f7a92b7d624667a011c1f82da3c64ee03c3a822d02672e3ce4baf498",
+            "formal_artifact": "milestone2/evidence/models/attleboro-hand-dependency-mutations-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/attleboro-hand-dependency-mutations-v1/H1_disabled.kyp",
+            "proof_sha256": "c9cc1dfccdb135dd3f14bcbe5e3b5ab992161ef0e7042a907d9249a76d1bc756",
+            "tactic_ms": 184,
+            "theorem": "attleboro-hand-dependency-mutations-v1_H1_disabled"
+          }
+        ],
+        "proved_dL_obligations": [
+          "attleboro-hand-dependency-mutations-v1_H1_disabled"
+        ],
+        "source_record": "results/milestone2/attleboro_hand_mutations.json",
+        "witness": null
+      },
+      "H2": {
+        "attempted_dL_obligations": [
+          "attleboro-hand-dependency-mutations-v1_H2_violation",
+          "v2_H2_specific_witness"
+        ],
+        "classification": "REJECTED",
+        "dependencies": {
+          "hand_panel": "TRUSTED",
+          "local_operator": "TRUSTED",
+          "motor_power": "TRUSTED",
+          "observer": "TRUSTED",
+          "pump": "TRUSTED",
+          "trip_path": "TRUSTED",
+          "vfd": "TRUSTED",
+          "water_path": "TRUSTED"
+        },
+        "input_state": {
+          "authorized": 1,
+          "deadline_tick": 3,
+          "flow_blocked": 0,
+          "generator_ready": 1,
+          "generator_running": 1,
+          "hand_selected": 1,
+          "initial_flow": 0,
+          "mts_generator": 1,
+          "observation_fresh": 1,
+          "ph_out_of_range": 0,
+          "previous_reset": 0,
+          "ready_tick": 1,
+          "remote_selected": 0,
+          "reset_pending": 0,
+          "reset_request": 0,
+          "trip": 0,
+          "utility": 0
+        },
+        "proofs": [
+          {
+            "archive_sha256": "125a0438f7a92b7d624667a011c1f82da3c64ee03c3a822d02672e3ce4baf498",
+            "formal_artifact": "milestone2/evidence/models/attleboro-hand-dependency-mutations-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/attleboro-hand-dependency-mutations-v1/H2_violation.kyp",
+            "proof_sha256": "f17fde6ed2eafa34c448858ff8c78b915bf0f8fd288dc8b3ecccbabd6176fda9",
+            "tactic_ms": 216,
+            "theorem": "attleboro-hand-dependency-mutations-v1_H2_violation"
+          },
+          {
+            "archive_sha256": "86080831bcb06ab45bd6c34174dacc84a28a3b312a79c37c79c8b99baec8df57",
+            "formal_artifact": "paper_v2/formal_evidence/models/v2_H2.kyx",
+            "proof_record": "paper_v2/formal_evidence/proof_records/v2_H2/specific_witness.kyp",
+            "proof_sha256": "32fd88a9b85b622b683f7065f387c8f1b5347597508533bde490a8e98dccf458",
+            "tactic_ms": 1263,
+            "theorem": "v2_H2_specific_witness"
+          }
+        ],
+        "proved_dL_obligations": [
+          "attleboro-hand-dependency-mutations-v1_H2_violation",
+          "v2_H2_specific_witness"
+        ],
+        "source_record": "results/milestone2/attleboro_hand_mutations.json",
+        "witness": {
+          "accepted": 1,
+          "delivered": 1,
+          "drive": 1,
+          "established": 1,
+          "fresh": 1,
+          "observed": "32/5",
+          "physical": 1,
+          "pressure": "246/5",
+          "q": "32/5",
+          "ready": 1,
+          "received": 1,
+          "request": 1,
+          "run": 1,
+          "safe": 1,
+          "t": 4,
+          "trusted": 1
+        }
+      }
+    },
+    "what_is_established": "Ready at tick zero establishes service. An absent actor disables the procedure. One tick late reaches service after the deadline."
+  },
+  {
+    "case": "S5",
+    "claim_boundary": "The theorem uses a reduced sampled plant, pinned forcing and synchronization readings, and an ideal grid after contact.",
+    "program_fragment": "Close demand, actual electrical contact and generated MW occupy distinct slots.",
+    "variants": {
+      "MER0": {
+        "attempted_dL_obligations": [
+          "merwin-hcc-remote-auto-end-to-end-recovery-v1_actor_controller",
+          "merwin-hcc-remote-auto-end-to-end-recovery-v1_delivery",
+          "merwin-hcc-remote-auto-end-to-end-recovery-v1_end_to_end",
+          "merwin-hcc-remote-auto-end-to-end-recovery-v1_execution_witness",
+          "merwin-hcc-remote-auto-end-to-end-recovery-v1_observation",
+          "merwin-hcc-remote-auto-end-to-end-recovery-v1_plant",
+          "merwin-hcc-remote-auto-end-to-end-recovery-v1_roll_sync",
+          "v2_MER0_O1_premises",
+          "v2_MER0_O3_boundary",
+          "v2_MER0_O6_correspondence"
+        ],
+        "classification": "PROVED",
+        "dependencies": {
+          "auxiliaries": "TRUSTED",
+          "breaker": "TRUSTED",
+          "breaker_command": "TRUSTED",
+          "hcc_link": "TRUSTED",
+          "hcc_operator": "TRUSTED",
+          "hydro_unit": "TRUSTED",
+          "power_meter": "TRUSTED",
+          "scada": "TRUSTED",
+          "sequencer": "TRUSTED",
+          "synchronization": "TRUSTED"
+        },
+        "input_state": {
+          "auxNormal": 1,
+          "contactOperable": 1,
+          "deadline": 1296,
+          "generationCoupled": 1,
+          "meterFresh": 1,
+          "plantReady": 1,
+          "remoteMode": 1,
+          "requestClock": 31,
+          "syncAvailable": 1,
+          "syncClock": 1281,
+          "voltage": 1030
+        },
+        "proofs": [
+          {
+            "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+            "formal_artifact": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/actor_controller.kyp",
+            "proof_sha256": "ccb0dee041905b195697916eb9bbeb0686316a48a5744917e2b676423dfd1407",
+            "tactic_ms": 20,
+            "theorem": "merwin-hcc-remote-auto-end-to-end-recovery-v1_actor_controller"
+          },
+          {
+            "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+            "formal_artifact": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/delivery.kyp",
+            "proof_sha256": "1d9dc0505191f86266766c4799b47f0eedcb7dee25158093307798ea9607e667",
+            "tactic_ms": 84,
+            "theorem": "merwin-hcc-remote-auto-end-to-end-recovery-v1_delivery"
+          },
+          {
+            "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+            "formal_artifact": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/end_to_end.kyp",
+            "proof_sha256": "c83d6111892e8005d733f033db9be76958211d8c3eceed105319827325728831",
+            "tactic_ms": 316,
+            "theorem": "merwin-hcc-remote-auto-end-to-end-recovery-v1_end_to_end"
+          },
+          {
+            "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+            "formal_artifact": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/execution_witness.kyp",
+            "proof_sha256": "dbe385093927bb63d19ed469f8acda207d283b359398b8514836995c5b70bda6",
+            "tactic_ms": 223,
+            "theorem": "merwin-hcc-remote-auto-end-to-end-recovery-v1_execution_witness"
+          },
+          {
+            "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+            "formal_artifact": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/observation.kyp",
+            "proof_sha256": "f2970ea997b99765053a39c584fe5be7007e29b3f9898bdc83d3e82b116ecd6c",
+            "tactic_ms": 352,
+            "theorem": "merwin-hcc-remote-auto-end-to-end-recovery-v1_observation"
+          },
+          {
+            "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+            "formal_artifact": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/plant.kyp",
+            "proof_sha256": "587010a890cb21dbc38e883067050d544d6c74fe3846b45f4fe0cbaebcd4f26c",
+            "tactic_ms": 297,
+            "theorem": "merwin-hcc-remote-auto-end-to-end-recovery-v1_plant"
+          },
+          {
+            "archive_sha256": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+            "formal_artifact": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+            "proof_record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/roll_sync.kyp",
+            "proof_sha256": "16c97880100895044c6c5844e6607b56877992d79400b0e0efc3affafe1d55ad",
+            "tactic_ms": 56,
+            "theorem": "merwin-hcc-remote-auto-end-to-end-recovery-v1_roll_sync"
+          },
+          {
+            "archive_sha256": "2a0050c6fca97dd90b53f15e1aac17fd9073e6b9e89b47ae856fc9abafc16c9e",
+            "formal_artifact": "paper_v2/formal_evidence/models/v2_MER0.kyx",
+            "proof_record": "paper_v2/formal_evidence/proof_records/v2_MER0/O1_premises.kyp",
+            "proof_sha256": "46618d8f97deaa3bec04f6d095f1a3d6ba0d695a346520cec1edf4381fccb815",
+            "tactic_ms": 151,
+            "theorem": "v2_MER0_O1_premises"
+          },
+          {
+            "archive_sha256": "2a0050c6fca97dd90b53f15e1aac17fd9073e6b9e89b47ae856fc9abafc16c9e",
+            "formal_artifact": "paper_v2/formal_evidence/models/v2_MER0.kyx",
+            "proof_record": "paper_v2/formal_evidence/proof_records/v2_MER0/O3_boundary.kyp",
+            "proof_sha256": "a42186e2e1873b2b77d253b5251252e011292c60660a849e18be13bdaf287bd6",
+            "tactic_ms": 2594,
+            "theorem": "v2_MER0_O3_boundary"
+          },
+          {
+            "archive_sha256": "2a0050c6fca97dd90b53f15e1aac17fd9073e6b9e89b47ae856fc9abafc16c9e",
+            "formal_artifact": "paper_v2/formal_evidence/models/v2_MER0.kyx",
+            "proof_record": "paper_v2/formal_evidence/proof_records/v2_MER0/O6_correspondence.kyp",
+            "proof_sha256": "2d70eac5ec8f9e4bc1a629688835b8d395a6e724324b56d36fc1dacdd76c707c",
+            "tactic_ms": 2134,
+            "theorem": "v2_MER0_O6_correspondence"
+          }
+        ],
+        "proved_dL_obligations": [
+          "merwin-hcc-remote-auto-end-to-end-recovery-v1_actor_controller",
+          "merwin-hcc-remote-auto-end-to-end-recovery-v1_delivery",
+          "merwin-hcc-remote-auto-end-to-end-recovery-v1_end_to_end",
+          "merwin-hcc-remote-auto-end-to-end-recovery-v1_execution_witness",
+          "merwin-hcc-remote-auto-end-to-end-recovery-v1_observation",
+          "merwin-hcc-remote-auto-end-to-end-recovery-v1_plant",
+          "merwin-hcc-remote-auto-end-to-end-recovery-v1_roll_sync",
+          "v2_MER0_O1_premises",
+          "v2_MER0_O3_boundary",
+          "v2_MER0_O6_correspondence"
+        ],
+        "source_record": "results/milestone2/merwin_mutations.json",
+        "witness": {
+          "accepted": "1",
+          "atSpeed": "1",
+          "clock": "1296",
+          "closeCmd": "1",
+          "contact": "1",
+          "credible": "1",
+          "mw1": "15540079/1000000",
+          "mw2": "1575840563/100000000",
+          "mw3": "792603199/50000000",
+          "relay": "1",
+          "request": "1",
+          "running": "1",
+          "service": "1"
+        }
+      },
+      "MER10": {
+        "attempted_dL_obligations": [
+          "merwin-mer10-violation_violation",
+          "v2_MER10_specific_witness"
+        ],
+        "classification": "UNKNOWN",
+        "dependencies": {
+          "auxiliaries": "TRUSTED",
+          "breaker": "UNKNOWN",
+          "breaker_command": "TRUSTED",
+          "hcc_link": "TRUSTED",
+          "hcc_operator": "TRUSTED",
+          "hydro_unit": "TRUSTED",
+          "power_meter": "TRUSTED",
+          "scada": "TRUSTED",
+          "sequencer": "TRUSTED",
+          "synchronization": "TRUSTED"
+        },
+        "input_state": {
+          "auxNormal": 1,
+          "contactOperable": 1,
+          "deadline": 1296,
+          "generationCoupled": 1,
+          "meterFresh": 1,
+          "plantReady": 1,
+          "remoteMode": 1,
+          "requestClock": 31,
+          "syncAvailable": 1,
+          "syncClock": 1281,
+          "voltage": 1030
+        },
+        "proofs": [
+          {
+            "archive_sha256": "7b7027586bceeb68e2bca9680994e37194d6dd1df05b15c707e586aca72d15b2",
+            "formal_artifact": "milestone2/evidence/models/merwin-mer10-violation.kyx",
+            "proof_record": "milestone2/evidence/proof_records/merwin-mer10-violation/violation.kyp",
+            "proof_sha256": "7e325fa302e988f7aaa6f84e8328ec5b8155edab5160ff484c43e29f8deda2fa",
+            "tactic_ms": 446,
+            "theorem": "merwin-mer10-violation_violation"
+          },
+          {
+            "archive_sha256": "b1b64234f8769bebfbd1d384d118084211471ab8dc85986048e6ed25a258c35f",
+            "formal_artifact": "paper_v2/formal_evidence/models/v2_MER10.kyx",
+            "proof_record": "paper_v2/formal_evidence/proof_records/v2_MER10/specific_witness.kyp",
+            "proof_sha256": "f7411e0e0f5d299410eb5f873deedd28004cb92497ba5429bb8a5c5cd29ba42a",
+            "tactic_ms": 1367,
+            "theorem": "v2_MER10_specific_witness"
+          }
+        ],
+        "proved_dL_obligations": [
+          "merwin-mer10-violation_violation",
+          "v2_MER10_specific_witness"
+        ],
+        "source_record": "results/milestone2/merwin_mutations.json",
+        "witness": {
+          "accepted": "1",
+          "atSpeed": "1",
+          "clock": "1296",
+          "closeCmd": "1",
+          "contact": "0",
+          "credible": "0",
+          "mw1": "0",
+          "mw2": "0",
+          "mw3": "0",
+          "relay": "1",
+          "request": "1",
+          "running": "0",
+          "service": "0"
+        }
+      },
+      "MER6": {
+        "attempted_dL_obligations": [
+          "merwin-mer6-violation_violation",
+          "v2_MER6_specific_witness"
+        ],
+        "classification": "REJECTED",
+        "dependencies": {
+          "auxiliaries": "TRUSTED",
+          "breaker": "TRUSTED",
+          "breaker_command": "TRUSTED",
+          "hcc_link": "TRUSTED",
+          "hcc_operator": "TRUSTED",
+          "hydro_unit": "TRUSTED",
+          "power_meter": "TRUSTED",
+          "scada": "TRUSTED",
+          "sequencer": "TRUSTED",
+          "synchronization": "TRUSTED"
+        },
+        "input_state": {
+          "auxNormal": 1,
+          "contactOperable": 0,
+          "deadline": 1296,
+          "generationCoupled": 1,
+          "meterFresh": 1,
+          "plantReady": 1,
+          "remoteMode": 1,
+          "requestClock": 31,
+          "syncAvailable": 1,
+          "syncClock": 1281,
+          "voltage": 1030
+        },
+        "proofs": [
+          {
+            "archive_sha256": "ed8e68b5cdaf2e8d8f2dd7cce862a93e0832b0166f79d7ac1b8970779087b22b",
+            "formal_artifact": "milestone2/evidence/models/merwin-mer6-violation.kyx",
+            "proof_record": "milestone2/evidence/proof_records/merwin-mer6-violation/violation.kyp",
+            "proof_sha256": "a3c9b2c40bfdfb81c0ce43ebdee09f882a62da497a213fe94592f6209ffa1754",
+            "tactic_ms": 445,
+            "theorem": "merwin-mer6-violation_violation"
+          },
+          {
+            "archive_sha256": "53493fbf163e812d30a24f174b6556f9af363cb40eb839a56b10bae740ca5e56",
+            "formal_artifact": "paper_v2/formal_evidence/models/v2_MER6.kyx",
+            "proof_record": "paper_v2/formal_evidence/proof_records/v2_MER6/specific_witness.kyp",
+            "proof_sha256": "e7cea1901365b6b91fb174c868393819f6d28ae7eb4d3ddc465e769123495aed",
+            "tactic_ms": 1622,
+            "theorem": "v2_MER6_specific_witness"
+          }
+        ],
+        "proved_dL_obligations": [
+          "merwin-mer6-violation_violation",
+          "v2_MER6_specific_witness"
+        ],
+        "source_record": "results/milestone2/merwin_mutations.json",
+        "witness": {
+          "accepted": "1",
+          "atSpeed": "1",
+          "clock": "1296",
+          "closeCmd": "1",
+          "contact": "0",
+          "credible": "0",
+          "mw1": "0",
+          "mw2": "0",
+          "mw3": "0",
+          "relay": "1",
+          "request": "1",
+          "running": "0",
+          "service": "0"
+        }
+      }
+    },
+    "what_is_established": "Nominal contact and coupled generation establish three credible samples. With known failed contact generation stays zero. Unknown integrity permits that adverse outcome."
+  },
+  {
+    "case": "S6",
+    "claim_boundary": "Process readiness, physical output, cyber trust and customer supply lack a complete contract or measurements.",
+    "program_fragment": "Reset, boot eligibility, reviewed backup load and benign logic execution reach a device milestone.",
+    "variants": {
+      "CHP0": {
+        "attempted_dL_obligations": [],
+        "classification": "UNKNOWN",
+        "customer_service": "UNKNOWN",
+        "dependencies": {
+          "available_compatible_reviewed_backup": true,
+          "backup_loaded": true,
+          "bootable_after_reset": true,
+          "external_customer_supply": null,
+          "heartbeat_confirmed": true,
+          "physical_heat_and_power_output": null,
+          "process_ready": null,
+          "reset_completed": true,
+          "runtime_started": true
+        },
+        "device": "ESTABLISHED",
+        "input_state": "siemens_compatible_openplc",
+        "missing_obligations": [
+          "Physical plant safety",
+          "Process execution and service",
+          "Credible customer delivery"
+        ],
+        "process": "UNKNOWN",
+        "proofs": [],
+        "proved_dL_obligations": [],
+        "source_record": "results/milestone2/chp_fail_closed_results.json",
+        "witness": {
+          "benign_logic": "EXECUTED",
+          "fixture_device": "SIMULATED"
+        }
+      }
+    },
+    "what_is_established": "The bounded fixture lifecycle has an independent benign execution witness."
+  }
+]

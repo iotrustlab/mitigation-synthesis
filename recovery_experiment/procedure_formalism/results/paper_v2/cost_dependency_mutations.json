@@ -1,0 +1,116 @@
+{
+  "rows": [
+    {
+      "B4": "PROVED",
+      "context_sha256": "334e2c30886032e59452c40efa1fcf4ed2cb8eb9066111e1371e290351798c65",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "reason": "Validated universal safety/service/cost and progress obligations.",
+      "scenario": "C0"
+    },
+    {
+      "B4": "PROVED",
+      "context_sha256": "334e2c30886032e59452c40efa1fcf4ed2cb8eb9066111e1371e290351798c65",
+      "procedure": "controlled-water-manual-P3-v1",
+      "reason": "Validated universal safety/service/cost and progress obligations.",
+      "scenario": "C0"
+    },
+    {
+      "B4": "REJECTED",
+      "context_sha256": "7e17b2e17e5b17c1725d7f620b6dccf6596d90e98fc5840db7747a1549597fa7",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "reason": "Delivered flow falls below the minimum.",
+      "scenario": "C1"
+    },
+    {
+      "B4": "PROVED",
+      "context_sha256": "7e17b2e17e5b17c1725d7f620b6dccf6596d90e98fc5840db7747a1549597fa7",
+      "procedure": "controlled-water-manual-P3-v1",
+      "reason": "Validated universal safety/service/cost and progress obligations.",
+      "scenario": "C1"
+    },
+    {
+      "B4": "PROVED",
+      "context_sha256": "38411672dd7b464c5f28322abcbb42acea530575552d74477293ac5b0f9d1cc0",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "reason": "Validated universal safety/service/cost and progress obligations.",
+      "scenario": "C2"
+    },
+    {
+      "B4": "REJECTED",
+      "context_sha256": "38411672dd7b464c5f28322abcbb42acea530575552d74477293ac5b0f9d1cc0",
+      "procedure": "controlled-water-manual-P3-v1",
+      "reason": "Required dependency unavailable: local_actor",
+      "scenario": "C2"
+    },
+    {
+      "B4": "REJECTED",
+      "context_sha256": "cb32a6ad2c31da7fdb04d634e3184d8ad43b48e4800b4bd7c6f6d5971ab07121",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "reason": "Required dependency unavailable: power_feed",
+      "scenario": "C3"
+    },
+    {
+      "B4": "REJECTED",
+      "context_sha256": "cb32a6ad2c31da7fdb04d634e3184d8ad43b48e4800b4bd7c6f6d5971ab07121",
+      "procedure": "controlled-water-manual-P3-v1",
+      "reason": "Required dependency unavailable: power_feed",
+      "scenario": "C3"
+    },
+    {
+      "B4": "REJECTED",
+      "context_sha256": "84118b54bcf28f49a98e5f51dd8ce049472e5f6e66000a43369fae455d723476",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "reason": "The final service observation lacks integrity.",
+      "scenario": "C4"
+    },
+    {
+      "B4": "REJECTED",
+      "context_sha256": "84118b54bcf28f49a98e5f51dd8ce049472e5f6e66000a43369fae455d723476",
+      "procedure": "controlled-water-manual-P3-v1",
+      "reason": "The final service observation lacks integrity.",
+      "scenario": "C4"
+    },
+    {
+      "B4": "PROVED",
+      "context_sha256": "736fd2cfe6a32fa98bafcdc4ddd318162479f1c68d69c4237d430489379d5a7a",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "reason": "Validated universal safety/service/cost and progress obligations.",
+      "scenario": "C5"
+    },
+    {
+      "B4": "PROVED",
+      "context_sha256": "736fd2cfe6a32fa98bafcdc4ddd318162479f1c68d69c4237d430489379d5a7a",
+      "procedure": "controlled-water-manual-P3-v1",
+      "reason": "Validated universal safety/service/cost and progress obligations.",
+      "scenario": "C5"
+    },
+    {
+      "B4": "PROVED",
+      "context_sha256": "a8c0b1a681ff85ba64ce79db40b221dc18f2a01b14442a69cac465fbbf5e0d21",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "reason": "Validated universal safety/service/cost and progress obligations.",
+      "scenario": "C6"
+    },
+    {
+      "B4": "REJECTED",
+      "context_sha256": "a8c0b1a681ff85ba64ce79db40b221dc18f2a01b14442a69cac465fbbf5e0d21",
+      "procedure": "controlled-water-manual-P3-v1",
+      "reason": "Opening misses the service deadline.",
+      "scenario": "C6"
+    },
+    {
+      "B4": "REJECTED",
+      "context_sha256": "2065eb705c14d2c1ec350f6409e1ab6fed2dcbbae3d7271e9452e26acd7dc268",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "reason": "Required dependency unavailable: delivery_pipe",
+      "scenario": "C7"
+    },
+    {
+      "B4": "REJECTED",
+      "context_sha256": "2065eb705c14d2c1ec350f6409e1ab6fed2dcbbae3d7271e9452e26acd7dc268",
+      "procedure": "controlled-water-manual-P3-v1",
+      "reason": "Required dependency unavailable: delivery_pipe",
+      "scenario": "C7"
+    }
+  ]
+}

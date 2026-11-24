@@ -1,0 +1,64 @@
+group,baseline,assessments,retained_proved,retained_rejected,retained_unknown,not_retained_proved,not_retained_rejected,not_retained_unknown,inapplicable_proved,inapplicable_rejected,inapplicable_unknown,applicable,proved_omission
+actor,B1,7,0,7,0,0,0,0,0,0,0,7,0
+actor,B2,7,0,2,0,0,5,0,0,0,0,7,0
+actor,B3,7,0,0,0,0,1,0,0,6,0,1,0
+actuator,B1,5,0,3,0,0,2,0,0,0,0,5,0
+actuator,B2,5,0,0,0,0,5,0,0,0,0,5,0
+actuator,B3,5,0,2,0,0,0,0,0,3,0,2,0
+authority,B1,4,0,4,0,0,0,0,0,0,0,4,0
+authority,B2,4,0,4,0,0,0,0,0,0,0,4,0
+authority,B3,4,0,0,0,0,2,0,0,2,0,2,0
+auxiliary permissives,B1,1,0,1,0,0,0,0,0,0,0,1,0
+auxiliary permissives,B2,1,0,1,0,0,0,0,0,0,0,1,0
+auxiliary permissives,B3,1,0,0,0,0,1,0,0,0,0,1,0
+backup,B1,3,0,3,0,0,0,0,0,0,0,3,0
+backup,B2,3,0,2,0,0,1,0,0,0,0,3,0
+backup,B3,3,0,0,0,0,3,0,0,0,0,3,0
+communication,B1,3,0,3,0,0,0,0,0,0,0,3,0
+communication,B2,3,0,0,0,0,3,0,0,0,0,3,0
+communication,B3,3,0,0,0,0,3,0,0,0,0,3,0
+controller,B1,2,0,2,0,0,0,0,0,0,0,2,0
+controller,B2,2,0,2,0,0,0,0,0,0,0,2,0
+controller,B3,2,0,0,0,0,2,0,0,0,0,2,0
+customer evidence,B1,1,0,0,1,0,0,0,0,0,0,1,0
+customer evidence,B2,1,0,0,1,0,0,0,0,0,0,1,0
+customer evidence,B3,1,0,0,1,0,0,0,0,0,0,1,0
+delivery,B1,2,0,2,0,0,0,0,0,0,0,2,0
+delivery,B2,2,0,2,0,0,0,0,0,0,0,2,0
+delivery,B3,2,0,2,0,0,0,0,0,0,0,2,0
+dependency evidence,B1,3,0,0,3,0,0,0,0,0,0,3,0
+dependency evidence,B2,3,0,0,1,0,0,2,0,0,0,3,0
+dependency evidence,B3,3,0,0,3,0,0,0,0,0,0,3,0
+device,B1,1,0,0,0,0,1,0,0,0,0,1,0
+device,B2,1,0,0,0,0,1,0,0,0,0,1,0
+device,B3,1,0,0,0,0,1,0,0,0,0,1,0
+observation,B1,7,0,7,0,0,0,0,0,0,0,7,0
+observation,B2,7,0,7,0,0,0,0,0,0,0,7,0
+observation,B3,7,0,4,0,0,0,0,0,3,0,4,0
+plant,B1,5,0,5,0,0,0,0,0,0,0,5,0
+plant,B2,5,0,3,0,0,2,0,0,0,0,5,0
+plant,B3,5,0,3,0,0,0,0,0,2,0,3,0
+power,B1,3,0,3,0,0,0,0,0,0,0,3,0
+power,B2,3,0,0,0,0,3,0,0,0,0,3,0
+power,B3,3,0,1,0,0,0,0,0,2,0,1,0
+process evidence,B1,2,0,0,2,0,0,0,0,0,0,2,0
+process evidence,B2,2,0,0,2,0,0,0,0,0,0,2,0
+process evidence,B3,2,0,0,2,0,0,0,0,0,0,2,0
+process permissives,B1,1,0,1,0,0,0,0,0,0,0,1,0
+process permissives,B2,1,0,1,0,0,0,0,0,0,0,1,0
+process permissives,B3,1,0,1,0,0,0,0,0,0,0,1,0
+protection,B1,3,0,3,0,0,0,0,0,0,0,3,0
+protection,B2,3,0,3,0,0,0,0,0,0,0,3,0
+protection,B3,3,0,0,0,0,1,0,0,2,0,1,0
+service contract,B1,2,0,0,0,0,0,0,0,2,0,0,0
+service contract,B2,2,0,0,0,0,0,0,0,2,0,0,0
+service contract,B3,2,0,0,0,0,0,0,0,2,0,0,0
+service established,B1,11,11,0,0,0,0,0,0,0,0,11,0
+service established,B2,11,11,0,0,0,0,0,0,0,0,11,0
+service established,B3,11,7,0,0,0,0,0,4,0,0,7,4
+synchronization,B1,1,0,1,0,0,0,0,0,0,0,1,0
+synchronization,B2,1,0,1,0,0,0,0,0,0,0,1,0
+synchronization,B3,1,0,0,0,0,1,0,0,0,0,1,0
+timing,B1,1,0,1,0,0,0,0,0,0,0,1,0
+timing,B2,1,0,1,0,0,0,0,0,0,0,1,0
+timing,B3,1,0,0,0,0,0,0,0,1,0,0,0

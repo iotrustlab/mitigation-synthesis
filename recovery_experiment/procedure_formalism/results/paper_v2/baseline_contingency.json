@@ -1,0 +1,749 @@
+{
+  "decision_groups": {
+    "ACCEPT": "retained",
+    "DECLINE": "not_retained",
+    "INAPPLICABLE": "inapplicable",
+    "UNRESOLVED": "not_retained"
+  },
+  "reference": "B4 end-to-end contract on research fixtures",
+  "rows": [
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "PROVED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "scenario": "M0",
+      "stage": "service established"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "DECLINE",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "scenario": "M1",
+      "stage": "authority"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "DECLINE",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "scenario": "M2",
+      "stage": "authority"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "DECLINE",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "scenario": "M3",
+      "stage": "communication"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "DECLINE",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "scenario": "M4",
+      "stage": "controller"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "scenario": "M5",
+      "stage": "delivery"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-local-hand-v1",
+      "scenario": "M5",
+      "stage": "authority"
+    },
+    {
+      "B1": "INAPPLICABLE",
+      "B2": "INAPPLICABLE",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-hold-v1",
+      "scenario": "M5",
+      "stage": "service contract"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "ACCEPT",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "scenario": "M6",
+      "stage": "actuator"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-local-hand-v1",
+      "scenario": "M6",
+      "stage": "actuator"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "scenario": "M7",
+      "stage": "plant"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "scenario": "M8",
+      "stage": "observation"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "scenario": "M9",
+      "stage": "observation"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-local-hand-v1",
+      "scenario": "M10",
+      "stage": "actor"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-local-hand-v1",
+      "scenario": "M11",
+      "stage": "actor"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "DECLINE",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "scenario": "M12",
+      "stage": "protection"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-local-hand-v1",
+      "scenario": "M12",
+      "stage": "protection"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "UNRESOLVED",
+      "B3": "ACCEPT",
+      "B4": "UNKNOWN",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "scenario": "M13",
+      "stage": "dependency evidence"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "DECLINE",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-remote-end-to-end-recovery-v1",
+      "scenario": "M14",
+      "stage": "communication"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-local-hand-v1",
+      "scenario": "M14",
+      "stage": "actor"
+    },
+    {
+      "B1": "INAPPLICABLE",
+      "B2": "INAPPLICABLE",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_remote_study",
+      "procedure": "attleboro-hold-v1",
+      "scenario": "M14",
+      "stage": "service contract"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "PROVED",
+      "family": "attleboro_hand",
+      "procedure": "attleboro-local-hand-end-to-end-recovery-v1",
+      "scenario": "H0",
+      "stage": "service established"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_hand",
+      "procedure": "attleboro-local-hand-end-to-end-recovery-v1",
+      "scenario": "H1",
+      "stage": "actor"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_hand",
+      "procedure": "attleboro-local-hand-end-to-end-recovery-v1",
+      "scenario": "H2",
+      "stage": "actor"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_hand",
+      "procedure": "attleboro-local-hand-end-to-end-recovery-v1",
+      "scenario": "H3",
+      "stage": "authority"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_hand",
+      "procedure": "attleboro-local-hand-end-to-end-recovery-v1",
+      "scenario": "H4",
+      "stage": "actuator"
+    },
+    {
+      "B1": "DECLINE",
+      "B2": "DECLINE",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_hand",
+      "procedure": "attleboro-local-hand-end-to-end-recovery-v1",
+      "scenario": "H5",
+      "stage": "actuator"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_hand",
+      "procedure": "attleboro-local-hand-end-to-end-recovery-v1",
+      "scenario": "H6",
+      "stage": "protection"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_hand",
+      "procedure": "attleboro-local-hand-end-to-end-recovery-v1",
+      "scenario": "H7",
+      "stage": "plant"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_hand",
+      "procedure": "attleboro-local-hand-end-to-end-recovery-v1",
+      "scenario": "H8",
+      "stage": "observation"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_hand",
+      "procedure": "attleboro-local-hand-end-to-end-recovery-v1",
+      "scenario": "H9",
+      "stage": "observation"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "attleboro_hand",
+      "procedure": "attleboro-local-hand-end-to-end-recovery-v1",
+      "scenario": "H10",
+      "stage": "power"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "PROVED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "scenario": "C0",
+      "stage": "service established"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "PROVED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-manual-P3-v1",
+      "scenario": "C0",
+      "stage": "service established"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "DECLINE",
+      "B4": "REJECTED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "scenario": "C1",
+      "stage": "controller"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "PROVED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-manual-P3-v1",
+      "scenario": "C1",
+      "stage": "service established"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "PROVED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "scenario": "C2",
+      "stage": "service established"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-manual-P3-v1",
+      "scenario": "C2",
+      "stage": "actor"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "ACCEPT",
+      "B4": "REJECTED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "scenario": "C3",
+      "stage": "power"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-manual-P3-v1",
+      "scenario": "C3",
+      "stage": "power"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "REJECTED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "scenario": "C4",
+      "stage": "observation"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-manual-P3-v1",
+      "scenario": "C4",
+      "stage": "observation"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "PROVED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "scenario": "C5",
+      "stage": "service established"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "PROVED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-manual-P3-v1",
+      "scenario": "C5",
+      "stage": "service established"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "PROVED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "scenario": "C6",
+      "stage": "service established"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-manual-P3-v1",
+      "scenario": "C6",
+      "stage": "timing"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "ACCEPT",
+      "B4": "REJECTED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "scenario": "C7",
+      "stage": "plant"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "INAPPLICABLE",
+      "B4": "REJECTED",
+      "family": "controlled_cost",
+      "procedure": "controlled-water-manual-P3-v1",
+      "scenario": "C7",
+      "stage": "plant"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "PROVED",
+      "family": "merwin",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "scenario": "MER0",
+      "stage": "service established"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "DECLINE",
+      "B4": "REJECTED",
+      "family": "merwin",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "scenario": "MER1",
+      "stage": "actor"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "DECLINE",
+      "B4": "REJECTED",
+      "family": "merwin",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "scenario": "MER2",
+      "stage": "communication"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "PROVED",
+      "family": "merwin",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "scenario": "MER3",
+      "stage": "service established"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "DECLINE",
+      "B4": "REJECTED",
+      "family": "merwin",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "scenario": "MER4",
+      "stage": "auxiliary permissives"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "DECLINE",
+      "B4": "REJECTED",
+      "family": "merwin",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "scenario": "MER5",
+      "stage": "synchronization"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "REJECTED",
+      "family": "merwin",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "scenario": "MER6",
+      "stage": "delivery"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "REJECTED",
+      "family": "merwin",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "scenario": "MER7",
+      "stage": "plant"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "REJECTED",
+      "family": "merwin",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "scenario": "MER8",
+      "stage": "observation"
+    },
+    {
+      "B1": "DECLINE",
+      "B2": "DECLINE",
+      "B3": "ACCEPT",
+      "B4": "REJECTED",
+      "family": "merwin",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "scenario": "MER9",
+      "stage": "actuator"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "UNRESOLVED",
+      "B3": "ACCEPT",
+      "B4": "UNKNOWN",
+      "family": "merwin",
+      "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "scenario": "MER10",
+      "stage": "dependency evidence"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "UNKNOWN",
+      "family": "chp",
+      "procedure": "chp-reviewed-backup-reload",
+      "scenario": "CHP0",
+      "stage": "process evidence"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "DECLINE",
+      "B3": "DECLINE",
+      "B4": "REJECTED",
+      "family": "chp",
+      "procedure": "chp-reviewed-backup-reload",
+      "scenario": "CHP1",
+      "stage": "backup"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "DECLINE",
+      "B4": "REJECTED",
+      "family": "chp",
+      "procedure": "chp-reviewed-backup-reload",
+      "scenario": "CHP2",
+      "stage": "backup"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "DECLINE",
+      "B4": "REJECTED",
+      "family": "chp",
+      "procedure": "chp-reviewed-backup-reload",
+      "scenario": "CHP3",
+      "stage": "backup"
+    },
+    {
+      "B1": "DECLINE",
+      "B2": "DECLINE",
+      "B3": "DECLINE",
+      "B4": "REJECTED",
+      "family": "chp",
+      "procedure": "chp-reviewed-backup-reload",
+      "scenario": "CHP4",
+      "stage": "device"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "UNKNOWN",
+      "family": "chp",
+      "procedure": "chp-reviewed-backup-reload",
+      "scenario": "CHP5",
+      "stage": "process evidence"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "REJECTED",
+      "family": "chp",
+      "procedure": "chp-reviewed-backup-reload",
+      "scenario": "CHP6",
+      "stage": "process permissives"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "UNKNOWN",
+      "family": "chp",
+      "procedure": "chp-reviewed-backup-reload",
+      "scenario": "CHP7",
+      "stage": "customer evidence"
+    },
+    {
+      "B1": "ACCEPT",
+      "B2": "ACCEPT",
+      "B3": "ACCEPT",
+      "B4": "UNKNOWN",
+      "family": "chp",
+      "procedure": "chp-reviewed-backup-reload",
+      "scenario": "CHP8",
+      "stage": "dependency evidence"
+    }
+  ],
+  "source": "results/milestone2/cross_domain_baselines.json#rows",
+  "stage_basis": "Remote uses first_stage per candidate. Other stages identify the decisive dependency or evidence boundary in the recorded case-specific mutation.",
+  "totals": [
+    {
+      "applicable": 66,
+      "assessments": 68,
+      "baseline": "B1",
+      "group": "all",
+      "inapplicable_proved": 0,
+      "inapplicable_rejected": 2,
+      "inapplicable_unknown": 0,
+      "not_retained_proved": 0,
+      "not_retained_rejected": 3,
+      "not_retained_unknown": 0,
+      "proved_omission": 0,
+      "retained_proved": 11,
+      "retained_rejected": 46,
+      "retained_unknown": 6
+    },
+    {
+      "applicable": 66,
+      "assessments": 68,
+      "baseline": "B2",
+      "group": "all",
+      "inapplicable_proved": 0,
+      "inapplicable_rejected": 2,
+      "inapplicable_unknown": 0,
+      "not_retained_proved": 0,
+      "not_retained_rejected": 20,
+      "not_retained_unknown": 2,
+      "proved_omission": 0,
+      "retained_proved": 11,
+      "retained_rejected": 29,
+      "retained_unknown": 4
+    },
+    {
+      "applicable": 41,
+      "assessments": 68,
+      "baseline": "B3",
+      "group": "all",
+      "inapplicable_proved": 4,
+      "inapplicable_rejected": 23,
+      "inapplicable_unknown": 0,
+      "not_retained_proved": 0,
+      "not_retained_rejected": 15,
+      "not_retained_unknown": 0,
+      "proved_omission": 4,
+      "retained_proved": 7,
+      "retained_rejected": 13,
+      "retained_unknown": 6
+    }
+  ],
+  "union_retained_by_reference": {
+    "PROVED": 11,
+    "REJECTED": 47,
+    "UNKNOWN": 6
+  },
+  "unit": "one candidate procedure in a labeled scenario"
+}

@@ -1,0 +1,48 @@
+{
+  "dependency_benchmark": {
+    "cache_policy": "The Z3 process and its memory are fresh. OS page caches were not flushed; page residency was uncontrolled.",
+    "clock": "perf_counter_ns",
+    "logical_cpu": 12,
+    "solver_process": "new per cell repetition",
+    "solver_threads": 1,
+    "workers": 1
+  },
+  "formal_proof_benchmark": {
+    "adaptive_game_logical_cpu": 30,
+    "cache_policy": "Fresh JVM and KeYmaera X user home per archive invocation. OS page caches were not flushed; page residency was uncontrolled.",
+    "cleo_scope": "Historical regression environment only.",
+    "fixed_procedure_logical_cpu": 31,
+    "heap_mib": {
+      "initial": 128,
+      "maximum": 1024
+    },
+    "jvm_active_processors": 1,
+    "jvm_gc": "SerialGC",
+    "timing_series": "Fixed cases run sequentially on one core. The optional game series ran concurrently on a different physical core.",
+    "workers_per_series": 1
+  },
+  "host": {
+    "architecture": "x86_64",
+    "cores_per_socket": 16,
+    "cpu_model": "AMD Ryzen 9 7950X 16-Core Processor",
+    "kernel": "6.8.0-149-generic",
+    "logical_cpus": 32,
+    "os": "Ubuntu 22.04.5 LTS",
+    "sharing": "Shared host; benchmarks on distinct physical cores; other load uncontrolled.",
+    "sockets": 1,
+    "threads_per_core": 2,
+    "visible_ram_bytes": 66540941312
+  },
+  "tools": {
+    "cleo_historical": "0.1.0",
+    "java": [
+      "openjdk version \"17.0.21.1\" 2026-11-17",
+      "OpenJDK Runtime Environment (build 17.0.21.1+2-1-22.04.1-Ubuntu)"
+    ],
+    "keymaera_x": "5.1.1",
+    "prover_jar_sha256": "c72cb700992e4c9fbf052113917e039ced43fa6c512493fe5473964e18b691bb",
+    "python": "3.10.12",
+    "z3": "Z3 version 4.15.4 - 64 bit",
+    "z3_sha256": "1bfaf5bbe81fd0b7800500ee08eef426aaabe18f8b9c4c4c32adffcd72f86cd5"
+  }
+}

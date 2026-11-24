@@ -1,0 +1,4 @@
+group,baseline,assessments,retained_proved,retained_rejected,retained_unknown,not_retained_proved,not_retained_rejected,not_retained_unknown,inapplicable_proved,inapplicable_rejected,inapplicable_unknown,applicable,proved_omission
+all,B1,68,11,46,6,0,3,0,0,2,0,66,0
+all,B2,68,11,29,4,0,20,2,0,2,0,66,0
+all,B3,68,7,13,6,0,15,0,4,23,0,41,4

@@ -1,0 +1,230 @@
+{
+  "input_snapshot": "fa719386e782766f01a8db770d7b128ccba3ad99",
+  "jar_sha256": "c72cb700992e4c9fbf052113917e039ced43fa6c512493fe5473964e18b691bb",
+  "java_version": "openjdk version \"17.0.21.1\" 2026-11-17",
+  "profiles": {
+    "v2_H0": {
+      "archive_sha256": "f8aebb4cdd544966dd4711de2bd900fc186592a4775c76295892047208d5682d",
+      "case": "v2_H0",
+      "obligations": {
+        "O1_premises": {
+          "duration_ms": 189,
+          "proof_sha256": "d2ab50a83a37ab4e16899741332e4e04f3e1428e859680b097da60a9cb45cdc4",
+          "status": "PROVED"
+        },
+        "O3_boundary": {
+          "duration_ms": 1347,
+          "proof_sha256": "8bb79b88275bc703c86703a902c34221c7f88c055df9bd28e2dda6f9949ddf28",
+          "status": "PROVED"
+        },
+        "O6_correspondence": {
+          "duration_ms": 1168,
+          "proof_sha256": "86cbd39e82b55a978c480ea159168d97b2b3dc8f86118239b4373228330ff272",
+          "status": "PROVED"
+        }
+      },
+      "optional_lemma_initialization_restricted": true,
+      "procedure_id": "v2_H0",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "PROVED",
+      "wall_seconds": 14.247
+    },
+    "v2_H2": {
+      "archive_sha256": "86080831bcb06ab45bd6c34174dacc84a28a3b312a79c37c79c8b99baec8df57",
+      "case": "v2_H2",
+      "obligations": {
+        "specific_witness": {
+          "duration_ms": 1263,
+          "proof_sha256": "32fd88a9b85b622b683f7065f387c8f1b5347597508533bde490a8e98dccf458",
+          "status": "PROVED"
+        }
+      },
+      "optional_lemma_initialization_restricted": true,
+      "procedure_id": "v2_H2",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "PROVED",
+      "wall_seconds": 14.327
+    },
+    "v2_M0": {
+      "archive_sha256": "6c827c244c2d7173670b0a489293ca782e3cbeccc2aeae6866d617a70e92fc49",
+      "case": "v2_M0",
+      "obligations": {
+        "O1_premises": {
+          "duration_ms": 91,
+          "proof_sha256": "0d9b9f5e779bc6f0d192cc04e3ee56282cedd68bcd082253e7296713860be7c6",
+          "status": "PROVED"
+        },
+        "O3_boundary": {
+          "duration_ms": 1167,
+          "proof_sha256": "4512dfcb01180a1e60af73dcaee0753a61aaac875ee389e0f1edc9c75de57b99",
+          "status": "PROVED"
+        },
+        "O6_correspondence": {
+          "duration_ms": 889,
+          "proof_sha256": "f80b65e3014237b622f9a13006ee9e3d2721b0a2178188ae47adc8afbd3ef154",
+          "status": "PROVED"
+        }
+      },
+      "optional_lemma_initialization_restricted": true,
+      "procedure_id": "v2_M0",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "PROVED",
+      "wall_seconds": 31.761
+    },
+    "v2_M13": {
+      "archive_sha256": "beaed1c5327912f9a8332f5f120b551770d15591df91d5bdc6f89eadf300328d",
+      "case": "v2_M13",
+      "obligations": {
+        "specific_witness": {
+          "duration_ms": 1424,
+          "proof_sha256": "4549ac89c787b15cca7b4368dba9e3ca764a76da21d88b4d8daf2437425db61a",
+          "status": "PROVED"
+        }
+      },
+      "optional_lemma_initialization_restricted": true,
+      "procedure_id": "v2_M13",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "PROVED",
+      "wall_seconds": 13.806
+    },
+    "v2_M5": {
+      "archive_sha256": "bffb7f37f708c5939ec1e0e282a3d032165f15a675464250d87ee4a449fc8867",
+      "case": "v2_M5",
+      "obligations": {
+        "specific_witness": {
+          "duration_ms": 1586,
+          "proof_sha256": "3e4fb6915fedf3452ceff31252061237c94fd2779f7388be4bd1b05ddf204fa8",
+          "status": "PROVED"
+        }
+      },
+      "optional_lemma_initialization_restricted": true,
+      "procedure_id": "v2_M5",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "PROVED",
+      "wall_seconds": 15.69
+    },
+    "v2_MER0": {
+      "archive_sha256": "2a0050c6fca97dd90b53f15e1aac17fd9073e6b9e89b47ae856fc9abafc16c9e",
+      "case": "v2_MER0",
+      "obligations": {
+        "O1_premises": {
+          "duration_ms": 151,
+          "proof_sha256": "46618d8f97deaa3bec04f6d095f1a3d6ba0d695a346520cec1edf4381fccb815",
+          "status": "PROVED"
+        },
+        "O3_boundary": {
+          "duration_ms": 2594,
+          "proof_sha256": "a42186e2e1873b2b77d253b5251252e011292c60660a849e18be13bdaf287bd6",
+          "status": "PROVED"
+        },
+        "O6_correspondence": {
+          "duration_ms": 2134,
+          "proof_sha256": "2d70eac5ec8f9e4bc1a629688835b8d395a6e724324b56d36fc1dacdd76c707c",
+          "status": "PROVED"
+        }
+      },
+      "optional_lemma_initialization_restricted": true,
+      "procedure_id": "v2_MER0",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "PROVED",
+      "wall_seconds": 16.765
+    },
+    "v2_MER10": {
+      "archive_sha256": "b1b64234f8769bebfbd1d384d118084211471ab8dc85986048e6ed25a258c35f",
+      "case": "v2_MER10",
+      "obligations": {
+        "specific_witness": {
+          "duration_ms": 1367,
+          "proof_sha256": "f7411e0e0f5d299410eb5f873deedd28004cb92497ba5429bb8a5c5cd29ba42a",
+          "status": "PROVED"
+        }
+      },
+      "optional_lemma_initialization_restricted": true,
+      "procedure_id": "v2_MER10",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "PROVED",
+      "wall_seconds": 14.089
+    },
+    "v2_MER6": {
+      "archive_sha256": "53493fbf163e812d30a24f174b6556f9af363cb40eb839a56b10bae740ca5e56",
+      "case": "v2_MER6",
+      "obligations": {
+        "specific_witness": {
+          "duration_ms": 1622,
+          "proof_sha256": "e7cea1901365b6b91fb174c868393819f6d28ae7eb4d3ddc465e769123495aed",
+          "status": "PROVED"
+        }
+      },
+      "optional_lemma_initialization_restricted": true,
+      "procedure_id": "v2_MER6",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "PROVED",
+      "wall_seconds": 13.763
+    },
+    "v2_P2": {
+      "archive_sha256": "af7e0be97aa8c4a007671b0a83ffaf7d19b0c87109d1a636f8b67f0459fdd0c3",
+      "case": "v2_P2",
+      "obligations": {
+        "O1_premises": {
+          "duration_ms": 174,
+          "proof_sha256": "a20aee52259665329d2552f3a3fabb611225674c027582412189de4ceefb645e",
+          "status": "PROVED"
+        },
+        "O3_boundary": {
+          "duration_ms": 717,
+          "proof_sha256": "d506cae599e80379b73739e43f399c6e8867fa5fd466fc64d3229e24e0902919",
+          "status": "PROVED"
+        },
+        "O6_correspondence": {
+          "duration_ms": 466,
+          "proof_sha256": "1241c6b179e8742376206ce5e7603c9bd83e69ab31b4dc398d4f02e05cf4aa51",
+          "status": "PROVED"
+        }
+      },
+      "optional_lemma_initialization_restricted": true,
+      "procedure_id": "v2_P2",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "PROVED",
+      "wall_seconds": 14.108
+    },
+    "v2_P3": {
+      "archive_sha256": "8f240aeaf6bc60969d103ebab16551c0de2032bc30df1c39e1f34411db960184",
+      "case": "v2_P3",
+      "obligations": {
+        "O1_premises": {
+          "duration_ms": 199,
+          "proof_sha256": "3a478d6db507b431fd4eb1743583c54f008e1eb7ce15ab360b77d37810173c47",
+          "status": "PROVED"
+        },
+        "O3_boundary": {
+          "duration_ms": 727,
+          "proof_sha256": "c00fd18de562b9b92d7f7f0f6fcbabc918b56aa41c66f11cdf354e84ffa274fe",
+          "status": "PROVED"
+        },
+        "O6_correspondence": {
+          "duration_ms": 484,
+          "proof_sha256": "92b54adb3b2cf207db2ea3d3813412b25877f4e9091bb0da8f987bfbc492a1cb",
+          "status": "PROVED"
+        }
+      },
+      "optional_lemma_initialization_restricted": true,
+      "procedure_id": "v2_P3",
+      "prover": "KeYmaera X 5.1.1",
+      "return_code": 0,
+      "status": "PROVED",
+      "wall_seconds": 14.326
+    }
+  },
+  "solver_sha256": "1bfaf5bbe81fd0b7800500ee08eef426aaabe18f8b9c4c4c32adffcd72f86cd5",
+  "solver_version": "Z3 version 4.15.4 - 64 bit",
+  "toolchain": "KeYmaera X 5.1.1 / Z3. One fresh isolated cache for these projection and witness proofs."
+}

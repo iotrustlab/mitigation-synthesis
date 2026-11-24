@@ -1,0 +1,39 @@
+{
+  "jar_sha256": "c72cb700992e4c9fbf052113917e039ced43fa6c512493fe5473964e18b691bb",
+  "modality": "dGL diamond",
+  "profile": "water_game",
+  "profile_sha256": "56125522604c1dd67b085536d11e53897f89be7cae9b5622f53e68b91ba5983c",
+  "record": {
+    "archive_sha256": "fa19215e0944079470d1e09f859249322953be2689019c8d6ac1b9e3f0671558",
+    "case": "water_game",
+    "obligations": {
+      "adaptive_win": {
+        "duration_ms": 43,
+        "proof_sha256": "654491f42b73d444ce1cb5336cef5beade08e5ec0fe20a2bac6d89df050fa737",
+        "status": "PROVED"
+      },
+      "fixed_P2_no_win": {
+        "duration_ms": 30,
+        "proof_sha256": "f4aa3181784f727af00c58f923d102040bda075411a72c6cfd27cef3cae758b9",
+        "status": "PROVED"
+      },
+      "fixed_P3_no_win": {
+        "duration_ms": 26,
+        "proof_sha256": "e00141af1a9644785f24c1b05bbcf3f588628e54ede11fa480985a0833874274",
+        "status": "PROVED"
+      },
+      "shared_power_no_win": {
+        "duration_ms": 50,
+        "proof_sha256": "eea5b7db2d58f3b3aa40f91b9b241da2b4c209e97ec11837ca6cb86076bcfb54",
+        "status": "PROVED"
+      }
+    },
+    "optional_lemma_initialization_restricted": true,
+    "procedure_id": "water_game",
+    "prover": "KeYmaera X 5.1.1",
+    "return_code": 0,
+    "status": "PROVED",
+    "wall_seconds": 6.552
+  },
+  "solver_sha256": "1bfaf5bbe81fd0b7800500ee08eef426aaabe18f8b9c4c4c32adffcd72f86cd5"
+}

@@ -1,0 +1,80 @@
+{
+  "context": {
+    "auto_capacity": 3,
+    "auto_delay": 1,
+    "auto_watts": 4,
+    "deadline": 2,
+    "demand": 3,
+    "faults": [],
+    "horizon": 4,
+    "inflow": 1,
+    "initial_volume": 12,
+    "lower": 4,
+    "manual_capacity": 3,
+    "manual_delay": 2,
+    "manual_watts": 1,
+    "minimum": 2,
+    "primary_flow": 0,
+    "upper": 17
+  },
+  "context_sha256": "334e2c30886032e59452c40efa1fcf4ed2cb8eb9066111e1371e290351798c65",
+  "contract": "Tank volume within bounds throughout both mandatory phases; flow at least minimum from deadline through horizon; fresh trusted final meter matches actual flow.",
+  "coordinate_order": [
+    "cService",
+    "cTime",
+    "cIntervention",
+    "cResource"
+  ],
+  "units": [
+    "L",
+    "s",
+    "manual action",
+    "J"
+  ],
+  "vectors": [
+    {
+      "composition": {
+        "duration_ms": 88,
+        "proof_sha256": "841d2504633c594a5c37e9933eb17b0ad360e9ec94f37304e11c6e10da8fe88f",
+        "status": "PROVED"
+      },
+      "model_sha256": "37278e3b919e707cda1ff8fe06f7deabd1b806f4ddc4f8b641dd56c73a1609dc",
+      "procedure": "controlled-water-automatic-P2-v1",
+      "profile": "cost_P2_42979f75cf",
+      "reachable": {
+        "duration_ms": 77,
+        "proof_sha256": "879bf5eb77e9e69de147b9829869f1db84c9abac01c9ab9964835c7616ca1759",
+        "status": "PROVED"
+      },
+      "source": "results/milestone2/common_context_cost_proofs.json",
+      "vector": [
+        3,
+        1,
+        0,
+        12
+      ]
+    },
+    {
+      "composition": {
+        "duration_ms": 104,
+        "proof_sha256": "ffb1ed61ec1a8210cb9c754ea7f3b87e4be9bf23c53cb761266ce1d9afc915af",
+        "status": "PROVED"
+      },
+      "model_sha256": "50105330332a9c8f268f9a30039c35b4abb45d82360eec2207e1197f6fcd807e",
+      "procedure": "controlled-water-manual-P3-v1",
+      "profile": "cost_P3_758f611e41",
+      "reachable": {
+        "duration_ms": 77,
+        "proof_sha256": "ab6fc03b6643934c7061134e1a77a280fd9f2e1d8ee21dfc453d33cfac4e0a68",
+        "status": "PROVED"
+      },
+      "source": "results/milestone2/common_context_cost_proofs.json",
+      "vector": [
+        6,
+        2,
+        1,
+        2
+      ]
+    }
+  ]
+}

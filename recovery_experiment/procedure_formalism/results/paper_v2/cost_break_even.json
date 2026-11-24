@@ -1,0 +1,27 @@
+{
+  "P2_strictly_preferred": "10*wResource < 3*wService + wTime + wIntervention",
+  "P3_minus_P2_coefficients": [
+    3,
+    1,
+    1,
+    -10
+  ],
+  "pareto_front": [
+    "controlled-water-automatic-P2-v1",
+    "controlled-water-manual-P3-v1"
+  ],
+  "scope": "Nonnegative weights on a common hard contract, finite candidate set.",
+  "tie": "equality; retain both",
+  "weight_order": [
+    "wService",
+    "wTime",
+    "wIntervention",
+    "wResource"
+  ],
+  "weight_units": [
+    "policy points per L",
+    "policy points per s",
+    "policy points per manual action",
+    "policy points per J"
+  ]
+}
