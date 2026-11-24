@@ -1,0 +1,3027 @@
+{
+  "cases": [
+    {
+      "assessments": [
+        {
+          "assessment_record": "results/attleboro_mutation_matrix.json",
+          "assessment_sha256": "157d96985eccaa45516139d25bd54fd8736c5b96740f6a67025d12e0967f2d99",
+          "case_id": "S1",
+          "claim_not_supported": "Continuous hydraulics, sustained customer supply, current-site meter integrity and staffing are outside this model.",
+          "claim_supported": "The composed box covers the three required scans, sampled safety, service at the deadline and a corresponding meter reading.",
+          "classification": "PROVED",
+          "classification_reason": "The composed box covers the three required scans, sampled safety, service at the deadline and a corresponding meter reading.",
+          "classification_scope": "Incident evidence for the stipulated research fixture.",
+          "counterexample_or_witness": {
+            "accepted": 1,
+            "delivered": 1,
+            "flow1": 0,
+            "flow2": 4,
+            "flow3": "32/5",
+            "fresh": 1,
+            "observed": "32/5",
+            "output": 1,
+            "pressure": "246/5",
+            "t": 3,
+            "trusted": 1
+          },
+          "deadline_or_horizon": {
+            "clock_unit": "100 ms",
+            "deadline_tick": 3,
+            "scheduled_boundary": "t=deadline & t=ready+3"
+          },
+          "dependency_assignment": {
+            "communication": "TRUSTED",
+            "delivery": "TRUSTED",
+            "motor_power": "TRUSTED",
+            "observer": "TRUSTED",
+            "ows": "TRUSTED",
+            "plc": "TRUSTED",
+            "pump": "TRUSTED",
+            "remote_operator": "TRUSTED",
+            "trip_path": "TRUSTED",
+            "vfd": "TRUSTED",
+            "water_path": "TRUSTED"
+          },
+          "domain": "Attleboro water",
+          "evidence_status": "BOUND_FIXTURE_ASSUMPTIONS",
+          "finite_model_check": {
+            "prefix_check": {
+              "blocked_prefixes": 0,
+              "reachable_prefixes_checked": 48,
+              "scope": "All valuations allowed by this case's guarded semantic assignments.",
+              "stage_widths": [
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "actor"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "controller"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "delivery"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "plant"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "observer"
+                }
+              ],
+              "terminal_paths": 1
+            },
+            "premise_valuation": {
+              "authorized": "1",
+              "blockedInput": "0",
+              "deadline": "3",
+              "genMode": "0",
+              "genReady": "0",
+              "genRun": "0",
+              "hand": "0",
+              "healthy": "1",
+              "ph": "0",
+              "prevReset": "0",
+              "qInit": "0",
+              "ready": "0",
+              "remote": "1",
+              "resetPending": "0",
+              "resetReq": "0",
+              "tripInput": "0",
+              "utility": "1"
+            },
+            "terminal_executions": [
+              {
+                "complete_contract": true,
+                "evidence_implies_correspondence": true,
+                "evidence_produced": true,
+                "on_time": true,
+                "physical": true,
+                "safe": true,
+                "values": {
+                  "delivered": "1",
+                  "flow1": "0",
+                  "flow2": "4",
+                  "flow3": "32/5",
+                  "observed": "32/5",
+                  "observedPressure": "246/5",
+                  "output": "1",
+                  "pressure": "246/5",
+                  "q": "32/5",
+                  "ready": "0",
+                  "t": "3",
+                  "tick1": "1",
+                  "tick2": "2",
+                  "tick3": "3"
+                }
+              }
+            ]
+          },
+          "hybrid_program_or_relevant_fragment": {
+            "description": "Trusted output is copied to the drive; the stopped pump advances through three mandatory scans.",
+            "stages": [
+              {
+                "guarded_relations": [
+                  "(request=authorized)",
+                  "(received=displayRequest)"
+                ],
+                "stage": "actor"
+              },
+              {
+                "guarded_relations": [
+                  "((((received=1) & (badPower=0) & (pending=0) & (remote=1) & (trip=0)) & accepted=1) | (!((received=1) & (badPower=0) & (pending=0) & (remote=1) & (trip=0)) & accepted=0))",
+                  "(output=accepted)"
+                ],
+                "stage": "controller"
+              },
+              {
+                "guarded_relations": [
+                  "(delivered=output)"
+                ],
+                "stage": "delivery"
+              },
+              {
+                "guarded_relations": [
+                  "((((delivered=1) & (remote=1) & (hand=0)) & drive=1) | (!((delivered=1) & (remote=1) & (hand=0)) & drive=0))",
+                  "(tick1=(ready+1))",
+                  "(tick2=(tick1+1))",
+                  "(tick3=(tick2+1))",
+                  "((((q>=5) & (pressure<=90) & (trip=0) & (ph=0)) & physical=1) | (!((q>=5) & (pressure<=90) & (trip=0) & (ph=0)) & physical=0))"
+                ],
+                "stage": "plant"
+              },
+              {
+                "guarded_relations": [
+                  "((((trusted=1) & (fresh=1) & (physical=1) & (observed=q) & (observedPressure=pressure) & (observed>=5) & (observedPressure<=90)) & established=1) | (!((trusted=1) & (fresh=1) & (physical=1) & (observed=q) & (observedPressure=pressure) & (observed>=5) & (observedPressure<=90)) & established=0))"
+                ],
+                "stage": "observer"
+              }
+            ]
+          },
+          "initial_state": {
+            "authorized": 1,
+            "flow_blocked": 0,
+            "generator_ready": 0,
+            "generator_running": 0,
+            "hand_selected": 0,
+            "initial_flow": 0,
+            "mts_generator": 0,
+            "observation_fresh": 1,
+            "ph_out_of_range": 0,
+            "previous_reset": 0,
+            "remote_selected": 1,
+            "reset_pending": 0,
+            "reset_request": 0,
+            "trip": 0,
+            "utility": 1
+          },
+          "model_hash": {
+            "models/M0.kyx": "c520d6a6c27c95886e855ca3349f6b261ba03140e132ccb610df50fe6365b4a5",
+            "paper_v2/formal_evidence/models/v2_M0.kyx": "6c827c244c2d7173670b0a489293ca782e3cbeccc2aeae6866d617a70e92fc49"
+          },
+          "obligation_scope": "Encoded fixed procedure and its admitted assignments.",
+          "obligations": {
+            "O1": {
+              "evidence": {
+                "theorems": [
+                  "v2_M0_O1_premises"
+                ]
+              },
+              "reason": "Concrete premise witness.",
+              "status": "PROVED"
+            },
+            "O2": {
+              "evidence": {
+                "theorems": [
+                  "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_execution_witness"
+                ]
+              },
+              "reason": "Diamond with stronger terminal service postcondition.",
+              "status": "PROVED"
+            },
+            "O3": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "v2_M0_O3_boundary"
+                ]
+              },
+              "reason": "Deadline box and exhaustive semantic-prefix successor check.",
+              "status": "PROVED"
+            },
+            "O4": {
+              "evidence": {
+                "theorems": [
+                  "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_end_to_end"
+                ]
+              },
+              "reason": "Safety conjunct of the bound composition proof.",
+              "status": "PROVED"
+            },
+            "O5": {
+              "evidence": {
+                "theorems": [
+                  "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_end_to_end"
+                ]
+              },
+              "reason": "Physical-service conjunct of the bound composition proof.",
+              "status": "PROVED"
+            },
+            "O6": {
+              "evidence": {
+                "theorems": [
+                  "v2_M0_O6_correspondence"
+                ]
+              },
+              "reason": "The full-program box proves both production of E and E implying correspondence with the physical measurements.",
+              "status": "PROVED"
+            },
+            "O7": {
+              "evidence": {
+                "theorems": [
+                  "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_end_to_end"
+                ]
+              },
+              "reason": "Bound end-to-end box.",
+              "status": "PROVED"
+            },
+            "O8": {
+              "evidence": {
+                "theorems": []
+              },
+              "reason": "This facility case has no common-context cost contract.",
+              "status": "INAPPLICABLE"
+            }
+          },
+          "obligations_attempted": [
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_end_to_end",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_execution_witness",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_precondition_witness",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_retained_start",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_actor",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_controller",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_delivery",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_observer",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_plant",
+            "v2_M0_O1_premises",
+            "v2_M0_O3_boundary",
+            "v2_M0_O6_correspondence"
+          ],
+          "obligations_proved": [
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_end_to_end",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_execution_witness",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_precondition_witness",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_retained_start",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_actor",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_controller",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_delivery",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_observer",
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_plant",
+            "v2_M0_O1_premises",
+            "v2_M0_O3_boundary",
+            "v2_M0_O6_correspondence"
+          ],
+          "observation_property": {
+            "correspondence_given_production": "physical=1 & trusted=1 & fresh=1 & observed=q & observedPressure=pressure",
+            "production": "established=1"
+          },
+          "physical_service_property": "physical=1 (q >= 5 L/s, pressure <= 90 psi, trip clear and normal pH)",
+          "premise": "utility=1 & genMode=0 & genRun=0 & genReady=0 & resetPending=0 & resetReq=0 & prevReset=0 & remote=1 & hand=0 & tripInput=0 & ph=0 & blockedInput=0 & healthy=1 & authorized=1 & qInit=0 & ready=0 & deadline=3",
+          "procedure": "attleboro-remote-end-to-end-recovery-v1",
+          "proof_hash": {
+            "paper_v2/formal_evidence/proof_records/v2_M0/O1_premises.kyp": "0d9b9f5e779bc6f0d192cc04e3ee56282cedd68bcd082253e7296713860be7c6",
+            "paper_v2/formal_evidence/proof_records/v2_M0/O3_boundary.kyp": "4512dfcb01180a1e60af73dcaee0753a61aaac875ee389e0f1edc9c75de57b99",
+            "paper_v2/formal_evidence/proof_records/v2_M0/O6_correspondence.kyp": "f80b65e3014237b622f9a13006ee9e3d2721b0a2178188ae47adc8afbd3ef154",
+            "proof_records/M0/end_to_end.kyp": "49621e563057068af159482970c79e3b58da1a9d37e51ad8df256545cd267e6a",
+            "proof_records/M0/execution_witness.kyp": "4716ac57f6ea9fdec076fa5ccf24af9698d0e94fc3a27b5e77f98d8301aa4e8b",
+            "proof_records/M0/precondition_witness.kyp": "d4bd6169e8c5ec54e2aec92e0a554ff32b60bd9deb4d075fcf058a7cfe8eabd0",
+            "proof_records/M0/retained_start.kyp": "20bec7f0612fc9f13790ed9e085408f030d7baa648a0cf24886ed53cd1737943",
+            "proof_records/M0/stage_actor.kyp": "837f8d7e153fea4ceb6c36f12001ae9368dd530899aa07df1f1072eb4474c4c8",
+            "proof_records/M0/stage_controller.kyp": "4f34a0e94c12127b3487b6bf827ecf5bd881ab2557ee134a7ac5c45620d02d69",
+            "proof_records/M0/stage_delivery.kyp": "d1de151795b07f0e0b83133379a3ae95400dd4dbd03ceeb89fdc148a413a315d",
+            "proof_records/M0/stage_observer.kyp": "d16f75b64fdf992f100cacc7efcd001c79294853d90745aa7dd5ebc4aabafed9",
+            "proof_records/M0/stage_plant.kyp": "6eb0f806cd4d45db87dd8626d0157f11c95f98c7086d95f1ae13daf0d53a95a1"
+          },
+          "proof_record": {
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_end_to_end": {
+              "model": "models/M0.kyx",
+              "record": "proof_records/M0/end_to_end.kyp"
+            },
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_execution_witness": {
+              "model": "models/M0.kyx",
+              "record": "proof_records/M0/execution_witness.kyp"
+            },
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_precondition_witness": {
+              "model": "models/M0.kyx",
+              "record": "proof_records/M0/precondition_witness.kyp"
+            },
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_retained_start": {
+              "model": "models/M0.kyx",
+              "record": "proof_records/M0/retained_start.kyp"
+            },
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_actor": {
+              "model": "models/M0.kyx",
+              "record": "proof_records/M0/stage_actor.kyp"
+            },
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_controller": {
+              "model": "models/M0.kyx",
+              "record": "proof_records/M0/stage_controller.kyp"
+            },
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_delivery": {
+              "model": "models/M0.kyx",
+              "record": "proof_records/M0/stage_delivery.kyp"
+            },
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_observer": {
+              "model": "models/M0.kyx",
+              "record": "proof_records/M0/stage_observer.kyp"
+            },
+            "attleboro-remote-end-to-end-recovery-v1_a82251473e7a6c74_stage_plant": {
+              "model": "models/M0.kyx",
+              "record": "proof_records/M0/stage_plant.kyp"
+            },
+            "v2_M0_O1_premises": {
+              "model": "paper_v2/formal_evidence/models/v2_M0.kyx",
+              "record": "paper_v2/formal_evidence/proof_records/v2_M0/O1_premises.kyp"
+            },
+            "v2_M0_O3_boundary": {
+              "model": "paper_v2/formal_evidence/models/v2_M0.kyx",
+              "record": "paper_v2/formal_evidence/proof_records/v2_M0/O3_boundary.kyp"
+            },
+            "v2_M0_O6_correspondence": {
+              "model": "paper_v2/formal_evidence/models/v2_M0.kyx",
+              "record": "paper_v2/formal_evidence/proof_records/v2_M0/O6_correspondence.kyp"
+            }
+          },
+          "safety_property": "safe=1 (initial and all three sampled flow, pressure, trip and pH conditions)",
+          "subcase": "M0"
+        }
+      ],
+      "case_id": "S1",
+      "domain": "Attleboro water",
+      "table": {
+        "claim_boundary": "Sampled water service at the deadline",
+        "formal_artifact": "Remote composition",
+        "hard_obligations": "O1--O7",
+        "result": [
+          "PROVED"
+        ],
+        "witness": "Three scans, 6.4 L/s at tick 3"
+      }
+    },
+    {
+      "assessments": [
+        {
+          "assessment_record": "results/attleboro_mutation_matrix.json",
+          "assessment_sha256": "157d96985eccaa45516139d25bd54fd8736c5b96740f6a67025d12e0967f2d99",
+          "case_id": "S2",
+          "claim_not_supported": "The counterexample refutes the specified universal guarantee. It does not estimate frequency or imply all executions fail.",
+          "claim_supported": "The stipulated compromised delivery admits a reachable suppressed command under which physical flow and its fresh reading are zero.",
+          "classification": "REJECTED",
+          "classification_reason": "The stipulated compromised delivery admits a reachable suppressed command under which physical flow and its fresh reading are zero.",
+          "classification_scope": "Incident evidence for the stipulated research fixture.",
+          "counterexample_or_witness": {
+            "accepted": 1,
+            "delivered": 0,
+            "flow1": 0,
+            "flow2": 0,
+            "flow3": 0,
+            "fresh": 1,
+            "observed": 0,
+            "output": 1,
+            "pressure": 30,
+            "t": 3,
+            "trusted": 1
+          },
+          "deadline_or_horizon": {
+            "clock_unit": "100 ms",
+            "deadline_tick": 3,
+            "scheduled_boundary": "t=deadline & t=ready+3"
+          },
+          "dependency_assignment": {
+            "communication": "TRUSTED",
+            "delivery": "COMPROMISED",
+            "motor_power": "TRUSTED",
+            "observer": "TRUSTED",
+            "ows": "TRUSTED",
+            "plc": "TRUSTED",
+            "pump": "TRUSTED",
+            "remote_operator": "TRUSTED",
+            "trip_path": "TRUSTED",
+            "vfd": "TRUSTED",
+            "water_path": "TRUSTED"
+          },
+          "domain": "Attleboro water",
+          "evidence_status": "BOUND_FIXTURE_ASSUMPTIONS",
+          "finite_model_check": {
+            "prefix_check": {
+              "blocked_prefixes": 0,
+              "reachable_prefixes_checked": 87,
+              "scope": "All valuations allowed by this case's guarded semantic assignments.",
+              "stage_widths": [
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "actor"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "controller"
+                },
+                {
+                  "prefixes_at_exit": 2,
+                  "stage": "delivery"
+                },
+                {
+                  "prefixes_at_exit": 2,
+                  "stage": "plant"
+                },
+                {
+                  "prefixes_at_exit": 2,
+                  "stage": "observer"
+                }
+              ],
+              "terminal_paths": 2
+            },
+            "premise_valuation": {
+              "authorized": "1",
+              "blockedInput": "0",
+              "deadline": "3",
+              "genMode": "0",
+              "genReady": "0",
+              "genRun": "0",
+              "hand": "0",
+              "healthy": "1",
+              "ph": "0",
+              "prevReset": "0",
+              "qInit": "0",
+              "ready": "0",
+              "remote": "1",
+              "resetPending": "0",
+              "resetReq": "0",
+              "tripInput": "0",
+              "utility": "1"
+            },
+            "terminal_executions": [
+              {
+                "complete_contract": false,
+                "evidence_implies_correspondence": true,
+                "evidence_produced": false,
+                "on_time": true,
+                "physical": false,
+                "safe": true,
+                "values": {
+                  "delivered": "0",
+                  "flow1": "0",
+                  "flow2": "0",
+                  "flow3": "0",
+                  "observed": "0",
+                  "observedPressure": "30",
+                  "output": "1",
+                  "pressure": "30",
+                  "q": "0",
+                  "ready": "0",
+                  "t": "3",
+                  "tick1": "1",
+                  "tick2": "2",
+                  "tick3": "3"
+                }
+              },
+              {
+                "complete_contract": true,
+                "evidence_implies_correspondence": true,
+                "evidence_produced": true,
+                "on_time": true,
+                "physical": true,
+                "safe": true,
+                "values": {
+                  "delivered": "1",
+                  "flow1": "0",
+                  "flow2": "4",
+                  "flow3": "32/5",
+                  "observed": "32/5",
+                  "observedPressure": "246/5",
+                  "output": "1",
+                  "pressure": "246/5",
+                  "q": "32/5",
+                  "ready": "0",
+                  "t": "3",
+                  "tick1": "1",
+                  "tick2": "2",
+                  "tick3": "3"
+                }
+              }
+            ]
+          },
+          "hybrid_program_or_relevant_fragment": {
+            "description": "After controller acceptance, choose a persistent delivered bit from {0,1}.",
+            "stages": [
+              {
+                "guarded_relations": [
+                  "(request=authorized)",
+                  "(received=displayRequest)"
+                ],
+                "stage": "actor"
+              },
+              {
+                "guarded_relations": [
+                  "((((received=1) & (badPower=0) & (pending=0) & (remote=1) & (trip=0)) & accepted=1) | (!((received=1) & (badPower=0) & (pending=0) & (remote=1) & (trip=0)) & accepted=0))",
+                  "(output=accepted)"
+                ],
+                "stage": "controller"
+              },
+              {
+                "guarded_relations": [
+                  "(delivered=0 | delivered=1)"
+                ],
+                "stage": "delivery"
+              },
+              {
+                "guarded_relations": [
+                  "((((delivered=1) & (remote=1) & (hand=0)) & drive=1) | (!((delivered=1) & (remote=1) & (hand=0)) & drive=0))",
+                  "(tick1=(ready+1))",
+                  "(tick2=(tick1+1))",
+                  "(tick3=(tick2+1))",
+                  "((((q>=5) & (pressure<=90) & (trip=0) & (ph=0)) & physical=1) | (!((q>=5) & (pressure<=90) & (trip=0) & (ph=0)) & physical=0))"
+                ],
+                "stage": "plant"
+              },
+              {
+                "guarded_relations": [
+                  "((((trusted=1) & (fresh=1) & (physical=1) & (observed=q) & (observedPressure=pressure) & (observed>=5) & (observedPressure<=90)) & established=1) | (!((trusted=1) & (fresh=1) & (physical=1) & (observed=q) & (observedPressure=pressure) & (observed>=5) & (observedPressure<=90)) & established=0))"
+                ],
+                "stage": "observer"
+              }
+            ]
+          },
+          "initial_state": {
+            "authorized": 1,
+            "flow_blocked": 0,
+            "generator_ready": 0,
+            "generator_running": 0,
+            "hand_selected": 0,
+            "initial_flow": 0,
+            "mts_generator": 0,
+            "observation_fresh": 1,
+            "ph_out_of_range": 0,
+            "previous_reset": 0,
+            "remote_selected": 1,
+            "reset_pending": 0,
+            "reset_request": 0,
+            "trip": 0,
+            "utility": 1
+          },
+          "model_hash": {
+            "models/M5.kyx": "94bcde2c484a8f5318b5c27f20161093b357acd4ad854c28a6b1a017ce67ad8c",
+            "paper_v2/formal_evidence/models/v2_M5.kyx": "bffb7f37f708c5939ec1e0e282a3d032165f15a675464250d87ee4a449fc8867"
+          },
+          "obligation_scope": "Encoded fixed procedure and its admitted assignments.",
+          "obligations": {
+            "O1": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "The concrete initial valuation satisfies every conjunct of the encoded premise.",
+              "status": "PROVED"
+            },
+            "O2": {
+              "evidence": {
+                "theorems": [
+                  "v2_M5_specific_witness"
+                ]
+              },
+              "reason": "The specific reachable terminal state implies an execution.",
+              "status": "PROVED"
+            },
+            "O3": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "Every admitted semantic prefix has a successor and every path reaches the scheduled boundary.",
+              "status": "PROVED"
+            },
+            "O4": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "The safety accumulator holds on every reachable finite terminal state.",
+              "status": "PROVED"
+            },
+            "O5": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "v2_M5_specific_witness"
+                ]
+              },
+              "reason": "An admitted complete execution has no physical service and no explicit persistent-failure exception.",
+              "status": "REFUTED"
+            },
+            "O6": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "v2_M5_specific_witness"
+                ]
+              },
+              "reason": "Credible service evidence is absent on a reachable branch. An accurate reading of zero does not establish production.",
+              "status": "REFUTED"
+            },
+            "O7": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "attleboro-remote-end-to-end-recovery-v1_6c59842db47fe5bf_violation"
+                ]
+              },
+              "reason": "The checked negated-contract diamond refutes universal composition in this model.",
+              "status": "REFUTED"
+            },
+            "O8": {
+              "evidence": {
+                "theorems": []
+              },
+              "reason": "This facility case has no common-context cost contract.",
+              "status": "INAPPLICABLE"
+            }
+          },
+          "obligations_attempted": [
+            "attleboro-remote-end-to-end-recovery-v1_6c59842db47fe5bf_violation",
+            "v2_M5_specific_witness"
+          ],
+          "obligations_proved": [
+            "attleboro-remote-end-to-end-recovery-v1_6c59842db47fe5bf_violation",
+            "v2_M5_specific_witness"
+          ],
+          "observation_property": {
+            "correspondence_given_production": "physical=1 & trusted=1 & fresh=1 & observed=q & observedPressure=pressure",
+            "production": "established=1"
+          },
+          "physical_service_property": "physical=1 (q >= 5 L/s, pressure <= 90 psi, trip clear and normal pH)",
+          "premise": "utility=1 & genMode=0 & genRun=0 & genReady=0 & resetPending=0 & resetReq=0 & prevReset=0 & remote=1 & hand=0 & tripInput=0 & ph=0 & blockedInput=0 & healthy=1 & authorized=1 & qInit=0 & ready=0 & deadline=3",
+          "procedure": "attleboro-remote-end-to-end-recovery-v1",
+          "proof_hash": {
+            "paper_v2/formal_evidence/proof_records/v2_M5/specific_witness.kyp": "3e4fb6915fedf3452ceff31252061237c94fd2779f7388be4bd1b05ddf204fa8",
+            "proof_records/M5/violation.kyp": "b6d69ec09686eb685d6443d441750cf75f40ce751d0859b8b6fd4d93631c68c6"
+          },
+          "proof_record": {
+            "attleboro-remote-end-to-end-recovery-v1_6c59842db47fe5bf_violation": {
+              "model": "models/M5.kyx",
+              "record": "proof_records/M5/violation.kyp"
+            },
+            "v2_M5_specific_witness": {
+              "model": "paper_v2/formal_evidence/models/v2_M5.kyx",
+              "record": "paper_v2/formal_evidence/proof_records/v2_M5/specific_witness.kyp"
+            }
+          },
+          "safety_property": "safe=1 (initial and all three sampled flow, pressure, trip and pH conditions)",
+          "subcase": "M5"
+        }
+      ],
+      "case_id": "S2",
+      "domain": "Attleboro water",
+      "table": {
+        "claim_boundary": "Known compromise admits suppression",
+        "formal_artifact": "Delivery diamond",
+        "hard_obligations": "O5--O7",
+        "result": [
+          "REJECTED"
+        ],
+        "witness": "Output one, delivered zero, zero flow"
+      }
+    },
+    {
+      "assessments": [
+        {
+          "assessment_record": "results/attleboro_mutation_matrix.json",
+          "assessment_sha256": "157d96985eccaa45516139d25bd54fd8736c5b96740f6a67025d12e0967f2d99",
+          "case_id": "S3",
+          "claim_not_supported": "Actual delivery integrity is unknown. A possible adverse choice cannot settle which incident occurred.",
+          "claim_supported": "Both a copied output and a suppressed command are feasible. The recorded incident leaves delivery integrity unresolved.",
+          "classification": "UNKNOWN",
+          "classification_reason": "Both a copied output and a suppressed command are feasible. The recorded incident leaves delivery integrity unresolved.",
+          "classification_scope": "Incident evidence for the stipulated research fixture.",
+          "counterexample_or_witness": {
+            "accepted": 1,
+            "delivered": 0,
+            "flow1": 0,
+            "flow2": 0,
+            "flow3": 0,
+            "fresh": 1,
+            "observed": 0,
+            "output": 1,
+            "pressure": 30,
+            "t": 3,
+            "trusted": 1
+          },
+          "deadline_or_horizon": {
+            "clock_unit": "100 ms",
+            "deadline_tick": 3,
+            "scheduled_boundary": "t=deadline & t=ready+3"
+          },
+          "dependency_assignment": {
+            "communication": "TRUSTED",
+            "delivery": "UNKNOWN",
+            "motor_power": "TRUSTED",
+            "observer": "TRUSTED",
+            "ows": "TRUSTED",
+            "plc": "TRUSTED",
+            "pump": "TRUSTED",
+            "remote_operator": "TRUSTED",
+            "trip_path": "TRUSTED",
+            "vfd": "TRUSTED",
+            "water_path": "TRUSTED"
+          },
+          "domain": "Attleboro water",
+          "evidence_status": "UNRESOLVED_INTEGRITY",
+          "finite_model_check": {
+            "prefix_check": {
+              "blocked_prefixes": 0,
+              "reachable_prefixes_checked": 87,
+              "scope": "All valuations allowed by this case's guarded semantic assignments.",
+              "stage_widths": [
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "actor"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "controller"
+                },
+                {
+                  "prefixes_at_exit": 2,
+                  "stage": "delivery"
+                },
+                {
+                  "prefixes_at_exit": 2,
+                  "stage": "plant"
+                },
+                {
+                  "prefixes_at_exit": 2,
+                  "stage": "observer"
+                }
+              ],
+              "terminal_paths": 2
+            },
+            "premise_valuation": {
+              "authorized": "1",
+              "blockedInput": "0",
+              "deadline": "3",
+              "genMode": "0",
+              "genReady": "0",
+              "genRun": "0",
+              "hand": "0",
+              "healthy": "1",
+              "ph": "0",
+              "prevReset": "0",
+              "qInit": "0",
+              "ready": "0",
+              "remote": "1",
+              "resetPending": "0",
+              "resetReq": "0",
+              "tripInput": "0",
+              "utility": "1"
+            },
+            "terminal_executions": [
+              {
+                "complete_contract": false,
+                "evidence_implies_correspondence": true,
+                "evidence_produced": false,
+                "on_time": true,
+                "physical": false,
+                "safe": true,
+                "values": {
+                  "delivered": "0",
+                  "flow1": "0",
+                  "flow2": "0",
+                  "flow3": "0",
+                  "observed": "0",
+                  "observedPressure": "30",
+                  "output": "1",
+                  "pressure": "30",
+                  "q": "0",
+                  "ready": "0",
+                  "t": "3",
+                  "tick1": "1",
+                  "tick2": "2",
+                  "tick3": "3"
+                }
+              },
+              {
+                "complete_contract": true,
+                "evidence_implies_correspondence": true,
+                "evidence_produced": true,
+                "on_time": true,
+                "physical": true,
+                "safe": true,
+                "values": {
+                  "delivered": "1",
+                  "flow1": "0",
+                  "flow2": "4",
+                  "flow3": "32/5",
+                  "observed": "32/5",
+                  "observedPressure": "246/5",
+                  "output": "1",
+                  "pressure": "246/5",
+                  "q": "32/5",
+                  "ready": "0",
+                  "t": "3",
+                  "tick1": "1",
+                  "tick2": "2",
+                  "tick3": "3"
+                }
+              }
+            ]
+          },
+          "hybrid_program_or_relevant_fragment": {
+            "description": "Union the nominal output-copy relation with the bounded adverse delivery relation.",
+            "stages": [
+              {
+                "guarded_relations": [
+                  "(request=authorized)",
+                  "(received=displayRequest)"
+                ],
+                "stage": "actor"
+              },
+              {
+                "guarded_relations": [
+                  "((((received=1) & (badPower=0) & (pending=0) & (remote=1) & (trip=0)) & accepted=1) | (!((received=1) & (badPower=0) & (pending=0) & (remote=1) & (trip=0)) & accepted=0))",
+                  "(output=accepted)"
+                ],
+                "stage": "controller"
+              },
+              {
+                "guarded_relations": [
+                  "(delivered=output | delivered=0 | delivered=1)"
+                ],
+                "stage": "delivery"
+              },
+              {
+                "guarded_relations": [
+                  "((((delivered=1) & (remote=1) & (hand=0)) & drive=1) | (!((delivered=1) & (remote=1) & (hand=0)) & drive=0))",
+                  "(tick1=(ready+1))",
+                  "(tick2=(tick1+1))",
+                  "(tick3=(tick2+1))",
+                  "((((q>=5) & (pressure<=90) & (trip=0) & (ph=0)) & physical=1) | (!((q>=5) & (pressure<=90) & (trip=0) & (ph=0)) & physical=0))"
+                ],
+                "stage": "plant"
+              },
+              {
+                "guarded_relations": [
+                  "((((trusted=1) & (fresh=1) & (physical=1) & (observed=q) & (observedPressure=pressure) & (observed>=5) & (observedPressure<=90)) & established=1) | (!((trusted=1) & (fresh=1) & (physical=1) & (observed=q) & (observedPressure=pressure) & (observed>=5) & (observedPressure<=90)) & established=0))"
+                ],
+                "stage": "observer"
+              }
+            ]
+          },
+          "initial_state": {
+            "authorized": 1,
+            "flow_blocked": 0,
+            "generator_ready": 0,
+            "generator_running": 0,
+            "hand_selected": 0,
+            "initial_flow": 0,
+            "mts_generator": 0,
+            "observation_fresh": 1,
+            "ph_out_of_range": 0,
+            "previous_reset": 0,
+            "remote_selected": 1,
+            "reset_pending": 0,
+            "reset_request": 0,
+            "trip": 0,
+            "utility": 1
+          },
+          "model_hash": {
+            "models/M13.kyx": "2d30c6538c3b3de57c5b8ec26b68656331b1be9e90c02b62debc0f5054462ccf",
+            "paper_v2/formal_evidence/models/v2_M13.kyx": "beaed1c5327912f9a8332f5f120b551770d15591df91d5bdc6f89eadf300328d"
+          },
+          "obligation_scope": "Encoded fixed procedure and its admitted assignments.",
+          "obligations": {
+            "O1": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "The concrete initial valuation satisfies every conjunct of the encoded premise.",
+              "status": "PROVED"
+            },
+            "O2": {
+              "evidence": {
+                "theorems": [
+                  "v2_M13_specific_witness"
+                ]
+              },
+              "reason": "The specific reachable terminal state implies an execution.",
+              "status": "PROVED"
+            },
+            "O3": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "Every admitted semantic prefix has a successor and every path reaches the scheduled boundary.",
+              "status": "PROVED"
+            },
+            "O4": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "The safety accumulator holds on every reachable finite terminal state.",
+              "status": "PROVED"
+            },
+            "O5": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "v2_M13_specific_witness"
+                ]
+              },
+              "reason": "An admitted complete execution has no physical service and no explicit persistent-failure exception.",
+              "status": "REFUTED"
+            },
+            "O6": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "v2_M13_specific_witness"
+                ]
+              },
+              "reason": "Credible service evidence is absent on a reachable branch. An accurate reading of zero does not establish production.",
+              "status": "REFUTED"
+            },
+            "O7": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "attleboro-remote-end-to-end-recovery-v1_aa4b36bfdae88953_violation"
+                ]
+              },
+              "reason": "The checked negated-contract diamond refutes universal composition in this model.",
+              "status": "REFUTED"
+            },
+            "O8": {
+              "evidence": {
+                "theorems": []
+              },
+              "reason": "This facility case has no common-context cost contract.",
+              "status": "INAPPLICABLE"
+            }
+          },
+          "obligations_attempted": [
+            "attleboro-remote-end-to-end-recovery-v1_aa4b36bfdae88953_violation",
+            "v2_M13_specific_witness"
+          ],
+          "obligations_proved": [
+            "attleboro-remote-end-to-end-recovery-v1_aa4b36bfdae88953_violation",
+            "v2_M13_specific_witness"
+          ],
+          "observation_property": {
+            "correspondence_given_production": "physical=1 & trusted=1 & fresh=1 & observed=q & observedPressure=pressure",
+            "production": "established=1"
+          },
+          "physical_service_property": "physical=1 (q >= 5 L/s, pressure <= 90 psi, trip clear and normal pH)",
+          "premise": "utility=1 & genMode=0 & genRun=0 & genReady=0 & resetPending=0 & resetReq=0 & prevReset=0 & remote=1 & hand=0 & tripInput=0 & ph=0 & blockedInput=0 & healthy=1 & authorized=1 & qInit=0 & ready=0 & deadline=3",
+          "procedure": "attleboro-remote-end-to-end-recovery-v1",
+          "proof_hash": {
+            "paper_v2/formal_evidence/proof_records/v2_M13/specific_witness.kyp": "4549ac89c787b15cca7b4368dba9e3ca764a76da21d88b4d8daf2437425db61a",
+            "proof_records/M13/violation.kyp": "0e15d7c152a83fba8877bc42872a5cddad51c502e496fd6865a1a106317aaa22"
+          },
+          "proof_record": {
+            "attleboro-remote-end-to-end-recovery-v1_aa4b36bfdae88953_violation": {
+              "model": "models/M13.kyx",
+              "record": "proof_records/M13/violation.kyp"
+            },
+            "v2_M13_specific_witness": {
+              "model": "paper_v2/formal_evidence/models/v2_M13.kyx",
+              "record": "paper_v2/formal_evidence/proof_records/v2_M13/specific_witness.kyp"
+            }
+          },
+          "safety_property": "safe=1 (initial and all three sampled flow, pressure, trip and pH conditions)",
+          "subcase": "M13"
+        }
+      ],
+      "case_id": "S3",
+      "domain": "Attleboro water",
+      "table": {
+        "claim_boundary": "Actual delivery integrity unresolved",
+        "formal_artifact": "Widened delivery relation",
+        "hard_obligations": "O5--O7",
+        "result": [
+          "UNKNOWN"
+        ],
+        "witness": "Copy and suppression both feasible"
+      }
+    },
+    {
+      "assessments": [
+        {
+          "assessment_record": "results/milestone2/attleboro_hand_mutations.json",
+          "assessment_sha256": "0c3bb67b8cf6a01cc645a0422b1734e5730064508fb969525d481f45bd2801b3",
+          "case_id": "S4",
+          "claim_not_supported": "No installed-site staffing or response-time bound follows from the authority record.",
+          "claim_supported": "The operator is ready at tick zero. Exclusive Hand selection on generator power reaches sampled service and a fresh reading at tick three.",
+          "classification": "PROVED",
+          "classification_reason": "The operator is ready at tick zero. Exclusive Hand selection on generator power reaches sampled service and a fresh reading at tick three.",
+          "classification_scope": "Incident evidence for the stipulated research fixture.",
+          "counterexample_or_witness": {
+            "accepted": 1,
+            "delivered": 1,
+            "drive": 1,
+            "established": 1,
+            "fresh": 1,
+            "observed": "32/5",
+            "physical": 1,
+            "pressure": "246/5",
+            "q": "32/5",
+            "ready": 0,
+            "received": 1,
+            "request": 1,
+            "run": 1,
+            "safe": 1,
+            "t": 3,
+            "trusted": 1
+          },
+          "deadline_or_horizon": {
+            "clock_unit": "100 ms",
+            "deadline_tick": 3,
+            "scheduled_boundary": "t=deadline & t=ready+3"
+          },
+          "dependency_assignment": {
+            "hand_panel": "TRUSTED",
+            "local_operator": "TRUSTED",
+            "motor_power": "TRUSTED",
+            "observer": "TRUSTED",
+            "pump": "TRUSTED",
+            "trip_path": "TRUSTED",
+            "vfd": "TRUSTED",
+            "water_path": "TRUSTED"
+          },
+          "domain": "Attleboro water",
+          "evidence_status": "BOUND_FIXTURE_ASSUMPTIONS",
+          "finite_model_check": {
+            "prefix_check": {
+              "blocked_prefixes": 0,
+              "reachable_prefixes_checked": 45,
+              "scope": "All valuations allowed by this case's guarded semantic assignments.",
+              "stage_widths": [
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "actor"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "controller"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "delivery"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "plant"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "observer"
+                }
+              ],
+              "terminal_paths": 1
+            },
+            "premise_valuation": {
+              "authorized": "1",
+              "blockedInput": "0",
+              "deadline": "3",
+              "genMode": "1",
+              "genReady": "1",
+              "genRun": "1",
+              "hand": "1",
+              "healthy": "1",
+              "ph": "0",
+              "prevReset": "0",
+              "qInit": "0",
+              "ready": "0",
+              "remote": "0",
+              "resetPending": "0",
+              "resetReq": "0",
+              "tripInput": "0",
+              "utility": "0"
+            },
+            "terminal_executions": [
+              {
+                "complete_contract": true,
+                "evidence_implies_correspondence": true,
+                "evidence_produced": true,
+                "on_time": true,
+                "physical": true,
+                "safe": true,
+                "values": {
+                  "delivered": "1",
+                  "flow1": "0",
+                  "flow2": "4",
+                  "flow3": "32/5",
+                  "observed": "32/5",
+                  "observedPressure": "246/5",
+                  "output": "1",
+                  "pressure": "246/5",
+                  "q": "32/5",
+                  "ready": "0",
+                  "t": "3",
+                  "tick1": "1",
+                  "tick2": "2",
+                  "tick3": "3"
+                }
+              }
+            ]
+          },
+          "hybrid_program_or_relevant_fragment": {
+            "description": "Local readiness and selector govern the panel; powered pump, trip path and observer are shared.",
+            "stages": [
+              {
+                "guarded_relations": [
+                  "(request=authorized)",
+                  "(received=request)"
+                ],
+                "stage": "actor"
+              },
+              {
+                "guarded_relations": [
+                  "((((received=1) & (hand=1) & (remote=0)) & accepted=1) | (!((received=1) & (hand=1) & (remote=0)) & accepted=0))",
+                  "(output=accepted)"
+                ],
+                "stage": "controller"
+              },
+              {
+                "guarded_relations": [
+                  "(delivered=output)"
+                ],
+                "stage": "delivery"
+              },
+              {
+                "guarded_relations": [
+                  "((((delivered=1) & (hand=1) & (remote=0)) & drive=1) | (!((delivered=1) & (hand=1) & (remote=0)) & drive=0))",
+                  "(tick1=(ready+1))",
+                  "(tick2=(tick1+1))",
+                  "(tick3=(tick2+1))",
+                  "((((q>=5) & (pressure<=90) & (trip=0) & (ph=0)) & physical=1) | (!((q>=5) & (pressure<=90) & (trip=0) & (ph=0)) & physical=0))"
+                ],
+                "stage": "plant"
+              },
+              {
+                "guarded_relations": [
+                  "((((trusted=1) & (fresh=1) & (physical=1) & (observed=q) & (observedPressure=pressure) & (observed>=5) & (observedPressure<=90)) & established=1) | (!((trusted=1) & (fresh=1) & (physical=1) & (observed=q) & (observedPressure=pressure) & (observed>=5) & (observedPressure<=90)) & established=0))"
+                ],
+                "stage": "observer"
+              }
+            ]
+          },
+          "initial_state": {
+            "authorized": 1,
+            "deadline_tick": 3,
+            "flow_blocked": 0,
+            "generator_ready": 1,
+            "generator_running": 1,
+            "hand_selected": 1,
+            "initial_flow": 0,
+            "mts_generator": 1,
+            "observation_fresh": 1,
+            "ph_out_of_range": 0,
+            "previous_reset": 0,
+            "ready_tick": 0,
+            "remote_selected": 0,
+            "reset_pending": 0,
+            "reset_request": 0,
+            "trip": 0,
+            "utility": 0
+          },
+          "model_hash": {
+            "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx": "b3ed0d97ec83a69268f93594a58af2c1781340a3049164a7c9e2ff6adb392eb9",
+            "paper_v2/formal_evidence/models/v2_H0.kyx": "f8aebb4cdd544966dd4711de2bd900fc186592a4775c76295892047208d5682d"
+          },
+          "obligation_scope": "Encoded fixed procedure and its admitted assignments.",
+          "obligations": {
+            "O1": {
+              "evidence": {
+                "theorems": [
+                  "v2_H0_O1_premises"
+                ]
+              },
+              "reason": "Concrete premise witness.",
+              "status": "PROVED"
+            },
+            "O2": {
+              "evidence": {
+                "theorems": [
+                  "attleboro-local-hand-end-to-end-recovery-v1_execution_witness"
+                ]
+              },
+              "reason": "Diamond with stronger terminal service postcondition.",
+              "status": "PROVED"
+            },
+            "O3": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "v2_H0_O3_boundary"
+                ]
+              },
+              "reason": "Deadline box and exhaustive semantic-prefix successor check.",
+              "status": "PROVED"
+            },
+            "O4": {
+              "evidence": {
+                "theorems": [
+                  "attleboro-local-hand-end-to-end-recovery-v1_end_to_end"
+                ]
+              },
+              "reason": "Safety conjunct of the bound composition proof.",
+              "status": "PROVED"
+            },
+            "O5": {
+              "evidence": {
+                "theorems": [
+                  "attleboro-local-hand-end-to-end-recovery-v1_end_to_end"
+                ]
+              },
+              "reason": "Physical-service conjunct of the bound composition proof.",
+              "status": "PROVED"
+            },
+            "O6": {
+              "evidence": {
+                "theorems": [
+                  "v2_H0_O6_correspondence"
+                ]
+              },
+              "reason": "The full-program box proves both production of E and E implying correspondence with the physical measurements.",
+              "status": "PROVED"
+            },
+            "O7": {
+              "evidence": {
+                "theorems": [
+                  "attleboro-local-hand-end-to-end-recovery-v1_end_to_end"
+                ]
+              },
+              "reason": "Bound end-to-end box.",
+              "status": "PROVED"
+            },
+            "O8": {
+              "evidence": {
+                "theorems": []
+              },
+              "reason": "This facility case has no common-context cost contract.",
+              "status": "INAPPLICABLE"
+            }
+          },
+          "obligations_attempted": [
+            "attleboro-local-hand-end-to-end-recovery-v1_end_to_end",
+            "attleboro-local-hand-end-to-end-recovery-v1_execution_witness",
+            "attleboro-local-hand-end-to-end-recovery-v1_precondition_witness",
+            "attleboro-local-hand-end-to-end-recovery-v1_stage_actor",
+            "attleboro-local-hand-end-to-end-recovery-v1_stage_controller",
+            "attleboro-local-hand-end-to-end-recovery-v1_stage_delivery",
+            "attleboro-local-hand-end-to-end-recovery-v1_stage_observer",
+            "attleboro-local-hand-end-to-end-recovery-v1_stage_plant",
+            "v2_H0_O1_premises",
+            "v2_H0_O3_boundary",
+            "v2_H0_O6_correspondence"
+          ],
+          "obligations_proved": [
+            "attleboro-local-hand-end-to-end-recovery-v1_end_to_end",
+            "attleboro-local-hand-end-to-end-recovery-v1_execution_witness",
+            "attleboro-local-hand-end-to-end-recovery-v1_precondition_witness",
+            "attleboro-local-hand-end-to-end-recovery-v1_stage_actor",
+            "attleboro-local-hand-end-to-end-recovery-v1_stage_controller",
+            "attleboro-local-hand-end-to-end-recovery-v1_stage_delivery",
+            "attleboro-local-hand-end-to-end-recovery-v1_stage_observer",
+            "attleboro-local-hand-end-to-end-recovery-v1_stage_plant",
+            "v2_H0_O1_premises",
+            "v2_H0_O3_boundary",
+            "v2_H0_O6_correspondence"
+          ],
+          "observation_property": {
+            "correspondence_given_production": "physical=1 & trusted=1 & fresh=1 & observed=q & observedPressure=pressure",
+            "production": "established=1"
+          },
+          "physical_service_property": "physical=1 (q >= 5 L/s, pressure <= 90 psi, trip clear and normal pH)",
+          "premise": "utility=0 & genMode=1 & genRun=1 & genReady=1 & resetPending=0 & resetReq=0 & prevReset=0 & remote=0 & hand=1 & tripInput=0 & ph=0 & blockedInput=0 & healthy=1 & authorized=1 & qInit=0 & ready=0 & deadline=3",
+          "procedure": "attleboro-local-hand-v1",
+          "proof_hash": {
+            "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/end_to_end.kyp": "74e72e3169084877ff088149f5575cb7a3fd6b66b418b7cb383d219207c71b66",
+            "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/execution_witness.kyp": "626c36906e5e06dbaa2599475f9e08c500e0ef58d3d87016f42548a3e91babd7",
+            "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/precondition_witness.kyp": "4952edff87010ee9d6517aa792114838241b3f39890af69f5eb7c1085940f8cf",
+            "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/stage_actor.kyp": "9bc8e8ef09c79c664a5c0a1230f47182c51566e36356af702d6a3c166ca48aac",
+            "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/stage_controller.kyp": "1dc3da5d3a475328af2f11ed350f2dc2f3341ce8938ae131e591a83972d91c7c",
+            "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/stage_delivery.kyp": "16948a5882d58b934e82c075ae973596647e1db794dc2d0666b9010c5c0ca5f6",
+            "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/stage_observer.kyp": "8e1dd40028f096309f2be3b166ad85a3b6c90cf4d343667edf71a85fdd307204",
+            "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/stage_plant.kyp": "764f51f43397c89e02481aa9e958d2e5dee07b1e892b2aab11eaa2c52d0b3ef0",
+            "paper_v2/formal_evidence/proof_records/v2_H0/O1_premises.kyp": "d2ab50a83a37ab4e16899741332e4e04f3e1428e859680b097da60a9cb45cdc4",
+            "paper_v2/formal_evidence/proof_records/v2_H0/O3_boundary.kyp": "8bb79b88275bc703c86703a902c34221c7f88c055df9bd28e2dda6f9949ddf28",
+            "paper_v2/formal_evidence/proof_records/v2_H0/O6_correspondence.kyp": "86cbd39e82b55a978c480ea159168d97b2b3dc8f86118239b4373228330ff272"
+          },
+          "proof_record": {
+            "attleboro-local-hand-end-to-end-recovery-v1_end_to_end": {
+              "model": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+              "record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/end_to_end.kyp"
+            },
+            "attleboro-local-hand-end-to-end-recovery-v1_execution_witness": {
+              "model": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+              "record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/execution_witness.kyp"
+            },
+            "attleboro-local-hand-end-to-end-recovery-v1_precondition_witness": {
+              "model": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+              "record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/precondition_witness.kyp"
+            },
+            "attleboro-local-hand-end-to-end-recovery-v1_stage_actor": {
+              "model": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+              "record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/stage_actor.kyp"
+            },
+            "attleboro-local-hand-end-to-end-recovery-v1_stage_controller": {
+              "model": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+              "record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/stage_controller.kyp"
+            },
+            "attleboro-local-hand-end-to-end-recovery-v1_stage_delivery": {
+              "model": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+              "record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/stage_delivery.kyp"
+            },
+            "attleboro-local-hand-end-to-end-recovery-v1_stage_observer": {
+              "model": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+              "record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/stage_observer.kyp"
+            },
+            "attleboro-local-hand-end-to-end-recovery-v1_stage_plant": {
+              "model": "milestone2/evidence/models/attleboro-local-hand-end-to-end-recovery-v1.kyx",
+              "record": "milestone2/evidence/proof_records/attleboro-local-hand-end-to-end-recovery-v1/stage_plant.kyp"
+            },
+            "v2_H0_O1_premises": {
+              "model": "paper_v2/formal_evidence/models/v2_H0.kyx",
+              "record": "paper_v2/formal_evidence/proof_records/v2_H0/O1_premises.kyp"
+            },
+            "v2_H0_O3_boundary": {
+              "model": "paper_v2/formal_evidence/models/v2_H0.kyx",
+              "record": "paper_v2/formal_evidence/proof_records/v2_H0/O3_boundary.kyp"
+            },
+            "v2_H0_O6_correspondence": {
+              "model": "paper_v2/formal_evidence/models/v2_H0.kyx",
+              "record": "paper_v2/formal_evidence/proof_records/v2_H0/O6_correspondence.kyp"
+            }
+          },
+          "safety_property": "safe=1 (initial and all three sampled flow, pressure, trip and pH conditions)",
+          "subcase": "H0"
+        },
+        {
+          "assessment_record": "results/milestone2/attleboro_hand_mutations.json",
+          "assessment_sha256": "0c3bb67b8cf6a01cc645a0422b1734e5730064508fb969525d481f45bd2801b3",
+          "case_id": "S4",
+          "claim_not_supported": "No installed-site staffing or response-time bound follows from the authority record.",
+          "claim_supported": "The required local operator is unavailable. The first assignment has no successor and the disabled box proves there is no complete execution.",
+          "classification": "REJECTED",
+          "classification_reason": "The required local operator is unavailable. The first assignment has no successor and the disabled box proves there is no complete execution.",
+          "classification_scope": "Incident evidence for the stipulated research fixture.",
+          "counterexample_or_witness": {
+            "disabled_stage": "actor",
+            "first_assignment": "request",
+            "terminal_paths": 0
+          },
+          "deadline_or_horizon": {
+            "clock_unit": "100 ms",
+            "deadline_tick": 3,
+            "scheduled_boundary": "t=deadline & t=ready+3"
+          },
+          "dependency_assignment": {
+            "hand_panel": "TRUSTED",
+            "local_operator": "UNAVAILABLE",
+            "motor_power": "TRUSTED",
+            "observer": "TRUSTED",
+            "pump": "TRUSTED",
+            "trip_path": "TRUSTED",
+            "vfd": "TRUSTED",
+            "water_path": "TRUSTED"
+          },
+          "domain": "Attleboro water",
+          "evidence_status": "BOUND_FIXTURE_ASSUMPTIONS",
+          "finite_model_check": {
+            "prefix_check": {
+              "blocked_assignment": "request",
+              "terminal_paths": 0
+            },
+            "premise_valuation": {
+              "authorized": "1",
+              "blockedInput": "0",
+              "deadline": "3",
+              "genMode": "1",
+              "genReady": "1",
+              "genRun": "1",
+              "hand": "1",
+              "healthy": "1",
+              "ph": "0",
+              "prevReset": "0",
+              "qInit": "0",
+              "ready": "0",
+              "remote": "0",
+              "resetPending": "0",
+              "resetReq": "0",
+              "tripInput": "0",
+              "utility": "0"
+            },
+            "terminal_executions": []
+          },
+          "hybrid_program_or_relevant_fragment": {
+            "description": "Local readiness and selector govern the panel; powered pump, trip path and observer are shared.",
+            "stages": [
+              {
+                "guarded_relations": [
+                  "(0=1)",
+                  "(received=request)"
+                ],
+                "stage": "actor"
+              },
+              {
+                "guarded_relations": [
+                  "((((received=1) & (hand=1) & (remote=0)) & accepted=1) | (!((received=1) & (hand=1) & (remote=0)) & accepted=0))",
+                  "(output=accepted)"
+                ],
+                "stage": "controller"
+              },
+              {
+                "guarded_relations": [
+                  "(delivered=output)"
+                ],
+                "stage": "delivery"
+              },
+              {
+                "guarded_relations": [
+                  "((((delivered=1) & (hand=1) & (remote=0)) & drive=1) | (!((delivered=1) & (hand=1) & (remote=0)) & drive=0))",
+                  "(tick1=(ready+1))",
+                  "(tick2=(tick1+1))",
+                  "(tick3=(tick2+1))",
+                  "((((q>=5) & (pressure<=90) & (trip=0) & (ph=0)) & physical=1) | (!((q>=5) & (pressure<=90) & (trip=0) & (ph=0)) & physical=0))"
+                ],
+                "stage": "plant"
+              },
+              {
+                "guarded_relations": [
+                  "((((trusted=1) & (fresh=1) & (physical=1) & (observed=q) & (observedPressure=pressure) & (observed>=5) & (observedPressure<=90)) & established=1) | (!((trusted=1) & (fresh=1) & (physical=1) & (observed=q) & (observedPressure=pressure) & (observed>=5) & (observedPressure<=90)) & established=0))"
+                ],
+                "stage": "observer"
+              }
+            ]
+          },
+          "initial_state": {
+            "authorized": 1,
+            "deadline_tick": 3,
+            "flow_blocked": 0,
+            "generator_ready": 1,
+            "generator_running": 1,
+            "hand_selected": 1,
+            "initial_flow": 0,
+            "mts_generator": 1,
+            "observation_fresh": 1,
+            "ph_out_of_range": 0,
+            "previous_reset": 0,
+            "ready_tick": 0,
+            "remote_selected": 0,
+            "reset_pending": 0,
+            "reset_request": 0,
+            "trip": 0,
+            "utility": 0
+          },
+          "model_hash": {
+            "milestone2/evidence/models/attleboro-hand-dependency-mutations-v1.kyx": "125a0438f7a92b7d624667a011c1f82da3c64ee03c3a822d02672e3ce4baf498"
+          },
+          "obligation_scope": "Encoded fixed procedure and its admitted assignments.",
+          "obligations": {
+            "O1": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "The concrete initial valuation satisfies every conjunct of the encoded premise.",
+              "status": "PROVED"
+            },
+            "O2": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "attleboro-hand-dependency-mutations-v1_H1_disabled"
+                ]
+              },
+              "reason": "The unavailable operator disables the first assignment. No execution or explicit failure reaches assessment.",
+              "status": "REFUTED"
+            },
+            "O3": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "attleboro-hand-dependency-mutations-v1_H1_disabled"
+                ]
+              },
+              "reason": "The unavailable operator disables the first assignment. No execution or explicit failure reaches assessment.",
+              "status": "REFUTED"
+            },
+            "O4": {
+              "evidence": {
+                "theorems": [
+                  "attleboro-hand-dependency-mutations-v1_H1_disabled"
+                ]
+              },
+              "reason": "The failed execution prerequisite precludes assessment. A vacuous box gives no assurance.",
+              "status": "INAPPLICABLE"
+            },
+            "O5": {
+              "evidence": {
+                "theorems": [
+                  "attleboro-hand-dependency-mutations-v1_H1_disabled"
+                ]
+              },
+              "reason": "The failed execution prerequisite precludes assessment. A vacuous box gives no assurance.",
+              "status": "INAPPLICABLE"
+            },
+            "O6": {
+              "evidence": {
+                "theorems": [
+                  "attleboro-hand-dependency-mutations-v1_H1_disabled"
+                ]
+              },
+              "reason": "The failed execution prerequisite precludes assessment. A vacuous box gives no assurance.",
+              "status": "INAPPLICABLE"
+            },
+            "O7": {
+              "evidence": {
+                "theorems": [
+                  "attleboro-hand-dependency-mutations-v1_H1_disabled"
+                ]
+              },
+              "reason": "The failed execution prerequisite precludes assessment. A vacuous box gives no assurance.",
+              "status": "INAPPLICABLE"
+            },
+            "O8": {
+              "evidence": {
+                "theorems": []
+              },
+              "reason": "This facility case has no common-context cost contract.",
+              "status": "INAPPLICABLE"
+            }
+          },
+          "obligations_attempted": [
+            "attleboro-hand-dependency-mutations-v1_H1_disabled"
+          ],
+          "obligations_proved": [
+            "attleboro-hand-dependency-mutations-v1_H1_disabled"
+          ],
+          "observation_property": {
+            "correspondence_given_production": "physical=1 & trusted=1 & fresh=1 & observed=q & observedPressure=pressure",
+            "production": "established=1"
+          },
+          "physical_service_property": "physical=1 (q >= 5 L/s, pressure <= 90 psi, trip clear and normal pH)",
+          "premise": "utility=0 & genMode=1 & genRun=1 & genReady=1 & resetPending=0 & resetReq=0 & prevReset=0 & remote=0 & hand=1 & tripInput=0 & ph=0 & blockedInput=0 & healthy=1 & authorized=1 & qInit=0 & ready=0 & deadline=3",
+          "procedure": "attleboro-local-hand-v1",
+          "proof_hash": {
+            "milestone2/evidence/proof_records/attleboro-hand-dependency-mutations-v1/H1_disabled.kyp": "c9cc1dfccdb135dd3f14bcbe5e3b5ab992161ef0e7042a907d9249a76d1bc756"
+          },
+          "proof_record": {
+            "attleboro-hand-dependency-mutations-v1_H1_disabled": {
+              "model": "milestone2/evidence/models/attleboro-hand-dependency-mutations-v1.kyx",
+              "record": "milestone2/evidence/proof_records/attleboro-hand-dependency-mutations-v1/H1_disabled.kyp"
+            }
+          },
+          "safety_property": "safe=1 (initial and all three sampled flow, pressure, trip and pH conditions)",
+          "subcase": "H1"
+        },
+        {
+          "assessment_record": "results/milestone2/attleboro_hand_mutations.json",
+          "assessment_sha256": "0c3bb67b8cf6a01cc645a0422b1734e5730064508fb969525d481f45bd2801b3",
+          "case_id": "S4",
+          "claim_not_supported": "No installed-site staffing or response-time bound follows from the authority record.",
+          "claim_supported": "Readiness at tick one shifts the three scans to ticks two, three and four. The flow at tick three is 4 L/s, below the 5 L/s threshold. The terminal service sample is late.",
+          "classification": "REJECTED",
+          "classification_reason": "Readiness at tick one shifts the three scans to ticks two, three and four. The flow at tick three is 4 L/s, below the 5 L/s threshold. The terminal service sample is late.",
+          "classification_scope": "Incident evidence for the stipulated research fixture.",
+          "counterexample_or_witness": {
+            "accepted": 1,
+            "delivered": 1,
+            "drive": 1,
+            "established": 1,
+            "fresh": 1,
+            "observed": "32/5",
+            "physical": 1,
+            "pressure": "246/5",
+            "q": "32/5",
+            "ready": 1,
+            "received": 1,
+            "request": 1,
+            "run": 1,
+            "safe": 1,
+            "t": 4,
+            "trusted": 1
+          },
+          "deadline_or_horizon": {
+            "clock_unit": "100 ms",
+            "deadline_tick": 3,
+            "scheduled_boundary": "t=deadline & t=ready+3"
+          },
+          "dependency_assignment": {
+            "hand_panel": "TRUSTED",
+            "local_operator": "TRUSTED",
+            "motor_power": "TRUSTED",
+            "observer": "TRUSTED",
+            "pump": "TRUSTED",
+            "trip_path": "TRUSTED",
+            "vfd": "TRUSTED",
+            "water_path": "TRUSTED"
+          },
+          "domain": "Attleboro water",
+          "evidence_status": "BOUND_FIXTURE_ASSUMPTIONS",
+          "finite_model_check": {
+            "prefix_check": {
+              "blocked_prefixes": 0,
+              "reachable_prefixes_checked": 45,
+              "scope": "All valuations allowed by this case's guarded semantic assignments.",
+              "stage_widths": [
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "actor"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "controller"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "delivery"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "plant"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "observer"
+                }
+              ],
+              "terminal_paths": 1
+            },
+            "premise_valuation": {
+              "authorized": "1",
+              "blockedInput": "0",
+              "deadline": "3",
+              "genMode": "1",
+              "genReady": "1",
+              "genRun": "1",
+              "hand": "1",
+              "healthy": "1",
+              "ph": "0",
+              "prevReset": "0",
+              "qInit": "0",
+              "ready": "1",
+              "remote": "0",
+              "resetPending": "0",
+              "resetReq": "0",
+              "tripInput": "0",
+              "utility": "0"
+            },
+            "terminal_executions": [
+              {
+                "complete_contract": false,
+                "evidence_implies_correspondence": true,
+                "evidence_produced": true,
+                "on_time": false,
+                "physical": true,
+                "safe": true,
+                "values": {
+                  "delivered": "1",
+                  "flow1": "0",
+                  "flow2": "4",
+                  "flow3": "32/5",
+                  "observed": "32/5",
+                  "observedPressure": "246/5",
+                  "output": "1",
+                  "pressure": "246/5",
+                  "q": "32/5",
+                  "ready": "1",
+                  "t": "4",
+                  "tick1": "2",
+                  "tick2": "3",
+                  "tick3": "4"
+                }
+              }
+            ]
+          },
+          "hybrid_program_or_relevant_fragment": {
+            "description": "Local readiness and selector govern the panel; powered pump, trip path and observer are shared.",
+            "stages": [
+              {
+                "guarded_relations": [
+                  "(request=authorized)",
+                  "(received=request)"
+                ],
+                "stage": "actor"
+              },
+              {
+                "guarded_relations": [
+                  "((((received=1) & (hand=1) & (remote=0)) & accepted=1) | (!((received=1) & (hand=1) & (remote=0)) & accepted=0))",
+                  "(output=accepted)"
+                ],
+                "stage": "controller"
+              },
+              {
+                "guarded_relations": [
+                  "(delivered=output)"
+                ],
+                "stage": "delivery"
+              },
+              {
+                "guarded_relations": [
+                  "((((delivered=1) & (hand=1) & (remote=0)) & drive=1) | (!((delivered=1) & (hand=1) & (remote=0)) & drive=0))",
+                  "(tick1=(ready+1))",
+                  "(tick2=(tick1+1))",
+                  "(tick3=(tick2+1))",
+                  "((((q>=5) & (pressure<=90) & (trip=0) & (ph=0)) & physical=1) | (!((q>=5) & (pressure<=90) & (trip=0) & (ph=0)) & physical=0))"
+                ],
+                "stage": "plant"
+              },
+              {
+                "guarded_relations": [
+                  "((((trusted=1) & (fresh=1) & (physical=1) & (observed=q) & (observedPressure=pressure) & (observed>=5) & (observedPressure<=90)) & established=1) | (!((trusted=1) & (fresh=1) & (physical=1) & (observed=q) & (observedPressure=pressure) & (observed>=5) & (observedPressure<=90)) & established=0))"
+                ],
+                "stage": "observer"
+              }
+            ]
+          },
+          "initial_state": {
+            "authorized": 1,
+            "deadline_tick": 3,
+            "flow_blocked": 0,
+            "generator_ready": 1,
+            "generator_running": 1,
+            "hand_selected": 1,
+            "initial_flow": 0,
+            "mts_generator": 1,
+            "observation_fresh": 1,
+            "ph_out_of_range": 0,
+            "previous_reset": 0,
+            "ready_tick": 1,
+            "remote_selected": 0,
+            "reset_pending": 0,
+            "reset_request": 0,
+            "trip": 0,
+            "utility": 0
+          },
+          "model_hash": {
+            "milestone2/evidence/models/attleboro-hand-dependency-mutations-v1.kyx": "125a0438f7a92b7d624667a011c1f82da3c64ee03c3a822d02672e3ce4baf498",
+            "paper_v2/formal_evidence/models/v2_H2.kyx": "86080831bcb06ab45bd6c34174dacc84a28a3b312a79c37c79c8b99baec8df57"
+          },
+          "obligation_scope": "Encoded fixed procedure and its admitted assignments.",
+          "obligations": {
+            "O1": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "The concrete initial valuation satisfies every conjunct of the encoded premise.",
+              "status": "PROVED"
+            },
+            "O2": {
+              "evidence": {
+                "theorems": [
+                  "v2_H2_specific_witness"
+                ]
+              },
+              "reason": "The specific reachable terminal state implies an execution.",
+              "status": "PROVED"
+            },
+            "O3": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "v2_H2_specific_witness"
+                ]
+              },
+              "reason": "All scans execute, but the clock reaches four against deadline three. There is no explicit persistent failure.",
+              "status": "REFUTED"
+            },
+            "O4": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "The safety accumulator holds on every reachable finite terminal state.",
+              "status": "PROVED"
+            },
+            "O5": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "The terminal physical predicate holds at tick four. O3 records the missed deadline.",
+              "status": "PROVED"
+            },
+            "O6": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "At tick four the observer produces matching credible service evidence. O3 records the missed deadline.",
+              "status": "PROVED"
+            },
+            "O7": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "attleboro-hand-dependency-mutations-v1_H2_violation"
+                ]
+              },
+              "reason": "Readiness at tick one shifts the three scans to ticks two, three and four. The flow at tick three is 4 L/s, below the 5 L/s threshold. The terminal service sample is late.",
+              "status": "REFUTED"
+            },
+            "O8": {
+              "evidence": {
+                "theorems": []
+              },
+              "reason": "This facility case has no common-context cost contract.",
+              "status": "INAPPLICABLE"
+            }
+          },
+          "obligations_attempted": [
+            "attleboro-hand-dependency-mutations-v1_H2_violation",
+            "v2_H2_specific_witness"
+          ],
+          "obligations_proved": [
+            "attleboro-hand-dependency-mutations-v1_H2_violation",
+            "v2_H2_specific_witness"
+          ],
+          "observation_property": {
+            "correspondence_given_production": "physical=1 & trusted=1 & fresh=1 & observed=q & observedPressure=pressure",
+            "production": "established=1"
+          },
+          "physical_service_property": "physical=1 (q >= 5 L/s, pressure <= 90 psi, trip clear and normal pH)",
+          "premise": "utility=0 & genMode=1 & genRun=1 & genReady=1 & resetPending=0 & resetReq=0 & prevReset=0 & remote=0 & hand=1 & tripInput=0 & ph=0 & blockedInput=0 & healthy=1 & authorized=1 & qInit=0 & ready=1 & deadline=3",
+          "procedure": "attleboro-local-hand-v1",
+          "proof_hash": {
+            "milestone2/evidence/proof_records/attleboro-hand-dependency-mutations-v1/H2_violation.kyp": "f17fde6ed2eafa34c448858ff8c78b915bf0f8fd288dc8b3ecccbabd6176fda9",
+            "paper_v2/formal_evidence/proof_records/v2_H2/specific_witness.kyp": "32fd88a9b85b622b683f7065f387c8f1b5347597508533bde490a8e98dccf458"
+          },
+          "proof_record": {
+            "attleboro-hand-dependency-mutations-v1_H2_violation": {
+              "model": "milestone2/evidence/models/attleboro-hand-dependency-mutations-v1.kyx",
+              "record": "milestone2/evidence/proof_records/attleboro-hand-dependency-mutations-v1/H2_violation.kyp"
+            },
+            "v2_H2_specific_witness": {
+              "model": "paper_v2/formal_evidence/models/v2_H2.kyx",
+              "record": "paper_v2/formal_evidence/proof_records/v2_H2/specific_witness.kyp"
+            }
+          },
+          "safety_property": "safe=1 (initial and all three sampled flow, pressure, trip and pH conditions)",
+          "subcase": "H2"
+        }
+      ],
+      "case_id": "S4",
+      "domain": "Attleboro water",
+      "table": {
+        "claim_boundary": "Staffing and arrival are premises",
+        "formal_artifact": "Hand composition, disabled box, late diamond",
+        "hard_obligations": "O2, O3, O7",
+        "result": [
+          "PROVED",
+          "REJECTED",
+          "REJECTED"
+        ],
+        "witness": "Ready at zero, absent, or ready at one"
+      }
+    },
+    {
+      "assessments": [
+        {
+          "assessment_record": "results/milestone2/merwin_mutations.json",
+          "assessment_sha256": "7c07057046077d3a509de7918d423f3fae48a06abe05001c97f74a63fb0e1581",
+          "case_id": "S5",
+          "claim_not_supported": "The theorem uses a reduced sampled plant, pinned forcing and synchronization readings, and an ideal grid after contact.",
+          "claim_supported": "Under the pinned forcing and synchronization observations, contact closes and three fresh generation samples exceed the 1 MW threshold.",
+          "classification": "PROVED",
+          "classification_reason": "Under the pinned forcing and synchronization observations, contact closes and three fresh generation samples exceed the 1 MW threshold.",
+          "classification_scope": "Incident evidence for the stipulated research fixture.",
+          "counterexample_or_witness": {
+            "accepted": "1",
+            "atSpeed": "1",
+            "clock": "1296",
+            "closeCmd": "1",
+            "contact": "1",
+            "credible": "1",
+            "mw1": "15540079/1000000",
+            "mw2": "1575840563/100000000",
+            "mw3": "792603199/50000000",
+            "relay": "1",
+            "request": "1",
+            "running": "1",
+            "service": "1"
+          },
+          "deadline_or_horizon": {
+            "clock_unit": "100 ms",
+            "deadline_tick": 1296,
+            "scheduled_boundary": "clock=deadline & contactClock<=tick1 & tick1<tick2 & tick2<tick3"
+          },
+          "dependency_assignment": {
+            "auxiliaries": "TRUSTED",
+            "breaker": "TRUSTED",
+            "breaker_command": "TRUSTED",
+            "hcc_link": "TRUSTED",
+            "hcc_operator": "TRUSTED",
+            "hydro_unit": "TRUSTED",
+            "power_meter": "TRUSTED",
+            "scada": "TRUSTED",
+            "sequencer": "TRUSTED",
+            "synchronization": "TRUSTED"
+          },
+          "domain": "Merwin hydro",
+          "evidence_status": "BOUND_FIXTURE_ASSUMPTIONS",
+          "finite_model_check": {
+            "prefix_check": {
+              "blocked_prefixes": 0,
+              "reachable_prefixes_checked": 51,
+              "scope": "All valuations allowed by this case's guarded semantic assignments.",
+              "stage_widths": [
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "actor"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "controller"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "roll"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "synchronization"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "delivery"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "plant"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "observer"
+                }
+              ],
+              "terminal_paths": 1
+            },
+            "premise_valuation": {
+              "auxNormal": "1",
+              "contactOperable": "1",
+              "deadline": "1296",
+              "generationCoupled": "1",
+              "meterFresh": "1",
+              "plantReady": "1",
+              "remoteMode": "1",
+              "requestClock": "31",
+              "syncAvailable": "1",
+              "syncClock": "1281",
+              "voltage": "1030"
+            },
+            "terminal_executions": [
+              {
+                "complete_contract": true,
+                "evidence_implies_correspondence": true,
+                "evidence_produced": true,
+                "on_time": true,
+                "physical": true,
+                "safe": true,
+                "values": {
+                  "clock": "1296",
+                  "closeCmd": "1",
+                  "contact": "1",
+                  "mw1": "15540079/1000000",
+                  "mw2": "1575840563/100000000",
+                  "mw3": "792603199/50000000",
+                  "observed1": "15540079/1000000",
+                  "observed2": "1575840563/100000000",
+                  "observed3": "792603199/50000000",
+                  "tick1": "1285",
+                  "tick2": "1291",
+                  "tick3": "1296"
+                }
+              }
+            ]
+          },
+          "hybrid_program_or_relevant_fragment": {
+            "description": "Close demand, actual electrical contact and generated MW occupy distinct slots.",
+            "stages": [
+              {
+                "guarded_relations": [
+                  "(((remoteMode=1) & request=1) | (!(remoteMode=1) & request=0))",
+                  "(((issued=1) & received=1) | (!(issued=1) & received=0))"
+                ],
+                "stage": "actor"
+              },
+              {
+                "guarded_relations": [
+                  "((((received=1) & (remoteMode=1) & (auxOK=1) & (plantReady=1)) & accepted=1) | (!((received=1) & (remoteMode=1) & (auxOK=1) & (plantReady=1)) & accepted=0))"
+                ],
+                "stage": "controller"
+              },
+              {
+                "guarded_relations": [
+                  "(((accepted=1) & drive=1) | (!(accepted=1) & drive=0))"
+                ],
+                "stage": "roll"
+              },
+              {
+                "guarded_relations": [
+                  "(((window=1) & closeCmd=1) | (!(window=1) & closeCmd=0))"
+                ],
+                "stage": "synchronization"
+              },
+              {
+                "guarded_relations": [
+                  "((((timerMs>=50) & (contactOperable=1)) & contact=1) | (!((timerMs>=50) & (contactOperable=1)) & contact=0))"
+                ],
+                "stage": "delivery"
+              },
+              {
+                "guarded_relations": [
+                  "(tick1=1285)",
+                  "((((contact=1) & (generationCoupled=1)) & rawMW1=((torque1*97)/100000000)) | (!((contact=1) & (generationCoupled=1)) & rawMW1=0))",
+                  "(((rawMW1>80) & mw1=80) | (!(rawMW1>80) & mw1=rawMW1))",
+                  "(tick2=1291)",
+                  "(tick3=1296)",
+                  "((((physical1=1) & (physical2=1) & (physical3=1) & (contactClock<=tick1) & (tick1<tick2) & (tick2<tick3)) & service=1) | (!((physical1=1) & (physical2=1) & (physical3=1) & (contactClock<=tick1) & (tick1<tick2) & (tick2<tick3)) & service=0))"
+                ],
+                "stage": "plant"
+              },
+              {
+                "guarded_relations": [
+                  "((((credit1=1) & (credit2=1) & (credit3=1)) & credible=1) | (!((credit1=1) & (credit2=1) & (credit3=1)) & credible=0))"
+                ],
+                "stage": "observer"
+              }
+            ]
+          },
+          "initial_state": {
+            "auxNormal": 1,
+            "contactOperable": 1,
+            "deadline": 1296,
+            "generationCoupled": 1,
+            "meterFresh": 1,
+            "plantReady": 1,
+            "remoteMode": 1,
+            "requestClock": 31,
+            "syncAvailable": 1,
+            "syncClock": 1281,
+            "voltage": 1030
+          },
+          "model_hash": {
+            "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx": "97fcb162147a93912de229b57485f705c74c9c286a9b70a421cd37cd3566b8b5",
+            "paper_v2/formal_evidence/models/v2_MER0.kyx": "2a0050c6fca97dd90b53f15e1aac17fd9073e6b9e89b47ae856fc9abafc16c9e"
+          },
+          "obligation_scope": "Encoded fixed procedure and its admitted assignments.",
+          "obligations": {
+            "O1": {
+              "evidence": {
+                "theorems": [
+                  "v2_MER0_O1_premises"
+                ]
+              },
+              "reason": "Concrete premise witness.",
+              "status": "PROVED"
+            },
+            "O2": {
+              "evidence": {
+                "theorems": [
+                  "merwin-hcc-remote-auto-end-to-end-recovery-v1_execution_witness"
+                ]
+              },
+              "reason": "Diamond with stronger terminal service postcondition.",
+              "status": "PROVED"
+            },
+            "O3": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "v2_MER0_O3_boundary"
+                ]
+              },
+              "reason": "Deadline box and exhaustive semantic-prefix successor check.",
+              "status": "PROVED"
+            },
+            "O4": {
+              "evidence": {
+                "theorems": [
+                  "merwin-hcc-remote-auto-end-to-end-recovery-v1_end_to_end"
+                ]
+              },
+              "reason": "Safety conjunct of the bound composition proof.",
+              "status": "PROVED"
+            },
+            "O5": {
+              "evidence": {
+                "theorems": [
+                  "merwin-hcc-remote-auto-end-to-end-recovery-v1_end_to_end"
+                ]
+              },
+              "reason": "Physical-service conjunct of the bound composition proof.",
+              "status": "PROVED"
+            },
+            "O6": {
+              "evidence": {
+                "theorems": [
+                  "v2_MER0_O6_correspondence"
+                ]
+              },
+              "reason": "The full-program box proves both production of E and E implying correspondence with the physical measurements.",
+              "status": "PROVED"
+            },
+            "O7": {
+              "evidence": {
+                "theorems": [
+                  "merwin-hcc-remote-auto-end-to-end-recovery-v1_end_to_end"
+                ]
+              },
+              "reason": "Bound end-to-end box.",
+              "status": "PROVED"
+            },
+            "O8": {
+              "evidence": {
+                "theorems": []
+              },
+              "reason": "This facility case has no common-context cost contract.",
+              "status": "INAPPLICABLE"
+            }
+          },
+          "obligations_attempted": [
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_actor_controller",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_delivery",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_end_to_end",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_execution_witness",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_observation",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_plant",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_roll_sync",
+            "v2_MER0_O1_premises",
+            "v2_MER0_O3_boundary",
+            "v2_MER0_O6_correspondence"
+          ],
+          "obligations_proved": [
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_actor_controller",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_delivery",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_end_to_end",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_execution_witness",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_observation",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_plant",
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_roll_sync",
+            "v2_MER0_O1_premises",
+            "v2_MER0_O3_boundary",
+            "v2_MER0_O6_correspondence"
+          ],
+          "observation_property": {
+            "correspondence_given_production": "service=1 & trusted=1 & fresh1=1 & observed1=mw1 & mw1>=1 & fresh2=1 & observed2=mw2 & mw2>=1 & fresh3=1 & observed3=mw3 & mw3>=1",
+            "production": "credible=1"
+          },
+          "physical_service_property": "service=1 (running, closed contact and MW >= 1 at all three ordered samples)",
+          "plant_reduction": {
+            "sha256": "ae99995a8d55f549d608bb8b8e3ee7b411d98ffab21e663295cbbb7f4ea707c3",
+            "source": "milestone2/evidence/merwin_plant_reduction.json"
+          },
+          "premise": "remoteMode=1 & plantReady=1 & auxNormal=1 & syncAvailable=1 & contactOperable=1 & generationCoupled=1 & meterFresh=1 & requestClock=31 & syncClock=1281 & voltage=1030 & deadline=1296",
+          "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+          "proof_hash": {
+            "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/actor_controller.kyp": "ccb0dee041905b195697916eb9bbeb0686316a48a5744917e2b676423dfd1407",
+            "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/delivery.kyp": "1d9dc0505191f86266766c4799b47f0eedcb7dee25158093307798ea9607e667",
+            "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/end_to_end.kyp": "c83d6111892e8005d733f033db9be76958211d8c3eceed105319827325728831",
+            "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/execution_witness.kyp": "dbe385093927bb63d19ed469f8acda207d283b359398b8514836995c5b70bda6",
+            "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/observation.kyp": "f2970ea997b99765053a39c584fe5be7007e29b3f9898bdc83d3e82b116ecd6c",
+            "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/plant.kyp": "587010a890cb21dbc38e883067050d544d6c74fe3846b45f4fe0cbaebcd4f26c",
+            "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/roll_sync.kyp": "16c97880100895044c6c5844e6607b56877992d79400b0e0efc3affafe1d55ad",
+            "paper_v2/formal_evidence/proof_records/v2_MER0/O1_premises.kyp": "46618d8f97deaa3bec04f6d095f1a3d6ba0d695a346520cec1edf4381fccb815",
+            "paper_v2/formal_evidence/proof_records/v2_MER0/O3_boundary.kyp": "a42186e2e1873b2b77d253b5251252e011292c60660a849e18be13bdaf287bd6",
+            "paper_v2/formal_evidence/proof_records/v2_MER0/O6_correspondence.kyp": "2d70eac5ec8f9e4bc1a629688835b8d395a6e724324b56d36fc1dacdd76c707c"
+          },
+          "proof_record": {
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_actor_controller": {
+              "model": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+              "record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/actor_controller.kyp"
+            },
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_delivery": {
+              "model": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+              "record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/delivery.kyp"
+            },
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_end_to_end": {
+              "model": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+              "record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/end_to_end.kyp"
+            },
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_execution_witness": {
+              "model": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+              "record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/execution_witness.kyp"
+            },
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_observation": {
+              "model": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+              "record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/observation.kyp"
+            },
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_plant": {
+              "model": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+              "record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/plant.kyp"
+            },
+            "merwin-hcc-remote-auto-end-to-end-recovery-v1_roll_sync": {
+              "model": "milestone2/evidence/models/merwin-hcc-remote-auto-end-to-end-recovery-v1.kyx",
+              "record": "milestone2/evidence/proof_records/merwin-hcc-remote-auto-end-to-end-recovery-v1/roll_sync.kyp"
+            },
+            "v2_MER0_O1_premises": {
+              "model": "paper_v2/formal_evidence/models/v2_MER0.kyx",
+              "record": "paper_v2/formal_evidence/proof_records/v2_MER0/O1_premises.kyp"
+            },
+            "v2_MER0_O3_boundary": {
+              "model": "paper_v2/formal_evidence/models/v2_MER0.kyx",
+              "record": "paper_v2/formal_evidence/proof_records/v2_MER0/O3_boundary.kyp"
+            },
+            "v2_MER0_O6_correspondence": {
+              "model": "paper_v2/formal_evidence/models/v2_MER0.kyx",
+              "record": "paper_v2/formal_evidence/proof_records/v2_MER0/O6_correspondence.kyp"
+            }
+          },
+          "safety_property": "safe=1 (sampled gate, speed and relay-permitted contact)",
+          "subcase": "MER0"
+        },
+        {
+          "assessment_record": "results/milestone2/merwin_mutations.json",
+          "assessment_sha256": "7c07057046077d3a509de7918d423f3fae48a06abe05001c97f74a63fb0e1581",
+          "case_id": "S5",
+          "claim_not_supported": "The theorem uses a reduced sampled plant, pinned forcing and synchronization readings, and an ideal grid after contact.",
+          "claim_supported": "The controller demands closure but stipulated inoperative contact stays open. The reduced plant reaches three zero-generation samples.",
+          "classification": "REJECTED",
+          "classification_reason": "The controller demands closure but stipulated inoperative contact stays open. The reduced plant reaches three zero-generation samples.",
+          "classification_scope": "Incident evidence for the stipulated research fixture.",
+          "counterexample_or_witness": {
+            "accepted": "1",
+            "atSpeed": "1",
+            "clock": "1296",
+            "closeCmd": "1",
+            "contact": "0",
+            "credible": "0",
+            "mw1": "0",
+            "mw2": "0",
+            "mw3": "0",
+            "relay": "1",
+            "request": "1",
+            "running": "0",
+            "service": "0"
+          },
+          "deadline_or_horizon": {
+            "clock_unit": "100 ms",
+            "deadline_tick": 1296,
+            "scheduled_boundary": "clock=deadline & contactClock<=tick1 & tick1<tick2 & tick2<tick3"
+          },
+          "dependency_assignment": {
+            "auxiliaries": "TRUSTED",
+            "breaker": "TRUSTED",
+            "breaker_command": "TRUSTED",
+            "hcc_link": "TRUSTED",
+            "hcc_operator": "TRUSTED",
+            "hydro_unit": "TRUSTED",
+            "power_meter": "TRUSTED",
+            "scada": "TRUSTED",
+            "sequencer": "TRUSTED",
+            "synchronization": "TRUSTED"
+          },
+          "domain": "Merwin hydro",
+          "evidence_status": "BOUND_FIXTURE_ASSUMPTIONS",
+          "finite_model_check": {
+            "prefix_check": {
+              "blocked_prefixes": 0,
+              "reachable_prefixes_checked": 51,
+              "scope": "All valuations allowed by this case's guarded semantic assignments.",
+              "stage_widths": [
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "actor"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "controller"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "roll"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "synchronization"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "delivery"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "plant"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "observer"
+                }
+              ],
+              "terminal_paths": 1
+            },
+            "premise_valuation": {
+              "auxNormal": "1",
+              "contactOperable": "0",
+              "deadline": "1296",
+              "generationCoupled": "1",
+              "meterFresh": "1",
+              "plantReady": "1",
+              "remoteMode": "1",
+              "requestClock": "31",
+              "syncAvailable": "1",
+              "syncClock": "1281",
+              "voltage": "1030"
+            },
+            "terminal_executions": [
+              {
+                "complete_contract": false,
+                "evidence_implies_correspondence": true,
+                "evidence_produced": false,
+                "on_time": true,
+                "physical": false,
+                "safe": true,
+                "values": {
+                  "clock": "1296",
+                  "closeCmd": "1",
+                  "contact": "0",
+                  "mw1": "0",
+                  "mw2": "0",
+                  "mw3": "0",
+                  "observed1": "0",
+                  "observed2": "0",
+                  "observed3": "0",
+                  "tick1": "1285",
+                  "tick2": "1291",
+                  "tick3": "1296"
+                }
+              }
+            ]
+          },
+          "hybrid_program_or_relevant_fragment": {
+            "description": "Close demand, actual electrical contact and generated MW occupy distinct slots.",
+            "stages": [
+              {
+                "guarded_relations": [
+                  "(((remoteMode=1) & request=1) | (!(remoteMode=1) & request=0))",
+                  "(((issued=1) & received=1) | (!(issued=1) & received=0))"
+                ],
+                "stage": "actor"
+              },
+              {
+                "guarded_relations": [
+                  "((((received=1) & (remoteMode=1) & (auxOK=1) & (plantReady=1)) & accepted=1) | (!((received=1) & (remoteMode=1) & (auxOK=1) & (plantReady=1)) & accepted=0))"
+                ],
+                "stage": "controller"
+              },
+              {
+                "guarded_relations": [
+                  "(((accepted=1) & drive=1) | (!(accepted=1) & drive=0))"
+                ],
+                "stage": "roll"
+              },
+              {
+                "guarded_relations": [
+                  "(((window=1) & closeCmd=1) | (!(window=1) & closeCmd=0))"
+                ],
+                "stage": "synchronization"
+              },
+              {
+                "guarded_relations": [
+                  "((((timerMs>=50) & (contactOperable=1)) & contact=1) | (!((timerMs>=50) & (contactOperable=1)) & contact=0))"
+                ],
+                "stage": "delivery"
+              },
+              {
+                "guarded_relations": [
+                  "(tick1=1285)",
+                  "((((contact=1) & (generationCoupled=1)) & rawMW1=((torque1*97)/100000000)) | (!((contact=1) & (generationCoupled=1)) & rawMW1=0))",
+                  "(((rawMW1>80) & mw1=80) | (!(rawMW1>80) & mw1=rawMW1))",
+                  "(tick2=1291)",
+                  "(tick3=1296)",
+                  "((((physical1=1) & (physical2=1) & (physical3=1) & (contactClock<=tick1) & (tick1<tick2) & (tick2<tick3)) & service=1) | (!((physical1=1) & (physical2=1) & (physical3=1) & (contactClock<=tick1) & (tick1<tick2) & (tick2<tick3)) & service=0))"
+                ],
+                "stage": "plant"
+              },
+              {
+                "guarded_relations": [
+                  "((((credit1=1) & (credit2=1) & (credit3=1)) & credible=1) | (!((credit1=1) & (credit2=1) & (credit3=1)) & credible=0))"
+                ],
+                "stage": "observer"
+              }
+            ]
+          },
+          "initial_state": {
+            "auxNormal": 1,
+            "contactOperable": 0,
+            "deadline": 1296,
+            "generationCoupled": 1,
+            "meterFresh": 1,
+            "plantReady": 1,
+            "remoteMode": 1,
+            "requestClock": 31,
+            "syncAvailable": 1,
+            "syncClock": 1281,
+            "voltage": 1030
+          },
+          "model_hash": {
+            "milestone2/evidence/models/merwin-mer6-violation.kyx": "ed8e68b5cdaf2e8d8f2dd7cce862a93e0832b0166f79d7ac1b8970779087b22b",
+            "paper_v2/formal_evidence/models/v2_MER6.kyx": "53493fbf163e812d30a24f174b6556f9af363cb40eb839a56b10bae740ca5e56"
+          },
+          "obligation_scope": "Encoded fixed procedure and its admitted assignments.",
+          "obligations": {
+            "O1": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "The concrete initial valuation satisfies every conjunct of the encoded premise.",
+              "status": "PROVED"
+            },
+            "O2": {
+              "evidence": {
+                "theorems": [
+                  "v2_MER6_specific_witness"
+                ]
+              },
+              "reason": "The specific reachable terminal state implies an execution.",
+              "status": "PROVED"
+            },
+            "O3": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "Every admitted semantic prefix has a successor and every path reaches the scheduled boundary.",
+              "status": "PROVED"
+            },
+            "O4": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "The safety accumulator holds on every reachable finite terminal state.",
+              "status": "PROVED"
+            },
+            "O5": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "v2_MER6_specific_witness"
+                ]
+              },
+              "reason": "An admitted complete execution has no physical service and no explicit persistent-failure exception.",
+              "status": "REFUTED"
+            },
+            "O6": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "Credible service evidence is absent on a reachable branch. An accurate reading of zero does not establish production.",
+              "status": "REFUTED"
+            },
+            "O7": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "merwin-mer6-violation_violation"
+                ]
+              },
+              "reason": "The checked negated-contract diamond refutes universal composition in this model.",
+              "status": "REFUTED"
+            },
+            "O8": {
+              "evidence": {
+                "theorems": []
+              },
+              "reason": "This facility case has no common-context cost contract.",
+              "status": "INAPPLICABLE"
+            }
+          },
+          "obligations_attempted": [
+            "merwin-mer6-violation_violation",
+            "v2_MER6_specific_witness"
+          ],
+          "obligations_proved": [
+            "merwin-mer6-violation_violation",
+            "v2_MER6_specific_witness"
+          ],
+          "observation_property": {
+            "correspondence_given_production": "service=1 & trusted=1 & fresh1=1 & observed1=mw1 & mw1>=1 & fresh2=1 & observed2=mw2 & mw2>=1 & fresh3=1 & observed3=mw3 & mw3>=1",
+            "production": "credible=1"
+          },
+          "physical_service_property": "service=1 (running, closed contact and MW >= 1 at all three ordered samples)",
+          "plant_reduction": {
+            "sha256": "ae99995a8d55f549d608bb8b8e3ee7b411d98ffab21e663295cbbb7f4ea707c3",
+            "source": "milestone2/evidence/merwin_plant_reduction.json"
+          },
+          "premise": "remoteMode=1 & plantReady=1 & auxNormal=1 & syncAvailable=1 & contactOperable=0 & generationCoupled=1 & meterFresh=1 & requestClock=31 & syncClock=1281 & voltage=1030 & deadline=1296",
+          "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+          "proof_hash": {
+            "milestone2/evidence/proof_records/merwin-mer6-violation/violation.kyp": "a3c9b2c40bfdfb81c0ce43ebdee09f882a62da497a213fe94592f6209ffa1754",
+            "paper_v2/formal_evidence/proof_records/v2_MER6/specific_witness.kyp": "e7cea1901365b6b91fb174c868393819f6d28ae7eb4d3ddc465e769123495aed"
+          },
+          "proof_record": {
+            "merwin-mer6-violation_violation": {
+              "model": "milestone2/evidence/models/merwin-mer6-violation.kyx",
+              "record": "milestone2/evidence/proof_records/merwin-mer6-violation/violation.kyp"
+            },
+            "v2_MER6_specific_witness": {
+              "model": "paper_v2/formal_evidence/models/v2_MER6.kyx",
+              "record": "paper_v2/formal_evidence/proof_records/v2_MER6/specific_witness.kyp"
+            }
+          },
+          "safety_property": "safe=1 (sampled gate, speed and relay-permitted contact)",
+          "subcase": "MER6"
+        },
+        {
+          "assessment_record": "results/milestone2/merwin_mutations.json",
+          "assessment_sha256": "7c07057046077d3a509de7918d423f3fae48a06abe05001c97f74a63fb0e1581",
+          "case_id": "S5",
+          "claim_not_supported": "The theorem uses a reduced sampled plant, pinned forcing and synchronization readings, and an ideal grid after contact.",
+          "claim_supported": "The widened breaker relation admits contact and no contact. The no-contact execution violates service, while incident integrity remains unresolved.",
+          "classification": "UNKNOWN",
+          "classification_reason": "The widened breaker relation admits contact and no contact. The no-contact execution violates service, while incident integrity remains unresolved.",
+          "classification_scope": "Incident evidence for the stipulated research fixture.",
+          "counterexample_or_witness": {
+            "accepted": "1",
+            "atSpeed": "1",
+            "clock": "1296",
+            "closeCmd": "1",
+            "contact": "0",
+            "credible": "0",
+            "mw1": "0",
+            "mw2": "0",
+            "mw3": "0",
+            "relay": "1",
+            "request": "1",
+            "running": "0",
+            "service": "0"
+          },
+          "deadline_or_horizon": {
+            "clock_unit": "100 ms",
+            "deadline_tick": 1296,
+            "scheduled_boundary": "clock=deadline & contactClock<=tick1 & tick1<tick2 & tick2<tick3"
+          },
+          "dependency_assignment": {
+            "auxiliaries": "TRUSTED",
+            "breaker": "UNKNOWN",
+            "breaker_command": "TRUSTED",
+            "hcc_link": "TRUSTED",
+            "hcc_operator": "TRUSTED",
+            "hydro_unit": "TRUSTED",
+            "power_meter": "TRUSTED",
+            "scada": "TRUSTED",
+            "sequencer": "TRUSTED",
+            "synchronization": "TRUSTED"
+          },
+          "domain": "Merwin hydro",
+          "evidence_status": "UNRESOLVED_INTEGRITY",
+          "finite_model_check": {
+            "prefix_check": {
+              "blocked_prefixes": 0,
+              "reachable_prefixes_checked": 82,
+              "scope": "All valuations allowed by this case's guarded semantic assignments.",
+              "stage_widths": [
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "actor"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "controller"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "roll"
+                },
+                {
+                  "prefixes_at_exit": 1,
+                  "stage": "synchronization"
+                },
+                {
+                  "prefixes_at_exit": 2,
+                  "stage": "delivery"
+                },
+                {
+                  "prefixes_at_exit": 2,
+                  "stage": "plant"
+                },
+                {
+                  "prefixes_at_exit": 2,
+                  "stage": "observer"
+                }
+              ],
+              "terminal_paths": 2
+            },
+            "premise_valuation": {
+              "auxNormal": "1",
+              "contactOperable": "1",
+              "deadline": "1296",
+              "generationCoupled": "1",
+              "meterFresh": "1",
+              "plantReady": "1",
+              "remoteMode": "1",
+              "requestClock": "31",
+              "syncAvailable": "1",
+              "syncClock": "1281",
+              "voltage": "1030"
+            },
+            "terminal_executions": [
+              {
+                "complete_contract": false,
+                "evidence_implies_correspondence": true,
+                "evidence_produced": false,
+                "on_time": true,
+                "physical": false,
+                "safe": true,
+                "values": {
+                  "clock": "1296",
+                  "closeCmd": "1",
+                  "contact": "0",
+                  "mw1": "0",
+                  "mw2": "0",
+                  "mw3": "0",
+                  "observed1": "0",
+                  "observed2": "0",
+                  "observed3": "0",
+                  "tick1": "1285",
+                  "tick2": "1291",
+                  "tick3": "1296"
+                }
+              },
+              {
+                "complete_contract": true,
+                "evidence_implies_correspondence": true,
+                "evidence_produced": true,
+                "on_time": true,
+                "physical": true,
+                "safe": true,
+                "values": {
+                  "clock": "1296",
+                  "closeCmd": "1",
+                  "contact": "1",
+                  "mw1": "15540079/1000000",
+                  "mw2": "1575840563/100000000",
+                  "mw3": "792603199/50000000",
+                  "observed1": "15540079/1000000",
+                  "observed2": "1575840563/100000000",
+                  "observed3": "792603199/50000000",
+                  "tick1": "1285",
+                  "tick2": "1291",
+                  "tick3": "1296"
+                }
+              }
+            ]
+          },
+          "hybrid_program_or_relevant_fragment": {
+            "description": "Close demand, actual electrical contact and generated MW occupy distinct slots.",
+            "stages": [
+              {
+                "guarded_relations": [
+                  "(((remoteMode=1) & request=1) | (!(remoteMode=1) & request=0))",
+                  "(((issued=1) & received=1) | (!(issued=1) & received=0))"
+                ],
+                "stage": "actor"
+              },
+              {
+                "guarded_relations": [
+                  "((((received=1) & (remoteMode=1) & (auxOK=1) & (plantReady=1)) & accepted=1) | (!((received=1) & (remoteMode=1) & (auxOK=1) & (plantReady=1)) & accepted=0))"
+                ],
+                "stage": "controller"
+              },
+              {
+                "guarded_relations": [
+                  "(((accepted=1) & drive=1) | (!(accepted=1) & drive=0))"
+                ],
+                "stage": "roll"
+              },
+              {
+                "guarded_relations": [
+                  "(((window=1) & closeCmd=1) | (!(window=1) & closeCmd=0))"
+                ],
+                "stage": "synchronization"
+              },
+              {
+                "guarded_relations": [
+                  "((((timerMs>=50) & (contactOperable=1)) & contact=1) | (!((timerMs>=50) & (contactOperable=1)) & contact=0) | contact=0 | contact=1)"
+                ],
+                "stage": "delivery"
+              },
+              {
+                "guarded_relations": [
+                  "(tick1=1285)",
+                  "((((contact=1) & (generationCoupled=1)) & rawMW1=((torque1*97)/100000000)) | (!((contact=1) & (generationCoupled=1)) & rawMW1=0))",
+                  "(((rawMW1>80) & mw1=80) | (!(rawMW1>80) & mw1=rawMW1))",
+                  "(tick2=1291)",
+                  "(tick3=1296)",
+                  "((((physical1=1) & (physical2=1) & (physical3=1) & (contactClock<=tick1) & (tick1<tick2) & (tick2<tick3)) & service=1) | (!((physical1=1) & (physical2=1) & (physical3=1) & (contactClock<=tick1) & (tick1<tick2) & (tick2<tick3)) & service=0))"
+                ],
+                "stage": "plant"
+              },
+              {
+                "guarded_relations": [
+                  "((((credit1=1) & (credit2=1) & (credit3=1)) & credible=1) | (!((credit1=1) & (credit2=1) & (credit3=1)) & credible=0))"
+                ],
+                "stage": "observer"
+              }
+            ]
+          },
+          "initial_state": {
+            "auxNormal": 1,
+            "contactOperable": 1,
+            "deadline": 1296,
+            "generationCoupled": 1,
+            "meterFresh": 1,
+            "plantReady": 1,
+            "remoteMode": 1,
+            "requestClock": 31,
+            "syncAvailable": 1,
+            "syncClock": 1281,
+            "voltage": 1030
+          },
+          "model_hash": {
+            "milestone2/evidence/models/merwin-mer10-violation.kyx": "7b7027586bceeb68e2bca9680994e37194d6dd1df05b15c707e586aca72d15b2",
+            "paper_v2/formal_evidence/models/v2_MER10.kyx": "b1b64234f8769bebfbd1d384d118084211471ab8dc85986048e6ed25a258c35f"
+          },
+          "obligation_scope": "Encoded fixed procedure and its admitted assignments.",
+          "obligations": {
+            "O1": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "The concrete initial valuation satisfies every conjunct of the encoded premise.",
+              "status": "PROVED"
+            },
+            "O2": {
+              "evidence": {
+                "theorems": [
+                  "v2_MER10_specific_witness"
+                ]
+              },
+              "reason": "The specific reachable terminal state implies an execution.",
+              "status": "PROVED"
+            },
+            "O3": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "Every admitted semantic prefix has a successor and every path reaches the scheduled boundary.",
+              "status": "PROVED"
+            },
+            "O4": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "The safety accumulator holds on every reachable finite terminal state.",
+              "status": "PROVED"
+            },
+            "O5": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "v2_MER10_specific_witness"
+                ]
+              },
+              "reason": "An admitted complete execution has no physical service and no explicit persistent-failure exception.",
+              "status": "REFUTED"
+            },
+            "O6": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": []
+              },
+              "reason": "Credible service evidence is absent on a reachable branch. An accurate reading of zero does not establish production.",
+              "status": "REFUTED"
+            },
+            "O7": {
+              "evidence": {
+                "finite_check": "finite_model_check",
+                "theorems": [
+                  "merwin-mer10-violation_violation"
+                ]
+              },
+              "reason": "The checked negated-contract diamond refutes universal composition in this model.",
+              "status": "REFUTED"
+            },
+            "O8": {
+              "evidence": {
+                "theorems": []
+              },
+              "reason": "This facility case has no common-context cost contract.",
+              "status": "INAPPLICABLE"
+            }
+          },
+          "obligations_attempted": [
+            "merwin-mer10-violation_violation",
+            "v2_MER10_specific_witness"
+          ],
+          "obligations_proved": [
+            "merwin-mer10-violation_violation",
+            "v2_MER10_specific_witness"
+          ],
+          "observation_property": {
+            "correspondence_given_production": "service=1 & trusted=1 & fresh1=1 & observed1=mw1 & mw1>=1 & fresh2=1 & observed2=mw2 & mw2>=1 & fresh3=1 & observed3=mw3 & mw3>=1",
+            "production": "credible=1"
+          },
+          "physical_service_property": "service=1 (running, closed contact and MW >= 1 at all three ordered samples)",
+          "plant_reduction": {
+            "sha256": "ae99995a8d55f549d608bb8b8e3ee7b411d98ffab21e663295cbbb7f4ea707c3",
+            "source": "milestone2/evidence/merwin_plant_reduction.json"
+          },
+          "premise": "remoteMode=1 & plantReady=1 & auxNormal=1 & syncAvailable=1 & contactOperable=1 & generationCoupled=1 & meterFresh=1 & requestClock=31 & syncClock=1281 & voltage=1030 & deadline=1296",
+          "procedure": "merwin-hcc-remote-auto-end-to-end-recovery-v1",
+          "proof_hash": {
+            "milestone2/evidence/proof_records/merwin-mer10-violation/violation.kyp": "7e325fa302e988f7aaa6f84e8328ec5b8155edab5160ff484c43e29f8deda2fa",
+            "paper_v2/formal_evidence/proof_records/v2_MER10/specific_witness.kyp": "f7411e0e0f5d299410eb5f873deedd28004cb92497ba5429bb8a5c5cd29ba42a"
+          },
+          "proof_record": {
+            "merwin-mer10-violation_violation": {
+              "model": "milestone2/evidence/models/merwin-mer10-violation.kyx",
+              "record": "milestone2/evidence/proof_records/merwin-mer10-violation/violation.kyp"
+            },
+            "v2_MER10_specific_witness": {
+              "model": "paper_v2/formal_evidence/models/v2_MER10.kyx",
+              "record": "paper_v2/formal_evidence/proof_records/v2_MER10/specific_witness.kyp"
+            }
+          },
+          "safety_property": "safe=1 (sampled gate, speed and relay-permitted contact)",
+          "subcase": "MER10"
+        }
+      ],
+      "case_id": "S5",
+      "domain": "Merwin hydro",
+      "table": {
+        "claim_boundary": "Pinned forcing and contact evidence",
+        "formal_artifact": "Startup composition and contact diamonds",
+        "hard_obligations": "O5--O7",
+        "result": [
+          "PROVED",
+          "REJECTED",
+          "UNKNOWN"
+        ],
+        "witness": "Three samples above 1 MW or three zeros"
+      }
+    },
+    {
+      "assessments": [
+        {
+          "assessment_record": "results/milestone2/chp_fail_closed_results.json",
+          "assessment_sha256": "4fc7037d53f76631aac1f7c486437e895aaec1486942d8e93ea52dfff59bda18",
+          "case_id": "S6",
+          "claim_not_supported": "Process readiness, physical output, cyber trust and customer supply lack a complete contract or measurements.",
+          "claim_supported": "The fixture records a simulated device lifecycle with an independent benign runtime observation. Process readiness, physical production and customer delivery remain unresolved.",
+          "classification": "UNKNOWN",
+          "classification_reason": "The fixture records a simulated device lifecycle with an independent benign runtime observation. Process readiness, physical production and customer delivery remain unresolved.",
+          "classification_scope": "Incident evidence for the stipulated research fixture.",
+          "counterexample_or_witness": {
+            "benign_logic": "EXECUTED",
+            "fixture_device": "SIMULATED"
+          },
+          "deadline_or_horizon": null,
+          "dependency_assignment": {
+            "available_compatible_reviewed_backup": true,
+            "backup_loaded": true,
+            "bootable_after_reset": true,
+            "external_customer_supply": null,
+            "heartbeat_confirmed": true,
+            "physical_heat_and_power_output": null,
+            "process_ready": null,
+            "reset_completed": true,
+            "runtime_started": true
+          },
+          "domain": "Polish CHP",
+          "evidence_status": "OBSERVED_IN_TRACE",
+          "hybrid_program_or_relevant_fragment": "Reset, boot eligibility, reviewed backup load and benign logic execution reach a device milestone.",
+          "initial_state": "siemens_compatible_openplc",
+          "milestones": {
+            "customer_service": "UNKNOWN",
+            "device": "ESTABLISHED",
+            "process": "UNKNOWN"
+          },
+          "model_hash": {},
+          "obligation_scope": "Physical process and customer-service claim.",
+          "obligations": {
+            "O1": {
+              "evidence": {
+                "theorems": [],
+                "trace": "trace_evidence"
+              },
+              "reason": "Service premises have no CHP process-state binding.",
+              "status": "UNBOUND_MODEL"
+            },
+            "O2": {
+              "evidence": {
+                "theorems": [],
+                "trace": "trace_evidence"
+              },
+              "reason": "No executable CHP process or supply model is bound.",
+              "status": "UNBOUND_MODEL"
+            },
+            "O3": {
+              "evidence": {
+                "theorems": [],
+                "trace": "trace_evidence"
+              },
+              "reason": "No process timeline or persistent failure model is bound.",
+              "status": "UNBOUND_MODEL"
+            },
+            "O4": {
+              "evidence": {
+                "theorems": [],
+                "trace": "trace_evidence"
+              },
+              "reason": "No physical process safety model is bound.",
+              "status": "UNBOUND_MODEL"
+            },
+            "O5": {
+              "evidence": {
+                "theorems": [],
+                "trace": "trace_evidence"
+              },
+              "reason": "No heat or electrical production model is bound.",
+              "status": "UNBOUND_MODEL"
+            },
+            "O6": {
+              "evidence": {
+                "theorems": [],
+                "trace": "trace_evidence"
+              },
+              "reason": "The fixture provides no measurements of physical or customer delivery.",
+              "status": "UNBOUND_EVIDENCE"
+            },
+            "O7": {
+              "evidence": {
+                "theorems": [],
+                "trace": "trace_evidence"
+              },
+              "reason": "The complete process and customer-service contract has no model.",
+              "status": "UNBOUND_MODEL"
+            },
+            "O8": {
+              "evidence": {
+                "theorems": []
+              },
+              "reason": "This facility case has no common-context cost contract.",
+              "status": "INAPPLICABLE"
+            }
+          },
+          "obligations_attempted": [],
+          "obligations_proved": [],
+          "observation_property": "Credible process-output and customer-supply measurements (unbound).",
+          "physical_service_property": "Physical CHP output and delivery of customer heat or electricity (unbound).",
+          "premise": "Reviewed compatible backup and witnessed benign runtime in the selected device fixture.",
+          "procedure": "chp-reviewed-backup-reload",
+          "proof_hash": {},
+          "proof_record": {},
+          "safety_property": null,
+          "subcase": "CHP0",
+          "trace_evidence": {
+            "bundle": "siemens_compatible_openplc",
+            "cyber_trust": "unknown",
+            "input_sha256": {
+              "assessment": "3954712005d9f0cc4ff83e8c0c21fd2498841a595bcc325521a24c8723d4810e",
+              "events": "3ce54a1ac2440af24c9300f4632996230b0369053891430a17e1f259d4d19973",
+              "runtime": "a5797b964ed33fe5467b3a3737cf4e4f7de6637cef94739f0ede1cda59d8294c",
+              "scenario": "890f19fa64ab9211e7f4117723e11633876d83de16afe850afa1e509ea48979b"
+            },
+            "probe": {
+              "compile_success": true,
+              "scan_count_after": 22.0,
+              "scan_count_before": 16.0,
+              "status": "CONFIRMED"
+            },
+            "record": "milestone2/chp_device_evidence.json",
+            "sha256": "23cbf0f54d84cf2f958524ff24769eaba871944921e4d43c650d2b9937deba21"
+          }
+        }
+      ],
+      "case_id": "S6",
+      "domain": "Polish CHP",
+      "table": {
+        "claim_boundary": "Device milestone only",
+        "formal_artifact": "Device lifecycle and runtime trace",
+        "hard_obligations": "O5--O7 unbound",
+        "result": [
+          "UNKNOWN"
+        ],
+        "witness": "Reviewed load and advancing scan counter"
+      }
+    }
+  ],
+  "method": "Nominal rows cite checked dL theorems. A finite_model_check evaluates the exact rational guarded assignments that emit each archive. Each obligation identifies its method. Relative paths start at procedure_formalism.",
+  "obligations_attempted_and_proved": "These lists name checked dL archive entries, including diamonds proving counterexamples. They are distinct from the statuses of the corresponding assurance goals.",
+  "schema_version": 3,
+  "scope": "Obligation statuses concern the bound model. Classification concerns the incident under its stated evidence. REFUTED O7 on a widened relation can coexist with UNKNOWN incident integrity. No service theorem was attempted for CHP.",
+  "timing": "O3 binds the assessment clock. O5 and O6 describe terminal physical service and corresponding evidence. O7 is the full deadline-bearing contract. An actual delivery failure state is distinct from a recorded persistent control-flow failure."
+}
