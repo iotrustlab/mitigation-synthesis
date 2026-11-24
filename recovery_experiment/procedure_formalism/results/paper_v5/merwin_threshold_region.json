@@ -1,0 +1,330 @@
+{
+  "scope": "Pinned startup trajectory, same terminal poll, positive requested generation in MW.",
+  "method": "Exact rational contract projection of all guarded executions. An inclusive upper endpoint is the minimum generation over the required suffix when safe, running, in contact, correctly timed, and freshly observed. Otherwise the branch supports no positive threshold. A null upper bound is unbounded.",
+  "poll_selection": "Last k consecutive service polls ending at the original horizon. k=4 is unsupported.",
+  "sources": [
+    "milestone2/merwin.py",
+    "milestone2/merwin_reduction.py",
+    "milestone2/fixtures/merwin_remote_forcing.csv",
+    "milestone2/evidence/merwin_plant_reduction.json",
+    "results/milestone2/merwin_proof_summary.json",
+    "results/milestone2/merwin_mutations.json"
+  ],
+  "forcing_region": {
+    "status": "UNSUPPORTED_BY_CURRENT_MODEL",
+    "reason": "The reduction binds one input series and synchronization observation sequence. No justified uncertainty intervals or correlations bind new input trajectories."
+  },
+  "branches": {
+    "MER0": [
+      {
+        "contact": 1,
+        "running": 1,
+        "safe": 1,
+        "ticks": [
+          1285,
+          1291,
+          1296
+        ],
+        "generation_mw": [
+          "15540079/1000000",
+          "1575840563/100000000",
+          "792603199/50000000"
+        ],
+        "fresh": [
+          1,
+          1,
+          1
+        ],
+        "readings_mw": [
+          "15540079/1000000",
+          "1575840563/100000000",
+          "792603199/50000000"
+        ]
+      }
+    ],
+    "MER6": [
+      {
+        "contact": 0,
+        "running": 0,
+        "safe": 1,
+        "ticks": [
+          1285,
+          1291,
+          1296
+        ],
+        "generation_mw": [
+          "0",
+          "0",
+          "0"
+        ],
+        "fresh": [
+          1,
+          1,
+          1
+        ],
+        "readings_mw": [
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "MER8": [
+      {
+        "contact": 1,
+        "running": 1,
+        "safe": 1,
+        "ticks": [
+          1285,
+          1291,
+          1296
+        ],
+        "generation_mw": [
+          "15540079/1000000",
+          "1575840563/100000000",
+          "792603199/50000000"
+        ],
+        "fresh": [
+          1,
+          1,
+          0
+        ],
+        "readings_mw": [
+          "15540079/1000000",
+          "1575840563/100000000",
+          "1575840563/100000000"
+        ]
+      }
+    ],
+    "MER10": [
+      {
+        "contact": 0,
+        "running": 0,
+        "safe": 1,
+        "ticks": [
+          1285,
+          1291,
+          1296
+        ],
+        "generation_mw": [
+          "0",
+          "0",
+          "0"
+        ],
+        "fresh": [
+          1,
+          1,
+          1
+        ],
+        "readings_mw": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "contact": 1,
+        "running": 1,
+        "safe": 1,
+        "ticks": [
+          1285,
+          1291,
+          1296
+        ],
+        "generation_mw": [
+          "15540079/1000000",
+          "1575840563/100000000",
+          "792603199/50000000"
+        ],
+        "fresh": [
+          1,
+          1,
+          1
+        ],
+        "readings_mw": [
+          "15540079/1000000",
+          "1575840563/100000000",
+          "792603199/50000000"
+        ]
+      }
+    ]
+  },
+  "results": [
+    {
+      "case": "MER0",
+      "required_polls": 1,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": "792603199/50000000",
+      "result": "SERVICE_PROVED"
+    },
+    {
+      "case": "MER0",
+      "required_polls": 1,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "792603199/50000000",
+      "maximum_mw_inclusive": null,
+      "result": "SERVICE_CONTRACT_VIOLATED"
+    },
+    {
+      "case": "MER0",
+      "required_polls": 2,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": "1575840563/100000000",
+      "result": "SERVICE_PROVED"
+    },
+    {
+      "case": "MER0",
+      "required_polls": 2,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "1575840563/100000000",
+      "maximum_mw_inclusive": null,
+      "result": "SERVICE_CONTRACT_VIOLATED"
+    },
+    {
+      "case": "MER0",
+      "required_polls": 3,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": "15540079/1000000",
+      "result": "SERVICE_PROVED"
+    },
+    {
+      "case": "MER0",
+      "required_polls": 3,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "15540079/1000000",
+      "maximum_mw_inclusive": null,
+      "result": "SERVICE_CONTRACT_VIOLATED"
+    },
+    {
+      "case": "MER0",
+      "required_polls": 4,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": null,
+      "result": "UNSUPPORTED_PARAMETER_REGION"
+    },
+    {
+      "case": "MER6",
+      "required_polls": 1,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": null,
+      "result": "SERVICE_CONTRACT_VIOLATED"
+    },
+    {
+      "case": "MER6",
+      "required_polls": 2,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": null,
+      "result": "SERVICE_CONTRACT_VIOLATED"
+    },
+    {
+      "case": "MER6",
+      "required_polls": 3,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": null,
+      "result": "SERVICE_CONTRACT_VIOLATED"
+    },
+    {
+      "case": "MER6",
+      "required_polls": 4,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": null,
+      "result": "UNSUPPORTED_PARAMETER_REGION"
+    },
+    {
+      "case": "MER8",
+      "required_polls": 1,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": null,
+      "result": "SERVICE_CONTRACT_VIOLATED"
+    },
+    {
+      "case": "MER8",
+      "required_polls": 2,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": null,
+      "result": "SERVICE_CONTRACT_VIOLATED"
+    },
+    {
+      "case": "MER8",
+      "required_polls": 3,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": null,
+      "result": "SERVICE_CONTRACT_VIOLATED"
+    },
+    {
+      "case": "MER8",
+      "required_polls": 4,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": null,
+      "result": "UNSUPPORTED_PARAMETER_REGION"
+    },
+    {
+      "case": "MER10",
+      "required_polls": 1,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": "792603199/50000000",
+      "result": "UNKNOWN_CONTACT_INTEGRITY"
+    },
+    {
+      "case": "MER10",
+      "required_polls": 1,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "792603199/50000000",
+      "maximum_mw_inclusive": null,
+      "result": "SERVICE_CONTRACT_VIOLATED"
+    },
+    {
+      "case": "MER10",
+      "required_polls": 2,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": "1575840563/100000000",
+      "result": "UNKNOWN_CONTACT_INTEGRITY"
+    },
+    {
+      "case": "MER10",
+      "required_polls": 2,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "1575840563/100000000",
+      "maximum_mw_inclusive": null,
+      "result": "SERVICE_CONTRACT_VIOLATED"
+    },
+    {
+      "case": "MER10",
+      "required_polls": 3,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": "15540079/1000000",
+      "result": "UNKNOWN_CONTACT_INTEGRITY"
+    },
+    {
+      "case": "MER10",
+      "required_polls": 3,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "15540079/1000000",
+      "maximum_mw_inclusive": null,
+      "result": "SERVICE_CONTRACT_VIOLATED"
+    },
+    {
+      "case": "MER10",
+      "required_polls": 4,
+      "deadline_tick": 1296,
+      "minimum_mw_exclusive": "0",
+      "maximum_mw_inclusive": null,
+      "result": "UNSUPPORTED_PARAMETER_REGION"
+    }
+  ]
+}

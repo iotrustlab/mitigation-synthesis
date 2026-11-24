@@ -1,0 +1,3341 @@
+{
+  "assessments": [
+    {
+      "assessment_id": "attleboro_remote_study/M0/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M1/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M2/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M3/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M4/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-hold-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M6/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M6/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M7/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M8/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M9/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M10/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M11/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M12/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M12/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M13/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-hold-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_hand/H0/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_hand/H1/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_hand/H2/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_hand/H3/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_hand/H4/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_hand/H5/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_hand/H6/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_hand/H7/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_hand/H8/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_hand/H9/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_hand/H10/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C0/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C0/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C1/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C1/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C2/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C2/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C3/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C3/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C4/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C4/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C5/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C5/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C6/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C6/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C7/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "controlled_cost/C7/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "merwin/MER0/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "merwin/MER1/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "merwin/MER2/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "merwin/MER3/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "merwin/MER4/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "merwin/MER5/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "merwin/MER6/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "merwin/MER7/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "merwin/MER8/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "merwin/MER9/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "merwin/MER10/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "chp/CHP0/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "chp/CHP1/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "chp/CHP2/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "chp/CHP3/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "chp/CHP4/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "chp/CHP5/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "chp/CHP6/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "chp/CHP7/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "chp/CHP8/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "NOT_RETAINED",
+      "variant": "FULL"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M0/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M1/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M2/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M3/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M4/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-hold-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M6/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M6/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M7/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M8/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M9/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M10/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M11/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M12/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M12/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M13/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-hold-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H0/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H1/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H2/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H3/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H4/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H5/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H6/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H7/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H8/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H9/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H10/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C0/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C0/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C1/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C1/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C2/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C2/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C3/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C3/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C4/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C4/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C5/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C5/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C6/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C6/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C7/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C7/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "merwin/MER0/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "merwin/MER1/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "merwin/MER2/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "merwin/MER3/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "merwin/MER4/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "merwin/MER5/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "merwin/MER6/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "merwin/MER7/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "merwin/MER8/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "merwin/MER9/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "merwin/MER10/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "chp/CHP0/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "chp/CHP1/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "chp/CHP2/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "chp/CHP3/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "chp/CHP4/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "chp/CHP5/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "chp/CHP6/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "chp/CHP7/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "chp/CHP8/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M0/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M1/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M2/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M3/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M4/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-hold-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M6/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M6/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M7/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M8/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M9/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M10/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M11/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M12/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M12/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M13/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-hold-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H0/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "PROVED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H1/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H2/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H3/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H4/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H5/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H6/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H7/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H8/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H9/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H10/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C0/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C0/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C1/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C1/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C2/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C2/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C3/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C3/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C4/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C4/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C5/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C5/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C6/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C6/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C7/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "controlled_cost/C7/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "merwin/MER0/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "merwin/MER1/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "merwin/MER2/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "merwin/MER3/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "merwin/MER4/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "merwin/MER5/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "merwin/MER6/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "merwin/MER7/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "merwin/MER8/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "merwin/MER9/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "merwin/MER10/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "chp/CHP0/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "chp/CHP1/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "chp/CHP2/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "chp/CHP3/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "chp/CHP4/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "chp/CHP5/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "chp/CHP6/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "chp/CHP7/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "chp/CHP8/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M0/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M1/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M2/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M3/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M4/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-hold-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M6/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M6/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M7/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M8/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M9/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M10/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M11/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M12/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M12/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M13/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-hold-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_hand/H0/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_hand/H1/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_hand/H2/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_hand/H3/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_hand/H4/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_hand/H5/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_hand/H6/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_hand/H7/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_hand/H8/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_hand/H9/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_hand/H10/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C0/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C0/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C1/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C1/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C2/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C2/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C3/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C3/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C4/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C4/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C5/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C5/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C6/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C6/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C7/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "controlled_cost/C7/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "merwin/MER0/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "merwin/MER1/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "merwin/MER2/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "merwin/MER3/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "merwin/MER4/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "merwin/MER5/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "merwin/MER6/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "merwin/MER7/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "merwin/MER8/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "merwin/MER9/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "merwin/MER10/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "chp/CHP0/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "chp/CHP1/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "chp/CHP2/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "chp/CHP3/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "chp/CHP4/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "chp/CHP5/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "chp/CHP6/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "chp/CHP7/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "chp/CHP8/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M0/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M1/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M2/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M3/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M4/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-hold-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M6/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M6/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M7/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M8/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M9/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M10/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M11/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M12/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M12/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M13/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-hold-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_hand/H0/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_hand/H1/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_hand/H2/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_hand/H3/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_hand/H4/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_hand/H5/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_hand/H6/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_hand/H7/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_hand/H8/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_hand/H9/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_hand/H10/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C0/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C0/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C1/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C1/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C2/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C2/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C3/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C3/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C4/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C4/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C5/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C5/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C6/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C6/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C7/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "controlled_cost/C7/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "merwin/MER0/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "merwin/MER1/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "merwin/MER2/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "merwin/MER3/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "merwin/MER4/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "merwin/MER5/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "merwin/MER6/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "merwin/MER7/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "merwin/MER8/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "merwin/MER9/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "merwin/MER10/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "NOT_RETAINED",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "chp/CHP0/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "chp/CHP1/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "chp/CHP2/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "chp/CHP3/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "chp/CHP4/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "chp/CHP5/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "chp/CHP6/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "chp/CHP7/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "chp/CHP8/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M0/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "PROVED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M1/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M2/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M3/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M4/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M5/attleboro-hold-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M6/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M6/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M7/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M8/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M9/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M10/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M11/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M12/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M12/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M13/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-remote-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-local-hand-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_remote_study/M14/attleboro-hold-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H0/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "PROVED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H1/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H2/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H3/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H4/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H5/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H6/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H7/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H8/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H9/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "attleboro_hand/H10/attleboro-local-hand-end-to-end-recovery-v1",
+      "domain": "attleboro",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C0/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C0/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C1/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C1/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C2/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C2/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C3/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C3/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C4/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C4/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C5/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C5/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C6/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "PROVED",
+      "retention": "RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C6/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C7/controlled-water-automatic-P2-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "controlled_cost/C7/controlled-water-manual-P3-v1",
+      "domain": "controlled_water",
+      "evidence_outcome": "REJECTED",
+      "retention": "NOT_RETAINED",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "merwin/MER0/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "PROVED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "merwin/MER1/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "merwin/MER2/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "merwin/MER3/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "PROVED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "merwin/MER4/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "merwin/MER5/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "merwin/MER6/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "merwin/MER7/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "merwin/MER8/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "merwin/MER9/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "merwin/MER10/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+      "domain": "merwin",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "chp/CHP0/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "chp/CHP1/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "chp/CHP2/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "chp/CHP3/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "chp/CHP4/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "chp/CHP5/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "chp/CHP6/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "REJECTED",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "chp/CHP7/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "assessment_id": "chp/CHP8/chp-reviewed-backup-reload",
+      "domain": "chp",
+      "evidence_outcome": "UNKNOWN",
+      "retention": "INAPPLICABLE",
+      "variant": "BREAK_SHARED_IDENTITY"
+    }
+  ],
+  "by_domain": [
+    {
+      "applicable": 32,
+      "decisive_assessments": [],
+      "domain": "attleboro",
+      "retained": 2,
+      "retained_known_failure": 0,
+      "retained_proved": 2,
+      "retained_unresolved": 0,
+      "retained_without_support": 0,
+      "variant": "FULL"
+    },
+    {
+      "applicable": 9,
+      "decisive_assessments": [],
+      "domain": "chp",
+      "retained": 0,
+      "retained_known_failure": 0,
+      "retained_proved": 0,
+      "retained_unresolved": 0,
+      "retained_without_support": 0,
+      "variant": "FULL"
+    },
+    {
+      "applicable": 16,
+      "decisive_assessments": [],
+      "domain": "controlled_water",
+      "retained": 7,
+      "retained_known_failure": 0,
+      "retained_proved": 7,
+      "retained_unresolved": 0,
+      "retained_without_support": 0,
+      "variant": "FULL"
+    },
+    {
+      "applicable": 11,
+      "decisive_assessments": [],
+      "domain": "merwin",
+      "retained": 2,
+      "retained_known_failure": 0,
+      "retained_proved": 2,
+      "retained_unresolved": 0,
+      "retained_without_support": 0,
+      "variant": "FULL"
+    },
+    {
+      "applicable": 30,
+      "decisive_assessments": [
+        "attleboro_remote_study/M10/attleboro-local-hand-v1",
+        "attleboro_remote_study/M11/attleboro-local-hand-v1",
+        "attleboro_hand/H1/attleboro-local-hand-end-to-end-recovery-v1",
+        "attleboro_hand/H2/attleboro-local-hand-end-to-end-recovery-v1"
+      ],
+      "domain": "attleboro",
+      "retained": 6,
+      "retained_known_failure": 4,
+      "retained_proved": 2,
+      "retained_unresolved": 0,
+      "retained_without_support": 4,
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "applicable": 0,
+      "decisive_assessments": [],
+      "domain": "chp",
+      "retained": 0,
+      "retained_known_failure": 0,
+      "retained_proved": 0,
+      "retained_unresolved": 0,
+      "retained_without_support": 0,
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "applicable": 16,
+      "decisive_assessments": [
+        "controlled_cost/C2/controlled-water-manual-P3-v1"
+      ],
+      "domain": "controlled_water",
+      "retained": 8,
+      "retained_known_failure": 1,
+      "retained_proved": 7,
+      "retained_unresolved": 0,
+      "retained_without_support": 1,
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "applicable": 11,
+      "decisive_assessments": [
+        "merwin/MER1/merwin-hcc-remote-auto-end-to-end-recovery-v1"
+      ],
+      "domain": "merwin",
+      "retained": 3,
+      "retained_known_failure": 1,
+      "retained_proved": 2,
+      "retained_unresolved": 0,
+      "retained_without_support": 1,
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "applicable": 13,
+      "decisive_assessments": [
+        "attleboro_remote_study/M5/attleboro-remote-end-to-end-recovery-v1",
+        "attleboro_remote_study/M13/attleboro-remote-end-to-end-recovery-v1"
+      ],
+      "domain": "attleboro",
+      "retained": 3,
+      "retained_known_failure": 1,
+      "retained_proved": 1,
+      "retained_unresolved": 1,
+      "retained_without_support": 2,
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "applicable": 0,
+      "decisive_assessments": [],
+      "domain": "chp",
+      "retained": 0,
+      "retained_known_failure": 0,
+      "retained_proved": 0,
+      "retained_unresolved": 0,
+      "retained_without_support": 0,
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "applicable": 16,
+      "decisive_assessments": [],
+      "domain": "controlled_water",
+      "retained": 7,
+      "retained_known_failure": 0,
+      "retained_proved": 7,
+      "retained_unresolved": 0,
+      "retained_without_support": 0,
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "applicable": 11,
+      "decisive_assessments": [
+        "merwin/MER6/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+        "merwin/MER10/merwin-hcc-remote-auto-end-to-end-recovery-v1"
+      ],
+      "domain": "merwin",
+      "retained": 4,
+      "retained_known_failure": 1,
+      "retained_proved": 2,
+      "retained_unresolved": 1,
+      "retained_without_support": 2,
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "applicable": 30,
+      "decisive_assessments": [
+        "attleboro_remote_study/M7/attleboro-remote-end-to-end-recovery-v1",
+        "attleboro_hand/H7/attleboro-local-hand-end-to-end-recovery-v1"
+      ],
+      "domain": "attleboro",
+      "retained": 4,
+      "retained_known_failure": 2,
+      "retained_proved": 2,
+      "retained_unresolved": 0,
+      "retained_without_support": 2,
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "applicable": 7,
+      "decisive_assessments": [
+        "chp/CHP0/chp-reviewed-backup-reload",
+        "chp/CHP5/chp-reviewed-backup-reload"
+      ],
+      "domain": "chp",
+      "retained": 2,
+      "retained_known_failure": 0,
+      "retained_proved": 0,
+      "retained_unresolved": 2,
+      "retained_without_support": 2,
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "applicable": 16,
+      "decisive_assessments": [],
+      "domain": "controlled_water",
+      "retained": 7,
+      "retained_known_failure": 0,
+      "retained_proved": 7,
+      "retained_unresolved": 0,
+      "retained_without_support": 0,
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "applicable": 11,
+      "decisive_assessments": [
+        "merwin/MER7/merwin-hcc-remote-auto-end-to-end-recovery-v1"
+      ],
+      "domain": "merwin",
+      "retained": 3,
+      "retained_known_failure": 1,
+      "retained_proved": 2,
+      "retained_unresolved": 0,
+      "retained_without_support": 1,
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "applicable": 30,
+      "decisive_assessments": [
+        "attleboro_remote_study/M8/attleboro-remote-end-to-end-recovery-v1",
+        "attleboro_remote_study/M9/attleboro-remote-end-to-end-recovery-v1",
+        "attleboro_hand/H8/attleboro-local-hand-end-to-end-recovery-v1",
+        "attleboro_hand/H9/attleboro-local-hand-end-to-end-recovery-v1"
+      ],
+      "domain": "attleboro",
+      "retained": 6,
+      "retained_known_failure": 4,
+      "retained_proved": 2,
+      "retained_unresolved": 0,
+      "retained_without_support": 4,
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "applicable": 0,
+      "decisive_assessments": [],
+      "domain": "chp",
+      "retained": 0,
+      "retained_known_failure": 0,
+      "retained_proved": 0,
+      "retained_unresolved": 0,
+      "retained_without_support": 0,
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "applicable": 16,
+      "decisive_assessments": [
+        "controlled_cost/C4/controlled-water-automatic-P2-v1",
+        "controlled_cost/C4/controlled-water-manual-P3-v1"
+      ],
+      "domain": "controlled_water",
+      "retained": 9,
+      "retained_known_failure": 2,
+      "retained_proved": 7,
+      "retained_unresolved": 0,
+      "retained_without_support": 2,
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "applicable": 11,
+      "decisive_assessments": [
+        "merwin/MER8/merwin-hcc-remote-auto-end-to-end-recovery-v1"
+      ],
+      "domain": "merwin",
+      "retained": 3,
+      "retained_known_failure": 1,
+      "retained_proved": 2,
+      "retained_unresolved": 0,
+      "retained_without_support": 1,
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "applicable": 8,
+      "decisive_assessments": [],
+      "domain": "attleboro",
+      "retained": 0,
+      "retained_known_failure": 0,
+      "retained_proved": 0,
+      "retained_unresolved": 0,
+      "retained_without_support": 0,
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "applicable": 0,
+      "decisive_assessments": [],
+      "domain": "chp",
+      "retained": 0,
+      "retained_known_failure": 0,
+      "retained_proved": 0,
+      "retained_unresolved": 0,
+      "retained_without_support": 0,
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "applicable": 16,
+      "decisive_assessments": [],
+      "domain": "controlled_water",
+      "retained": 7,
+      "retained_known_failure": 0,
+      "retained_proved": 7,
+      "retained_unresolved": 0,
+      "retained_without_support": 0,
+      "variant": "BREAK_SHARED_IDENTITY"
+    },
+    {
+      "applicable": 0,
+      "decisive_assessments": [],
+      "domain": "merwin",
+      "retained": 0,
+      "retained_known_failure": 0,
+      "retained_proved": 0,
+      "retained_unresolved": 0,
+      "retained_without_support": 0,
+      "variant": "BREAK_SHARED_IDENTITY"
+    }
+  ],
+  "clone_placement_diagnostic": [
+    {
+      "cloned_retained_all_placements": [],
+      "original_retained": [],
+      "placements": [
+        {
+          "affected_copy": "attleboro-remote-end-to-end-recovery-v1",
+          "retained": []
+        },
+        {
+          "affected_copy": "attleboro-local-hand-v1",
+          "retained": [
+            "attleboro-remote-end-to-end-recovery-v1"
+          ]
+        }
+      ],
+      "resource": "vfd",
+      "scenario": "M6",
+      "stipulated_status": "UNAVAILABLE"
+    },
+    {
+      "cloned_retained_all_placements": [],
+      "original_retained": [],
+      "placements": [
+        {
+          "affected_copy": "controlled-water-automatic-P2-v1",
+          "retained": [
+            "controlled-water-manual-P3-v1"
+          ]
+        },
+        {
+          "affected_copy": "controlled-water-manual-P3-v1",
+          "retained": [
+            "controlled-water-automatic-P2-v1"
+          ]
+        }
+      ],
+      "resource": "power_feed",
+      "scenario": "C3",
+      "stipulated_status": "UNAVAILABLE"
+    },
+    {
+      "cloned_retained_all_placements": [],
+      "original_retained": [],
+      "placements": [
+        {
+          "affected_copy": "controlled-water-automatic-P2-v1",
+          "retained": [
+            "controlled-water-manual-P3-v1"
+          ]
+        },
+        {
+          "affected_copy": "controlled-water-manual-P3-v1",
+          "retained": [
+            "controlled-water-automatic-P2-v1"
+          ]
+        }
+      ],
+      "resource": "meter",
+      "scenario": "C4",
+      "stipulated_status": "COMPROMISED"
+    },
+    {
+      "cloned_retained_all_placements": [],
+      "original_retained": [],
+      "placements": [
+        {
+          "affected_copy": "controlled-water-automatic-P2-v1",
+          "retained": [
+            "controlled-water-manual-P3-v1"
+          ]
+        },
+        {
+          "affected_copy": "controlled-water-manual-P3-v1",
+          "retained": [
+            "controlled-water-automatic-P2-v1"
+          ]
+        }
+      ],
+      "resource": "delivery_pipe",
+      "scenario": "C7",
+      "stipulated_status": "UNAVAILABLE"
+    }
+  ],
+  "decision": "Retained requires a reachable endpoint and satisfaction on every execution of the specified weakened contract. The full reference is adjudicated separately from baseline votes.",
+  "methods": {
+    "BREAK_SHARED_IDENTITY": "Key each shared resource by (candidate, resource) instead of resource. Preserve every observed or stipulated status for the fixed candidate. The separate placement diagnostic applies one shared-event mutation to one copy at a time.",
+    "COLLAPSE_DELIVERY": "Feed command output directly to the delivery slot. Keep separate power, mode, protection, relay, plant and meter requirements. Local Hand already copies the command.",
+    "COLLAPSE_PLANT": "Replace terminal service magnitude by the service threshold when the actuator reports running (water and hydro) or the drive is powered (tank). Sample that substituted quantity using the original observer guards. Keep original safety, time and upstream enabling conditions. For eligible CHP device/process queries the observed heartbeat serves as the proxy, subject to any explicitly false process prerequisite.",
+    "FULL": "Retain a reachable candidate meeting the complete bounded service contract; documentary claims require service evidence.",
+    "NO_AUTHORITY": "Assume the modeled initiating actor present and authorized, and remove water actor wait. Preserve selectors, interlocks, communication and equipment startup times.",
+    "NO_OBSERVATION": "Project away the final observer stage and its postconditions. Check the actual physical quantity, safety and time."
+  },
+  "totals": [
+    {
+      "applicable": 68,
+      "decisive_assessments": [],
+      "retained": 11,
+      "retained_known_failure": 0,
+      "retained_proved": 11,
+      "retained_unresolved": 0,
+      "retained_without_support": 0,
+      "variant": "FULL"
+    },
+    {
+      "applicable": 57,
+      "decisive_assessments": [
+        "attleboro_remote_study/M10/attleboro-local-hand-v1",
+        "attleboro_remote_study/M11/attleboro-local-hand-v1",
+        "attleboro_hand/H1/attleboro-local-hand-end-to-end-recovery-v1",
+        "attleboro_hand/H2/attleboro-local-hand-end-to-end-recovery-v1",
+        "controlled_cost/C2/controlled-water-manual-P3-v1",
+        "merwin/MER1/merwin-hcc-remote-auto-end-to-end-recovery-v1"
+      ],
+      "retained": 17,
+      "retained_known_failure": 6,
+      "retained_proved": 11,
+      "retained_unresolved": 0,
+      "retained_without_support": 6,
+      "variant": "NO_AUTHORITY"
+    },
+    {
+      "applicable": 40,
+      "decisive_assessments": [
+        "attleboro_remote_study/M5/attleboro-remote-end-to-end-recovery-v1",
+        "attleboro_remote_study/M13/attleboro-remote-end-to-end-recovery-v1",
+        "merwin/MER6/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+        "merwin/MER10/merwin-hcc-remote-auto-end-to-end-recovery-v1"
+      ],
+      "retained": 14,
+      "retained_known_failure": 2,
+      "retained_proved": 10,
+      "retained_unresolved": 2,
+      "retained_without_support": 4,
+      "variant": "COLLAPSE_DELIVERY"
+    },
+    {
+      "applicable": 64,
+      "decisive_assessments": [
+        "attleboro_remote_study/M7/attleboro-remote-end-to-end-recovery-v1",
+        "attleboro_hand/H7/attleboro-local-hand-end-to-end-recovery-v1",
+        "merwin/MER7/merwin-hcc-remote-auto-end-to-end-recovery-v1",
+        "chp/CHP0/chp-reviewed-backup-reload",
+        "chp/CHP5/chp-reviewed-backup-reload"
+      ],
+      "retained": 16,
+      "retained_known_failure": 3,
+      "retained_proved": 11,
+      "retained_unresolved": 2,
+      "retained_without_support": 5,
+      "variant": "COLLAPSE_PLANT"
+    },
+    {
+      "applicable": 57,
+      "decisive_assessments": [
+        "attleboro_remote_study/M8/attleboro-remote-end-to-end-recovery-v1",
+        "attleboro_remote_study/M9/attleboro-remote-end-to-end-recovery-v1",
+        "attleboro_hand/H8/attleboro-local-hand-end-to-end-recovery-v1",
+        "attleboro_hand/H9/attleboro-local-hand-end-to-end-recovery-v1",
+        "controlled_cost/C4/controlled-water-automatic-P2-v1",
+        "controlled_cost/C4/controlled-water-manual-P3-v1",
+        "merwin/MER8/merwin-hcc-remote-auto-end-to-end-recovery-v1"
+      ],
+      "retained": 18,
+      "retained_known_failure": 7,
+      "retained_proved": 11,
+      "retained_unresolved": 0,
+      "retained_without_support": 7,
+      "variant": "NO_OBSERVATION"
+    },
+    {
+      "applicable": 24,
+      "decisive_assessments": [],
+      "retained": 7,
+      "retained_known_failure": 0,
+      "retained_proved": 7,
+      "retained_unresolved": 0,
+      "retained_without_support": 0,
+      "variant": "BREAK_SHARED_IDENTITY"
+    }
+  ],
+  "unit": "One supplied candidate in one original operating state."
+}
